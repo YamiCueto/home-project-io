@@ -3,7 +3,7 @@
     "original": {
       "meshes": 328,
       "triangles": 361652,
-      "materials": 16,
+      "materials": 18,
       "dims_m": [
         8.42,
         11.7,
@@ -13,7 +13,7 @@
     "reimported": {
       "meshes": 328,
       "triangles": 602240,
-      "materials": 16,
+      "materials": 18,
       "dims_m": [
         8.42,
         11.7,
@@ -27,25 +27,25 @@
       0.0,
       0.0
     ],
-    "file_size_kb": 94164.21
+    "file_size_kb": 94158.18
   },
   "furniture.fbx": {
     "original": {
-      "meshes": 103,
-      "triangles": 122245,
-      "materials": 22,
+      "meshes": 117,
+      "triangles": 124357,
+      "materials": 24,
       "dims_m": [
-        7.69,
+        7.74,
         10.82,
         5.41
       ]
     },
     "reimported": {
-      "meshes": 103,
-      "triangles": 130513,
-      "materials": 22,
+      "meshes": 117,
+      "triangles": 132049,
+      "materials": 24,
       "dims_m": [
-        7.69,
+        7.74,
         10.82,
         5.41
       ]
@@ -57,13 +57,13 @@
       0.0,
       0.0
     ],
-    "file_size_kb": 28285.07
+    "file_size_kb": 28320.09
   },
   "interactive_doors.fbx": {
     "original": {
       "meshes": 19,
       "triangles": 228,
-      "materials": 2,
+      "materials": 4,
       "dims_m": [
         7.18,
         8.105,
@@ -73,7 +73,7 @@
     "reimported": {
       "meshes": 19,
       "triangles": 228,
-      "materials": 2,
+      "materials": 4,
       "dims_m": [
         7.18,
         8.105,
@@ -87,7 +87,7 @@
       0.0,
       0.0
     ],
-    "file_size_kb": 67.84
+    "file_size_kb": 67.76
   },
   "installations.fbx": {
     "original": {
@@ -177,6 +177,6 @@
       0.0,
       0.0
     ],
-    "file_size_kb": 264.57
+    "file_size_kb": 264.54
   }
 }

@@ -107,7 +107,9 @@ namespace HomeProject.Tests.PlayMode
             yield return null;
 
             InputSystem.settings.backgroundBehavior = InputSettings.BackgroundBehavior.IgnoreFocus;
-            Keyboard kb = Keyboard.current ?? InputSystem.AddDevice<Keyboard>();
+            Keyboard kb = InputSystem.AddDevice<Keyboard>();
+            kb.MakeCurrent();
+            yield return null;
             InputSystem.QueueStateEvent(kb, new KeyboardState());
             yield return null;
             InputSystem.QueueStateEvent(kb, new KeyboardState(Key.E));
@@ -115,6 +117,7 @@ namespace HomeProject.Tests.PlayMode
             yield return null;
             InputSystem.QueueStateEvent(kb, new KeyboardState());
             yield return null;
+            InputSystem.RemoveDevice(kb);
 
             Assert.IsTrue(door.IsOpen, "Pressing E via InputSystem did not open P1_M_Sur_Sala_Puerta1.");
 
@@ -134,7 +137,7 @@ namespace HomeProject.Tests.PlayMode
             Assert.IsNotNull(player);
             Assert.IsNotNull(hud);
 
-            string renderDir = Path.GetFullPath(Path.Combine(Application.dataPath, "../../renders/hito_08_3_1"));
+            string renderDir = Path.GetFullPath(Path.Combine(Application.dataPath, "../../renders/hito_08_3"));
             Directory.CreateDirectory(renderDir);
 
             int shotIndex = 1;

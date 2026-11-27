@@ -224,25 +224,25 @@
     "name": "P2_M_Master_Este_Puerta3",
     "pivot_location_m": [
       4.55,
-      2.6,
+      2.55,
       2.94
     ],
     "dimensions_m": [
       0.05,
-      0.9,
+      1.0,
       2.06
     ]
   },
   {
     "name": "P2_M_Vest_Bano_Puerta1",
     "pivot_location_m": [
-      6.2,
-      2.7,
+      6.0,
+      2.6,
       2.94
     ],
     "dimensions_m": [
       0.05,
-      0.8,
+      0.9,
       2.06
     ]
   }

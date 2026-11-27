@@ -4,9 +4,9 @@
     "screen_height": 1440,
     "warmup_frames": 60,
     "render_pipeline": "URP 17.6.0 (Forward+, HDR, MSAA 4x, SSAO, Shadows 4096)",
-    "average_fps": 368.5,
-    "average_frame_time_ms": 2.7100000381469727,
-    "p95_frame_time_ms": 3.700000047683716,
-    "p99_frame_time_ms": 8.010000228881836,
-    "one_percent_low_fps": 80.30000305175781
+    "average_fps": 374.20001220703125,
+    "average_frame_time_ms": 2.6700000762939453,
+    "p95_frame_time_ms": 3.8299999237060547,
+    "p99_frame_time_ms": 7.989999771118164,
+    "one_percent_low_fps": 77.5999984741211
 }

@@ -33,7 +33,7 @@ namespace HomeProject.Core
             {
                 if (bx < 4.55f) return "Habitacion Principal";
                 if (bx >= 4.55f && by < 1.50f) return "Balcon";
-                if (bx >= 4.55f && by < 3.10f) return "Vestidor";
+                if (bx >= 4.55f && bx < 6.00f) return "Vestidor";
                 return "Bano Principal";
             }
 

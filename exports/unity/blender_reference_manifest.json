@@ -1,5 +1,5 @@
 {
-  "blend_file": "C:\\Users\\YAMI\\Documents\\projects\\home-project\\models\\HOME_PROJECT_HITO_06_V3.blend",
+  "blend_file": "C:\\Users\\YAMI\\Documents\\projects\\home-project\\models\\HOME_PROJECT_HITO_08_3.blend",
   "objects": [
     {
       "name": "Anden_Frontal",
@@ -13214,9 +13214,9 @@
         "08_Propuesta_Segunda_Planta"
       ],
       "location_blender": [
-        2.6,
-        4.7,
-        5.3
+        0.0,
+        0.0,
+        0.0
       ],
       "rotation_euler_deg_blender": [
         0.0,
@@ -13250,7 +13250,7 @@
       ],
       "triangles": 12,
       "materials": [
-        "MAT_wall_int"
+        "MAT_stucco_blanco"
       ],
       "visible_viewport": true,
       "visible_render": true
@@ -13297,7 +13297,7 @@
       ],
       "triangles": 12,
       "materials": [
-        "MAT_madera_ext"
+        "MAT_madera_nogal"
       ],
       "visible_viewport": true,
       "visible_render": true
@@ -13308,9 +13308,9 @@
         "08_Propuesta_Segunda_Planta"
       ],
       "location_blender": [
-        1.15,
-        4.7,
-        4.25
+        0.0,
+        0.0,
+        0.0
       ],
       "rotation_euler_deg_blender": [
         0.0,
@@ -13344,7 +13344,7 @@
       ],
       "triangles": 12,
       "materials": [
-        "MAT_wall_int"
+        "MAT_stucco_blanco"
       ],
       "visible_viewport": true,
       "visible_render": true
@@ -13355,9 +13355,9 @@
         "08_Propuesta_Segunda_Planta"
       ],
       "location_blender": [
-        5.45,
-        4.7,
-        4.25
+        0.0,
+        0.0,
+        0.0
       ],
       "rotation_euler_deg_blender": [
         0.0,
@@ -13391,7 +13391,7 @@
       ],
       "triangles": 12,
       "materials": [
-        "MAT_wall_int"
+        "MAT_stucco_blanco"
       ],
       "visible_viewport": true,
       "visible_render": true
@@ -14436,9 +14436,9 @@
         "08_Propuesta_Segunda_Planta"
       ],
       "location_blender": [
-        4.55,
-        0.95,
-        5.3
+        0.0,
+        0.0,
+        0.0
       ],
       "rotation_euler_deg_blender": [
         0.0,
@@ -14472,7 +14472,7 @@
       ],
       "triangles": 12,
       "materials": [
-        "MAT_wall_int"
+        "MAT_stucco_blanco"
       ],
       "visible_viewport": true,
       "visible_render": true
@@ -14483,9 +14483,9 @@
         "08_Propuesta_Segunda_Planta"
       ],
       "location_blender": [
-        4.55,
-        3.05,
-        5.3
+        0.0,
+        0.0,
+        0.0
       ],
       "rotation_euler_deg_blender": [
         0.0,
@@ -14504,22 +14504,22 @@
       ],
       "world_min_blender": [
         4.5,
-        2.6,
+        2.55,
         5.0
       ],
       "world_max_blender": [
         4.6,
-        3.5,
+        3.55,
         5.6
       ],
       "size_blender": [
         0.1,
-        0.9,
+        1.0,
         0.6
       ],
       "triangles": 12,
       "materials": [
-        "MAT_wall_int"
+        "MAT_stucco_blanco"
       ],
       "visible_viewport": true,
       "visible_render": true
@@ -14566,7 +14566,7 @@
       ],
       "triangles": 12,
       "materials": [
-        "MAT_madera_ext"
+        "MAT_vidrio_arq"
       ],
       "visible_viewport": true,
       "visible_render": true
@@ -14578,7 +14578,7 @@
       ],
       "location_blender": [
         4.55,
-        2.6,
+        2.55,
         2.94
       ],
       "rotation_euler_deg_blender": [
@@ -14598,22 +14598,22 @@
       ],
       "world_min_blender": [
         4.525,
-        2.6,
+        2.55,
         2.94
       ],
       "world_max_blender": [
         4.575,
-        3.5,
+        3.55,
         5.0
       ],
       "size_blender": [
         0.05,
-        0.9,
+        1.0,
         2.06
       ],
       "triangles": 12,
       "materials": [
-        "MAT_madera_ext"
+        "MAT_madera_nogal"
       ],
       "visible_viewport": true,
       "visible_render": true
@@ -14624,9 +14624,9 @@
         "08_Propuesta_Segunda_Planta"
       ],
       "location_blender": [
-        4.55,
-        0.275,
-        4.25
+        0.0,
+        0.0,
+        0.0
       ],
       "rotation_euler_deg_blender": [
         0.0,
@@ -14660,7 +14660,7 @@
       ],
       "triangles": 12,
       "materials": [
-        "MAT_wall_int"
+        "MAT_stucco_blanco"
       ],
       "visible_viewport": true,
       "visible_render": true
@@ -14671,9 +14671,9 @@
         "08_Propuesta_Segunda_Planta"
       ],
       "location_blender": [
-        4.55,
-        2.05,
-        4.25
+        0.0,
+        0.0,
+        0.0
       ],
       "rotation_euler_deg_blender": [
         0.0,
@@ -14687,7 +14687,7 @@
       ],
       "world_center_blender": [
         4.55,
-        2.05,
+        2.025,
         4.25
       ],
       "world_min_blender": [
@@ -14697,17 +14697,17 @@
       ],
       "world_max_blender": [
         4.6,
-        2.6,
+        2.55,
         5.6
       ],
       "size_blender": [
         0.1,
-        1.1,
+        1.05,
         2.7
       ],
       "triangles": 12,
       "materials": [
-        "MAT_wall_int"
+        "MAT_stucco_blanco"
       ],
       "visible_viewport": true,
       "visible_render": true
@@ -14718,9 +14718,9 @@
         "08_Propuesta_Segunda_Planta"
       ],
       "location_blender": [
-        4.55,
-        4.075,
-        4.25
+        0.0,
+        0.0,
+        0.0
       ],
       "rotation_euler_deg_blender": [
         0.0,
@@ -14734,12 +14734,12 @@
       ],
       "world_center_blender": [
         4.55,
-        4.075,
+        4.1,
         4.25
       ],
       "world_min_blender": [
         4.5,
-        3.5,
+        3.55,
         2.9
       ],
       "world_max_blender": [
@@ -14749,12 +14749,12 @@
       ],
       "size_blender": [
         0.1,
-        1.15,
+        1.1,
         2.7
       ],
       "triangles": 12,
       "materials": [
-        "MAT_wall_int"
+        "MAT_stucco_blanco"
       ],
       "visible_viewport": true,
       "visible_render": true
@@ -16410,9 +16410,9 @@
         "08_Propuesta_Segunda_Planta"
       ],
       "location_blender": [
-        6.2,
-        3.1,
-        5.3
+        0.0,
+        0.0,
+        0.0
       ],
       "rotation_euler_deg_blender": [
         0.0,
@@ -16425,28 +16425,28 @@
         1.0
       ],
       "world_center_blender": [
-        6.2,
-        3.1,
+        6.0,
+        3.05,
         5.3
       ],
       "world_min_blender": [
-        6.15,
-        2.7,
+        5.95,
+        2.6,
         5.0
       ],
       "world_max_blender": [
-        6.25,
+        6.05,
         3.5,
         5.6
       ],
       "size_blender": [
         0.1,
-        0.8,
+        0.9,
         0.6
       ],
       "triangles": 12,
       "materials": [
-        "MAT_wall_int"
+        "MAT_stucco_blanco"
       ],
       "visible_viewport": true,
       "visible_render": true
@@ -16457,8 +16457,8 @@
         "08_Propuesta_Segunda_Planta"
       ],
       "location_blender": [
-        6.2,
-        2.7,
+        6.0,
+        2.6,
         2.94
       ],
       "rotation_euler_deg_blender": [
@@ -16472,28 +16472,28 @@
         1.0
       ],
       "world_center_blender": [
-        6.2,
-        3.1,
+        6.0,
+        3.05,
         3.97
       ],
       "world_min_blender": [
-        6.175,
-        2.7,
+        5.975,
+        2.6,
         2.94
       ],
       "world_max_blender": [
-        6.225,
+        6.025,
         3.5,
         5.0
       ],
       "size_blender": [
         0.05,
-        0.8,
+        0.9,
         2.06
       ],
       "triangles": 12,
       "materials": [
-        "MAT_madera_ext"
+        "MAT_madera_nogal"
       ],
       "visible_viewport": true,
       "visible_render": true
@@ -16504,9 +16504,9 @@
         "08_Propuesta_Segunda_Planta"
       ],
       "location_blender": [
-        6.2,
-        2.225,
-        4.25
+        0.0,
+        0.0,
+        0.0
       ],
       "rotation_euler_deg_blender": [
         0.0,
@@ -16519,28 +16519,28 @@
         1.0
       ],
       "world_center_blender": [
-        6.2,
-        2.225,
+        6.0,
+        2.175,
         4.25
       ],
       "world_min_blender": [
-        6.15,
+        5.95,
         1.75,
         2.9
       ],
       "world_max_blender": [
-        6.25,
-        2.7,
+        6.05,
+        2.6,
         5.6
       ],
       "size_blender": [
         0.1,
-        0.95,
+        0.85,
         2.7
       ],
       "triangles": 12,
       "materials": [
-        "MAT_wall_int"
+        "MAT_stucco_blanco"
       ],
       "visible_viewport": true,
       "visible_render": true
@@ -16551,9 +16551,9 @@
         "08_Propuesta_Segunda_Planta"
       ],
       "location_blender": [
-        6.2,
-        4.075,
-        4.25
+        0.0,
+        0.0,
+        0.0
       ],
       "rotation_euler_deg_blender": [
         0.0,
@@ -16566,17 +16566,17 @@
         1.0
       ],
       "world_center_blender": [
-        6.2,
+        6.0,
         4.075,
         4.25
       ],
       "world_min_blender": [
-        6.15,
+        5.95,
         3.5,
         2.9
       ],
       "world_max_blender": [
-        6.25,
+        6.05,
         4.65,
         5.6
       ],
@@ -16587,7 +16587,7 @@
       ],
       "triangles": 12,
       "materials": [
-        "MAT_wall_int"
+        "MAT_stucco_blanco"
       ],
       "visible_viewport": true,
       "visible_render": true
@@ -17068,14 +17068,14 @@
         "11_Mobiliario"
       ],
       "location_blender": [
-        1.7,
-        3.3,
+        0.5,
+        1.9,
         3.53
       ],
       "rotation_euler_deg_blender": [
         0.0,
         -0.0,
-        0.0
+        90.0
       ],
       "scale_blender": [
         1.0,
@@ -17083,23 +17083,23 @@
         1.0
       ],
       "world_center_blender": [
-        1.7,
-        3.3,
+        0.5,
+        1.9,
         3.53
       ],
       "world_min_blender": [
-        1.3,
-        3.1,
+        0.3,
+        1.5,
         3.46
       ],
       "world_max_blender": [
-        2.1,
-        3.5,
+        0.7,
+        2.3,
         3.6
       ],
       "size_blender": [
-        0.8,
         0.4,
+        0.8,
         0.14
       ],
       "triangles": 12,
@@ -17115,14 +17115,14 @@
         "11_Mobiliario"
       ],
       "location_blender": [
-        2.6,
-        3.3,
+        0.5,
+        2.8,
         3.53
       ],
       "rotation_euler_deg_blender": [
         0.0,
         -0.0,
-        0.0
+        90.0
       ],
       "scale_blender": [
         1.0,
@@ -17130,23 +17130,23 @@
         1.0
       ],
       "world_center_blender": [
-        2.6,
-        3.3,
+        0.5,
+        2.8,
         3.53
       ],
       "world_min_blender": [
-        2.2,
-        3.1,
+        0.3,
+        2.4,
         3.46
       ],
       "world_max_blender": [
-        3.0,
-        3.5,
+        0.7,
+        3.2,
         3.6
       ],
       "size_blender": [
-        0.8,
         0.4,
+        0.8,
         0.14
       ],
       "triangles": 12,
@@ -17162,14 +17162,14 @@
         "11_Mobiliario"
       ],
       "location_blender": [
-        2.15,
-        2.6,
+        1.2,
+        2.35,
         3.0775
       ],
       "rotation_euler_deg_blender": [
         0.0,
         -0.0,
-        0.0
+        90.0
       ],
       "scale_blender": [
         1.0,
@@ -17177,18 +17177,18 @@
         1.0
       ],
       "world_center_blender": [
-        2.15,
-        2.6,
+        1.2,
+        2.35,
         3.0775
       ],
       "world_min_blender": [
-        1.15,
-        1.6,
+        0.2,
+        1.35,
         2.955
       ],
       "world_max_blender": [
-        3.15,
-        3.6,
+        2.2,
+        3.35,
         3.2
       ],
       "size_blender": [
@@ -17209,14 +17209,14 @@
         "11_Mobiliario"
       ],
       "location_blender": [
-        2.15,
-        3.61,
+        0.19,
+        2.35,
         3.5375
       ],
       "rotation_euler_deg_blender": [
         0.0,
         -0.0,
-        0.0
+        90.0
       ],
       "scale_blender": [
         1.0,
@@ -17224,23 +17224,23 @@
         1.0
       ],
       "world_center_blender": [
-        2.15,
-        3.61,
+        0.19,
+        2.35,
         3.5375
       ],
       "world_min_blender": [
-        1.07,
-        3.55,
+        0.13,
+        1.27,
         2.955
       ],
       "world_max_blender": [
-        3.23,
-        3.67,
+        0.25,
+        3.43,
         4.12
       ],
       "size_blender": [
-        2.16,
         0.12,
+        2.16,
         1.165
       ],
       "triangles": 12,
@@ -17256,14 +17256,14 @@
         "11_Mobiliario"
       ],
       "location_blender": [
-        2.15,
-        2.6,
+        1.2,
+        2.35,
         3.33
       ],
       "rotation_euler_deg_blender": [
         0.0,
         -0.0,
-        0.0
+        90.0
       ],
       "scale_blender": [
         1.0,
@@ -17271,18 +17271,18 @@
         1.0
       ],
       "world_center_blender": [
-        2.15,
-        2.6,
+        1.2,
+        2.35,
         3.33
       ],
       "world_min_blender": [
-        1.18,
-        1.63,
+        0.23,
+        1.38,
         3.2
       ],
       "world_max_blender": [
-        3.12,
-        3.57,
+        2.17,
+        3.32,
         3.46
       ],
       "size_blender": [
@@ -17303,14 +17303,14 @@
         "11_Mobiliario"
       ],
       "location_blender": [
-        2.15,
-        2.33,
+        1.47,
+        2.35,
         3.355
       ],
       "rotation_euler_deg_blender": [
         0.0,
         -0.0,
-        0.0
+        90.0
       ],
       "scale_blender": [
         1.0,
@@ -17318,23 +17318,23 @@
         1.0
       ],
       "world_center_blender": [
-        2.15,
-        2.33,
+        1.47,
+        2.35,
         3.355
       ],
       "world_min_blender": [
-        1.16,
-        1.61,
+        0.75,
+        1.36,
         3.22
       ],
       "world_max_blender": [
-        3.14,
-        3.05,
+        2.19,
+        3.34,
         3.49
       ],
       "size_blender": [
-        1.98,
         1.44,
+        1.98,
         0.27
       ],
       "triangles": 12,
@@ -17459,28 +17459,75 @@
         1.0
       ],
       "world_center_blender": [
-        5.825,
-        4.065,
+        5.285,
+        4.35,
         4.095
       ],
       "world_min_blender": [
-        5.55,
-        3.58,
+        4.65,
+        4.08,
         2.94
       ],
       "world_max_blender": [
-        6.1,
-        4.55,
+        5.92,
+        4.62,
         5.25
       ],
       "size_blender": [
-        0.55,
-        0.97,
+        1.27,
+        0.54,
         2.31
       ],
       "triangles": 12,
       "materials": [
-        "MAT_madera_ext"
+        "MAT_madera_roble"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "P2_Mob_Closet_Vestidor_Sur",
+      "collections": [
+        "11_Mobiliario"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        5.285,
+        2.05,
+        4.095
+      ],
+      "world_min_blender": [
+        4.65,
+        1.78,
+        2.94
+      ],
+      "world_max_blender": [
+        5.92,
+        2.32,
+        5.25
+      ],
+      "size_blender": [
+        1.27,
+        0.54,
+        2.31
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_madera_roble"
       ],
       "visible_viewport": true,
       "visible_render": true
@@ -17647,28 +17694,28 @@
         1.0
       ],
       "world_center_blender": [
-        7.35,
-        2.25,
-        2.95
+        7.335,
+        2.265,
+        2.955
       ],
       "world_min_blender": [
-        6.9,
-        1.8,
+        6.85,
+        1.78,
         2.94
       ],
       "world_max_blender": [
-        7.8,
-        2.7,
-        2.96
+        7.82,
+        2.75,
+        2.97
       ],
       "size_blender": [
-        0.9,
-        0.9,
-        0.02
+        0.97,
+        0.97,
+        0.03
       ],
       "triangles": 12,
       "materials": [
-        "MAT_piso_antideslizante"
+        "MAT_ceramica_blanca"
       ],
       "visible_viewport": true,
       "visible_render": true
@@ -17788,28 +17835,28 @@
         1.0
       ],
       "world_center_blender": [
-        7.805,
+        7.815,
         4.125,
-        4.4
+        4.42
       ],
       "world_min_blender": [
-        7.78,
-        3.75,
-        3.95
+        7.79,
+        3.7,
+        3.92
       ],
       "world_max_blender": [
-        7.83,
-        4.5,
-        4.85
+        7.84,
+        4.55,
+        4.92
       ],
       "size_blender": [
         0.05,
-        0.75,
-        0.9
+        0.85,
+        1.0
       ],
       "triangles": 12,
       "materials": [
-        "MAT_luz_calida"
+        "MAT_aluminio"
       ],
       "visible_viewport": true,
       "visible_render": true
@@ -17882,28 +17929,28 @@
         1.0
       ],
       "world_center_blender": [
-        7.475,
-        3.175,
+        7.5,
+        3.2,
         3.15
       ],
       "world_min_blender": [
-        7.15,
-        2.9,
+        7.18,
+        2.95,
         2.94
       ],
       "world_max_blender": [
-        7.8,
+        7.82,
         3.45,
         3.36
       ],
       "size_blender": [
-        0.65,
-        0.55,
+        0.64,
+        0.5,
         0.42
       ],
       "triangles": 12,
       "materials": [
-        "MAT_ceramica_sanitaria"
+        "MAT_ceramica_blanca"
       ],
       "visible_viewport": true,
       "visible_render": true
@@ -17976,28 +18023,28 @@
         1.0
       ],
       "world_center_blender": [
-        7.525,
+        7.52,
         4.125,
-        3.345
+        3.35
       ],
       "world_min_blender": [
-        7.25,
-        3.7,
+        7.22,
+        3.65,
         2.94
       ],
       "world_max_blender": [
-        7.8,
-        4.55,
-        3.75
+        7.82,
+        4.6,
+        3.76
       ],
       "size_blender": [
-        0.55,
-        0.85,
-        0.81
+        0.6,
+        0.95,
+        0.82
       ],
       "triangles": 12,
       "materials": [
-        "MAT_cuarzo_blanco"
+        "MAT_madera_roble"
       ],
       "visible_viewport": true,
       "visible_render": true
@@ -18008,14 +18055,14 @@
         "11_Mobiliario"
       ],
       "location_blender": [
-        2.15,
-        3.68,
+        0.12,
+        2.35,
         3.565
       ],
       "rotation_euler_deg_blender": [
         0.0,
         -0.0,
-        0.0
+        90.0
       ],
       "scale_blender": [
         1.0,
@@ -18023,23 +18070,23 @@
         1.0
       ],
       "world_center_blender": [
-        2.15,
-        3.68,
+        0.12,
+        2.35,
         3.565
       ],
       "world_min_blender": [
-        1.09,
-        3.67,
+        0.11,
+        1.29,
         3.05
       ],
       "world_max_blender": [
-        3.21,
-        3.69,
+        0.13,
+        3.41,
         4.08
       ],
       "size_blender": [
-        2.12,
         0.02,
+        2.12,
         1.03
       ],
       "triangles": 12,
@@ -18117,24 +18164,24 @@
         1.0
       ],
       "world_center_blender": [
-        6.895,
-        2.25,
-        3.955
+        6.85,
+        2.265,
+        3.96
       ],
       "world_min_blender": [
-        6.88,
-        1.8,
-        2.96
+        6.83,
+        1.78,
+        2.97
       ],
       "world_max_blender": [
-        6.91,
-        2.7,
+        6.87,
+        2.75,
         4.95
       ],
       "size_blender": [
-        0.03,
-        0.9,
-        1.99
+        0.04,
+        0.97,
+        1.98
       ],
       "triangles": 12,
       "materials": [
@@ -18243,8 +18290,8 @@
         "11_Mobiliario"
       ],
       "location_blender": [
-        2.3,
         2.05,
+        2.35,
         2.9475
       ],
       "rotation_euler_deg_blender": [
@@ -18258,18 +18305,18 @@
         1.0
       ],
       "world_center_blender": [
-        2.3,
         2.05,
+        2.35,
         2.9475
       ],
       "world_min_blender": [
-        0.9,
-        0.8,
+        0.65,
+        1.1,
         2.94
       ],
       "world_max_blender": [
-        3.7,
-        3.3,
+        3.45,
+        3.6,
         2.955
       ],
       "size_blender": [
@@ -18290,14 +18337,14 @@
         "11_Mobiliario"
       ],
       "location_blender": [
-        0.83,
-        3.3,
+        0.5,
+        1.03,
         2.94
       ],
       "rotation_euler_deg_blender": [
         0.0,
         -0.0,
-        0.0
+        90.0
       ],
       "scale_blender": [
         1.0,
@@ -18305,23 +18352,23 @@
         1.0
       ],
       "world_center_blender": [
-        0.83,
-        3.3,
+        0.5,
+        1.03,
         3.21297
       ],
       "world_min_blender": [
-        0.555,
-        3.075,
+        0.275,
+        0.755,
         2.93764
       ],
       "world_max_blender": [
-        1.105,
-        3.525,
+        0.725,
+        1.305,
         3.48831
       ],
       "size_blender": [
-        0.55,
         0.45,
+        0.55,
         0.55066
       ],
       "triangles": 2756,
@@ -18337,14 +18384,14 @@
         "11_Mobiliario"
       ],
       "location_blender": [
-        3.47,
-        3.3,
+        0.5,
+        3.67,
         2.94
       ],
       "rotation_euler_deg_blender": [
         0.0,
         -0.0,
-        0.0
+        90.0
       ],
       "scale_blender": [
         1.0,
@@ -18352,23 +18399,23 @@
         1.0
       ],
       "world_center_blender": [
-        3.47,
-        3.3,
+        0.5,
+        3.67,
         3.21297
       ],
       "world_min_blender": [
-        3.195,
-        3.075,
+        0.275,
+        3.395,
         2.93764
       ],
       "world_max_blender": [
-        3.745,
-        3.525,
+        0.725,
+        3.945,
         3.48831
       ],
       "size_blender": [
-        0.55,
         0.45,
+        0.55,
         0.55066
       ],
       "triangles": 2756,
@@ -18478,9 +18525,9 @@
         "08_Propuesta_Segunda_Planta"
       ],
       "location_blender": [
-        7.05,
-        3.2,
-        2.92
+        0.0,
+        0.0,
+        0.0
       ],
       "rotation_euler_deg_blender": [
         0.0,
@@ -18493,12 +18540,12 @@
         1.0
       ],
       "world_center_blender": [
-        7.05,
+        6.95,
         3.2,
         2.92
       ],
       "world_min_blender": [
-        6.25,
+        6.05,
         1.75,
         2.9
       ],
@@ -18508,13 +18555,13 @@
         2.94
       ],
       "size_blender": [
-        1.6,
+        1.8,
         2.9,
         0.04
       ],
       "triangles": 12,
       "materials": [
-        "MAT_porcelanato_ext"
+        "MAT_porcelanato"
       ],
       "visible_viewport": true,
       "visible_render": true
@@ -18807,9 +18854,9 @@
         "08_Propuesta_Segunda_Planta"
       ],
       "location_blender": [
-        5.375,
-        3.2,
-        2.92
+        0.0,
+        0.0,
+        0.0
       ],
       "rotation_euler_deg_blender": [
         0.0,
@@ -18822,7 +18869,7 @@
         1.0
       ],
       "world_center_blender": [
-        5.375,
+        5.275,
         3.2,
         2.92
       ],
@@ -18832,18 +18879,18 @@
         2.9
       ],
       "world_max_blender": [
-        6.15,
+        5.95,
         4.65,
         2.94
       ],
       "size_blender": [
-        1.55,
+        1.35,
         2.9,
         0.04
       ],
       "triangles": 12,
       "materials": [
-        "MAT_porcelanato_ext"
+        "MAT_porcelanato"
       ],
       "visible_viewport": true,
       "visible_render": true
@@ -22280,13 +22327,13 @@
       "visible_render": true
     },
     {
-      "name": "Veh_Swift_Cabina",
+      "name": "Veh_Swift_Cabina_Vidrios",
       "collections": [
         "10_Vehiculos"
       ],
       "location_blender": [
-        0.3,
-        -0.1,
+        0.0,
+        0.0,
         0.0
       ],
       "rotation_euler_deg_blender": [
@@ -22300,120 +22347,26 @@
         1.0
       ],
       "world_center_blender": [
-        5.9175,
-        2.35,
-        1.2225
+        5.88,
+        2.38954,
+        1.12495
       ],
       "world_min_blender": [
-        5.17,
-        1.3,
-        0.89
+        5.1,
+        1.05969,
+        0.86
       ],
       "world_max_blender": [
-        6.665,
-        3.4,
-        1.555
+        6.66,
+        3.71939,
+        1.3899
       ],
       "size_blender": [
-        1.495,
-        2.1,
-        0.665
+        1.56,
+        2.6597,
+        0.5299
       ],
-      "triangles": 12,
-      "materials": [
-        "MAT_vehicle_car"
-      ],
-      "visible_viewport": true,
-      "visible_render": true
-    },
-    {
-      "name": "Veh_Swift_Chasis",
-      "collections": [
-        "10_Vehiculos"
-      ],
-      "location_blender": [
-        0.3,
-        -0.1,
-        0.0
-      ],
-      "rotation_euler_deg_blender": [
-        0.0,
-        -0.0,
-        0.0
-      ],
-      "scale_blender": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "world_center_blender": [
-        5.9175,
-        2.2475,
-        0.555
-      ],
-      "world_min_blender": [
-        5.05,
-        0.25,
-        0.22
-      ],
-      "world_max_blender": [
-        6.785,
-        4.245,
-        0.89
-      ],
-      "size_blender": [
-        1.735,
-        3.995,
-        0.67
-      ],
-      "triangles": 12,
-      "materials": [
-        "MAT_vehicle_car"
-      ],
-      "visible_viewport": true,
-      "visible_render": true
-    },
-    {
-      "name": "Veh_Swift_Parabrisas",
-      "collections": [
-        "10_Vehiculos"
-      ],
-      "location_blender": [
-        0.3,
-        -0.1,
-        0.0
-      ],
-      "rotation_euler_deg_blender": [
-        0.0,
-        -0.0,
-        0.0
-      ],
-      "scale_blender": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "world_center_blender": [
-        5.9175,
-        2.3,
-        1.21
-      ],
-      "world_min_blender": [
-        5.21,
-        1.25,
-        0.92
-      ],
-      "world_max_blender": [
-        6.625,
-        3.35,
-        1.5
-      ],
-      "size_blender": [
-        1.415,
-        2.1,
-        0.58
-      ],
-      "triangles": 12,
+      "triangles": 88,
       "materials": [
         "MAT_vidrio_arq"
       ],
@@ -22421,14 +22374,14 @@
       "visible_render": true
     },
     {
-      "name": "Veh_Swift_Puerta_Cond",
+      "name": "Veh_Swift_Carroceria",
       "collections": [
         "10_Vehiculos"
       ],
       "location_blender": [
-        6.785,
-        2.42,
-        0.25
+        0.0,
+        0.0,
+        0.0
       ],
       "rotation_euler_deg_blender": [
         0.0,
@@ -22441,26 +22394,26 @@
         1.0
       ],
       "world_center_blender": [
-        6.785,
-        1.97,
-        0.725
+        5.88,
+        2.25131,
+        0.84988
       ],
       "world_min_blender": [
-        6.765,
-        1.52,
-        0.25
+        5.02,
+        0.40262,
+        0.26019
       ],
       "world_max_blender": [
-        6.805,
-        2.42,
-        1.2
+        6.74,
+        4.1,
+        1.43957
       ],
       "size_blender": [
-        0.04,
-        0.9,
-        0.95
+        1.72,
+        3.69738,
+        1.17938
       ],
-      "triangles": 12,
+      "triangles": 172,
       "materials": [
         "MAT_vehicle_car"
       ],
@@ -22468,14 +22421,14 @@
       "visible_render": true
     },
     {
-      "name": "Veh_Swift_Puerta_Pas",
+      "name": "Veh_Swift_Espejo_L",
       "collections": [
         "10_Vehiculos"
       ],
       "location_blender": [
-        5.05,
-        2.42,
-        0.25
+        0.0,
+        0.0,
+        0.0
       ],
       "rotation_euler_deg_blender": [
         0.0,
@@ -22488,228 +22441,40 @@
         1.0
       ],
       "world_center_blender": [
-        5.05,
-        1.97,
-        0.725
+        4.98,
+        1.45,
+        0.91
       ],
       "world_min_blender": [
-        5.03,
-        1.52,
-        0.25
+        4.92,
+        1.37,
+        0.86
       ],
       "world_max_blender": [
-        5.07,
-        2.42,
-        1.2
+        5.04,
+        1.53,
+        0.96
       ],
       "size_blender": [
-        0.04,
-        0.9,
-        0.95
+        0.12,
+        0.16,
+        0.1
       ],
       "triangles": 12,
       "materials": [
-        "MAT_vehicle_car"
+        "MAT_aluminio_negro"
       ],
       "visible_viewport": true,
       "visible_render": true
     },
     {
-      "name": "Veh_Swift_Rueda_4.9_1.1",
+      "name": "Veh_Swift_Espejo_R",
       "collections": [
         "10_Vehiculos"
       ],
       "location_blender": [
-        5.17,
-        0.97,
-        0.32
-      ],
-      "rotation_euler_deg_blender": [
-        -0.0,
-        90.0,
-        0.0
-      ],
-      "scale_blender": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "world_center_blender": [
-        5.17,
-        0.97,
-        0.32
-      ],
-      "world_min_blender": [
-        5.075,
-        0.69,
-        0.04
-      ],
-      "world_max_blender": [
-        5.265,
-        1.25,
-        0.6
-      ],
-      "size_blender": [
-        0.19,
-        0.56,
-        0.56
-      ],
-      "triangles": 76,
-      "materials": [
-        "MAT_antracita"
-      ],
-      "visible_viewport": true,
-      "visible_render": true
-    },
-    {
-      "name": "Veh_Swift_Rueda_4.9_3.6",
-      "collections": [
-        "10_Vehiculos"
-      ],
-      "location_blender": [
-        5.17,
-        3.5,
-        0.32
-      ],
-      "rotation_euler_deg_blender": [
-        -0.0,
-        90.0,
-        0.0
-      ],
-      "scale_blender": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "world_center_blender": [
-        5.17,
-        3.5,
-        0.32
-      ],
-      "world_min_blender": [
-        5.075,
-        3.22,
-        0.04
-      ],
-      "world_max_blender": [
-        5.265,
-        3.78,
-        0.6
-      ],
-      "size_blender": [
-        0.19,
-        0.56,
-        0.56
-      ],
-      "triangles": 76,
-      "materials": [
-        "MAT_antracita"
-      ],
-      "visible_viewport": true,
-      "visible_render": true
-    },
-    {
-      "name": "Veh_Swift_Rueda_6.4_1.1",
-      "collections": [
-        "10_Vehiculos"
-      ],
-      "location_blender": [
-        6.665,
-        0.97,
-        0.32
-      ],
-      "rotation_euler_deg_blender": [
-        -0.0,
-        90.0,
-        0.0
-      ],
-      "scale_blender": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "world_center_blender": [
-        6.665,
-        0.97,
-        0.32
-      ],
-      "world_min_blender": [
-        6.57,
-        0.69,
-        0.04
-      ],
-      "world_max_blender": [
-        6.76,
-        1.25,
-        0.6
-      ],
-      "size_blender": [
-        0.19,
-        0.56,
-        0.56
-      ],
-      "triangles": 76,
-      "materials": [
-        "MAT_antracita"
-      ],
-      "visible_viewport": true,
-      "visible_render": true
-    },
-    {
-      "name": "Veh_Swift_Rueda_6.4_3.6",
-      "collections": [
-        "10_Vehiculos"
-      ],
-      "location_blender": [
-        6.665,
-        3.5,
-        0.32
-      ],
-      "rotation_euler_deg_blender": [
-        -0.0,
-        90.0,
-        0.0
-      ],
-      "scale_blender": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "world_center_blender": [
-        6.665,
-        3.5,
-        0.32
-      ],
-      "world_min_blender": [
-        6.57,
-        3.22,
-        0.04
-      ],
-      "world_max_blender": [
-        6.76,
-        3.78,
-        0.6
-      ],
-      "size_blender": [
-        0.19,
-        0.56,
-        0.56
-      ],
-      "triangles": 76,
-      "materials": [
-        "MAT_antracita"
-      ],
-      "visible_viewport": true,
-      "visible_render": true
-    },
-    {
-      "name": "Veh_VStrom_Cuerpo",
-      "collections": [
-        "10_Vehiculos"
-      ],
-      "location_blender": [
-        0.1,
-        0.32,
+        0.0,
+        0.0,
         0.0
       ],
       "rotation_euler_deg_blender": [
@@ -22723,26 +22488,684 @@
         1.0
       ],
       "world_center_blender": [
-        7.39,
-        3.02,
-        0.825
+        6.78,
+        1.45,
+        0.91
+      ],
+      "world_min_blender": [
+        6.72,
+        1.37,
+        0.86
+      ],
+      "world_max_blender": [
+        6.84,
+        1.53,
+        0.96
+      ],
+      "size_blender": [
+        0.12,
+        0.16,
+        0.1
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_aluminio_negro"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Veh_Swift_Faro_L",
+      "collections": [
+        "10_Vehiculos"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        5.25,
+        0.425,
+        0.6
+      ],
+      "world_min_blender": [
+        5.1,
+        0.38,
+        0.54
+      ],
+      "world_max_blender": [
+        5.4,
+        0.47,
+        0.66
+      ],
+      "size_blender": [
+        0.3,
+        0.09,
+        0.12
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_aluminio"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Veh_Swift_Faro_R",
+      "collections": [
+        "10_Vehiculos"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        6.51,
+        0.425,
+        0.6
+      ],
+      "world_min_blender": [
+        6.36,
+        0.38,
+        0.54
+      ],
+      "world_max_blender": [
+        6.66,
+        0.47,
+        0.66
+      ],
+      "size_blender": [
+        0.3,
+        0.09,
+        0.12
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_aluminio"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Veh_Swift_Parrilla",
+      "collections": [
+        "10_Vehiculos"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        5.88,
+        0.4,
+        0.4
+      ],
+      "world_min_blender": [
+        5.32,
+        0.37,
+        0.28
+      ],
+      "world_max_blender": [
+        6.44,
+        0.43,
+        0.52
+      ],
+      "size_blender": [
+        1.12,
+        0.06,
+        0.24
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_antracita"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Veh_Swift_Piloto_Tras",
+      "collections": [
+        "10_Vehiculos"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        5.88,
+        4.095,
+        0.72
+      ],
+      "world_min_blender": [
+        5.12,
+        4.07,
+        0.66
+      ],
+      "world_max_blender": [
+        6.64,
+        4.12,
+        0.78
+      ],
+      "size_blender": [
+        1.52,
+        0.05,
+        0.12
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_vehicle_moto"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Veh_Swift_Rueda_FL",
+      "collections": [
+        "10_Vehiculos"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        5.08,
+        1.07,
+        0.34
+      ],
+      "world_min_blender": [
+        4.975,
+        0.77,
+        0.04
+      ],
+      "world_max_blender": [
+        5.185,
+        1.37,
+        0.64
+      ],
+      "size_blender": [
+        0.21,
+        0.6,
+        0.6
+      ],
+      "triangles": 284,
+      "materials": [
+        "MAT_antracita"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Veh_Swift_Rueda_FL_Rim",
+      "collections": [
+        "10_Vehiculos"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        5.08,
+        1.07,
+        0.34
+      ],
+      "world_min_blender": [
+        4.9666,
+        0.896,
+        0.166
+      ],
+      "world_max_blender": [
+        5.1934,
+        1.244,
+        0.514
+      ],
+      "size_blender": [
+        0.2268,
+        0.348,
+        0.348
+      ],
+      "triangles": 60,
+      "materials": [
+        "MAT_aluminio"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Veh_Swift_Rueda_FR",
+      "collections": [
+        "10_Vehiculos"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        6.68,
+        1.07,
+        0.34
+      ],
+      "world_min_blender": [
+        6.575,
+        0.77,
+        0.04
+      ],
+      "world_max_blender": [
+        6.785,
+        1.37,
+        0.64
+      ],
+      "size_blender": [
+        0.21,
+        0.6,
+        0.6
+      ],
+      "triangles": 284,
+      "materials": [
+        "MAT_antracita"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Veh_Swift_Rueda_FR_Rim",
+      "collections": [
+        "10_Vehiculos"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        6.68,
+        1.07,
+        0.34
+      ],
+      "world_min_blender": [
+        6.5666,
+        0.896,
+        0.166
+      ],
+      "world_max_blender": [
+        6.7934,
+        1.244,
+        0.514
+      ],
+      "size_blender": [
+        0.2268,
+        0.348,
+        0.348
+      ],
+      "triangles": 60,
+      "materials": [
+        "MAT_aluminio"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Veh_Swift_Rueda_RL",
+      "collections": [
+        "10_Vehiculos"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        5.08,
+        3.47,
+        0.34
+      ],
+      "world_min_blender": [
+        4.975,
+        3.17,
+        0.04
+      ],
+      "world_max_blender": [
+        5.185,
+        3.77,
+        0.64
+      ],
+      "size_blender": [
+        0.21,
+        0.6,
+        0.6
+      ],
+      "triangles": 284,
+      "materials": [
+        "MAT_antracita"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Veh_Swift_Rueda_RL_Rim",
+      "collections": [
+        "10_Vehiculos"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        5.08,
+        3.47,
+        0.34
+      ],
+      "world_min_blender": [
+        4.9666,
+        3.296,
+        0.166
+      ],
+      "world_max_blender": [
+        5.1934,
+        3.644,
+        0.514
+      ],
+      "size_blender": [
+        0.2268,
+        0.348,
+        0.348
+      ],
+      "triangles": 60,
+      "materials": [
+        "MAT_aluminio"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Veh_Swift_Rueda_RR",
+      "collections": [
+        "10_Vehiculos"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        6.68,
+        3.47,
+        0.34
+      ],
+      "world_min_blender": [
+        6.575,
+        3.17,
+        0.04
+      ],
+      "world_max_blender": [
+        6.785,
+        3.77,
+        0.64
+      ],
+      "size_blender": [
+        0.21,
+        0.6,
+        0.6
+      ],
+      "triangles": 284,
+      "materials": [
+        "MAT_antracita"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Veh_Swift_Rueda_RR_Rim",
+      "collections": [
+        "10_Vehiculos"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        6.68,
+        3.47,
+        0.34
+      ],
+      "world_min_blender": [
+        6.5666,
+        3.296,
+        0.166
+      ],
+      "world_max_blender": [
+        6.7934,
+        3.644,
+        0.514
+      ],
+      "size_blender": [
+        0.2268,
+        0.348,
+        0.348
+      ],
+      "triangles": 60,
+      "materials": [
+        "MAT_aluminio"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Veh_VStrom_Asiento",
+      "collections": [
+        "10_Vehiculos"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        7.36,
+        3.1,
+        0.835
+      ],
+      "world_min_blender": [
+        7.22,
+        2.8,
+        0.78
+      ],
+      "world_max_blender": [
+        7.5,
+        3.4,
+        0.89
+      ],
+      "size_blender": [
+        0.28,
+        0.6,
+        0.11
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_antracita"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Veh_VStrom_Carroceria",
+      "collections": [
+        "10_Vehiculos"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        7.36,
+        2.81853,
+        0.80734
       ],
       "world_min_blender": [
         7.2,
-        2.27,
-        0.49
+        2.04562,
+        0.56136
       ],
       "world_max_blender": [
-        7.58,
-        3.77,
-        1.16
+        7.52,
+        3.59145,
+        1.05331
       ],
       "size_blender": [
-        0.38,
-        1.5,
-        0.67
+        0.32,
+        1.54583,
+        0.49195
       ],
-      "triangles": 12,
+      "triangles": 184,
       "materials": [
         "MAT_vehicle_moto"
       ],
@@ -22755,8 +23178,8 @@
         "10_Vehiculos"
       ],
       "location_blender": [
-        0.1,
-        0.32,
+        0.0,
+        0.0,
         0.0
       ],
       "rotation_euler_deg_blender": [
@@ -22770,28 +23193,122 @@
         1.0
       ],
       "world_center_blender": [
-        7.39,
-        2.4,
-        1.2775
+        7.36,
+        2.25,
+        1.17
       ],
       "world_min_blender": [
-        7.25,
-        2.3,
-        1.16
+        7.23,
+        2.17,
+        1.02
       ],
       "world_max_blender": [
-        7.53,
-        2.5,
-        1.395
+        7.49,
+        2.33,
+        1.32
       ],
       "size_blender": [
-        0.28,
-        0.2,
-        0.235
+        0.26,
+        0.16,
+        0.3
       ],
       "triangles": 12,
       "materials": [
         "MAT_vidrio_arq"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Veh_VStrom_Escape",
+      "collections": [
+        "10_Vehiculos"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        7.55,
+        3.215,
+        0.43
+      ],
+      "world_min_blender": [
+        7.51,
+        2.9,
+        0.36
+      ],
+      "world_max_blender": [
+        7.59,
+        3.53,
+        0.5
+      ],
+      "size_blender": [
+        0.08,
+        0.63,
+        0.14
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_aluminio"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Veh_VStrom_Horquilla",
+      "collections": [
+        "10_Vehiculos"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        7.36,
+        2.16,
+        0.69
+      ],
+      "world_min_blender": [
+        7.25,
+        2.07,
+        0.36
+      ],
+      "world_max_blender": [
+        7.47,
+        2.25,
+        1.02
+      ],
+      "size_blender": [
+        0.22,
+        0.18,
+        0.66
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_aluminio"
       ],
       "visible_viewport": true,
       "visible_render": true
@@ -22802,8 +23319,8 @@
         "10_Vehiculos"
       ],
       "location_blender": [
-        0.1,
-        0.32,
+        0.0,
+        0.0,
         0.0
       ],
       "rotation_euler_deg_blender": [
@@ -22817,23 +23334,23 @@
         1.0
       ],
       "world_center_blender": [
-        7.39,
-        2.535,
-        1.15
+        7.36,
+        2.35,
+        1.05
       ],
       "world_min_blender": [
-        6.95,
-        2.47,
-        1.12
+        6.96,
+        2.3,
+        1.02
       ],
       "world_max_blender": [
-        7.83,
-        2.6,
-        1.18
+        7.76,
+        2.4,
+        1.08
       ],
       "size_blender": [
-        0.88,
-        0.13,
+        0.8,
+        0.1,
         0.06
       ],
       "triangles": 12,
@@ -22844,18 +23361,18 @@
       "visible_render": true
     },
     {
-      "name": "Veh_VStrom_Rueda_2.0",
+      "name": "Veh_VStrom_Motor",
       "collections": [
         "10_Vehiculos"
       ],
       "location_blender": [
-        7.39,
-        2.27,
-        0.36
+        0.0,
+        0.0,
+        0.0
       ],
       "rotation_euler_deg_blender": [
+        0.0,
         -0.0,
-        90.0,
         0.0
       ],
       "scale_blender": [
@@ -22864,26 +23381,73 @@
         1.0
       ],
       "world_center_blender": [
-        7.39,
-        2.27,
+        7.36,
+        2.73,
+        0.44
+      ],
+      "world_min_blender": [
+        7.22,
+        2.43,
+        0.26
+      ],
+      "world_max_blender": [
+        7.5,
+        3.03,
+        0.62
+      ],
+      "size_blender": [
+        0.28,
+        0.6,
+        0.36
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_aluminio_negro"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Veh_VStrom_Rueda_F",
+      "collections": [
+        "10_Vehiculos"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        7.36,
+        2.07,
         0.36
       ],
       "world_min_blender": [
-        7.325,
-        1.95,
+        7.3,
+        1.75,
         0.04
       ],
       "world_max_blender": [
-        7.455,
-        2.59,
+        7.42,
+        2.39,
         0.68
       ],
       "size_blender": [
-        0.13,
+        0.12,
         0.64,
         0.64
       ],
-      "triangles": 76,
+      "triangles": 284,
       "materials": [
         "MAT_antracita"
       ],
@@ -22891,18 +23455,18 @@
       "visible_render": true
     },
     {
-      "name": "Veh_VStrom_Rueda_3.4",
+      "name": "Veh_VStrom_Rueda_F_Rim",
       "collections": [
         "10_Vehiculos"
       ],
       "location_blender": [
-        7.39,
-        3.74,
-        0.36
+        0.0,
+        0.0,
+        0.0
       ],
       "rotation_euler_deg_blender": [
+        0.0,
         -0.0,
-        90.0,
         0.0
       ],
       "scale_blender": [
@@ -22911,28 +23475,122 @@
         1.0
       ],
       "world_center_blender": [
-        7.39,
-        3.74,
+        7.36,
+        2.07,
         0.36
       ],
       "world_min_blender": [
-        7.325,
-        3.42,
+        7.2952,
+        1.8844,
+        0.1744
+      ],
+      "world_max_blender": [
+        7.4248,
+        2.2556,
+        0.5456
+      ],
+      "size_blender": [
+        0.1296,
+        0.3712,
+        0.3712
+      ],
+      "triangles": 60,
+      "materials": [
+        "MAT_aluminio"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Veh_VStrom_Rueda_R",
+      "collections": [
+        "10_Vehiculos"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        7.36,
+        3.41,
+        0.34
+      ],
+      "world_min_blender": [
+        7.285,
+        3.11,
         0.04
       ],
       "world_max_blender": [
-        7.455,
-        4.06,
-        0.68
-      ],
-      "size_blender": [
-        0.13,
-        0.64,
+        7.435,
+        3.71,
         0.64
       ],
-      "triangles": 76,
+      "size_blender": [
+        0.15,
+        0.6,
+        0.6
+      ],
+      "triangles": 284,
       "materials": [
         "MAT_antracita"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Veh_VStrom_Rueda_R_Rim",
+      "collections": [
+        "10_Vehiculos"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        7.36,
+        3.41,
+        0.34
+      ],
+      "world_min_blender": [
+        7.279,
+        3.236,
+        0.166
+      ],
+      "world_max_blender": [
+        7.441,
+        3.584,
+        0.514
+      ],
+      "size_blender": [
+        0.162,
+        0.348,
+        0.348
+      ],
+      "triangles": 60,
+      "materials": [
+        "MAT_aluminio"
       ],
       "visible_viewport": true,
       "visible_render": true

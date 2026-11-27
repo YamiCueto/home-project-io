@@ -1,0 +1,37 @@
+{
+  "model": "HOME_PROJECT_HITO_01_V3.blend",
+  "blender_version": "5.3.0 Beta",
+  "metrics": {
+    "lot_m2": 90.0,
+    "p1_strict_covered_m2": 59.83,
+    "p1_uncovered_patio_terrace_m2": 30.17,
+    "p1_full_terraces_covered_m2": 75.94,
+    "p1_net_interior_m2": 44.87,
+    "p1_sala_m2": 12.62,
+    "p1_garage_m2": 14.62,
+    "p1_hab_huespedes_m2": 12.83,
+    "p2_gross_m2": 80.0,
+    "p2_net_interior_m2": 66.71,
+    "p2_balcony_m2": 4.88,
+    "rv_cameras_count": 11,
+    "hinged_doors_count": 14,
+    "windows_count": 12
+  },
+  "checks": {
+    "garage_right_side_front_gate": "PASS",
+    "sala_left_separated_from_garage": "PASS",
+    "p1_strict_60m2_scenario": "PASS",
+    "p1_full_terraces_covered_scenario": "FAIL",
+    "p2_limit_80m2": "PASS",
+    "total_strict_140m2": "PASS",
+    "room_overlaps": "PASS",
+    "furniture_collisions": "PASS",
+    "connectivity_all_rooms": "PASS",
+    "stairs_aligned_and_slab_hole": "PASS",
+    "stair_headroom_2m": "PASS",
+    "virtual_tour_cameras_ready": "PASS",
+    "no_duplicate_geometry": "PASS",
+    "structural_verification": "PENDING",
+    "urban_setbacks_and_pot": "PENDING"
+  }
+}

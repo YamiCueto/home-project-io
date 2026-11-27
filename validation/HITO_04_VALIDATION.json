@@ -1,0 +1,22 @@
+{
+  "model": "HOME_PROJECT_HITO_04.blend",
+  "metrics": {
+    "furniture_objects": 74,
+    "vehicle_objects": 12,
+    "domotica_energy_objects": 13,
+    "renders_generated": 18,
+    "meshes_without_uv": 0
+  },
+  "checks": {
+    "col_p2_03_conflict_resolved": "PASS",
+    "no_furniture_blocking_doors": "PASS",
+    "all_meshes_have_uvs_for_unity": "PASS",
+    "energy_and_domotica_modeled": "PASS",
+    "all_18_renders_generated": "PASS",
+    "electrical_and_structural_cert": "PENDING"
+  },
+  "details": {
+    "coplanar": [],
+    "door_blocks": []
+  }
+}

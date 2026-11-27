@@ -1,0 +1,75 @@
+{
+  "model": "HOME_PROJECT_HITO_05.blend",
+  "metrics": {
+    "flagship_renders_expected": 8,
+    "flagship_renders_present": 8,
+    "beveled_objects": 114,
+    "interactive_hinged_doors": 17,
+    "meshes_without_uv": 0,
+    "color_management": "AgX"
+  },
+  "benchmark": {
+    "gpu": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+    "backend": "OPTIX",
+    "color_management": "AgX",
+    "renders": [
+      {
+        "file": "exterior/01_ESQUINA_DIA_4K.png",
+        "res": "3840x2160",
+        "samples": 64,
+        "seconds": 6.83
+      },
+      {
+        "file": "exterior/04_AEREA_FOTOVOLTAICA.png",
+        "res": "2560x1440",
+        "samples": 48,
+        "seconds": 2.17
+      },
+      {
+        "file": "exterior/02_ESQUINA_ATARDECER_4K.png",
+        "res": "3840x2160",
+        "samples": 64,
+        "seconds": 6.81
+      },
+      {
+        "file": "exterior/03_FRONTAL_NOCHE.png",
+        "res": "2560x1440",
+        "samples": 48,
+        "seconds": 2.54
+      },
+      {
+        "file": "interior/05_SALA_CONTEMPORANEA.png",
+        "res": "2560x1440",
+        "samples": 64,
+        "seconds": 7.5
+      },
+      {
+        "file": "interior/06_COCINA_COMEDOR.png",
+        "res": "2560x1440",
+        "samples": 64,
+        "seconds": 7.03
+      },
+      {
+        "file": "interior/07_SUITE_PRINCIPAL.png",
+        "res": "2560x1440",
+        "samples": 64,
+        "seconds": 7.27
+      },
+      {
+        "file": "architectural/08_CORTE_ISOMETRICO_CONJUNTO.png",
+        "res": "2560x1440",
+        "samples": 48,
+        "seconds": 2.81
+      }
+    ]
+  },
+  "checks": {
+    "all_flagship_renders_exist": "PASS",
+    "no_missing_textures": "PASS",
+    "agx_optix_configured": "PASS",
+    "interactive_doors_preserved": "PASS",
+    "unity_uv_compatibility": "PASS",
+    "external_assets_licensed": "PASS",
+    "structural_and_pot_cert": "PENDING"
+  }
+}

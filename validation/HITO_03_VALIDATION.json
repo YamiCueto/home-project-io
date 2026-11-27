@@ -1,0 +1,25 @@
+{
+  "model": "HOME_PROJECT_HITO_03.blend",
+  "render_engine": "CYCLES",
+  "cycles_device": "GPU",
+  "cycles_denoiser": "OPTIX",
+  "materials_count": 21,
+  "checks": {
+    "no_coplanar_column_wall_zfighting": "FAIL",
+    "vegetation_inside_private_lot": "PASS",
+    "facade_clear_of_public_sidewalk_ground": "PASS",
+    "cycles_optix_configured": "PASS",
+    "all_6_renders_2560x1440_generated": "PASS",
+    "structural_and_pot_approval": "PENDING"
+  },
+  "details": {
+    "coplanar_pairs": [
+      [
+        "Col_P2_03",
+        "P2_M_Sur_S4"
+      ]
+    ],
+    "veg_outside_lot": [],
+    "fach_outside_public": []
+  }
+}

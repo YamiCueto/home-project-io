@@ -1,0 +1,43 @@
+{
+  "model": "HOME_PROJECT_HITO_02.blend",
+  "areas_from_geometry_m2": {
+    "p1_total_floors_net_m2": 75.85,
+    "p1_covered_floors_net_m2": 59.738,
+    "p2_floors_net_m2": 68.022,
+    "p2_slab_horizontal_projection_m2": 76.438,
+    "roof_horizontal_projection_m2": 80.0
+  },
+  "stair_validation": {
+    "landing_depth_m": 1.0,
+    "min_headroom_over_steps_m": 2.881,
+    "steps_count": 15
+  },
+  "garage_validation": {
+    "garage_dims_m": [
+      3.25,
+      4.5
+    ],
+    "car_to_moto_door_clearance_m": 0.365,
+    "sectional_door_panels": 4
+  },
+  "checks": {
+    "columns_inside_lot": "PASS",
+    "furniture_collisions": "PASS",
+    "column_door_interferences": "PASS",
+    "no_duplicate_geometry": "PASS",
+    "stair_landing_coherent_095m": "PASS",
+    "stair_headroom_205m": "PASS",
+    "connectivity_from_real_doors": "PASS",
+    "agent_walkthrough_no_wall_hits": "PASS",
+    "garage_door_clearance_035m": "PASS",
+    "structural_and_pot_approval": "PENDING"
+  },
+  "details": {
+    "cols_outside_lot": [],
+    "furn_collisions": [],
+    "col_door_int": [],
+    "duplicates": [],
+    "unconnected": [],
+    "agent_collisions": []
+  }
+}

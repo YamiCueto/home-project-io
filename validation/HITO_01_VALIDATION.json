@@ -1,0 +1,57 @@
+{
+  "blender_version": "5.3.0 Beta",
+  "units": "METRIC",
+  "p1_gross_m2": 60.0,
+  "p2_gross_m2": 72.9,
+  "total_gross_m2": 132.9,
+  "p1_limit_ok": true,
+  "p2_limit_ok": true,
+  "total_limit_ok": true,
+  "p1_ext_walls_m2": 4.71,
+  "p1_int_walls_m2": 1.89,
+  "p1_net_rooms_m2": 52.695,
+  "p1_sum_check_m2": 59.295,
+  "p2_ext_walls_m2": 5.355,
+  "p2_int_walls_m2": 3.03,
+  "p2_net_rooms_m2": 63.895,
+  "p2_sum_check_m2": 72.28,
+  "p1_overlaps": [],
+  "p2_overlaps": [],
+  "stairs_vertically_aligned": true,
+  "bedroom_count": 4,
+  "bedrooms": [
+    "P1_Habitacion_Huespedes",
+    "P2_Habitacion_Principal",
+    "P2_Habitacion_Hija_1",
+    "P2_Habitacion_Hija_2"
+  ],
+  "bathroom_count": 3,
+  "bathrooms": [
+    "P1_Bano_Social",
+    "P2_Bano_Principal",
+    "P2_Bano_Compartido"
+  ],
+  "vehicles_real_scale": {
+    "suzuki_swift_dzire_2023_m": [
+      1.735,
+      3.995,
+      1.515
+    ],
+    "suzuki_v_strom_250_sx_m": [
+      0.88,
+      2.18,
+      1.355
+    ],
+    "garage_clear_m": [
+      3.3,
+      4.55
+    ],
+    "side_by_side_fit": true
+  },
+  "identified_constraints_tension": {
+    "p1_sala_area_m2": 5.49,
+    "p1_sala_comfort_deficit_m2": 2.51,
+    "laundry_shared_under_stair": true,
+    "note": "Planta 1 cumple <= 60 m2 con vehiculos y mobiliario a escala real, pero la zona social (Sala) queda ajustada (5.30 m2) y lavanderia se ubica bajo la escalera."
+  }
+}

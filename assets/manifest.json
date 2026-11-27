@@ -1,0 +1,97 @@
+{
+  "project": "HOME_PROJECT",
+  "milestone": "6.0",
+  "license_policy": "CC0_ONLY",
+  "assets": [
+    {
+      "id": "wide_street_01",
+      "source": "polyhaven",
+      "type": "hdris",
+      "resolution": "2k",
+      "author": "Sergej Majboroda",
+      "license": "CC0",
+      "url": "https://polyhaven.com/a/wide_street_01",
+      "used_in": ["World_Hito3"]
+    },
+    {
+      "id": "concrete_pavement_03",
+      "source": "polyhaven",
+      "type": "textures",
+      "resolution": "2k",
+      "author": "Charlotte Baglioni",
+      "license": "CC0",
+      "url": "https://polyhaven.com/a/concrete_pavement_03",
+      "used_in": ["Anden_Frontal", "Anden_Lateral"]
+    },
+    {
+      "id": "asphalt_02",
+      "source": "polyhaven",
+      "type": "textures",
+      "resolution": "2k",
+      "author": "Rob Tuytel",
+      "license": "CC0",
+      "url": "https://polyhaven.com/a/asphalt_02",
+      "used_in": ["Calle_Frontal", "Calle_Lateral"]
+    },
+    {
+      "id": "dark_wood",
+      "source": "polyhaven",
+      "type": "textures",
+      "resolution": "2k",
+      "author": "Dario Barresi, Dimitrios Savva, Rico Cilliers",
+      "license": "CC0",
+      "url": "https://polyhaven.com/a/dark_wood",
+      "used_in": ["P1_Mob_Mesa_Comedor_Sobre", "P1_Mob_Mueble_TV", "P2_Mob_Cama_Master_Base"]
+    },
+    {
+      "id": "modern_coffee_table_01",
+      "source": "polyhaven",
+      "type": "models",
+      "resolution": "2k",
+      "author": "Amin",
+      "license": "CC0",
+      "url": "https://polyhaven.com/a/modern_coffee_table_01",
+      "used_in": ["P1_PH_CoffeeTable_modern_coffee_table_01"]
+    },
+    {
+      "id": "dining_chair_02",
+      "source": "polyhaven",
+      "type": "models",
+      "resolution": "2k",
+      "author": "James Ray Cock",
+      "license": "CC0",
+      "url": "https://polyhaven.com/a/dining_chair_02",
+      "used_in": ["P1_PH_Chair_1_dining_chair_02", "P1_PH_Chair_2_dining_chair_02", "P1_PH_Chair_3_dining_chair_02", "P1_PH_Chair_4_dining_chair_02", "P1_PH_Chair_5_dining_chair_02"]
+    },
+    {
+      "id": "side_table_01",
+      "source": "polyhaven",
+      "type": "models",
+      "resolution": "2k",
+      "author": "James Ray Cock",
+      "license": "CC0",
+      "url": "https://polyhaven.com/a/side_table_01",
+      "used_in": ["P2_PH_Nightstand_1_side_table_01", "P2_PH_Nightstand_2_side_table_01"]
+    },
+    {
+      "id": "potted_plant_01",
+      "source": "polyhaven",
+      "type": "models",
+      "resolution": "2k",
+      "author": "Rico Cilliers",
+      "license": "CC0",
+      "url": "https://polyhaven.com/a/potted_plant_01",
+      "used_in": ["PH_Plant1_1", "PH_Plant1_2", "PH_Plant1_3"]
+    },
+    {
+      "id": "potted_plant_02",
+      "source": "polyhaven",
+      "type": "models",
+      "resolution": "2k",
+      "author": "Rico Cilliers",
+      "license": "CC0",
+      "url": "https://polyhaven.com/a/potted_plant_02",
+      "used_in": ["PH_Plant2_Balcon"]
+    }
+  ]
+}

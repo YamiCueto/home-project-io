@@ -1,0 +1,223 @@
+[
+  {
+    "name": "P1_M_Bano_Este_Puerta1",
+    "pivot_location_m": [
+      2.1,
+      5.3,
+      0.04
+    ],
+    "dimensions_m": [
+      0.05,
+      0.8,
+      2.06
+    ]
+  },
+  {
+    "name": "P1_M_Bano_Sur_Puerta1",
+    "pivot_location_m": [
+      2.15,
+      4.7,
+      0.04
+    ],
+    "dimensions_m": [
+      0.9,
+      0.05,
+      2.06
+    ]
+  },
+  {
+    "name": "P1_M_Huesped_Norte_Cocina_Puerta1",
+    "pivot_location_m": [
+      2.15,
+      8.1,
+      0.04
+    ],
+    "dimensions_m": [
+      0.95,
+      0.05,
+      2.06
+    ]
+  },
+  {
+    "name": "P1_M_Huesped_Norte_Cocina_Puerta3",
+    "pivot_location_m": [
+      6.2,
+      8.1,
+      0.04
+    ],
+    "dimensions_m": [
+      0.9,
+      0.05,
+      2.06
+    ]
+  },
+  {
+    "name": "P1_M_Sep_Sala_Garaje_Puerta1",
+    "pivot_location_m": [
+      4.55,
+      3.7,
+      0.04
+    ],
+    "dimensions_m": [
+      0.05,
+      0.85,
+      2.06
+    ]
+  },
+  {
+    "name": "P1_M_Sur_Garaje_Porton1_P1",
+    "pivot_location_m": [
+      6.225,
+      0.075,
+      0.3288
+    ],
+    "dimensions_m": [
+      2.95,
+      0.11,
+      0.5575
+    ]
+  },
+  {
+    "name": "P1_M_Sur_Garaje_Porton1_P2",
+    "pivot_location_m": [
+      6.225,
+      0.075,
+      0.9062
+    ],
+    "dimensions_m": [
+      2.95,
+      0.11,
+      0.5575
+    ]
+  },
+  {
+    "name": "P1_M_Sur_Garaje_Porton1_P3",
+    "pivot_location_m": [
+      6.225,
+      0.075,
+      1.4837
+    ],
+    "dimensions_m": [
+      2.95,
+      0.11,
+      0.5575
+    ]
+  },
+  {
+    "name": "P1_M_Sur_Garaje_Porton1_P4",
+    "pivot_location_m": [
+      6.225,
+      0.075,
+      2.0612
+    ],
+    "dimensions_m": [
+      2.95,
+      0.11,
+      0.5575
+    ]
+  },
+  {
+    "name": "P1_M_Sur_Sala_Puerta1",
+    "pivot_location_m": [
+      0.65,
+      1.7,
+      0.04
+    ],
+    "dimensions_m": [
+      0.95,
+      0.05,
+      2.11
+    ]
+  },
+  {
+    "name": "P2_M_Banda_Norte_Puerta1",
+    "pivot_location_m": [
+      2.95,
+      6.7,
+      2.94
+    ],
+    "dimensions_m": [
+      0.9,
+      0.05,
+      2.06
+    ]
+  },
+  {
+    "name": "P2_M_Banda_Norte_Puerta3",
+    "pivot_location_m": [
+      4.15,
+      6.7,
+      2.94
+    ],
+    "dimensions_m": [
+      0.9,
+      0.05,
+      2.06
+    ]
+  },
+  {
+    "name": "P2_M_Banda_Sur_Puerta1",
+    "pivot_location_m": [
+      2.15,
+      4.7,
+      2.94
+    ],
+    "dimensions_m": [
+      0.9,
+      0.05,
+      2.06
+    ]
+  },
+  {
+    "name": "P2_M_Bano_Comp_Este_Puerta1",
+    "pivot_location_m": [
+      2.1,
+      5.6,
+      2.94
+    ],
+    "dimensions_m": [
+      0.05,
+      0.8,
+      2.06
+    ]
+  },
+  {
+    "name": "P2_M_Master_Este_Puerta1",
+    "pivot_location_m": [
+      4.55,
+      0.4,
+      2.94
+    ],
+    "dimensions_m": [
+      0.05,
+      1.1,
+      2.06
+    ]
+  },
+  {
+    "name": "P2_M_Master_Este_Puerta3",
+    "pivot_location_m": [
+      4.55,
+      2.6,
+      2.94
+    ],
+    "dimensions_m": [
+      0.05,
+      0.9,
+      2.06
+    ]
+  },
+  {
+    "name": "P2_M_Vest_Bano_Puerta1",
+    "pivot_location_m": [
+      6.2,
+      2.7,
+      2.94
+    ],
+    "dimensions_m": [
+      0.05,
+      0.8,
+      2.06
+    ]
+  }
+]

@@ -1,0 +1,83 @@
+{
+  "model": "HOME_PROJECT_HITO_06_V2.blend",
+  "areas_evaluated_m2": {
+    "p1_total_floors_net_m2": 77.18,
+    "p1_covered_by_upper_or_p1_roof_net_m2": 73.605,
+    "p1_uncovered_net_m2": 3.575,
+    "p1_excess_over_60m2_if_all_covered_counted": 13.605,
+    "p2_floors_net_m2": 68.022,
+    "p2_slab_projection_m2": 75.898,
+    "roof_projection_m2": 85.688
+  },
+  "checks": {
+    "all_bedrooms_100pct_covered": "PASS",
+    "p2_roof_within_80m2": "PASS",
+    "full_1152_walkthrough_all_obstacles": "PASS",
+    "car_doors_swing_no_hit": "PASS",
+    "physical_doorway_connectivity": "PASS",
+    "explicit_door_swing_0_90_clear": "PASS",
+    "no_mob_wall_collisions": "PASS",
+    "tv_window_clear_and_bed_vector": "PASS",
+    "all_6_4k_png_ihdr_iend_valid": "PASS",
+    "manifest_cc0_and_textures_packed": "PASS",
+    "lot_boundaries_respected": "PASS",
+    "no_duplicate_geometry": "PASS",
+    "structural_electrical_pot_cert": "PENDING"
+  },
+  "details": {
+    "bedrooms_uncovered": [],
+    "car_door_hits": [],
+    "walk_collisions": [],
+    "walk_unsupported_frames": [],
+    "door_swing_collisions": [],
+    "mob_wall_collisions": [],
+    "unconnected": [],
+    "lot_violations": [],
+    "duplicates": [],
+    "missing_imgs": [],
+    "renders_4k": {
+      "01_ESQUINA_DIA_4K.png": {
+        "width": 3840,
+        "height": 2160,
+        "has_iend": true,
+        "sha256": "1bea0c5da68e021618d6e489ffbc5a154e9a6796277511392d74e2d67e71069d",
+        "ok": true
+      },
+      "02_ESQUINA_NOCHE_4K.png": {
+        "width": 3840,
+        "height": 2160,
+        "has_iend": true,
+        "sha256": "87c1e1f1e6c1359c0694fe25b8afee16d08c9228cb8d4f45bb74712481c84c64",
+        "ok": true
+      },
+      "03_SALA_CONTEMPORANEA_4K.png": {
+        "width": 3840,
+        "height": 2160,
+        "has_iend": true,
+        "sha256": "9bafe0de08bf39bcd16f4d32473ad9f7f4504759522ed85cd4605cd4aa64a40f",
+        "ok": true
+      },
+      "04_COCINA_COMEDOR_4K.png": {
+        "width": 3840,
+        "height": 2160,
+        "has_iend": true,
+        "sha256": "284833bd2c50085d3325dbb58a335afd2c5d853405ef9d76762f631b99749651",
+        "ok": true
+      },
+      "05_SUITE_PRINCIPAL_4K.png": {
+        "width": 3840,
+        "height": 2160,
+        "has_iend": true,
+        "sha256": "4bbaf5b22094342e399f2f3ac5524233b5ada2965b29b96bfe0c4c99cd1fdb28",
+        "ok": true
+      },
+      "06_CUBIERTA_FOTOVOLTAICA_4K.png": {
+        "width": 3840,
+        "height": 2160,
+        "has_iend": true,
+        "sha256": "9da1c1e062c2905b31f6cdffad44680561f7a4be2ea1307f5bc09ae7796bcef7",
+        "ok": true
+      }
+    }
+  }
+}

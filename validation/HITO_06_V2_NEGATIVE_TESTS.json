@@ -1,0 +1,17 @@
+{
+  "all_12_negative_tests_caught_fail": true,
+  "cases": {
+    "1_blocked_door": "FAIL",
+    "2_furniture_in_wall": "FAIL",
+    "3_unanimated_camera": "FAIL",
+    "4_walkthrough_wall_hit": "FAIL",
+    "5_missing_texture": "FAIL",
+    "6_wrong_or_corrupt_png": "FAIL",
+    "7_out_of_bounds_object": "FAIL",
+    "8_duplicate_geometry": "FAIL",
+    "9_unlicensed_asset": "FAIL",
+    "10_walkthrough_hits_furniture": "FAIL",
+    "11_door_wrong_swing_dir": "FAIL",
+    "12_bedroom_without_roof": "FAIL"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "model": "HOME_PROJECT_HITO_05_V2.blend",
+  "metrics": {
+    "polyhaven_objects_placed": 23,
+    "urban_context_objects": 21,
+    "renders_4k_present": 6
+  },
+  "benchmark": {
+    "renders": [
+      {
+        "file": "01_ESQUINA_DIA_4K.png",
+        "res": "3840x2160",
+        "samples": 64,
+        "seconds": 11.71
+      },
+      {
+        "file": "06_CUBIERTA_FOTOVOLTAICA_4K.png",
+        "res": "3840x2160",
+        "samples": 48,
+        "seconds": 7.84
+      },
+      {
+        "file": "03_SALA_CONTEMPORANEA_4K.png",
+        "res": "3840x2160",
+        "samples": 64,
+        "seconds": 21.86
+      },
+      {
+        "file": "04_COCINA_COMEDOR_4K.png",
+        "res": "3840x2160",
+        "samples": 64,
+        "seconds": 19.59
+      },
+      {
+        "file": "05_SUITE_PRINCIPAL_4K.png",
+        "res": "3840x2160",
+        "samples": 64,
+        "seconds": 21.39
+      },
+      {
+        "file": "02_ESQUINA_NOCHE_4K.png",
+        "res": "3840x2160",
+        "samples": 64,
+        "seconds": 9.17
+      }
+    ]
+  },
+  "checks": {
+    "polyhaven_cc0_assets_integrated": "PASS",
+    "urban_context_separated": "PASS",
+    "lot_markers_hidden_in_commercial": "PASS",
+    "tv_relocated_window_freed": "PASS",
+    "master_bed_oriented_to_street": "PASS",
+    "all_6_4k_renders_generated": "PASS",
+    "structural_and_pot_cert": "PENDING"
+  }
+}

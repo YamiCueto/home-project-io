@@ -2,7 +2,7 @@
 
 Transformación arquitectónica y visualización fotorrealista de una vivienda esquinera de una planta en el **Caribe colombiano** hacia una residencia contemporánea de dos plantas (`90 m²` de lote provisional · `8,00 × 11,25 m`), desarrollada paramétricamente mediante **Blender 5.3.0 Beta**, **Python (`bpy` / `bmesh`)**, **Blender MCP 2.0** y **Cycles + NVIDIA OptiX (RTX 5070 Ti)**.
 
-![Perspectiva Esquinera Diurna 4K](renders/hito_05/exterior/01_ESQUINA_DIA_4K.png)
+![Perspectiva Esquinera Diurna 4K](renders/hito_05_v2/01_ESQUINA_DIA_4K.png)
 
 ---
 
@@ -28,7 +28,7 @@ Transformación arquitectónica y visualización fotorrealista de una vivienda e
 - [x] **Hito 2** — Volumetría completa, escalera funcional (`1,00 m` de desembarco), estructura conceptual y recorrido virtual (`48 s`)
 - [x] **Hito 3** — Fachadas contemporáneas, celosías tropicales, piedra natural, iluminación nocturna y cubierta fotovoltaica
 - [x] **Hito 4** — Interiorismo completo, vehículos a escala real, preinstalación energética y domótica conceptual
-- [x] **Hito 5** — Renderizado fotorrealista (`AgX` + `Cycles OptiX` en `4K` y `2560 × 1440`)
+- [x] **Hito 5 / 5.1** — Renderizado fotorrealista (`AgX` + `Cycles OptiX` en `4K`) e integración de recursos CC0 de **Poly Haven** + contexto urbano
 - [ ] **Hito 6** — Auditoría integral
 - [ ] **Hito 7** — Recorrido cinematográfico
 - [ ] **Hito 8** — Simulador interactivo Unity
@@ -48,23 +48,23 @@ Transformación arquitectónica y visualización fotorrealista de una vivienda e
 
 ---
 
-## Galería Fotorrealista (Hito 5 — Cycles OptiX + AgX)
+## Galería Fotorrealista (Hito 5.1 — Cycles OptiX + AgX + Poly Haven 4K)
 
-### Exteriores (Día, Atardecer, Noche y Cubierta Solar)
+### Exteriores y Cubierta Solar (4K)
 
-| Atardecer Esquinero (4K) | Fachada Nocturna |
+| Esquina Diurna (HDRI Poly Haven) | Esquina Nocturna (`2700–3000K`) |
 | :---: | :---: |
-| ![Atardecer 4K](renders/hito_05/exterior/02_ESQUINA_ATARDECER_4K.png) | ![Noche](renders/hito_05/exterior/03_FRONTAL_NOCHE.png) |
+| ![Esquina Día 4K](renders/hito_05_v2/01_ESQUINA_DIA_4K.png) | ![Esquina Noche 4K](renders/hito_05_v2/02_ESQUINA_NOCHE_4K.png) |
 
-| Vista Aérea Fotovoltaica | Presentación Isométrica |
+| Cubierta Fotovoltaica Refinada (4K) | Presentación Isométrica (Hito 5) |
 | :---: | :---: |
-| ![Aérea Solar](renders/hito_05/exterior/04_AEREA_FOTOVOLTAICA.png) | ![Isométrica](renders/hito_05/architectural/08_CORTE_ISOMETRICO_CONJUNTO.png) |
+| ![Cubierta Solar 4K](renders/hito_05_v2/06_CUBIERTA_FOTOVOLTAICA_4K.png) | ![Isométrica](renders/hito_05/architectural/08_CORTE_ISOMETRICO_CONJUNTO.png) |
 
-### Interiores
+### Interiores (4K)
 
 | Sala Contemporánea | Cocina Integral y Comedor | Suite Principal |
 | :---: | :---: | :---: |
-| ![Sala](renders/hito_05/interior/05_SALA_CONTEMPORANEA.png) | ![Cocina y Comedor](renders/hito_05/interior/06_COCINA_COMEDOR.png) | ![Suite Principal](renders/hito_05/interior/07_SUITE_PRINCIPAL.png) |
+| ![Sala 4K](renders/hito_05_v2/03_SALA_CONTEMPORANEA_4K.png) | ![Cocina y Comedor 4K](renders/hito_05_v2/04_COCINA_COMEDOR_4K.png) | ![Suite Principal 4K](renders/hito_05_v2/05_SUITE_PRINCIPAL_4K.png) |
 
 ---
 

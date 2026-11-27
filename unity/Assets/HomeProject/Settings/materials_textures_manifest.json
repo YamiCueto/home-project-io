@@ -1,0 +1,382 @@
+[
+  {
+    "material": "asphalt_02_material_Calle_Frontal",
+    "textures": [
+      {
+        "image": "asphalt_02_Diffuse",
+        "packed": true
+      },
+      {
+        "image": "asphalt_02_Displacement",
+        "packed": true
+      },
+      {
+        "image": "asphalt_02_nor_gl",
+        "packed": true
+      },
+      {
+        "image": "asphalt_02_Rough",
+        "packed": true
+      }
+    ]
+  },
+  {
+    "material": "asphalt_02_material_Calle_Lateral",
+    "textures": [
+      {
+        "image": "asphalt_02_Diffuse",
+        "packed": true
+      },
+      {
+        "image": "asphalt_02_Displacement",
+        "packed": true
+      },
+      {
+        "image": "asphalt_02_nor_gl",
+        "packed": true
+      },
+      {
+        "image": "asphalt_02_Rough",
+        "packed": true
+      }
+    ]
+  },
+  {
+    "material": "concrete_pavement_03_material_Anden_Frontal",
+    "textures": [
+      {
+        "image": "concrete_pavement_03_Diffuse",
+        "packed": true
+      },
+      {
+        "image": "concrete_pavement_03_Displacement",
+        "packed": true
+      },
+      {
+        "image": "concrete_pavement_03_nor_gl",
+        "packed": true
+      },
+      {
+        "image": "concrete_pavement_03_Rough",
+        "packed": true
+      }
+    ]
+  },
+  {
+    "material": "concrete_pavement_03_material_Anden_Lateral",
+    "textures": [
+      {
+        "image": "concrete_pavement_03_Diffuse",
+        "packed": true
+      },
+      {
+        "image": "concrete_pavement_03_Displacement",
+        "packed": true
+      },
+      {
+        "image": "concrete_pavement_03_nor_gl",
+        "packed": true
+      },
+      {
+        "image": "concrete_pavement_03_Rough",
+        "packed": true
+      }
+    ]
+  },
+  {
+    "material": "dark_wood_material_P1_Mob_Mesa_Comedor_Sobre",
+    "textures": [
+      {
+        "image": "dark_wood_Diffuse",
+        "packed": true
+      },
+      {
+        "image": "dark_wood_Displacement",
+        "packed": true
+      },
+      {
+        "image": "dark_wood_nor_gl",
+        "packed": true
+      },
+      {
+        "image": "dark_wood_Rough",
+        "packed": true
+      }
+    ]
+  },
+  {
+    "material": "dining_chair_02",
+    "textures": [
+      {
+        "image": "dining_chair_02_diff.png.001",
+        "packed": true
+      },
+      {
+        "image": "dining_chair_02_metal.png",
+        "packed": true
+      },
+      {
+        "image": "dining_chair_02_rough.png.001",
+        "packed": true
+      },
+      {
+        "image": "dining_chair_02_nor_gl.png.001",
+        "packed": true
+      }
+    ]
+  },
+  {
+    "material": "MAT_acero_inox",
+    "textures": []
+  },
+  {
+    "material": "MAT_aluminio_negro",
+    "textures": []
+  },
+  {
+    "material": "MAT_antracita",
+    "textures": []
+  },
+  {
+    "material": "MAT_aplique_calido",
+    "textures": []
+  },
+  {
+    "material": "MAT_arte_mural",
+    "textures": []
+  },
+  {
+    "material": "MAT_blanco_calido",
+    "textures": []
+  },
+  {
+    "material": "MAT_bordillo",
+    "textures": []
+  },
+  {
+    "material": "MAT_celdas_pv",
+    "textures": []
+  },
+  {
+    "material": "MAT_ceramica_sanitaria",
+    "textures": []
+  },
+  {
+    "material": "MAT_concreto_arq",
+    "textures": []
+  },
+  {
+    "material": "MAT_cuarzo_blanco",
+    "textures": []
+  },
+  {
+    "material": "MAT_equipo_domotica",
+    "textures": []
+  },
+  {
+    "material": "MAT_estuco_blanco",
+    "textures": []
+  },
+  {
+    "material": "MAT_follaje_tropical",
+    "textures": []
+  },
+  {
+    "material": "MAT_led_indirecto",
+    "textures": []
+  },
+  {
+    "material": "MAT_linderos",
+    "textures": []
+  },
+  {
+    "material": "MAT_luz_calida",
+    "textures": []
+  },
+  {
+    "material": "MAT_madera_ext",
+    "textures": []
+  },
+  {
+    "material": "MAT_pantalla_tv",
+    "textures": []
+  },
+  {
+    "material": "MAT_piedra_natural",
+    "textures": []
+  },
+  {
+    "material": "MAT_piso_antideslizante",
+    "textures": []
+  },
+  {
+    "material": "MAT_porcelanato_ext",
+    "textures": []
+  },
+  {
+    "material": "MAT_senal_vial",
+    "textures": []
+  },
+  {
+    "material": "MAT_slab",
+    "textures": []
+  },
+  {
+    "material": "MAT_solar_panel",
+    "textures": []
+  },
+  {
+    "material": "MAT_stair",
+    "textures": []
+  },
+  {
+    "material": "MAT_tapete_tejido",
+    "textures": []
+  },
+  {
+    "material": "MAT_textil_claro",
+    "textures": []
+  },
+  {
+    "material": "MAT_textil_neutro",
+    "textures": []
+  },
+  {
+    "material": "MAT_vecino_neutro",
+    "textures": []
+  },
+  {
+    "material": "MAT_vecino_techo",
+    "textures": []
+  },
+  {
+    "material": "MAT_vehicle_car",
+    "textures": []
+  },
+  {
+    "material": "MAT_vehicle_moto",
+    "textures": []
+  },
+  {
+    "material": "MAT_vidrio_arq",
+    "textures": []
+  },
+  {
+    "material": "MAT_wall_int",
+    "textures": []
+  },
+  {
+    "material": "modern_coffee_table_01",
+    "textures": [
+      {
+        "image": "modern_coffee_table_01_diff.png",
+        "packed": true
+      },
+      {
+        "image": "modern_coffee_table_01_rough.png",
+        "packed": true
+      },
+      {
+        "image": "modern_coffee_table_01_nor_gl.png",
+        "packed": true
+      }
+    ]
+  },
+  {
+    "material": "potted_plant_01_leaves",
+    "textures": [
+      {
+        "image": "potted_plant_01_leaves_nor_gl.png.001",
+        "packed": true
+      },
+      {
+        "image": "potted_plant_01_leaves_rough.png.001",
+        "packed": true
+      },
+      {
+        "image": "potted_plant_01_leaves_diff.png.001",
+        "packed": true
+      },
+      {
+        "image": "potted_plant_01_leaves_alpha.png",
+        "packed": true
+      }
+    ]
+  },
+  {
+    "material": "potted_plant_01_pot",
+    "textures": [
+      {
+        "image": "potted_plant_01_pot_diff.png",
+        "packed": true
+      },
+      {
+        "image": "potted_plant_01_pot_rough.png",
+        "packed": true
+      },
+      {
+        "image": "potted_plant_01_pot_nor_gl.png",
+        "packed": true
+      }
+    ]
+  },
+  {
+    "material": "potted_plant_02_leaves",
+    "textures": [
+      {
+        "image": "potted_plant_02_leaves_nor_gl.png",
+        "packed": true
+      },
+      {
+        "image": "potted_plant_02_leaves_diff.png",
+        "packed": true
+      },
+      {
+        "image": "potted_plant_02_leaves_rough.png",
+        "packed": true
+      },
+      {
+        "image": "potted_plant_02_leaves_alpha.png",
+        "packed": true
+      }
+    ]
+  },
+  {
+    "material": "potted_plant_02_pot",
+    "textures": [
+      {
+        "image": "potted_plant_02_pot_diff.png",
+        "packed": true
+      },
+      {
+        "image": "potted_plant_02_pot_rough.png",
+        "packed": true
+      },
+      {
+        "image": "potted_plant_02_pot_nor_gl.png",
+        "packed": true
+      }
+    ]
+  },
+  {
+    "material": "side_table_01",
+    "textures": [
+      {
+        "image": "side_table_01_metallic.png",
+        "packed": true
+      },
+      {
+        "image": "side_table_01_gl_normal.png",
+        "packed": true
+      },
+      {
+        "image": "side_table_01_roughness.png",
+        "packed": true
+      },
+      {
+        "image": "side_table_01_BaseColor.png.001",
+        "packed": true
+      }
+    ]
+  }
+]

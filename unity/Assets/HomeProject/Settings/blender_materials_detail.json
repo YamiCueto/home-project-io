@@ -1,0 +1,1093 @@
+[
+  {
+    "name": "asphalt_02_material_Calle_Frontal",
+    "textures": {
+      "asphalt_02_Diffuse": "asphalt_02_Diffuse.png",
+      "asphalt_02_Displacement": "asphalt_02_Displacement.png",
+      "asphalt_02_nor_gl": "asphalt_02_nor_gl.png",
+      "asphalt_02_Rough": "asphalt_02_Rough.png"
+    },
+    "base_color": [
+      0.8,
+      0.8,
+      0.8,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.5,
+    "ior": 1.5,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "emission_strength": 0.0
+  },
+  {
+    "name": "asphalt_02_material_Calle_Lateral",
+    "textures": {
+      "asphalt_02_Diffuse": "asphalt_02_Diffuse.png",
+      "asphalt_02_Displacement": "asphalt_02_Displacement.png",
+      "asphalt_02_nor_gl": "asphalt_02_nor_gl.png",
+      "asphalt_02_Rough": "asphalt_02_Rough.png"
+    },
+    "base_color": [
+      0.8,
+      0.8,
+      0.8,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.5,
+    "ior": 1.5,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "emission_strength": 0.0
+  },
+  {
+    "name": "concrete_pavement_03_material_Anden_Frontal",
+    "textures": {
+      "concrete_pavement_03_Diffuse": "concrete_pavement_03_Diffuse.png",
+      "concrete_pavement_03_Displacement": "concrete_pavement_03_Displacement.png",
+      "concrete_pavement_03_nor_gl": "concrete_pavement_03_nor_gl.png",
+      "concrete_pavement_03_Rough": "concrete_pavement_03_Rough.png"
+    },
+    "base_color": [
+      0.8,
+      0.8,
+      0.8,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.5,
+    "ior": 1.5,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "emission_strength": 0.0
+  },
+  {
+    "name": "concrete_pavement_03_material_Anden_Lateral",
+    "textures": {
+      "concrete_pavement_03_Diffuse": "concrete_pavement_03_Diffuse.png",
+      "concrete_pavement_03_Displacement": "concrete_pavement_03_Displacement.png",
+      "concrete_pavement_03_nor_gl": "concrete_pavement_03_nor_gl.png",
+      "concrete_pavement_03_Rough": "concrete_pavement_03_Rough.png"
+    },
+    "base_color": [
+      0.8,
+      0.8,
+      0.8,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.5,
+    "ior": 1.5,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "emission_strength": 0.0
+  },
+  {
+    "name": "dark_wood_material_P1_Mob_Mesa_Comedor_Sobre",
+    "textures": {
+      "dark_wood_Diffuse": "dark_wood_Diffuse.png",
+      "dark_wood_Displacement": "dark_wood_Displacement.png",
+      "dark_wood_nor_gl": "dark_wood_nor_gl.png",
+      "dark_wood_Rough": "dark_wood_Rough.png"
+    },
+    "base_color": [
+      0.8,
+      0.8,
+      0.8,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.5,
+    "ior": 1.5,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "emission_strength": 0.0
+  },
+  {
+    "name": "dining_chair_02",
+    "textures": {
+      "dining_chair_02_diff.png.001": "dining_chair_02_diff.png",
+      "dining_chair_02_metal.png": "dining_chair_02_metal.png",
+      "dining_chair_02_rough.png.001": "dining_chair_02_rough.png",
+      "dining_chair_02_nor_gl.png.001": "dining_chair_02_nor_gl.png"
+    },
+    "base_color": [
+      0.8,
+      0.8,
+      0.8,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.5,
+    "ior": 1.45,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "emission_strength": 1.0
+  },
+  {
+    "name": "MAT_acero_inox",
+    "textures": {},
+    "base_color": [
+      0.72,
+      0.74,
+      0.76,
+      1.0
+    ],
+    "metallic": 0.92,
+    "roughness": 0.25,
+    "ior": 1.5,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "emission_strength": 0.0
+  },
+  {
+    "name": "MAT_aluminio_negro",
+    "textures": {},
+    "base_color": [
+      0.05,
+      0.05,
+      0.06,
+      1.0
+    ],
+    "metallic": 0.88,
+    "roughness": 0.28,
+    "ior": 1.5,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "emission_strength": 0.0
+  },
+  {
+    "name": "MAT_antracita",
+    "textures": {},
+    "base_color": [
+      0.14,
+      0.15,
+      0.17,
+      1.0
+    ],
+    "metallic": 0.45,
+    "roughness": 0.38,
+    "ior": 1.5,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "emission_strength": 0.0
+  },
+  {
+    "name": "MAT_aplique_calido",
+    "textures": {},
+    "base_color": [
+      1.0,
+      0.82,
+      0.52,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.2,
+    "ior": 1.5,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      1.0,
+      0.78,
+      0.45,
+      1.0
+    ],
+    "emission_strength": 12.0
+  },
+  {
+    "name": "MAT_arte_mural",
+    "textures": {},
+    "base_color": [
+      0.22,
+      0.32,
+      0.38,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.45,
+    "ior": 1.5,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "emission_strength": 0.0
+  },
+  {
+    "name": "MAT_blanco_calido",
+    "textures": {},
+    "base_color": [
+      0.92,
+      0.9,
+      0.87,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.45,
+    "ior": 1.5,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "emission_strength": 0.0
+  },
+  {
+    "name": "MAT_bordillo",
+    "textures": {},
+    "base_color": [
+      0.72,
+      0.71,
+      0.69,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.85,
+    "ior": 1.5,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "emission_strength": 0.0
+  },
+  {
+    "name": "MAT_celdas_pv",
+    "textures": {},
+    "base_color": [
+      0.04,
+      0.08,
+      0.18,
+      1.0
+    ],
+    "metallic": 0.25,
+    "roughness": 0.12,
+    "ior": 1.5,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "emission_strength": 0.0
+  },
+  {
+    "name": "MAT_ceramica_sanitaria",
+    "textures": {},
+    "base_color": [
+      0.96,
+      0.96,
+      0.96,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.12,
+    "ior": 1.5,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "emission_strength": 0.0
+  },
+  {
+    "name": "MAT_concreto_arq",
+    "textures": {},
+    "base_color": [
+      0.48,
+      0.49,
+      0.5,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.72,
+    "ior": 1.5,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "emission_strength": 0.0
+  },
+  {
+    "name": "MAT_cuarzo_blanco",
+    "textures": {},
+    "base_color": [
+      0.8,
+      0.8,
+      0.8,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.12,
+    "ior": 1.5,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "emission_strength": 0.0
+  },
+  {
+    "name": "MAT_equipo_domotica",
+    "textures": {},
+    "base_color": [
+      0.15,
+      0.42,
+      0.32,
+      1.0
+    ],
+    "metallic": 0.4,
+    "roughness": 0.35,
+    "ior": 1.5,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "emission_strength": 0.0
+  },
+  {
+    "name": "MAT_estuco_blanco",
+    "textures": {},
+    "base_color": [
+      0.91,
+      0.9,
+      0.87,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.78,
+    "ior": 1.5,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "emission_strength": 0.0
+  },
+  {
+    "name": "MAT_follaje_tropical",
+    "textures": {},
+    "base_color": [
+      0.12,
+      0.34,
+      0.11,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.55,
+    "ior": 1.5,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "emission_strength": 0.0
+  },
+  {
+    "name": "MAT_led_indirecto",
+    "textures": {},
+    "base_color": [
+      1.0,
+      0.8,
+      0.5,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.2,
+    "ior": 1.5,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      1.0,
+      0.78,
+      0.48,
+      1.0
+    ],
+    "emission_strength": 8.0
+  },
+  {
+    "name": "MAT_linderos",
+    "textures": {},
+    "base_color": [
+      0.9,
+      0.2,
+      0.18,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.6,
+    "ior": 1.5,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "emission_strength": 0.0
+  },
+  {
+    "name": "MAT_luz_calida",
+    "textures": {},
+    "base_color": [
+      1.0,
+      0.84,
+      0.58,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.2,
+    "ior": 1.5,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      1.0,
+      0.82,
+      0.55,
+      1.0
+    ],
+    "emission_strength": 6.0
+  },
+  {
+    "name": "MAT_madera_ext",
+    "textures": {},
+    "base_color": [
+      0.8,
+      0.8,
+      0.8,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.36,
+    "ior": 1.5,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "emission_strength": 0.0
+  },
+  {
+    "name": "MAT_pantalla_tv",
+    "textures": {},
+    "base_color": [
+      0.04,
+      0.05,
+      0.06,
+      1.0
+    ],
+    "metallic": 0.1,
+    "roughness": 0.08,
+    "ior": 1.5,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "emission_strength": 0.0
+  },
+  {
+    "name": "MAT_piedra_natural",
+    "textures": {},
+    "base_color": [
+      0.42,
+      0.39,
+      0.35,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.85,
+    "ior": 1.5,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "emission_strength": 0.0
+  },
+  {
+    "name": "MAT_piso_antideslizante",
+    "textures": {},
+    "base_color": [
+      0.58,
+      0.57,
+      0.54,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.78,
+    "ior": 1.5,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "emission_strength": 0.0
+  },
+  {
+    "name": "MAT_porcelanato_ext",
+    "textures": {},
+    "base_color": [
+      0.8,
+      0.8,
+      0.8,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.2,
+    "ior": 1.5,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "emission_strength": 0.0
+  },
+  {
+    "name": "MAT_senal_vial",
+    "textures": {},
+    "base_color": [
+      0.92,
+      0.88,
+      0.78,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.7,
+    "ior": 1.5,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "emission_strength": 0.0
+  },
+  {
+    "name": "MAT_slab",
+    "textures": {},
+    "base_color": [
+      0.55,
+      0.56,
+      0.58,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.75,
+    "ior": 1.5,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "emission_strength": 0.0
+  },
+  {
+    "name": "MAT_solar_panel",
+    "textures": {},
+    "base_color": [
+      0.06,
+      0.1,
+      0.22,
+      1.0
+    ],
+    "metallic": 0.35,
+    "roughness": 0.15,
+    "ior": 1.5,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "emission_strength": 0.0
+  },
+  {
+    "name": "MAT_stair",
+    "textures": {},
+    "base_color": [
+      0.74,
+      0.62,
+      0.44,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.55,
+    "ior": 1.5,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "emission_strength": 0.0
+  },
+  {
+    "name": "MAT_tapete_tejido",
+    "textures": {},
+    "base_color": [
+      0.76,
+      0.73,
+      0.68,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.95,
+    "ior": 1.5,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "emission_strength": 0.0
+  },
+  {
+    "name": "MAT_textil_claro",
+    "textures": {},
+    "base_color": [
+      0.88,
+      0.86,
+      0.82,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.9,
+    "ior": 1.5,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "emission_strength": 0.0
+  },
+  {
+    "name": "MAT_textil_neutro",
+    "textures": {},
+    "base_color": [
+      0.42,
+      0.4,
+      0.37,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.9,
+    "ior": 1.5,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "emission_strength": 0.0
+  },
+  {
+    "name": "MAT_vecino_neutro",
+    "textures": {},
+    "base_color": [
+      0.78,
+      0.76,
+      0.72,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.85,
+    "ior": 1.5,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "emission_strength": 0.0
+  },
+  {
+    "name": "MAT_vecino_techo",
+    "textures": {},
+    "base_color": [
+      0.45,
+      0.46,
+      0.48,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.8,
+    "ior": 1.5,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "emission_strength": 0.0
+  },
+  {
+    "name": "MAT_vehicle_car",
+    "textures": {},
+    "base_color": [
+      0.12,
+      0.3,
+      0.62,
+      1.0
+    ],
+    "metallic": 0.65,
+    "roughness": 0.2,
+    "ior": 1.5,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "emission_strength": 0.0
+  },
+  {
+    "name": "MAT_vehicle_moto",
+    "textures": {},
+    "base_color": [
+      0.78,
+      0.18,
+      0.12,
+      1.0
+    ],
+    "metallic": 0.55,
+    "roughness": 0.25,
+    "ior": 1.5,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "emission_strength": 0.0
+  },
+  {
+    "name": "MAT_vidrio_arq",
+    "textures": {},
+    "base_color": [
+      0.86,
+      0.94,
+      0.97,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.03,
+    "ior": 1.52,
+    "alpha": 1.0,
+    "transmission": 0.92,
+    "emission_color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "emission_strength": 0.0
+  },
+  {
+    "name": "MAT_wall_int",
+    "textures": {},
+    "base_color": [
+      0.88,
+      0.87,
+      0.85,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.8,
+    "ior": 1.5,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "emission_strength": 0.0
+  },
+  {
+    "name": "modern_coffee_table_01",
+    "textures": {
+      "modern_coffee_table_01_diff.png": "modern_coffee_table_01_diff.png",
+      "modern_coffee_table_01_rough.png": "modern_coffee_table_01_rough.png",
+      "modern_coffee_table_01_nor_gl.png": "modern_coffee_table_01_nor_gl.png"
+    },
+    "base_color": [
+      0.8,
+      0.8,
+      0.8,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.5,
+    "ior": 1.45,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "emission_strength": 1.0
+  },
+  {
+    "name": "potted_plant_01_leaves",
+    "textures": {
+      "potted_plant_01_leaves_nor_gl.png.001": "potted_plant_01_leaves_nor_gl.png",
+      "potted_plant_01_leaves_rough.png.001": "potted_plant_01_leaves_rough.png",
+      "potted_plant_01_leaves_diff.png.001": "potted_plant_01_leaves_diff.png",
+      "potted_plant_01_leaves_alpha.png": "potted_plant_01_leaves_alpha.png"
+    },
+    "base_color": [
+      0.8,
+      0.8,
+      0.8,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.5,
+    "ior": 1.45,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "emission_strength": 1.0
+  },
+  {
+    "name": "potted_plant_01_pot",
+    "textures": {
+      "potted_plant_01_pot_diff.png": "potted_plant_01_pot_diff.png",
+      "potted_plant_01_pot_rough.png": "potted_plant_01_pot_rough.png",
+      "potted_plant_01_pot_nor_gl.png": "potted_plant_01_pot_nor_gl.png"
+    },
+    "base_color": [
+      0.8,
+      0.8,
+      0.8,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.5,
+    "ior": 1.45,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "emission_strength": 1.0
+  },
+  {
+    "name": "potted_plant_02_leaves",
+    "textures": {
+      "potted_plant_02_leaves_nor_gl.png": "potted_plant_02_leaves_nor_gl.png",
+      "potted_plant_02_leaves_diff.png": "potted_plant_02_leaves_diff.png",
+      "potted_plant_02_leaves_rough.png": "potted_plant_02_leaves_rough.png",
+      "potted_plant_02_leaves_alpha.png": "potted_plant_02_leaves_alpha.png"
+    },
+    "base_color": [
+      0.8,
+      0.8,
+      0.8,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.5,
+    "ior": 1.45,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "emission_strength": 1.0
+  },
+  {
+    "name": "potted_plant_02_pot",
+    "textures": {
+      "potted_plant_02_pot_diff.png": "potted_plant_02_pot_diff.png",
+      "potted_plant_02_pot_rough.png": "potted_plant_02_pot_rough.png",
+      "potted_plant_02_pot_nor_gl.png": "potted_plant_02_pot_nor_gl.png"
+    },
+    "base_color": [
+      0.8,
+      0.8,
+      0.8,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.5,
+    "ior": 1.45,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "emission_strength": 1.0
+  },
+  {
+    "name": "side_table_01",
+    "textures": {
+      "side_table_01_metallic.png": "side_table_01_metallic.png",
+      "side_table_01_gl_normal.png": "side_table_01_gl_normal.png",
+      "side_table_01_roughness.png": "side_table_01_roughness.png",
+      "side_table_01_BaseColor.png.001": "side_table_01_BaseColor.png"
+    },
+    "base_color": [
+      0.8,
+      0.8,
+      0.8,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.5,
+    "ior": 1.45,
+    "alpha": 1.0,
+    "transmission": 0.0,
+    "emission_color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "emission_strength": 1.0
+  }
+]

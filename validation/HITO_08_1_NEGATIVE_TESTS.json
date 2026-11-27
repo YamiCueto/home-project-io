@@ -1,0 +1,64 @@
+{
+    "milestone": "Hito 8.1",
+    "total_cases": 7,
+    "passed_cases": 7,
+    "all_detected": true,
+    "cases": [
+        {
+            "test_id": "NEG_01_WRONG_SCALE",
+            "description": "Escalar P1_M_Oeste_S0 a (2,2,2) debe fallar validacion dimensional",
+            "fault_detected": true,
+            "detector_message": "dimensional_checks_failed=1",
+            "scene_restored": true,
+            "passed": true
+        },
+        {
+            "test_id": "NEG_02_MISSING_ASSET",
+            "description": "Remover sharedMesh en P1_M_Oeste_S0 debe detectarse como referencia faltante",
+            "fault_detected": true,
+            "detector_message": "missing_mesh_references=1",
+            "scene_restored": true,
+            "passed": true
+        },
+        {
+            "test_id": "NEG_03_INCOMPATIBLE_SHADER",
+            "description": "Asignar shader Built-In Standard debe detectarse como material no-URP",
+            "fault_detected": true,
+            "detector_message": "non_urp_materials=1",
+            "scene_restored": true,
+            "passed": true
+        },
+        {
+            "test_id": "NEG_04_COLLIDER_BLOCKING_DOOR",
+            "description": "Collider bloqueando puerta principal debe detectarse en auditoria de aberturas",
+            "fault_detected": true,
+            "detector_message": "opening_audits_passed=16/17",
+            "scene_restored": true,
+            "passed": true
+        },
+        {
+            "test_id": "NEG_05_VISIBLE_COLLIDER",
+            "description": "Habilitar MeshRenderer en CollisionGeometry debe detectarse como collider visible",
+            "fault_detected": true,
+            "detector_message": "visible_collider_renderers=1",
+            "scene_restored": true,
+            "passed": true
+        },
+        {
+            "test_id": "NEG_06_WRONG_PIVOT",
+            "description": "Desplazar pivote de puerta 0.60m debe detectarse en validacion de pivotes",
+            "fault_detected": true,
+            "detector_message": "Door pivot mismatch on P1_M_Sur_Sala_Puerta1: diff=0,600m",
+            "scene_restored": true,
+            "passed": true
+        },
+        {
+            "test_id": "NEG_07_FLOOR_MISALIGNMENT",
+            "description": "Alterar altura/escala de elemento P2 debe detectarse como desalineacion",
+            "fault_detected": true,
+            "detector_message": "dimensional_checks_failed=1",
+            "scene_restored": true,
+            "passed": true
+        }
+    ]
+}

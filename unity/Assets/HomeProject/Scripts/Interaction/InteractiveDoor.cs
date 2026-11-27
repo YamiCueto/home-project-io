@@ -49,7 +49,9 @@ namespace HomeProject.Interaction
                 float dir = (gameObject.name.Contains("Bano_Este") ||
                              gameObject.name.Contains("Bano_Comp_Este") ||
                              gameObject.name.Contains("Banda_Norte") ||
-                             gameObject.name.Contains("Banda_Sur")) ? -1f : 1f;
+                             gameObject.name.Contains("Banda_Sur") ||
+                             gameObject.name.Contains("Huesped_Norte_Cocina") ||
+                             gameObject.name.Contains("Fach_Porton_Peatonal")) ? -1f : 1f;
                 Vector3 localVerticalAxis = transform.InverseTransformDirection(Vector3.up);
                 openRotation = closedRotation * Quaternion.AngleAxis(openAngleDegrees * dir, localVerticalAxis);
             }

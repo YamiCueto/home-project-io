@@ -1,0 +1,300 @@
+{
+    "milestone": "Hito 8.2",
+    "unity_version": "6000.6.11f1",
+    "render_pipeline": "UniversalRenderPipelineAsset",
+    "scene_path": "Assets/HomeProject/Scenes/HomeProject_Main.unity",
+    "tolerance_m": 0.019999999552965164,
+    "overall_passed": true,
+    "statistics": {
+        "total_gameobjects": 636,
+        "total_mesh_renderers": 489,
+        "total_unique_meshes": 489,
+        "total_triangles": 733189,
+        "total_unique_materials": 46,
+        "urp_lit_materials": 46,
+        "non_urp_materials": 0,
+        "total_colliders": 608,
+        "box_colliders": 152,
+        "mesh_colliders": 456,
+        "visible_collider_renderers": 0,
+        "missing_mesh_references": 0,
+        "missing_material_references": 0,
+        "missing_expected_objects": 0,
+        "duplicate_object_names": 0
+    },
+    "dimensional_checks_total": 486,
+    "dimensional_checks_passed": 486,
+    "dimensional_checks_failed": 0,
+    "pivot_checks_total": 19,
+    "pivot_checks_passed": 19,
+    "capsule_audits_total": 8,
+    "capsule_audits_passed": 8,
+    "floor_raycasts_total": 8,
+    "floor_raycasts_passed": 8,
+    "missing_objects": [],
+    "duplicate_names": [],
+    "explicit_exceptions": [
+        {
+            "object_name": "PH_Plant1_1_potted_plant_01_pebbles",
+            "magnitude_m": 0.4812999963760376,
+            "justification": "Sub-malla decorativa de guijarros en maceta heredada del export FBX de Hito 6.1; no afecta estructura ni navegabilidad."
+        },
+        {
+            "object_name": "PH_Plant1_2_potted_plant_01_pebbles",
+            "magnitude_m": 0.4812999963760376,
+            "justification": "Sub-malla decorativa de guijarros en maceta heredada del export FBX de Hito 6.1; no afecta estructura ni navegabilidad."
+        },
+        {
+            "object_name": "PH_Plant1_3_potted_plant_01_pebbles",
+            "magnitude_m": 0.4812999963760376,
+            "justification": "Sub-malla decorativa de guijarros en maceta heredada del export FBX de Hito 6.1; no afecta estructura ni navegabilidad."
+        }
+    ],
+    "failed_transforms": [],
+    "capsule_audits": [
+        {
+            "name": "Acceso_Peatonal_Exterior_a_Sala",
+            "start_unity": [
+                -1.1200000047683716,
+                0.05000000074505806,
+                1.2000000476837158
+            ],
+            "end_unity": [
+                -1.1200000047683716,
+                0.05000000074505806,
+                -2.5
+            ],
+            "capsule_radius_m": 0.30000001192092896,
+            "capsule_height_m": 1.7999999523162842,
+            "blocked": false,
+            "blocking_object": "",
+            "passed": true
+        },
+        {
+            "name": "Sala_a_Bano_Social",
+            "start_unity": [
+                -2.5999999046325684,
+                0.05000000074505806,
+                -4.099999904632568
+            ],
+            "end_unity": [
+                -2.5999999046325684,
+                0.05000000074505806,
+                -5.199999809265137
+            ],
+            "capsule_radius_m": 0.30000001192092896,
+            "capsule_height_m": 1.7999999523162842,
+            "blocked": false,
+            "blocking_object": "",
+            "passed": true
+        },
+        {
+            "name": "Sala_a_Garaje",
+            "start_unity": [
+                -4.0,
+                0.05000000074505806,
+                -4.119999885559082
+            ],
+            "end_unity": [
+                -5.099999904632568,
+                0.05000000074505806,
+                -4.119999885559082
+            ],
+            "capsule_radius_m": 0.30000001192092896,
+            "capsule_height_m": 1.7999999523162842,
+            "blocked": false,
+            "blocking_object": "",
+            "passed": true
+        },
+        {
+            "name": "Pasillo_a_Hab_Huespedes",
+            "start_unity": [
+                -2.619999885559082,
+                0.05000000074505806,
+                -7.5
+            ],
+            "end_unity": [
+                -2.619999885559082,
+                0.05000000074505806,
+                -8.800000190734863
+            ],
+            "capsule_radius_m": 0.30000001192092896,
+            "capsule_height_m": 1.7999999523162842,
+            "blocked": false,
+            "blocking_object": "",
+            "passed": true
+        },
+        {
+            "name": "Cocina_a_Lavanderia",
+            "start_unity": [
+                -6.650000095367432,
+                0.05000000074505806,
+                -7.5
+            ],
+            "end_unity": [
+                -6.650000095367432,
+                0.05000000074505806,
+                -8.800000190734863
+            ],
+            "capsule_radius_m": 0.30000001192092896,
+            "capsule_height_m": 1.7999999523162842,
+            "blocked": false,
+            "blocking_object": "",
+            "passed": true
+        },
+        {
+            "name": "Corredor_P2_a_Master",
+            "start_unity": [
+                -5.099999904632568,
+                2.950000047683716,
+                -0.949999988079071
+            ],
+            "end_unity": [
+                -3.799999952316284,
+                2.950000047683716,
+                -0.949999988079071
+            ],
+            "capsule_radius_m": 0.30000001192092896,
+            "capsule_height_m": 1.7999999523162842,
+            "blocked": false,
+            "blocking_object": "",
+            "passed": true
+        },
+        {
+            "name": "Corredor_P2_a_Hija_1",
+            "start_unity": [
+                -3.4000000953674316,
+                2.950000047683716,
+                -6.099999904632568
+            ],
+            "end_unity": [
+                -3.4000000953674316,
+                2.950000047683716,
+                -7.300000190734863
+            ],
+            "capsule_radius_m": 0.30000001192092896,
+            "capsule_height_m": 1.7999999523162842,
+            "blocked": false,
+            "blocking_object": "",
+            "passed": true
+        },
+        {
+            "name": "Corredor_P2_a_Hija_2",
+            "start_unity": [
+                -4.599999904632568,
+                2.950000047683716,
+                -6.099999904632568
+            ],
+            "end_unity": [
+                -4.599999904632568,
+                2.950000047683716,
+                -7.300000190734863
+            ],
+            "capsule_radius_m": 0.30000001192092896,
+            "capsule_height_m": 1.7999999523162842,
+            "blocked": false,
+            "blocking_object": "",
+            "passed": true
+        }
+    ],
+    "floor_raycasts": [
+        {
+            "zone_name": "Anden_Frontal",
+            "origin_unity": [
+                -2.0,
+                1.0,
+                0.75
+            ],
+            "hit": true,
+            "hit_object": "Anden_Frontal",
+            "hit_y": 0.0,
+            "passed": true
+        },
+        {
+            "zone_name": "Sala_P1",
+            "origin_unity": [
+                -1.1200000047683716,
+                1.5,
+                -2.0
+            ],
+            "hit": true,
+            "hit_object": "P1_Piso_P1_Sala",
+            "hit_y": 0.03999999910593033,
+            "passed": true
+        },
+        {
+            "zone_name": "Garaje_P1",
+            "origin_unity": [
+                -4.849999904632568,
+                1.5,
+                -2.4000000953674316
+            ],
+            "hit": true,
+            "hit_object": "P1_Piso_P1_Garaje_Derecho",
+            "hit_y": 0.03999999910593033,
+            "passed": true
+        },
+        {
+            "zone_name": "Cocina_P1",
+            "origin_unity": [
+                -6.699999809265137,
+                1.5,
+                -6.900000095367432
+            ],
+            "hit": true,
+            "hit_object": "P1_Piso_P1_Cocina",
+            "hit_y": 0.03999999910593033,
+            "passed": true
+        },
+        {
+            "zone_name": "Huespedes_P1",
+            "origin_unity": [
+                -2.299999952316284,
+                1.5,
+                -9.600000381469727
+            ],
+            "hit": true,
+            "hit_object": "P1_Piso_P1_Habitacion_Huespedes",
+            "hit_y": 0.03999999910593033,
+            "passed": true
+        },
+        {
+            "zone_name": "Escalera_Peldano_08",
+            "origin_unity": [
+                -4.96999979019165,
+                2.5,
+                -5.21999979019165
+            ],
+            "hit": true,
+            "hit_object": "P1_Esc_Peldano_08",
+            "hit_y": 1.4500000476837158,
+            "passed": true
+        },
+        {
+            "zone_name": "Desembarco_P2",
+            "origin_unity": [
+                -7.300000190734863,
+                4.0,
+                -5.199999809265137
+            ],
+            "hit": true,
+            "hit_object": "P2_Piso_P2_Llegada_Escalera",
+            "hit_y": 2.940000057220459,
+            "passed": true
+        },
+        {
+            "zone_name": "Master_P2",
+            "origin_unity": [
+                -3.799999952316284,
+                4.0,
+                -1.0
+            ],
+            "hit": true,
+            "hit_object": "P2_Piso_P2_Habitacion_Principal",
+            "hit_y": 2.940000057220459,
+            "passed": true
+        }
+    ],
+    "errors": [],
+    "warnings": []
+}

@@ -53,7 +53,7 @@ namespace HomeProject.Editor
 
             if (writeReportFile)
             {
-                string outPath = Path.GetFullPath(Path.Combine(Application.dataPath, "../../validation/HITO_08_3_VALIDATION.json"));
+                string outPath = Path.GetFullPath(Path.Combine(Application.dataPath, "../../validation/HITO_08_3_1_VALIDATION.json"));
                 Directory.CreateDirectory(Path.GetDirectoryName(outPath));
                 File.WriteAllText(outPath, JsonUtility.ToJson(report, true));
             }

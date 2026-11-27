@@ -1,0 +1,11 @@
+{
+  "pedestrian_gate_width_m": 1.0,
+  "pedestrian_gate_pass": true,
+  "dining_north_aisle_m": 0.955,
+  "kitchen_entry_aisle_m": 1.3,
+  "kitchen_aisle_pass": true,
+  "garage_enclosure_present": true,
+  "stair_handrail_present": true,
+  "p2_stairwell_guardrails_present": true,
+  "all_passed": true
+}

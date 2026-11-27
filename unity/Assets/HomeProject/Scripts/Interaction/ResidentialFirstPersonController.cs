@@ -36,7 +36,11 @@ namespace HomeProject.Interaction
         public float CurrentElevationY => transform.position.y;
         public float CurrentYaw => yaw;
         public InteractiveDoor LastHoveredDoor { get; private set; }
-        public int CollisionCount { get; private set; }
+        public int FloorCollisions { get; private set; }
+        public int StairCollisions { get; private set; }
+        public int WallCollisions { get; private set; }
+        public int ObstacleCollisions { get; private set; }
+        public int CollisionCount => FloorCollisions + StairCollisions + WallCollisions + ObstacleCollisions;
         public string LastHitObject { get; private set; }
         public Camera PlayerCamera => playerCamera;
 
@@ -72,10 +76,23 @@ namespace HomeProject.Interaction
 
         private void OnControllerColliderHit(ControllerColliderHit hit)
         {
-            if (hit.normal.y < 0.5f)
+            string hitName = hit.collider != null ? hit.collider.gameObject.name : "";
+            LastHitObject = hitName;
+            if (hitName.Contains("Esc_Peldano"))
             {
-                CollisionCount++;
-                LastHitObject = hit.collider != null ? hit.collider.gameObject.name : "";
+                StairCollisions++;
+            }
+            else if (hit.normal.y >= 0.7f)
+            {
+                FloorCollisions++;
+            }
+            else if (hitName.Contains("_M_") || hitName.Contains("Puerta") || hitName.Contains("Porton") || hitName.Contains("Baranda") || hitName.Contains("Glass") || hitName.Contains("Fach_"))
+            {
+                WallCollisions++;
+            }
+            else
+            {
+                ObstacleCollisions++;
             }
         }
 
@@ -214,6 +231,16 @@ namespace HomeProject.Interaction
                     }
                 }
             }
+        }
+
+        public bool InteractWithDoor(InteractiveDoor door)
+        {
+            if (door == null) return false;
+            float dist = Vector3.Distance(transform.position, door.transform.position);
+            if (dist > interactDistance) return false;
+            LastHoveredDoor = door;
+            door.Toggle();
+            return true;
         }
 
         public void ResetToSpawn()

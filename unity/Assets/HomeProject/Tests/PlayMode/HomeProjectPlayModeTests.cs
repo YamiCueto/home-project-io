@@ -103,10 +103,13 @@ namespace HomeProject.Tests.PlayMode
             InteractiveDoor door = doorGo.GetComponent<InteractiveDoor>();
             door.SetOpen(false, true);
 
-            player.TeleportTo(new Vector3(-1.12f, 0.08f, -0.50f), 180f);
+            player.TeleportTo(new Vector3(-1.12f, 0.08f, -1.10f), 180f);
             yield return null;
 
+            InputSystem.settings.backgroundBehavior = InputSettings.BackgroundBehavior.IgnoreFocus;
             Keyboard kb = Keyboard.current ?? InputSystem.AddDevice<Keyboard>();
+            InputSystem.QueueStateEvent(kb, new KeyboardState());
+            yield return null;
             InputSystem.QueueStateEvent(kb, new KeyboardState(Key.E));
             yield return null;
             yield return null;
@@ -131,20 +134,21 @@ namespace HomeProject.Tests.PlayMode
             Assert.IsNotNull(player);
             Assert.IsNotNull(hud);
 
-            string renderDir = Path.GetFullPath(Path.Combine(Application.dataPath, "../../renders/hito_08_3"));
+            string renderDir = Path.GetFullPath(Path.Combine(Application.dataPath, "../../renders/hito_08_3_1"));
             Directory.CreateDirectory(renderDir);
 
             int shotIndex = 1;
             ResidentialNavigationAgent agent = new ResidentialNavigationAgent(player);
-            yield return agent.ExecuteContinuousTour(label =>
+            yield return agent.ExecuteContinuousTour(zoneName =>
             {
-                string fileName = shotIndex.ToString("D2") + "_PLAYMODE_" + label + ".png";
+                string safeName = zoneName.Replace(" / ", "_").Replace(" ", "_");
+                string fileName = shotIndex.ToString("D2") + "_ZONA_" + safeName + ".png";
                 CaptureCameraFrame(player.PlayerCamera, Path.Combine(renderDir, fileName));
                 shotIndex++;
             });
 
             NavigationTraceReport traceReport = agent.BuildReport();
-            string tracePath = Path.GetFullPath(Path.Combine(Application.dataPath, "../../validation/HITO_08_3_NAVIGATION_TRACE.json"));
+            string tracePath = Path.GetFullPath(Path.Combine(Application.dataPath, "../../validation/HITO_08_3_1_NAVIGATION_TRACE.json"));
             Directory.CreateDirectory(Path.GetDirectoryName(tracePath));
             File.WriteAllText(tracePath, JsonUtility.ToJson(traceReport, true));
 
@@ -159,11 +163,15 @@ namespace HomeProject.Tests.PlayMode
                 p99_frame_time_ms = Mathf.Round(p99Ms * 100f) / 100f,
                 one_percent_low_fps = Mathf.Round(onePercentLow * 10f) / 10f
             };
-            string perfPath = Path.GetFullPath(Path.Combine(Application.dataPath, "../../validation/HITO_08_3_PERFORMANCE.json"));
+            string perfPath = Path.GetFullPath(Path.Combine(Application.dataPath, "../../validation/HITO_08_3_1_PERFORMANCE.json"));
             File.WriteAllText(perfPath, JsonUtility.ToJson(perf, true));
 
-            Assert.GreaterOrEqual(traceReport.zones_visited_count, 14,
-                "Too few zones visited in continuous tour: " + traceReport.zones_visited_count + "/18");
+            Assert.AreEqual(0, traceReport.teleport_count, "Teleports prohibited during autonomous tour.");
+            Assert.IsTrue(traceReport.exterior_entry_passed, "Exterior pedestrian entry failed.");
+            Assert.IsTrue(traceReport.exterior_return_passed, "Return to exterior failed.");
+            Assert.AreEqual(18, traceReport.zones_visited_count,
+                "Unreachable zones: " + string.Join(", ", traceReport.unreachable_zones));
+            Assert.IsTrue(traceReport.all_zones_visited, "Not all 18 zones were visited.");
         }
 
         private static void CaptureCameraFrame(Camera cam, string path)

@@ -65,7 +65,7 @@ namespace HomeProject.Tests.EditMode
             Assert.IsNotNull(hud, "ResidentialHudController missing.");
 
             InteractiveDoor[] doors = Object.FindObjectsByType<InteractiveDoor>();
-            Assert.AreEqual(17, doors.Length, "Expected 17 InteractiveDoor components.");
+            Assert.AreEqual(19, doors.Length, "Expected 19 InteractiveDoor components.");
         }
 
         [Test]

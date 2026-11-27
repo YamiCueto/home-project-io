@@ -53,7 +53,7 @@ namespace HomeProject.Editor
 
             if (writeReportFile)
             {
-                string outPath = Path.GetFullPath(Path.Combine(Application.dataPath, "../../validation/HITO_08_2_VALIDATION.json"));
+                string outPath = Path.GetFullPath(Path.Combine(Application.dataPath, "../../validation/HITO_08_3_VALIDATION.json"));
                 Directory.CreateDirectory(Path.GetDirectoryName(outPath));
                 File.WriteAllText(outPath, JsonUtility.ToJson(report, true));
             }
@@ -311,7 +311,7 @@ namespace HomeProject.Editor
             int mask = colLayer >= 0 ? (1 << colLayer) : Physics.DefaultRaycastLayers;
             Physics.SyncTransforms();
 
-            float radius = 0.28f;
+            float radius = 0.30f;
             float height = 1.80f;
 
             (string name, Vector3 start, Vector3 end)[] sweeps =

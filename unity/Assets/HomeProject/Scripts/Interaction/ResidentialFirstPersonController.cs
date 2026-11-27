@@ -24,6 +24,7 @@ namespace HomeProject.Interaction
         private float verticalVelocity;
         private float pitch;
         private float yaw;
+        private float smoothedCameraY;
         private bool inputOverrideActive;
         private Vector2 overrideMove;
         private Vector2 overrideLook;
@@ -33,21 +34,49 @@ namespace HomeProject.Interaction
         public bool IsGrounded => controller != null && controller.isGrounded;
         public string CurrentZoneName => ResidentialZoneTracker.GetZoneName(transform.position);
         public float CurrentElevationY => transform.position.y;
+        public float CurrentYaw => yaw;
         public InteractiveDoor LastHoveredDoor { get; private set; }
+        public int CollisionCount { get; private set; }
+        public string LastHitObject { get; private set; }
+        public Camera PlayerCamera => playerCamera;
 
         private void Awake()
         {
             controller = GetComponent<CharacterController>();
             ConfigureCharacterController();
             playerCamera = GetComponentInChildren<Camera>(true);
-            orbitalCamera = Object.FindFirstObjectByType<OrbitalInspectionCamera>(FindObjectsInactive.Include);
+            orbitalCamera = Object.FindAnyObjectByType<OrbitalInspectionCamera>(FindObjectsInactive.Include);
             yaw = spawnYaw;
-            ApplyCameraTransform();
+            smoothedCameraY = transform.position.y + cameraEyeHeight;
+            ApplyCameraTransform(true);
         }
 
         private void Start()
         {
             SetOrbitalMode(false);
+        }
+
+        private void OnDisable()
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
+
+        private void OnApplicationFocus(bool hasFocus)
+        {
+            if (hasFocus)
+            {
+                UpdateCursorLock();
+            }
+        }
+
+        private void OnControllerColliderHit(ControllerColliderHit hit)
+        {
+            if (hit.normal.y < 0.5f)
+            {
+                CollisionCount++;
+                LastHitObject = hit.collider != null ? hit.collider.gameObject.name : "";
+            }
         }
 
         public void ConfigureCharacterController()
@@ -67,6 +96,12 @@ namespace HomeProject.Interaction
         private void Update()
         {
             HandleSystemShortcuts();
+
+            if (transform.position.y < -1.0f)
+            {
+                ResetToSpawn();
+                return;
+            }
 
             if (IsPaused || IsOrbitalMode)
             {
@@ -117,7 +152,7 @@ namespace HomeProject.Interaction
 
             yaw += delta.x;
             pitch = Mathf.Clamp(pitch - delta.y, -80f, 80f);
-            ApplyCameraTransform();
+            ApplyCameraTransform(false);
         }
 
         private void HandleMovement()
@@ -155,6 +190,7 @@ namespace HomeProject.Interaction
 
             Vector3 motion = (horizontal + Vector3.up * verticalVelocity) * Time.deltaTime;
             controller.Move(motion);
+            ApplyCameraTransform(false);
         }
 
         private void HandleDoorHoverAndInteract()
@@ -196,7 +232,8 @@ namespace HomeProject.Interaction
             verticalVelocity = 0f;
             yaw = newYaw;
             pitch = 0f;
-            ApplyCameraTransform();
+            smoothedCameraY = position.y + cameraEyeHeight;
+            ApplyCameraTransform(true);
             controller.enabled = true;
             Physics.SyncTransforms();
         }
@@ -211,6 +248,16 @@ namespace HomeProject.Interaction
         public void SetOrbitalMode(bool orbital)
         {
             IsOrbitalMode = orbital;
+
+            Camera[] allCams = Object.FindObjectsByType<Camera>(FindObjectsInactive.Include);
+            for (int i = 0; i < allCams.Length; i++)
+            {
+                if (allCams[i] != playerCamera && (orbitalCamera == null || allCams[i].gameObject != orbitalCamera.gameObject))
+                {
+                    allCams[i].enabled = false;
+                }
+            }
+
             if (playerCamera != null)
             {
                 playerCamera.enabled = !orbital;
@@ -222,12 +269,23 @@ namespace HomeProject.Interaction
             UpdateCursorLock();
         }
 
-        private void ApplyCameraTransform()
+        private void ApplyCameraTransform(bool immediate)
         {
             transform.rotation = Quaternion.Euler(0f, yaw, 0f);
             if (playerCamera != null)
             {
-                playerCamera.transform.localPosition = new Vector3(0f, cameraEyeHeight, 0f);
+                float targetY = transform.position.y + cameraEyeHeight;
+                if (immediate)
+                {
+                    smoothedCameraY = targetY;
+                }
+                else
+                {
+                    smoothedCameraY = Mathf.Lerp(smoothedCameraY, targetY, Mathf.Clamp01(Time.deltaTime * 18f));
+                }
+
+                float localY = smoothedCameraY - transform.position.y;
+                playerCamera.transform.localPosition = new Vector3(0f, localY, 0f);
                 playerCamera.transform.localRotation = Quaternion.Euler(pitch, 0f, 0f);
             }
         }

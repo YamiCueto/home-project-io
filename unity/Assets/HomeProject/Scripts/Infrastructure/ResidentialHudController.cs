@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using HomeProject.Interaction;
 using UnityEngine;
 
@@ -5,42 +6,81 @@ namespace HomeProject.Infrastructure
 {
     public class ResidentialHudController : MonoBehaviour
     {
+        private const int WarmupFrames = 60;
+
         private ResidentialFirstPersonController player;
+        private readonly List<float> frameTimesMs = new List<float>();
         private float smoothedDeltaTime = 0.016f;
-        private float minFps = 9999f;
-        private float fpsSum;
-        private int frameSamples;
+        private int totalFrames;
 
         public float CurrentFps => smoothedDeltaTime > 0.0001f ? 1.0f / smoothedDeltaTime : 0f;
         public float CurrentFrameTimeMs => smoothedDeltaTime * 1000f;
-        public float AverageFps => frameSamples > 0 ? fpsSum / frameSamples : 0f;
-        public float MinFps => frameSamples > 0 ? minFps : 0f;
 
         private void Awake()
         {
-            player = Object.FindFirstObjectByType<ResidentialFirstPersonController>();
+            player = Object.FindAnyObjectByType<ResidentialFirstPersonController>();
         }
 
         private void Update()
         {
-            smoothedDeltaTime += (Time.unscaledDeltaTime - smoothedDeltaTime) * 0.1f;
-            if (Time.unscaledDeltaTime > 0.0001f)
+            float dt = Time.unscaledDeltaTime;
+            if (dt <= 0.0001f)
             {
-                float instFps = 1.0f / Time.unscaledDeltaTime;
-                fpsSum += instFps;
-                frameSamples++;
-                if (instFps < minFps)
-                {
-                    minFps = instFps;
-                }
+                return;
             }
+
+            smoothedDeltaTime += (dt - smoothedDeltaTime) * 0.1f;
+            totalFrames++;
+            if (totalFrames > WarmupFrames)
+            {
+                frameTimesMs.Add(dt * 1000f);
+            }
+        }
+
+        public void GetPerformanceSummary(out float avgFps, out float avgFrameMs, out float p95FrameMs, out float p99FrameMs, out float onePercentLowFps)
+        {
+            if (frameTimesMs.Count == 0)
+            {
+                avgFps = CurrentFps;
+                avgFrameMs = CurrentFrameTimeMs;
+                p95FrameMs = avgFrameMs;
+                p99FrameMs = avgFrameMs;
+                onePercentLowFps = avgFps;
+                return;
+            }
+
+            List<float> sorted = new List<float>(frameTimesMs);
+            sorted.Sort();
+
+            float sum = 0f;
+            for (int i = 0; i < sorted.Count; i++)
+            {
+                sum += sorted[i];
+            }
+
+            avgFrameMs = sum / sorted.Count;
+            avgFps = avgFrameMs > 0.001f ? 1000f / avgFrameMs : 0f;
+
+            int p95Idx = Mathf.Clamp(Mathf.CeilToInt(sorted.Count * 0.95f) - 1, 0, sorted.Count - 1);
+            int p99Idx = Mathf.Clamp(Mathf.CeilToInt(sorted.Count * 0.99f) - 1, 0, sorted.Count - 1);
+            p95FrameMs = sorted[p95Idx];
+            p99FrameMs = sorted[p99Idx];
+
+            int topOnePercentCount = Mathf.Max(1, Mathf.CeilToInt(sorted.Count * 0.01f));
+            float slowSum = 0f;
+            for (int i = sorted.Count - topOnePercentCount; i < sorted.Count; i++)
+            {
+                slowSum += sorted[i];
+            }
+            float slowAvgMs = slowSum / topOnePercentCount;
+            onePercentLowFps = slowAvgMs > 0.001f ? 1000f / slowAvgMs : 0f;
         }
 
         private void OnGUI()
         {
             if (player == null)
             {
-                player = Object.FindFirstObjectByType<ResidentialFirstPersonController>();
+                player = Object.FindAnyObjectByType<ResidentialFirstPersonController>();
                 if (player == null) return;
             }
 

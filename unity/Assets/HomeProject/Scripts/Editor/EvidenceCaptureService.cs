@@ -22,6 +22,18 @@ namespace HomeProject.Editor
             CaptureCollidersPreview(Path.Combine(outDir, "09_COLLIDERS.png"));
         }
 
+        public static void CaptureHito082Renders()
+        {
+            string outDir = Path.GetFullPath(Path.Combine(Application.dataPath, "../../renders/hito_08_2"));
+            Directory.CreateDirectory(outDir);
+
+            RenderNamedCamera("Orbital_Inspection_Camera", Path.Combine(outDir, "02_MODO_ORBITAL.png"));
+            RenderNamedCamera("04_Sala", Path.Combine(outDir, "03_SALA_FPS.png"));
+            RenderNamedCamera("08_Escalera", Path.Combine(outDir, "04_ESCALERA_FPS.png"));
+            RenderNamedCamera("09_Hab_Principal", Path.Combine(outDir, "05_HAB_PRINCIPAL_FPS.png"));
+            RenderNamedCamera("07_Garaje", Path.Combine(outDir, "06_GARAJE_FPS.png"));
+        }
+
         private static void RenderNamedCamera(string cameraName, string outputPath)
         {
             GameObject camGo = GameObject.Find(HomeProjectConstants.CamerasRootName + "/" + cameraName);

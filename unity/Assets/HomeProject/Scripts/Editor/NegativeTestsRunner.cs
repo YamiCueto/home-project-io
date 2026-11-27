@@ -19,6 +19,7 @@ namespace HomeProject.Editor
             report.cases.Add(TestVisibleCollider());
             report.cases.Add(TestWrongPivot());
             report.cases.Add(TestFloorMisalignment());
+            report.cases.Add(TestDuplicateObjectName());
 
             report.total_cases = report.cases.Count;
             for (int i = 0; i < report.cases.Count; i++)
@@ -30,7 +31,7 @@ namespace HomeProject.Editor
             }
             report.all_detected = report.passed_cases == report.total_cases;
 
-            string outPath = Path.GetFullPath(Path.Combine(Application.dataPath, "../../validation/HITO_08_1_NEGATIVE_TESTS.json"));
+            string outPath = Path.GetFullPath(Path.Combine(Application.dataPath, "../../validation/HITO_08_2_NEGATIVE_TESTS.json"));
             Directory.CreateDirectory(Path.GetDirectoryName(outPath));
             File.WriteAllText(outPath, JsonUtility.ToJson(report, true));
             return report;
@@ -136,13 +137,13 @@ namespace HomeProject.Editor
             Object.DestroyImmediate(blocker);
             Physics.SyncTransforms();
 
-            bool detected = val.opening_audits_passed < val.opening_audits_total;
+            bool detected = val.capsule_audits_passed < val.capsule_audits_total;
             return new NegativeTestCaseResult
             {
                 test_id = "NEG_04_COLLIDER_BLOCKING_DOOR",
-                description = "Collider bloqueando puerta principal debe detectarse en auditoria de aberturas",
+                description = "Collider bloqueando puerta principal debe detectarse en barrido volumetrico de capsula",
                 fault_detected = detected,
-                detector_message = "opening_audits_passed=" + val.opening_audits_passed + "/" + val.opening_audits_total,
+                detector_message = "capsule_audits_passed=" + val.capsule_audits_passed + "/" + val.capsule_audits_total,
                 scene_restored = GameObject.Find("_TMP_DOOR_BLOCKER") == null,
                 passed = detected
             };
@@ -183,17 +184,17 @@ namespace HomeProject.Editor
             }
 
             Vector3 origPos = door.transform.position;
-            door.transform.position = origPos + new Vector3(0.6f, 0f, 0f);
+            door.transform.position = origPos + new Vector3(0.05f, 0f, 0f);
             Hito081ValidationReport val = SceneValidatorService.ValidateCurrentScene(false);
             door.transform.position = origPos;
 
-            bool detected = val.errors.Count > 0;
+            bool detected = val.pivot_checks_passed < val.pivot_checks_total;
             return new NegativeTestCaseResult
             {
                 test_id = "NEG_06_WRONG_PIVOT",
-                description = "Desplazar pivote de puerta 0.60m debe detectarse en validacion de pivotes",
+                description = "Desplazar pivote de puerta 0.05m (> 0.02m) debe detectarse en validacion de pivotes",
                 fault_detected = detected,
-                detector_message = val.errors.Count > 0 ? val.errors[0] : "none",
+                detector_message = "pivot_checks_passed=" + val.pivot_checks_passed + "/" + val.pivot_checks_total,
                 scene_restored = door.transform.position == origPos,
                 passed = detected
             };
@@ -201,29 +202,50 @@ namespace HomeProject.Editor
 
         private static NegativeTestCaseResult TestFloorMisalignment()
         {
-            GameObject p2 = GameObject.Find("P2_Losa_Entrepiso");
+            GameObject p2 = GameObject.Find("P2_Losa_Seg_1");
             if (p2 == null)
             {
-                p2 = GameObject.Find("P2_M_Oeste_S0");
-            }
-            if (p2 == null)
-            {
-                return FailedSetup("NEG_07_FLOOR_MISALIGNMENT", "P2 element not found");
+                return FailedSetup("NEG_07_FLOOR_MISALIGNMENT", "P2_Losa_Seg_1 not found");
             }
 
-            Vector3 origScale = p2.transform.localScale;
-            p2.transform.localScale = new Vector3(1.0f, 1.3f, 1.0f);
+            Vector3 origPos = p2.transform.position;
+            p2.transform.position = origPos + new Vector3(0f, 0.25f, 0f);
             Hito081ValidationReport val = SceneValidatorService.ValidateCurrentScene(false);
-            p2.transform.localScale = origScale;
+            p2.transform.position = origPos;
 
             bool detected = val.dimensional_checks_failed > 0;
             return new NegativeTestCaseResult
             {
                 test_id = "NEG_07_FLOOR_MISALIGNMENT",
-                description = "Alterar altura/escala de elemento P2 debe detectarse como desalineacion",
+                description = "Desplazar losa P2 verticalmente 0.25m debe detectarse en validacion posicional",
                 fault_detected = detected,
                 detector_message = "dimensional_checks_failed=" + val.dimensional_checks_failed,
-                scene_restored = p2.transform.localScale == origScale,
+                scene_restored = p2.transform.position == origPos,
+                passed = detected
+            };
+        }
+
+        private static NegativeTestCaseResult TestDuplicateObjectName()
+        {
+            GameObject arch = GameObject.Find(HomeProjectConstants.HomeProjectRootName + "/" + HomeProjectConstants.GroupArchitecture);
+            if (arch == null)
+            {
+                return FailedSetup("NEG_08_DUPLICATE_OBJECT_NAME", "Architecture group not found");
+            }
+
+            GameObject dup = new GameObject("P1_M_Oeste_S0");
+            dup.transform.SetParent(arch.transform, false);
+            Hito081ValidationReport val = SceneValidatorService.ValidateCurrentScene(false);
+            Object.DestroyImmediate(dup);
+
+            bool detected = val.statistics.duplicate_object_names > 0;
+            return new NegativeTestCaseResult
+            {
+                test_id = "NEG_08_DUPLICATE_OBJECT_NAME",
+                description = "Introducir objeto con nombre duplicado debe detectarse en UNI-01",
+                fault_detected = detected,
+                detector_message = "duplicate_object_names=" + val.statistics.duplicate_object_names,
+                scene_restored = true,
                 passed = detected
             };
         }

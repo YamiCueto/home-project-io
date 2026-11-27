@@ -1,8 +1,11 @@
 using System.Collections.Generic;
 using HomeProject.Core;
+using HomeProject.Infrastructure;
+using HomeProject.Interaction;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.SceneManagement;
 
 namespace HomeProject.Editor
@@ -34,7 +37,8 @@ namespace HomeProject.Editor
             InstantiateFbxPackage(HomeProjectConstants.CollidersFbxPath, colGroup, "colliders_pkg");
 
             OrganizeVehicles(furnGroup, urbanGroup, vehGroup);
-            SetupSystems(systemsRoot);
+            SetupInteractiveDoors(doorsGroup);
+            SetupSystems(systemsRoot, camerasRoot);
             RemoveStrayDefaultObjects(scene, homeRoot, lightingRoot, camerasRoot, systemsRoot);
 
             EditorSceneManager.MarkSceneDirty(scene);
@@ -154,13 +158,70 @@ namespace HomeProject.Editor
             }
         }
 
-        private static void SetupSystems(GameObject systemsRoot)
+        private static void SetupInteractiveDoors(Transform doorsGroup)
+        {
+            MeshRenderer[] renderers = doorsGroup.GetComponentsInChildren<MeshRenderer>(true);
+            for (int i = 0; i < renderers.Length; i++)
+            {
+                if (renderers[i].gameObject.GetComponent<InteractiveDoor>() == null)
+                {
+                    renderers[i].gameObject.AddComponent<InteractiveDoor>();
+                }
+            }
+        }
+
+        private static void SetupSystems(GameObject systemsRoot, GameObject camerasRoot)
         {
             Transform sys = GetOrCreateChild(systemsRoot.transform, "HomeProjectSystems");
             if (sys.GetComponent<HomeProjectSystemInitializer>() == null)
             {
                 sys.gameObject.AddComponent<HomeProjectSystemInitializer>();
             }
+
+            Transform hud = GetOrCreateChild(systemsRoot.transform, "ResidentialHud");
+            if (hud.GetComponent<ResidentialHudController>() == null)
+            {
+                hud.gameObject.AddComponent<ResidentialHudController>();
+            }
+
+            Transform orb = GetOrCreateChild(camerasRoot.transform, "Orbital_Inspection_Camera");
+            Camera orbCam = orb.GetComponent<Camera>();
+            if (orbCam == null) orbCam = orb.gameObject.AddComponent<Camera>();
+            orbCam.enabled = false;
+            orbCam.fieldOfView = 48f;
+            orbCam.nearClipPlane = 0.05f;
+            orbCam.farClipPlane = 250f;
+            UniversalAdditionalCameraData orbUac = orb.GetComponent<UniversalAdditionalCameraData>();
+            if (orbUac == null) orbUac = orb.gameObject.AddComponent<UniversalAdditionalCameraData>();
+            orbUac.renderPostProcessing = true;
+            if (orb.GetComponent<OrbitalInspectionCamera>() == null)
+            {
+                orb.gameObject.AddComponent<OrbitalInspectionCamera>();
+            }
+
+            Transform playerTf = GetOrCreateChild(systemsRoot.transform, "ResidentialPlayer");
+            playerTf.position = new Vector3(-1.12f, 0.08f, 1.80f);
+            playerTf.rotation = Quaternion.Euler(0f, 180f, 0f);
+            CharacterController cc = playerTf.GetComponent<CharacterController>();
+            if (cc == null) cc = playerTf.gameObject.AddComponent<CharacterController>();
+            ResidentialFirstPersonController fps = playerTf.GetComponent<ResidentialFirstPersonController>();
+            if (fps == null) fps = playerTf.gameObject.AddComponent<ResidentialFirstPersonController>();
+            fps.ConfigureCharacterController();
+
+            Transform pCamTf = GetOrCreateChild(playerTf, "PlayerCamera");
+            pCamTf.localPosition = new Vector3(0f, 1.65f, 0f);
+            pCamTf.localRotation = Quaternion.identity;
+            pCamTf.tag = "MainCamera";
+            Camera pCam = pCamTf.GetComponent<Camera>();
+            if (pCam == null) pCam = pCamTf.gameObject.AddComponent<Camera>();
+            pCam.enabled = true;
+            pCam.fieldOfView = 60f;
+            pCam.nearClipPlane = 0.05f;
+            pCam.farClipPlane = 250f;
+            UniversalAdditionalCameraData pUac = pCamTf.GetComponent<UniversalAdditionalCameraData>();
+            if (pUac == null) pUac = pCamTf.gameObject.AddComponent<UniversalAdditionalCameraData>();
+            pUac.renderPostProcessing = true;
+            pUac.antialiasing = AntialiasingMode.SubpixelMorphologicalAntiAliasing;
         }
 
         private static void RemoveStrayDefaultObjects(Scene scene, params GameObject[] keepRoots)

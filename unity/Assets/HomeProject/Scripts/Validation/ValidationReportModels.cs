@@ -4,25 +4,46 @@ using System.Collections.Generic;
 namespace HomeProject.Validation
 {
     [Serializable]
-    public class ObjectDimensionCheck
+    public class ObjectTransformCheck
     {
         public string name;
         public string category;
         public float[] blender_size_m;
         public float[] unity_size_m;
-        public float[] abs_diff_m;
-        public float max_diff_m;
+        public float max_size_diff_m;
+        public float center_pos_diff_m;
         public bool passed;
     }
 
     [Serializable]
-    public class OpeningAuditCheck
+    public class ExplicitExceptionRecord
+    {
+        public string object_name;
+        public float magnitude_m;
+        public string justification;
+    }
+
+    [Serializable]
+    public class CapsuleSweepAudit
     {
         public string name;
-        public float[] center_unity;
-        public float[] half_extents;
-        public bool blocked_by_collider;
+        public float[] start_unity;
+        public float[] end_unity;
+        public float capsule_radius_m;
+        public float capsule_height_m;
+        public bool blocked;
         public string blocking_object;
+        public bool passed;
+    }
+
+    [Serializable]
+    public class FloorRaycastAudit
+    {
+        public string zone_name;
+        public float[] origin_unity;
+        public bool hit;
+        public string hit_object;
+        public float hit_y;
         public bool passed;
     }
 
@@ -42,12 +63,14 @@ namespace HomeProject.Validation
         public int visible_collider_renderers;
         public int missing_mesh_references;
         public int missing_material_references;
+        public int missing_expected_objects;
+        public int duplicate_object_names;
     }
 
     [Serializable]
     public class Hito081ValidationReport
     {
-        public string milestone = "Hito 8.1";
+        public string milestone = "Hito 8.2";
         public string unity_version;
         public string render_pipeline;
         public string scene_path;
@@ -57,11 +80,18 @@ namespace HomeProject.Validation
         public int dimensional_checks_total;
         public int dimensional_checks_passed;
         public int dimensional_checks_failed;
-        public int opening_audits_total;
-        public int opening_audits_passed;
-        public List<ObjectDimensionCheck> failed_dimensions = new List<ObjectDimensionCheck>();
-        public List<ObjectDimensionCheck> sample_dimensions = new List<ObjectDimensionCheck>();
-        public List<OpeningAuditCheck> opening_audits = new List<OpeningAuditCheck>();
+        public int pivot_checks_total;
+        public int pivot_checks_passed;
+        public int capsule_audits_total;
+        public int capsule_audits_passed;
+        public int floor_raycasts_total;
+        public int floor_raycasts_passed;
+        public List<string> missing_objects = new List<string>();
+        public List<string> duplicate_names = new List<string>();
+        public List<ExplicitExceptionRecord> explicit_exceptions = new List<ExplicitExceptionRecord>();
+        public List<ObjectTransformCheck> failed_transforms = new List<ObjectTransformCheck>();
+        public List<CapsuleSweepAudit> capsule_audits = new List<CapsuleSweepAudit>();
+        public List<FloorRaycastAudit> floor_raycasts = new List<FloorRaycastAudit>();
         public List<string> errors = new List<string>();
         public List<string> warnings = new List<string>();
     }
@@ -80,7 +110,7 @@ namespace HomeProject.Validation
     [Serializable]
     public class Hito081NegativeTestsReport
     {
-        public string milestone = "Hito 8.1";
+        public string milestone = "Hito 8.2";
         public int total_cases;
         public int passed_cases;
         public bool all_detected;

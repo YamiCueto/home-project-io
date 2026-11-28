@@ -55,6 +55,7 @@ namespace HomeProject.Editor
         public static void GenerateReportAndRenders()
         {
             EvidenceCaptureService.CaptureAllRenders();
+            EvidenceCaptureService.CaptureHito082Renders();
             Debug.Log("Home Project: Game camera renders captured.");
         }
 

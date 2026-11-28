@@ -16,6 +16,9 @@ namespace HomeProject.Architecture
         public string name;
         public List<string> collections = new List<string>();
         public float[] location_blender;
+        public float[] rotation_euler_deg_blender;
+        public float[] scale_blender;
+        public float[] world_center_blender;
         public float[] world_min_blender;
         public float[] world_max_blender;
         public float[] size_blender;

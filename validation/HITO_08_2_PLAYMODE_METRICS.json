@@ -1,0 +1,13 @@
+{
+    "screen_width": 2560,
+    "screen_height": 1440,
+    "average_fps": 422.6000061035156,
+    "min_fps": 2.5999999046325684,
+    "frame_time_ms": 2.5899999141693115,
+    "stair_top_y": 2.9600000381469727,
+    "stair_bottom_y": 0.05999999865889549,
+    "closed_door_blocked": true,
+    "open_door_entered_sala": true,
+    "wall_blocked": true,
+    "spawn_reset_passed": true
+}

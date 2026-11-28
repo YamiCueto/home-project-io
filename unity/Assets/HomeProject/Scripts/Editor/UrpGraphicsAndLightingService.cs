@@ -186,7 +186,7 @@ namespace HomeProject.Editor
         private static void ConfigureCameras(Transform camerasRoot, Bounds b)
         {
             Vector3 c = b.center;
-            CreateOrUpdateCamera(camerasRoot, "Main Camera", new Vector3(-13.5f, 4.8f, 8.5f), new Vector3(-4.0f, 2.5f, -4.5f), 50f, true);
+            CreateOrUpdateCamera(camerasRoot, "Main Camera", new Vector3(-13.5f, 4.8f, 8.5f), new Vector3(-4.0f, 2.5f, -4.5f), 50f, false);
             CreateOrUpdateCamera(camerasRoot, "01_Fachada_Frontal", new Vector3(-4.0f, 2.2f, 9.0f), new Vector3(-4.0f, 2.5f, -1.0f), 50f, false);
             CreateOrUpdateCamera(camerasRoot, "02_Perspectiva_Esquinera", new Vector3(-13.5f, 4.8f, 8.5f), new Vector3(-4.0f, 2.5f, -4.5f), 48f, false);
             CreateOrUpdateCamera(camerasRoot, "03_Vista_Aerea", new Vector3(-15.0f, 16.0f, 10.0f), c, 45f, false);

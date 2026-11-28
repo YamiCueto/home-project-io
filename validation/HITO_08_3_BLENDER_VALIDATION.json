@@ -1,0 +1,11 @@
+{
+  "car_redesigned": true,
+  "moto_redesigned": true,
+  "car_north_door_clearance_m": 0.585,
+  "moto_north_door_clearance_m": 1.094,
+  "garage_vehicles_clear_pass": true,
+  "vestidor_width_m": 1.35,
+  "bano_principal_width_m": 1.8,
+  "master_entry_clear_stairwell": true,
+  "all_passed": true
+}

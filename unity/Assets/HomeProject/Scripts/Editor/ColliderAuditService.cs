@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-using HomeProject.Architecture;
 using HomeProject.Core;
 using UnityEditor;
 using UnityEngine;
@@ -23,7 +21,11 @@ namespace HomeProject.Editor
                 ConfigureColliderGroup(colGroup, colLayer);
             }
 
-            ConfigureFurnitureAndDoorColliders(root.transform);
+            ConfigureStaticGroupColliders(root.transform, HomeProjectConstants.GroupArchitecture, false);
+            ConfigureStaticGroupColliders(root.transform, HomeProjectConstants.GroupUrbanContext, false);
+            ConfigureStaticGroupColliders(root.transform, HomeProjectConstants.GroupFurniture, false);
+            ConfigureStaticGroupColliders(root.transform, HomeProjectConstants.GroupVehicles, false);
+            ConfigureStaticGroupColliders(root.transform, HomeProjectConstants.GroupInteractiveDoors, true);
         }
 
         private static void ConfigureColliderGroup(Transform colGroup, int colLayer)
@@ -89,39 +91,40 @@ namespace HomeProject.Editor
             }
         }
 
-        private static void ConfigureFurnitureAndDoorColliders(Transform homeRoot)
+        private static void ConfigureStaticGroupColliders(Transform homeRoot, string groupName, bool useBoxCollider)
         {
-            string[] groups = { HomeProjectConstants.GroupFurniture, HomeProjectConstants.GroupInteractiveDoors, HomeProjectConstants.GroupVehicles };
-            for (int g = 0; g < groups.Length; g++)
+            Transform group = homeRoot.Find(groupName);
+            if (group == null)
             {
-                Transform group = homeRoot.Find(groups[g]);
-                if (group == null)
+                return;
+            }
+
+            MeshFilter[] filters = group.GetComponentsInChildren<MeshFilter>(true);
+            for (int i = 0; i < filters.Length; i++)
+            {
+                GameObject go = filters[i].gameObject;
+                Mesh mesh = filters[i].sharedMesh;
+                if (mesh == null)
                 {
                     continue;
                 }
 
-                MeshFilter[] filters = group.GetComponentsInChildren<MeshFilter>(true);
-                for (int i = 0; i < filters.Length; i++)
+                if (go.GetComponent<Collider>() != null)
                 {
-                    GameObject go = filters[i].gameObject;
-                    Mesh mesh = filters[i].sharedMesh;
-                    if (mesh == null || go.GetComponent<Collider>() != null)
-                    {
-                        continue;
-                    }
+                    continue;
+                }
 
-                    if (groups[g] == HomeProjectConstants.GroupInteractiveDoors)
-                    {
-                        BoxCollider box = go.AddComponent<BoxCollider>();
-                        box.center = mesh.bounds.center;
-                        box.size = mesh.bounds.size;
-                    }
-                    else
-                    {
-                        MeshCollider mc = go.AddComponent<MeshCollider>();
-                        mc.sharedMesh = mesh;
-                        mc.convex = false;
-                    }
+                if (useBoxCollider)
+                {
+                    BoxCollider box = go.AddComponent<BoxCollider>();
+                    box.center = mesh.bounds.center;
+                    box.size = mesh.bounds.size;
+                }
+                else
+                {
+                    MeshCollider mc = go.AddComponent<MeshCollider>();
+                    mc.sharedMesh = mesh;
+                    mc.convex = false;
                 }
             }
         }

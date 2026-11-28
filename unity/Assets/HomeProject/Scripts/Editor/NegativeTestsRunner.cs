@@ -32,9 +32,12 @@ namespace HomeProject.Editor
             }
             report.all_detected = report.passed_cases == report.total_cases;
 
+            string json = JsonUtility.ToJson(report, true);
             string outPath = Path.GetFullPath(Path.Combine(Application.dataPath, "../../validation/HITO_08_3_1_NEGATIVE_TESTS.json"));
             Directory.CreateDirectory(Path.GetDirectoryName(outPath));
-            File.WriteAllText(outPath, JsonUtility.ToJson(report, true));
+            File.WriteAllText(outPath, json);
+            string outPath2 = Path.GetFullPath(Path.Combine(Application.dataPath, "../../validation/HITO_08_3_2_NEGATIVE_TESTS.json"));
+            File.WriteAllText(outPath2, json);
             return report;
         }
 

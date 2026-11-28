@@ -208,19 +208,6 @@
     ]
   },
   {
-    "name": "P2_M_Master_Este_Puerta1",
-    "pivot_location_m": [
-      4.55,
-      0.4,
-      2.94
-    ],
-    "dimensions_m": [
-      0.05,
-      1.1,
-      2.06
-    ]
-  },
-  {
     "name": "P2_M_Master_Este_Puerta3",
     "pivot_location_m": [
       4.55,
@@ -236,8 +223,8 @@
   {
     "name": "P2_M_Vest_Bano_Puerta1",
     "pivot_location_m": [
-      6.0,
-      2.6,
+      6.1,
+      2.55,
       2.94
     ],
     "dimensions_m": [

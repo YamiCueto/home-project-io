@@ -78,8 +78,7 @@ namespace HomeProject.Interaction
             "Bano Compartido",
             "Habitacion Principal",
             "Vestidor",
-            "Bano Principal",
-            "Balcon"
+            "Bano Principal"
         };
 
         public ResidentialNavigationAgent(ResidentialFirstPersonController controller)
@@ -147,10 +146,7 @@ namespace HomeProject.Interaction
                 ("Vestidor", new Vector3(-5.30f, 2.94f, -3.05f), "P2_M_Vest_Bano_Puerta1"),
                 ("Bano_Principal", new Vector3(-6.55f, 2.94f, -3.05f), ""),
                 ("Retorno_Vestidor", new Vector3(-5.30f, 2.94f, -3.05f), ""),
-                ("Retorno_Master", new Vector3(-4.00f, 2.94f, -0.95f), "P2_M_Master_Este_Puerta1"),
-                ("Balcon", new Vector3(-5.80f, 2.94f, -0.95f), ""),
-                ("Retorno_Master_Balcon", new Vector3(-4.00f, 2.94f, -0.95f), ""),
-                ("Retorno_Master_Oeste", new Vector3(-2.60f, 2.94f, -0.95f), ""),
+                ("Retorno_Master_Oeste", new Vector3(-2.60f, 2.94f, -3.05f), ""),
                 ("Retorno_Master_Salir", new Vector3(-2.60f, 2.94f, -3.80f), ""),
                 ("Corredor_P2_Descenso", new Vector3(-2.60f, 2.94f, -6.10f), ""),
                 ("Corredor_P2_Escalera_Norte", new Vector3(-7.35f, 2.94f, -6.10f), ""),

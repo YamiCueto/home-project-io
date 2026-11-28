@@ -177,6 +177,10 @@ namespace HomeProject.Editor
             {
                 sys.gameObject.AddComponent<HomeProjectSystemInitializer>();
             }
+            if (sys.GetComponent<ArchitecturalInspectionMode>() == null)
+            {
+                sys.gameObject.AddComponent<ArchitecturalInspectionMode>();
+            }
 
             Transform hud = GetOrCreateChild(systemsRoot.transform, "ResidentialHud");
             if (hud.GetComponent<ResidentialHudController>() == null)

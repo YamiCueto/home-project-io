@@ -37,6 +37,7 @@ namespace HomeProject.Editor
             InstantiateFbxPackage(HomeProjectConstants.CollidersFbxPath, colGroup, "colliders_pkg");
 
             OrganizeVehicles(furnGroup, urbanGroup, vehGroup);
+            SetupTropicalTrees(urbanGroup);
             SetupInteractiveDoors(doorsGroup);
             SetupSystems(systemsRoot, camerasRoot);
             RemoveStrayDefaultObjects(scene, homeRoot, lightingRoot, camerasRoot, systemsRoot);
@@ -154,6 +155,114 @@ namespace HomeProject.Editor
                 if (n.StartsWith("Vehiculo_") || n.StartsWith("Vehicle_"))
                 {
                     results.Add(all[i]);
+                }
+            }
+        }
+
+        private static void SetupTropicalTrees(Transform urbanGroup)
+        {
+            if (urbanGroup == null)
+            {
+                return;
+            }
+
+            Transform urbanPkg = urbanGroup.Find("urban_context_pkg");
+            if (urbanPkg != null)
+            {
+                if (PrefabUtility.IsPartOfPrefabInstance(urbanPkg.gameObject))
+                {
+                    PrefabUtility.UnpackPrefabInstance(urbanPkg.gameObject, PrefabUnpackMode.OutermostRoot, InteractionMode.AutomatedAction);
+                }
+                LODGroup pkgLod = urbanPkg.GetComponent<LODGroup>();
+                if (pkgLod != null)
+                {
+                    Object.DestroyImmediate(pkgLod);
+                }
+            }
+
+            string[] treePrefixes = { "Arbol_Tropical_01", "Arbol_Tropical_02", "Arbol_Tropical_03" };
+            for (int i = 0; i < treePrefixes.Length; i++)
+            {
+                Transform staleTree = urbanGroup.Find(treePrefixes[i]);
+                if (staleTree != null)
+                {
+                    Object.DestroyImmediate(staleTree.gameObject);
+                }
+            }
+
+            Transform[] allTransforms = urbanGroup.GetComponentsInChildren<Transform>(true);
+
+            for (int i = 0; i < treePrefixes.Length; i++)
+            {
+                string prefix = treePrefixes[i];
+                Transform lod0 = null;
+                Transform lod1 = null;
+                Transform lod2 = null;
+
+                for (int t = 0; t < allTransforms.Length; t++)
+                {
+                    string n = allTransforms[t].name;
+                    if (n == prefix + "_LOD0") lod0 = allTransforms[t];
+                    else if (n == prefix + "_LOD1") lod1 = allTransforms[t];
+                    else if (n == prefix + "_LOD2") lod2 = allTransforms[t];
+                }
+
+                if (lod0 == null)
+                {
+                    continue;
+                }
+
+                Transform treeParent = urbanGroup.Find(prefix);
+                if (treeParent == null)
+                {
+                    GameObject treeGo = new GameObject(prefix);
+                    treeParent = treeGo.transform;
+                    treeParent.SetParent(urbanGroup, false);
+                    treeParent.position = lod0.position;
+                }
+
+                lod0.SetParent(treeParent, true);
+                if (lod1 != null) lod1.SetParent(treeParent, true);
+                if (lod2 != null) lod2.SetParent(treeParent, true);
+
+                LODGroup lodGroup = treeParent.GetComponent<LODGroup>();
+                if (lodGroup == null)
+                {
+                    lodGroup = treeParent.gameObject.AddComponent<LODGroup>();
+                }
+
+                List<LOD> lods = new List<LOD>();
+                Renderer r0 = lod0.GetComponent<Renderer>();
+                if (r0 != null) lods.Add(new LOD(0.35f, new[] { r0 }));
+                if (lod1 != null)
+                {
+                    Renderer r1 = lod1.GetComponent<Renderer>();
+                    if (r1 != null) lods.Add(new LOD(0.12f, new[] { r1 }));
+                }
+                if (lod2 != null)
+                {
+                    Renderer r2 = lod2.GetComponent<Renderer>();
+                    if (r2 != null) lods.Add(new LOD(0.02f, new[] { r2 }));
+                }
+                if (lods.Count > 0)
+                {
+                    lodGroup.SetLODs(lods.ToArray());
+                    lodGroup.RecalculateBounds();
+                }
+
+                CapsuleCollider trunkCol = treeParent.GetComponent<CapsuleCollider>();
+                if (trunkCol == null)
+                {
+                    trunkCol = treeParent.gameObject.AddComponent<CapsuleCollider>();
+                }
+                trunkCol.center = new Vector3(0f, 1.35f, 0f);
+                trunkCol.radius = 0.24f;
+                trunkCol.height = 2.70f;
+                trunkCol.direction = 1;
+
+                if (treeParent.GetComponent<HomeProject.Architecture.TropicalFoliageWind>() == null)
+                {
+                    treeParent.gameObject.AddComponent<HomeProject.Architecture.TropicalFoliageWind>();
                 }
             }
         }

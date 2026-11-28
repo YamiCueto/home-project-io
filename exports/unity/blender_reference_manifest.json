@@ -1,5 +1,5 @@
 {
-  "blend_file": "C:\\Users\\YAMI\\Documents\\projects\\home-project\\models\\HOME_PROJECT_HITO_08_3_2.blend",
+  "blend_file": "C:\\Users\\YAMI\\Documents\\projects\\home-project\\models\\HOME_PROJECT_HITO_08_3_3.blend",
   "objects": [
     {
       "name": "Anden_Frontal",
@@ -338,193 +338,451 @@
       "visible_render": false
     },
     {
-      "name": "Arbol_Urbano_Copa_1",
+      "name": "Arbol_Tropical_01_LOD0",
       "collections": [
         "17_Contexto_Urbano",
         "Contexto_Urbano"
       ],
       "location_blender": [
-        -1.8,
-        -1.1,
-        3.1
+        -2.05,
+        -1.15,
+        0.0
       ],
       "rotation_euler_deg_blender": [
         0.0,
         -0.0,
-        0.0
+        18.0
       ],
       "scale_blender": [
-        1.1,
-        1.1,
-        0.85
+        0.92,
+        0.92,
+        0.92
       ],
       "world_center_blender": [
-        -1.8,
-        -1.1,
-        3.1
+        -1.70228,
+        -1.7755,
+        2.07069
       ],
       "world_min_blender": [
-        -3.1077,
-        -2.475,
-        2.0375
+        -3.58791,
+        -4.06631,
+        -0.02242
       ],
       "world_max_blender": [
-        -0.4923,
-        0.275,
-        4.1625
+        0.18335,
+        0.51531,
+        4.1638
       ],
       "size_blender": [
-        2.61541,
-        2.75,
-        2.125
+        3.77126,
+        4.58162,
+        4.18622
       ],
-      "triangles": 80,
+      "triangles": 281643,
       "materials": [
-        "MAT_follaje_tropical"
+        "tree_small_02_branches",
+        "tree_small_02_leaves",
+        "tree_small_02_trunk"
       ],
       "visible_viewport": true,
       "visible_render": true
     },
     {
-      "name": "Arbol_Urbano_Copa_2",
+      "name": "Arbol_Tropical_01_LOD1",
       "collections": [
         "17_Contexto_Urbano",
         "Contexto_Urbano"
       ],
       "location_blender": [
-        10.2,
-        11.0,
-        3.1
+        -2.05,
+        -1.15,
+        0.0
       ],
       "rotation_euler_deg_blender": [
         0.0,
         -0.0,
-        0.0
+        18.0
       ],
       "scale_blender": [
-        1.1,
-        1.1,
-        0.85
+        0.92,
+        0.92,
+        0.92
       ],
       "world_center_blender": [
-        10.2,
-        11.0,
-        3.1
+        -1.70415,
+        -1.77676,
+        2.07352
       ],
       "world_min_blender": [
-        8.89229,
-        9.625,
-        2.0375
+        -3.58445,
+        -4.06597,
+        -0.02299
       ],
       "world_max_blender": [
-        11.5077,
-        12.375,
-        4.1625
+        0.17615,
+        0.51245,
+        4.17003
       ],
       "size_blender": [
-        2.61541,
-        2.75,
-        2.125
+        3.7606,
+        4.57842,
+        4.19301
       ],
-      "triangles": 80,
+      "triangles": 120310,
       "materials": [
-        "MAT_follaje_tropical"
+        "tree_small_02_branches",
+        "tree_small_02_leaves",
+        "tree_small_02_trunk"
       ],
       "visible_viewport": true,
       "visible_render": true
     },
     {
-      "name": "Arbol_Urbano_Tronco_1",
+      "name": "Arbol_Tropical_01_LOD2",
       "collections": [
         "17_Contexto_Urbano",
         "Contexto_Urbano"
       ],
       "location_blender": [
-        -1.8,
-        -1.1,
-        1.2
+        -2.05,
+        -1.15,
+        0.0
       ],
       "rotation_euler_deg_blender": [
         0.0,
         -0.0,
-        0.0
+        18.0
       ],
       "scale_blender": [
-        1.0,
-        1.0,
-        1.0
+        0.92,
+        0.92,
+        0.92
       ],
       "world_center_blender": [
-        -1.8,
-        -1.1,
-        1.2
+        -1.69223,
+        -1.78157,
+        2.06585
       ],
       "world_min_blender": [
-        -1.92,
-        -1.22,
-        0.0
+        -3.56824,
+        -4.06337,
+        -0.02417
       ],
       "world_max_blender": [
-        -1.68,
-        -0.98,
-        2.4
+        0.18378,
+        0.50023,
+        4.15586
       ],
       "size_blender": [
-        0.24,
-        0.24,
-        2.4
+        3.75202,
+        4.5636,
+        4.18002
       ],
-      "triangles": 12,
+      "triangles": 50398,
       "materials": [
-        "MAT_madera_ext"
+        "tree_small_02_branches",
+        "tree_small_02_leaves",
+        "tree_small_02_trunk"
       ],
       "visible_viewport": true,
       "visible_render": true
     },
     {
-      "name": "Arbol_Urbano_Tronco_2",
+      "name": "Arbol_Tropical_02_LOD0",
       "collections": [
         "17_Contexto_Urbano",
         "Contexto_Urbano"
       ],
       "location_blender": [
-        10.2,
-        11.0,
-        1.2
+        10.25,
+        10.95,
+        0.0
       ],
       "rotation_euler_deg_blender": [
         0.0,
         -0.0,
-        0.0
+        135.0
       ],
       "scale_blender": [
-        1.0,
-        1.0,
-        1.0
+        0.88,
+        0.88,
+        0.88
       ],
       "world_center_blender": [
-        10.2,
-        11.0,
-        1.2
+        10.79194,
+        11.55168,
+        1.47845
       ],
       "world_min_blender": [
-        10.08,
-        10.88,
-        0.0
+        8.26479,
+        9.02453,
+        -0.01453
       ],
       "world_max_blender": [
-        10.32,
-        11.12,
-        2.4
+        13.31909,
+        14.07883,
+        2.97142
       ],
       "size_blender": [
-        0.24,
-        0.24,
-        2.4
+        5.0543,
+        5.0543,
+        2.98595
       ],
-      "triangles": 12,
+      "triangles": 129174,
       "materials": [
-        "MAT_madera_ext"
+        "island_tree_02",
+        "island_tree_02_leaves",
+        "island_tree_02_branches"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Arbol_Tropical_02_LOD1",
+      "collections": [
+        "17_Contexto_Urbano",
+        "Contexto_Urbano"
+      ],
+      "location_blender": [
+        10.25,
+        10.95,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        135.0
+      ],
+      "scale_blender": [
+        0.88,
+        0.88,
+        0.88
+      ],
+      "world_center_blender": [
+        10.80413,
+        11.55091,
+        1.48575
+      ],
+      "world_min_blender": [
+        8.30538,
+        9.05216,
+        -0.01133
+      ],
+      "world_max_blender": [
+        13.30288,
+        14.04965,
+        2.98284
+      ],
+      "size_blender": [
+        4.9975,
+        4.9975,
+        2.99418
+      ],
+      "triangles": 53453,
+      "materials": [
+        "island_tree_02",
+        "island_tree_02_leaves",
+        "island_tree_02_branches"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Arbol_Tropical_02_LOD2",
+      "collections": [
+        "17_Contexto_Urbano",
+        "Contexto_Urbano"
+      ],
+      "location_blender": [
+        10.25,
+        10.95,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        135.0
+      ],
+      "scale_blender": [
+        0.88,
+        0.88,
+        0.88
+      ],
+      "world_center_blender": [
+        10.78259,
+        11.52936,
+        1.47896
+      ],
+      "world_min_blender": [
+        8.29678,
+        9.04355,
+        -0.01001
+      ],
+      "world_max_blender": [
+        13.2684,
+        14.01517,
+        2.96794
+      ],
+      "size_blender": [
+        4.97162,
+        4.97162,
+        2.97795
+      ],
+      "triangles": 23516,
+      "materials": [
+        "island_tree_02",
+        "island_tree_02_leaves",
+        "island_tree_02_branches"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Arbol_Tropical_03_LOD0",
+      "collections": [
+        "17_Contexto_Urbano",
+        "Contexto_Urbano"
+      ],
+      "location_blender": [
+        9.15,
+        4.4,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        0.0,
+        -72.0
+      ],
+      "scale_blender": [
+        0.72,
+        0.72,
+        0.72
+      ],
+      "world_center_blender": [
+        8.66048,
+        4.12787,
+        1.62054
+      ],
+      "world_min_blender": [
+        6.86767,
+        2.65216,
+        -0.01754
+      ],
+      "world_max_blender": [
+        10.45328,
+        5.60359,
+        3.25863
+      ],
+      "size_blender": [
+        3.58561,
+        2.95142,
+        3.27617
+      ],
+      "triangles": 281643,
+      "materials": [
+        "tree_small_02_branches",
+        "tree_small_02_leaves",
+        "tree_small_02_trunk"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Arbol_Tropical_03_LOD1",
+      "collections": [
+        "17_Contexto_Urbano",
+        "Contexto_Urbano"
+      ],
+      "location_blender": [
+        9.15,
+        4.4,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        0.0,
+        -72.0
+      ],
+      "scale_blender": [
+        0.72,
+        0.72,
+        0.72
+      ],
+      "world_center_blender": [
+        8.65949,
+        4.12934,
+        1.62275
+      ],
+      "world_min_blender": [
+        6.86794,
+        2.6578,
+        -0.01799
+      ],
+      "world_max_blender": [
+        10.45105,
+        5.60087,
+        3.2635
+      ],
+      "size_blender": [
+        3.58311,
+        2.94308,
+        3.28149
+      ],
+      "triangles": 120310,
+      "materials": [
+        "tree_small_02_branches",
+        "tree_small_02_leaves",
+        "tree_small_02_trunk"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Arbol_Tropical_03_LOD2",
+      "collections": [
+        "17_Contexto_Urbano",
+        "Contexto_Urbano"
+      ],
+      "location_blender": [
+        9.15,
+        4.4,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        0.0,
+        -72.0
+      ],
+      "scale_blender": [
+        0.72,
+        0.72,
+        0.72
+      ],
+      "world_center_blender": [
+        8.65573,
+        4.12001,
+        1.61675
+      ],
+      "world_min_blender": [
+        6.86997,
+        2.65182,
+        -0.01891
+      ],
+      "world_max_blender": [
+        10.44148,
+        5.58819,
+        3.25241
+      ],
+      "size_blender": [
+        3.57151,
+        2.93636,
+        3.27132
+      ],
+      "triangles": 50398,
+      "materials": [
+        "tree_small_02_branches",
+        "tree_small_02_leaves",
+        "tree_small_02_trunk"
       ],
       "visible_viewport": true,
       "visible_render": true
@@ -569,6 +827,918 @@
         0.1,
         0.1,
         5.8
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_aluminio_negro"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Baranda_Cubierta_Este",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        7.925,
+        5.0,
+        6.91
+      ],
+      "world_min_blender": [
+        7.9,
+        0.1,
+        6.88
+      ],
+      "world_max_blender": [
+        7.95,
+        9.9,
+        6.94
+      ],
+      "size_blender": [
+        0.05,
+        9.8,
+        0.06
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_aluminio_negro"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Baranda_Cubierta_Norte",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        4.0,
+        9.925,
+        6.91
+      ],
+      "world_min_blender": [
+        0.05,
+        9.9,
+        6.88
+      ],
+      "world_max_blender": [
+        7.95,
+        9.95,
+        6.94
+      ],
+      "size_blender": [
+        7.9,
+        0.05,
+        0.06
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_aluminio_negro"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Baranda_Cubierta_Oeste",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        0.075,
+        5.0,
+        6.91
+      ],
+      "world_min_blender": [
+        0.05,
+        0.1,
+        6.88
+      ],
+      "world_max_blender": [
+        0.1,
+        9.9,
+        6.94
+      ],
+      "size_blender": [
+        0.05,
+        9.8,
+        0.06
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_aluminio_negro"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Baranda_Cubierta_Poste_01",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        0.08,
+        0.08,
+        6.625
+      ],
+      "world_min_blender": [
+        0.055,
+        0.055,
+        6.35
+      ],
+      "world_max_blender": [
+        0.105,
+        0.105,
+        6.9
+      ],
+      "size_blender": [
+        0.05,
+        0.05,
+        0.55
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_aluminio_negro"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Baranda_Cubierta_Poste_02",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        4.0,
+        0.08,
+        6.625
+      ],
+      "world_min_blender": [
+        3.975,
+        0.055,
+        6.35
+      ],
+      "world_max_blender": [
+        4.025,
+        0.105,
+        6.9
+      ],
+      "size_blender": [
+        0.05,
+        0.05,
+        0.55
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_aluminio_negro"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Baranda_Cubierta_Poste_03",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        7.92,
+        0.08,
+        6.625
+      ],
+      "world_min_blender": [
+        7.895,
+        0.055,
+        6.35
+      ],
+      "world_max_blender": [
+        7.945,
+        0.105,
+        6.9
+      ],
+      "size_blender": [
+        0.05,
+        0.05,
+        0.55
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_aluminio_negro"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Baranda_Cubierta_Poste_04",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        0.08,
+        5.0,
+        6.625
+      ],
+      "world_min_blender": [
+        0.055,
+        4.975,
+        6.35
+      ],
+      "world_max_blender": [
+        0.105,
+        5.025,
+        6.9
+      ],
+      "size_blender": [
+        0.05,
+        0.05,
+        0.55
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_aluminio_negro"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Baranda_Cubierta_Poste_05",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        7.92,
+        5.0,
+        6.625
+      ],
+      "world_min_blender": [
+        7.895,
+        4.975,
+        6.35
+      ],
+      "world_max_blender": [
+        7.945,
+        5.025,
+        6.9
+      ],
+      "size_blender": [
+        0.05,
+        0.05,
+        0.55
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_aluminio_negro"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Baranda_Cubierta_Poste_06",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        0.08,
+        9.92,
+        6.625
+      ],
+      "world_min_blender": [
+        0.055,
+        9.895,
+        6.35
+      ],
+      "world_max_blender": [
+        0.105,
+        9.945,
+        6.9
+      ],
+      "size_blender": [
+        0.05,
+        0.05,
+        0.55
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_aluminio_negro"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Baranda_Cubierta_Poste_07",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        4.0,
+        9.92,
+        6.625
+      ],
+      "world_min_blender": [
+        3.975,
+        9.895,
+        6.35
+      ],
+      "world_max_blender": [
+        4.025,
+        9.945,
+        6.9
+      ],
+      "size_blender": [
+        0.05,
+        0.05,
+        0.55
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_aluminio_negro"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Baranda_Cubierta_Poste_08",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        7.92,
+        9.92,
+        6.625
+      ],
+      "world_min_blender": [
+        7.895,
+        9.895,
+        6.35
+      ],
+      "world_max_blender": [
+        7.945,
+        9.945,
+        6.9
+      ],
+      "size_blender": [
+        0.05,
+        0.05,
+        0.55
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_aluminio_negro"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Baranda_Cubierta_Sur",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        4.0,
+        0.075,
+        6.91
+      ],
+      "world_min_blender": [
+        0.05,
+        0.05,
+        6.88
+      ],
+      "world_max_blender": [
+        7.95,
+        0.1,
+        6.94
+      ],
+      "size_blender": [
+        7.9,
+        0.05,
+        0.06
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_aluminio_negro"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Baranda_Escotilla_Este",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        7.805,
+        6.2,
+        6.88
+      ],
+      "world_min_blender": [
+        7.78,
+        5.67,
+        6.85
+      ],
+      "world_max_blender": [
+        7.83,
+        6.73,
+        6.91
+      ],
+      "size_blender": [
+        0.05,
+        1.06,
+        0.06
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_aluminio_negro"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Baranda_Escotilla_Norte",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        6.675,
+        6.705,
+        6.88
+      ],
+      "world_min_blender": [
+        5.52,
+        6.68,
+        6.85
+      ],
+      "world_max_blender": [
+        7.83,
+        6.73,
+        6.91
+      ],
+      "size_blender": [
+        2.31,
+        0.05,
+        0.06
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_aluminio_negro"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Baranda_Escotilla_Oeste",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        5.495,
+        6.2,
+        6.88
+      ],
+      "world_min_blender": [
+        5.47,
+        5.67,
+        6.85
+      ],
+      "world_max_blender": [
+        5.52,
+        6.73,
+        6.91
+      ],
+      "size_blender": [
+        0.05,
+        1.06,
+        0.06
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_aluminio_negro"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Baranda_Escotilla_Poste_01",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        5.495,
+        5.695,
+        6.39
+      ],
+      "world_min_blender": [
+        5.47,
+        5.67,
+        5.88
+      ],
+      "world_max_blender": [
+        5.52,
+        5.72,
+        6.9
+      ],
+      "size_blender": [
+        0.05,
+        0.05,
+        1.02
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_aluminio_negro"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Baranda_Escotilla_Poste_02",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        5.495,
+        6.705,
+        6.39
+      ],
+      "world_min_blender": [
+        5.47,
+        6.68,
+        5.88
+      ],
+      "world_max_blender": [
+        5.52,
+        6.73,
+        6.9
+      ],
+      "size_blender": [
+        0.05,
+        0.05,
+        1.02
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_aluminio_negro"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Baranda_Escotilla_Poste_03",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        7.805,
+        5.695,
+        6.39
+      ],
+      "world_min_blender": [
+        7.78,
+        5.67,
+        5.88
+      ],
+      "world_max_blender": [
+        7.83,
+        5.72,
+        6.9
+      ],
+      "size_blender": [
+        0.05,
+        0.05,
+        1.02
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_aluminio_negro"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Baranda_Escotilla_Poste_04",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        7.805,
+        6.705,
+        6.39
+      ],
+      "world_min_blender": [
+        7.78,
+        6.68,
+        5.88
+      ],
+      "world_max_blender": [
+        7.83,
+        6.73,
+        6.9
+      ],
+      "size_blender": [
+        0.05,
+        0.05,
+        1.02
       ],
       "triangles": 12,
       "materials": [
@@ -2594,6 +3764,102 @@
       "visible_render": true
     },
     {
+      "name": "Cubierta_Canal_Drenaje",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        7.725,
+        5.0,
+        5.875
+      ],
+      "world_min_blender": [
+        7.6,
+        0.25,
+        5.86
+      ],
+      "world_max_blender": [
+        7.85,
+        9.75,
+        5.89
+      ],
+      "size_blender": [
+        0.25,
+        9.5,
+        0.03
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_aluminio_negro"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Cubierta_Descanso_Escotilla",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        7.4,
+        6.2,
+        5.84
+      ],
+      "world_min_blender": [
+        7.05,
+        5.75,
+        5.8
+      ],
+      "world_max_blender": [
+        7.75,
+        6.65,
+        5.88
+      ],
+      "size_blender": [
+        0.7,
+        0.9,
+        0.08
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_impermeabilizante"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
       "name": "Cubierta_P1_Huespedes",
       "collections": [
         "07_Propuesta_Primera_Planta",
@@ -2642,15 +3908,15 @@
       "visible_render": true
     },
     {
-      "name": "Cubierta_Pendiente_Drenaje",
+      "name": "Cubierta_Pend_Seg_Este",
       "collections": [
-        "14_Fachadas_Y_Vegetacion",
+        "08_Propuesta_Segunda_Planta",
         "Arquitectura"
       ],
       "location_blender": [
-        4.0,
-        5.0,
-        5.84
+        0.0,
+        0.0,
+        0.0
       ],
       "rotation_euler_deg_blender": [
         0.0,
@@ -2663,12 +3929,12 @@
         1.0
       ],
       "world_center_blender": [
-        4.0,
+        7.8,
         5.0,
         5.84
       ],
       "world_min_blender": [
-        0.15,
+        7.75,
         0.15,
         5.8
       ],
@@ -2678,27 +3944,411 @@
         5.88
       ],
       "size_blender": [
-        7.7,
+        0.1,
         9.7,
         0.08
       ],
       "triangles": 12,
       "materials": [
-        "MAT_concreto_arq"
+        "MAT_impermeabilizante"
       ],
       "visible_viewport": true,
       "visible_render": true
     },
     {
-      "name": "Cubierta_Plana_Superior",
+      "name": "Cubierta_Pend_Seg_Norte",
       "collections": [
         "08_Propuesta_Segunda_Planta",
         "Arquitectura"
       ],
       "location_blender": [
-        4.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        6.65,
+        8.25,
+        5.84
+      ],
+      "world_min_blender": [
+        5.55,
+        6.65,
+        5.8
+      ],
+      "world_max_blender": [
+        7.75,
+        9.85,
+        5.88
+      ],
+      "size_blender": [
+        2.2,
+        3.2,
+        0.08
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_impermeabilizante"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Cubierta_Pend_Seg_Oeste",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        2.85,
+        5.0,
+        5.84
+      ],
+      "world_min_blender": [
+        0.15,
+        0.15,
+        5.8
+      ],
+      "world_max_blender": [
+        5.55,
+        9.85,
+        5.88
+      ],
+      "size_blender": [
+        5.4,
+        9.7,
+        0.08
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_impermeabilizante"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Cubierta_Pend_Seg_Sur",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        6.65,
+        2.95,
+        5.84
+      ],
+      "world_min_blender": [
+        5.55,
+        0.15,
+        5.8
+      ],
+      "world_max_blender": [
+        7.75,
+        5.75,
+        5.88
+      ],
+      "size_blender": [
+        2.2,
+        5.6,
+        0.08
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_impermeabilizante"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Cubierta_Plana_Seg_Este",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        7.875,
         5.0,
         5.7
+      ],
+      "world_min_blender": [
+        7.75,
+        0.0,
+        5.6
+      ],
+      "world_max_blender": [
+        8.0,
+        10.0,
+        5.8
+      ],
+      "size_blender": [
+        0.25,
+        10.0,
+        0.2
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_hormigon"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Cubierta_Plana_Seg_Norte",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        6.65,
+        8.325,
+        5.7
+      ],
+      "world_min_blender": [
+        5.55,
+        6.65,
+        5.6
+      ],
+      "world_max_blender": [
+        7.75,
+        10.0,
+        5.8
+      ],
+      "size_blender": [
+        2.2,
+        3.35,
+        0.2
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_hormigon"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Cubierta_Plana_Seg_Oeste",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        2.775,
+        5.0,
+        5.7
+      ],
+      "world_min_blender": [
+        0.0,
+        0.0,
+        5.6
+      ],
+      "world_max_blender": [
+        5.55,
+        10.0,
+        5.8
+      ],
+      "size_blender": [
+        5.55,
+        10.0,
+        0.2
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_hormigon"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Cubierta_Plana_Seg_Sur",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        6.65,
+        2.875,
+        5.7
+      ],
+      "world_min_blender": [
+        5.55,
+        0.0,
+        5.6
+      ],
+      "world_max_blender": [
+        7.75,
+        5.75,
+        5.8
+      ],
+      "size_blender": [
+        2.2,
+        5.75,
+        0.2
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_hormigon"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Cubierta_Solapa_Este",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        7.815,
+        5.0,
+        5.92
+      ],
+      "world_min_blender": [
+        7.78,
+        0.15,
+        5.88
+      ],
+      "world_max_blender": [
+        7.85,
+        9.85,
+        5.96
+      ],
+      "size_blender": [
+        0.07,
+        9.7,
+        0.08
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_aluminio_negro"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Cubierta_Solapa_Norte",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
       ],
       "rotation_euler_deg_blender": [
         0.0,
@@ -2712,27 +4362,171 @@
       ],
       "world_center_blender": [
         4.0,
-        5.0,
-        5.7
+        9.815,
+        5.92
       ],
       "world_min_blender": [
-        0.0,
-        0.0,
-        5.6
+        0.15,
+        9.78,
+        5.88
       ],
       "world_max_blender": [
-        8.0,
-        10.0,
-        5.8
+        7.85,
+        9.85,
+        5.96
       ],
       "size_blender": [
-        8.0,
-        10.0,
-        0.2
+        7.7,
+        0.07,
+        0.08
       ],
       "triangles": 12,
       "materials": [
-        "MAT_concreto_arq"
+        "MAT_aluminio_negro"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Cubierta_Solapa_Oeste",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        0.185,
+        5.0,
+        5.92
+      ],
+      "world_min_blender": [
+        0.15,
+        0.15,
+        5.88
+      ],
+      "world_max_blender": [
+        0.22,
+        9.85,
+        5.96
+      ],
+      "size_blender": [
+        0.07,
+        9.7,
+        0.08
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_aluminio_negro"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Cubierta_Solapa_Sur",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        4.0,
+        0.185,
+        5.92
+      ],
+      "world_min_blender": [
+        0.15,
+        0.15,
+        5.88
+      ],
+      "world_max_blender": [
+        7.85,
+        0.22,
+        5.96
+      ],
+      "size_blender": [
+        7.7,
+        0.07,
+        0.08
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_aluminio_negro"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Cubierta_Sumidero_NE",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        7.73,
+        9.675,
+        5.87
+      ],
+      "world_min_blender": [
+        7.62,
+        9.55,
+        5.84
+      ],
+      "world_max_blender": [
+        7.84,
+        9.8,
+        5.9
+      ],
+      "size_blender": [
+        0.22,
+        0.25,
+        0.06
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_aluminio"
       ],
       "visible_viewport": true,
       "visible_render": true
@@ -3122,6 +4916,726 @@
       "visible_render": true
     },
     {
+      "name": "Esc_Techo_Baranda_Norte",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        6.45,
+        6.62,
+        5.31
+      ],
+      "world_min_blender": [
+        5.85,
+        6.595,
+        3.815
+      ],
+      "world_max_blender": [
+        7.05,
+        6.645,
+        6.805
+      ],
+      "size_blender": [
+        1.2,
+        0.05,
+        2.99
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_aluminio_negro"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Esc_Techo_Baranda_Sur",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        6.45,
+        5.78,
+        5.31
+      ],
+      "world_min_blender": [
+        5.85,
+        5.755,
+        3.815
+      ],
+      "world_max_blender": [
+        7.05,
+        5.805,
+        6.805
+      ],
+      "size_blender": [
+        1.2,
+        0.05,
+        2.99
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_aluminio_negro"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Esc_Techo_Peldano_01",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        5.91615,
+        6.2,
+        3.05308
+      ],
+      "world_min_blender": [
+        5.85,
+        5.85,
+        2.94
+      ],
+      "world_max_blender": [
+        5.98231,
+        6.55,
+        3.16615
+      ],
+      "size_blender": [
+        0.13231,
+        0.7,
+        0.22615
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_acero_tecnico"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Esc_Techo_Peldano_02",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        6.00846,
+        6.2,
+        3.27923
+      ],
+      "world_min_blender": [
+        5.94231,
+        5.85,
+        3.16615
+      ],
+      "world_max_blender": [
+        6.07462,
+        6.55,
+        3.39231
+      ],
+      "size_blender": [
+        0.13231,
+        0.7,
+        0.22615
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_acero_tecnico"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Esc_Techo_Peldano_03",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        6.10077,
+        6.2,
+        3.50538
+      ],
+      "world_min_blender": [
+        6.03462,
+        5.85,
+        3.39231
+      ],
+      "world_max_blender": [
+        6.16692,
+        6.55,
+        3.61846
+      ],
+      "size_blender": [
+        0.13231,
+        0.7,
+        0.22615
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_acero_tecnico"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Esc_Techo_Peldano_04",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        6.19308,
+        6.2,
+        3.73154
+      ],
+      "world_min_blender": [
+        6.12692,
+        5.85,
+        3.61846
+      ],
+      "world_max_blender": [
+        6.25923,
+        6.55,
+        3.84462
+      ],
+      "size_blender": [
+        0.13231,
+        0.7,
+        0.22615
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_acero_tecnico"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Esc_Techo_Peldano_05",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        6.28538,
+        6.2,
+        3.95769
+      ],
+      "world_min_blender": [
+        6.21923,
+        5.85,
+        3.84462
+      ],
+      "world_max_blender": [
+        6.35154,
+        6.55,
+        4.07077
+      ],
+      "size_blender": [
+        0.13231,
+        0.7,
+        0.22615
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_acero_tecnico"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Esc_Techo_Peldano_06",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        6.37769,
+        6.2,
+        4.18385
+      ],
+      "world_min_blender": [
+        6.31154,
+        5.85,
+        4.07077
+      ],
+      "world_max_blender": [
+        6.44385,
+        6.55,
+        4.29692
+      ],
+      "size_blender": [
+        0.13231,
+        0.7,
+        0.22615
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_acero_tecnico"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Esc_Techo_Peldano_07",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        6.47,
+        6.2,
+        4.41
+      ],
+      "world_min_blender": [
+        6.40385,
+        5.85,
+        4.29692
+      ],
+      "world_max_blender": [
+        6.53615,
+        6.55,
+        4.52308
+      ],
+      "size_blender": [
+        0.13231,
+        0.7,
+        0.22615
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_acero_tecnico"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Esc_Techo_Peldano_08",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        6.56231,
+        6.2,
+        4.63615
+      ],
+      "world_min_blender": [
+        6.49615,
+        5.85,
+        4.52308
+      ],
+      "world_max_blender": [
+        6.62846,
+        6.55,
+        4.74923
+      ],
+      "size_blender": [
+        0.13231,
+        0.7,
+        0.22615
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_acero_tecnico"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Esc_Techo_Peldano_09",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        6.65462,
+        6.2,
+        4.86231
+      ],
+      "world_min_blender": [
+        6.58846,
+        5.85,
+        4.74923
+      ],
+      "world_max_blender": [
+        6.72077,
+        6.55,
+        4.97538
+      ],
+      "size_blender": [
+        0.13231,
+        0.7,
+        0.22615
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_acero_tecnico"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Esc_Techo_Peldano_10",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        6.74692,
+        6.2,
+        5.08846
+      ],
+      "world_min_blender": [
+        6.68077,
+        5.85,
+        4.97538
+      ],
+      "world_max_blender": [
+        6.81308,
+        6.55,
+        5.20154
+      ],
+      "size_blender": [
+        0.13231,
+        0.7,
+        0.22615
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_acero_tecnico"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Esc_Techo_Peldano_11",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        6.83923,
+        6.2,
+        5.31462
+      ],
+      "world_min_blender": [
+        6.77308,
+        5.85,
+        5.20154
+      ],
+      "world_max_blender": [
+        6.90538,
+        6.55,
+        5.42769
+      ],
+      "size_blender": [
+        0.13231,
+        0.7,
+        0.22615
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_acero_tecnico"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Esc_Techo_Peldano_12",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        6.93154,
+        6.2,
+        5.54077
+      ],
+      "world_min_blender": [
+        6.86538,
+        5.85,
+        5.42769
+      ],
+      "world_max_blender": [
+        6.99769,
+        6.55,
+        5.65385
+      ],
+      "size_blender": [
+        0.13231,
+        0.7,
+        0.22615
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_acero_tecnico"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Esc_Techo_Peldano_13",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        7.02385,
+        6.2,
+        5.76692
+      ],
+      "world_min_blender": [
+        6.95769,
+        5.85,
+        5.65385
+      ],
+      "world_max_blender": [
+        7.09,
+        6.55,
+        5.88
+      ],
+      "size_blender": [
+        0.13231,
+        0.7,
+        0.22615
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_acero_tecnico"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
       "name": "Esc_Vidrio_P2_Norte",
       "collections": [
         "08_Propuesta_Segunda_Planta",
@@ -3213,6 +5727,150 @@
       "triangles": 12,
       "materials": [
         "MAT_vidrio_arq"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Escotilla_Techo_Cierre",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        5.7,
+        5.74,
+        6.005
+      ],
+      "world_min_blender": [
+        5.6,
+        5.71,
+        5.96
+      ],
+      "world_max_blender": [
+        5.8,
+        5.77,
+        6.05
+      ],
+      "size_blender": [
+        0.2,
+        0.06,
+        0.09
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_acero_tecnico"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Escotilla_Techo_Marco",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        6.65,
+        6.2,
+        5.955
+      ],
+      "world_min_blender": [
+        5.49,
+        5.69,
+        5.88
+      ],
+      "world_max_blender": [
+        7.81,
+        6.71,
+        6.03
+      ],
+      "size_blender": [
+        2.32,
+        1.02,
+        0.15
+      ],
+      "triangles": 48,
+      "materials": [
+        "MAT_aluminio_negro"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Escotilla_Techo_Puerta1",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Puertas_Y_Ventanas"
+      ],
+      "location_blender": [
+        5.55,
+        6.65,
+        6.03
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        6.65,
+        6.2,
+        6.055
+      ],
+      "world_min_blender": [
+        5.55,
+        5.75,
+        6.03
+      ],
+      "world_max_blender": [
+        7.75,
+        6.65,
+        6.08
+      ],
+      "size_blender": [
+        2.2,
+        0.9,
+        0.05
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_aluminio"
       ],
       "visible_viewport": true,
       "visible_render": true
@@ -4324,8 +6982,8 @@
     {
       "name": "Inst_Zona_Ampliacion_Solar",
       "collections": [
-        "16_Instalaciones_Domotica",
-        "Instalaciones"
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
       ],
       "location_blender": [
         0.0,
@@ -4343,7 +7001,7 @@
         1.0
       ],
       "world_center_blender": [
-        3.9,
+        3.45,
         7.225,
         5.91
       ],
@@ -4353,21 +7011,21 @@
         5.88
       ],
       "world_max_blender": [
-        6.6,
+        5.7,
         8.2,
         5.94
       ],
       "size_blender": [
-        5.4,
+        4.5,
         1.95,
         0.06
       ],
       "triangles": 12,
       "materials": [
-        "MAT_solar_panel"
+        "MAT_impermeabilizante"
       ],
-      "visible_viewport": false,
-      "visible_render": false
+      "visible_viewport": true,
+      "visible_render": true
     },
     {
       "name": "P1_Esc_Peldano_01",
@@ -12825,7 +15483,7 @@
       ],
       "location_blender": [
         6.45,
-        6.7,
+        7.5,
         4.25
       ],
       "rotation_euler_deg_blender": [
@@ -12840,17 +15498,17 @@
       ],
       "world_center_blender": [
         6.45,
-        6.7,
+        7.5,
         4.25
       ],
       "world_min_blender": [
         5.05,
-        6.65,
+        7.45,
         2.9
       ],
       "world_max_blender": [
         7.85,
-        6.75,
+        7.55,
         5.6
       ],
       "size_blender": [
@@ -13240,6 +15898,54 @@
       "size_blender": [
         0.1,
         0.25,
+        2.7
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_wall_int"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "P2_M_Corredor_Norte_Ret",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        5.1,
+        7.1,
+        4.25
+      ],
+      "world_min_blender": [
+        5.05,
+        6.65,
+        2.9
+      ],
+      "world_max_blender": [
+        5.15,
+        7.55,
+        5.6
+      ],
+      "size_blender": [
+        0.1,
+        0.9,
         2.7
       ],
       "triangles": 12,
@@ -18146,6 +20852,54 @@
       "visible_render": true
     },
     {
+      "name": "P2_Piso_P2_Bypass_Esc_Techo",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        6.5,
+        6.7,
+        2.92
+      ],
+      "world_min_blender": [
+        5.15,
+        6.65,
+        2.9
+      ],
+      "world_max_blender": [
+        7.85,
+        6.75,
+        2.94
+      ],
+      "size_blender": [
+        2.7,
+        0.1,
+        0.04
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_slab"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
       "name": "P2_Piso_P2_Distribuidor_Norte",
       "collections": [
         "08_Propuesta_Segunda_Planta",
@@ -19781,12 +22535,12 @@
       "name": "Solar_Canalizacion",
       "collections": [
         "14_Fachadas_Y_Vegetacion",
-        "Instalaciones"
+        "Arquitectura"
       ],
       "location_blender": [
-        0.0,
-        0.0,
-        0.0
+        5.685,
+        6.875,
+        5.91
       ],
       "rotation_euler_deg_blender": [
         0.0,
@@ -19799,19 +22553,19 @@
         1.0
       ],
       "world_center_blender": [
-        0.0,
-        0.0,
-        0.0
+        5.685,
+        6.875,
+        5.91
       ],
       "world_min_blender": [
-        -0.035,
-        -2.875,
-        -0.03
+        5.65,
+        4.0,
+        5.88
       ],
       "world_max_blender": [
-        0.035,
-        2.875,
-        0.03
+        5.72,
+        9.75,
+        5.94
       ],
       "size_blender": [
         0.07,
@@ -19822,22 +22576,22 @@
       "materials": [
         "MAT_aluminio_negro"
       ],
-      "visible_viewport": false,
-      "visible_render": false
+      "visible_viewport": true,
+      "visible_render": true
     },
     {
       "name": "Solar_Celdas_0_0",
       "collections": [
         "14_Fachadas_Y_Vegetacion",
-        "Instalaciones"
+        "Arquitectura"
       ],
       "location_blender": [
-        0.0,
-        0.0,
-        0.0
+        2.125,
+        3.1,
+        6.0225
       ],
       "rotation_euler_deg_blender": [
-        0.0,
+        10.0,
         -0.0,
         0.0
       ],
@@ -19847,45 +22601,45 @@
         1.0
       ],
       "world_center_blender": [
-        0.0,
-        0.0,
-        0.0
+        2.125,
+        3.1,
+        6.0225
       ],
       "world_min_blender": [
-        -0.735,
-        -0.71,
-        -0.0125
+        1.39,
+        2.39862,
+        5.8869
       ],
       "world_max_blender": [
-        0.735,
-        0.71,
-        0.0125
+        2.86,
+        3.80138,
+        6.1581
       ],
       "size_blender": [
         1.47,
-        1.42,
-        0.025
+        1.40277,
+        0.2712
       ],
       "triangles": 12,
       "materials": [
         "MAT_celdas_pv"
       ],
-      "visible_viewport": false,
-      "visible_render": false
+      "visible_viewport": true,
+      "visible_render": true
     },
     {
       "name": "Solar_Celdas_0_1",
       "collections": [
         "14_Fachadas_Y_Vegetacion",
-        "Instalaciones"
+        "Arquitectura"
       ],
       "location_blender": [
-        0.0,
-        0.0,
-        0.0
+        3.845,
+        3.1,
+        6.0225
       ],
       "rotation_euler_deg_blender": [
-        0.0,
+        10.0,
         -0.0,
         0.0
       ],
@@ -19895,45 +22649,45 @@
         1.0
       ],
       "world_center_blender": [
-        0.0,
-        0.0,
-        0.0
+        3.845,
+        3.1,
+        6.0225
       ],
       "world_min_blender": [
-        -0.735,
-        -0.71,
-        -0.0125
+        3.11,
+        2.39862,
+        5.8869
       ],
       "world_max_blender": [
-        0.735,
-        0.71,
-        0.0125
+        4.58,
+        3.80138,
+        6.1581
       ],
       "size_blender": [
         1.47,
-        1.42,
-        0.025
+        1.40277,
+        0.2712
       ],
       "triangles": 12,
       "materials": [
         "MAT_celdas_pv"
       ],
-      "visible_viewport": false,
-      "visible_render": false
+      "visible_viewport": true,
+      "visible_render": true
     },
     {
       "name": "Solar_Celdas_0_2",
       "collections": [
         "14_Fachadas_Y_Vegetacion",
-        "Instalaciones"
+        "Arquitectura"
       ],
       "location_blender": [
-        0.0,
-        0.0,
-        0.0
+        5.565,
+        3.1,
+        6.0225
       ],
       "rotation_euler_deg_blender": [
-        0.0,
+        10.0,
         -0.0,
         0.0
       ],
@@ -19943,45 +22697,45 @@
         1.0
       ],
       "world_center_blender": [
-        0.0,
-        0.0,
-        0.0
+        5.565,
+        3.1,
+        6.0225
       ],
       "world_min_blender": [
-        -0.735,
-        -0.71,
-        -0.0125
+        4.83,
+        2.39862,
+        5.8869
       ],
       "world_max_blender": [
-        0.735,
-        0.71,
-        0.0125
+        6.3,
+        3.80138,
+        6.1581
       ],
       "size_blender": [
         1.47,
-        1.42,
-        0.025
+        1.40277,
+        0.2712
       ],
       "triangles": 12,
       "materials": [
         "MAT_celdas_pv"
       ],
-      "visible_viewport": false,
-      "visible_render": false
+      "visible_viewport": true,
+      "visible_render": true
     },
     {
       "name": "Solar_Celdas_1_0",
       "collections": [
         "14_Fachadas_Y_Vegetacion",
-        "Instalaciones"
+        "Arquitectura"
       ],
       "location_blender": [
-        0.0,
-        0.0,
-        0.0
+        2.125,
+        4.85,
+        6.0225
       ],
       "rotation_euler_deg_blender": [
-        0.0,
+        10.0,
         -0.0,
         0.0
       ],
@@ -19991,45 +22745,45 @@
         1.0
       ],
       "world_center_blender": [
-        0.0,
-        0.0,
-        0.0
+        2.125,
+        4.85,
+        6.0225
       ],
       "world_min_blender": [
-        -0.735,
-        -0.71,
-        -0.0125
+        1.39,
+        4.14862,
+        5.8869
       ],
       "world_max_blender": [
-        0.735,
-        0.71,
-        0.0125
+        2.86,
+        5.55138,
+        6.1581
       ],
       "size_blender": [
         1.47,
-        1.42,
-        0.025
+        1.40277,
+        0.2712
       ],
       "triangles": 12,
       "materials": [
         "MAT_celdas_pv"
       ],
-      "visible_viewport": false,
-      "visible_render": false
+      "visible_viewport": true,
+      "visible_render": true
     },
     {
       "name": "Solar_Celdas_1_1",
       "collections": [
         "14_Fachadas_Y_Vegetacion",
-        "Instalaciones"
+        "Arquitectura"
       ],
       "location_blender": [
-        0.0,
-        0.0,
-        0.0
+        3.845,
+        4.85,
+        6.0225
       ],
       "rotation_euler_deg_blender": [
-        0.0,
+        10.0,
         -0.0,
         0.0
       ],
@@ -20039,45 +22793,45 @@
         1.0
       ],
       "world_center_blender": [
-        0.0,
-        0.0,
-        0.0
+        3.845,
+        4.85,
+        6.0225
       ],
       "world_min_blender": [
-        -0.735,
-        -0.71,
-        -0.0125
+        3.11,
+        4.14862,
+        5.8869
       ],
       "world_max_blender": [
-        0.735,
-        0.71,
-        0.0125
+        4.58,
+        5.55138,
+        6.1581
       ],
       "size_blender": [
         1.47,
-        1.42,
-        0.025
+        1.40277,
+        0.2712
       ],
       "triangles": 12,
       "materials": [
         "MAT_celdas_pv"
       ],
-      "visible_viewport": false,
-      "visible_render": false
+      "visible_viewport": true,
+      "visible_render": true
     },
     {
       "name": "Solar_Celdas_1_2",
       "collections": [
         "14_Fachadas_Y_Vegetacion",
-        "Instalaciones"
+        "Arquitectura"
       ],
       "location_blender": [
-        0.0,
-        0.0,
-        0.0
+        5.565,
+        4.85,
+        6.0225
       ],
       "rotation_euler_deg_blender": [
-        0.0,
+        10.0,
         -0.0,
         0.0
       ],
@@ -20087,45 +22841,45 @@
         1.0
       ],
       "world_center_blender": [
-        0.0,
-        0.0,
-        0.0
+        5.565,
+        4.85,
+        6.0225
       ],
       "world_min_blender": [
-        -0.735,
-        -0.71,
-        -0.0125
+        4.83,
+        4.14862,
+        5.8869
       ],
       "world_max_blender": [
-        0.735,
-        0.71,
-        0.0125
+        6.3,
+        5.55138,
+        6.1581
       ],
       "size_blender": [
         1.47,
-        1.42,
-        0.025
+        1.40277,
+        0.2712
       ],
       "triangles": 12,
       "materials": [
         "MAT_celdas_pv"
       ],
-      "visible_viewport": false,
-      "visible_render": false
+      "visible_viewport": true,
+      "visible_render": true
     },
     {
       "name": "Solar_Marco_0_0",
       "collections": [
         "14_Fachadas_Y_Vegetacion",
-        "Instalaciones"
+        "Arquitectura"
       ],
       "location_blender": [
-        0.0,
-        0.0,
-        0.0
+        2.125,
+        3.1,
+        6.005
       ],
       "rotation_euler_deg_blender": [
-        0.0,
+        10.0,
         -0.0,
         0.0
       ],
@@ -20135,45 +22889,45 @@
         1.0
       ],
       "world_center_blender": [
-        0.0,
-        0.0,
-        0.0
+        2.125,
+        3.1,
+        6.005
       ],
       "world_min_blender": [
-        -0.775,
-        -0.75,
-        -0.025
+        1.35,
+        2.35705,
+        5.85014
       ],
       "world_max_blender": [
-        0.775,
-        0.75,
-        0.025
+        2.9,
+        3.84295,
+        6.15986
       ],
       "size_blender": [
         1.55,
-        1.5,
-        0.05
+        1.48589,
+        0.30971
       ],
       "triangles": 12,
       "materials": [
         "MAT_aluminio_negro"
       ],
-      "visible_viewport": false,
-      "visible_render": false
+      "visible_viewport": true,
+      "visible_render": true
     },
     {
       "name": "Solar_Marco_0_1",
       "collections": [
         "14_Fachadas_Y_Vegetacion",
-        "Instalaciones"
+        "Arquitectura"
       ],
       "location_blender": [
-        0.0,
-        0.0,
-        0.0
+        3.845,
+        3.1,
+        6.005
       ],
       "rotation_euler_deg_blender": [
-        0.0,
+        10.0,
         -0.0,
         0.0
       ],
@@ -20183,45 +22937,45 @@
         1.0
       ],
       "world_center_blender": [
-        0.0,
-        0.0,
-        0.0
+        3.845,
+        3.1,
+        6.005
       ],
       "world_min_blender": [
-        -0.775,
-        -0.75,
-        -0.025
+        3.07,
+        2.35705,
+        5.85014
       ],
       "world_max_blender": [
-        0.775,
-        0.75,
-        0.025
+        4.62,
+        3.84295,
+        6.15986
       ],
       "size_blender": [
         1.55,
-        1.5,
-        0.05
+        1.48589,
+        0.30971
       ],
       "triangles": 12,
       "materials": [
         "MAT_aluminio_negro"
       ],
-      "visible_viewport": false,
-      "visible_render": false
+      "visible_viewport": true,
+      "visible_render": true
     },
     {
       "name": "Solar_Marco_0_2",
       "collections": [
         "14_Fachadas_Y_Vegetacion",
-        "Instalaciones"
+        "Arquitectura"
       ],
       "location_blender": [
-        0.0,
-        0.0,
-        0.0
+        5.565,
+        3.1,
+        6.005
       ],
       "rotation_euler_deg_blender": [
-        0.0,
+        10.0,
         -0.0,
         0.0
       ],
@@ -20231,45 +22985,45 @@
         1.0
       ],
       "world_center_blender": [
-        0.0,
-        0.0,
-        0.0
+        5.565,
+        3.1,
+        6.005
       ],
       "world_min_blender": [
-        -0.775,
-        -0.75,
-        -0.025
+        4.79,
+        2.35705,
+        5.85014
       ],
       "world_max_blender": [
-        0.775,
-        0.75,
-        0.025
+        6.34,
+        3.84295,
+        6.15986
       ],
       "size_blender": [
         1.55,
-        1.5,
-        0.05
+        1.48589,
+        0.30971
       ],
       "triangles": 12,
       "materials": [
         "MAT_aluminio_negro"
       ],
-      "visible_viewport": false,
-      "visible_render": false
+      "visible_viewport": true,
+      "visible_render": true
     },
     {
       "name": "Solar_Marco_1_0",
       "collections": [
         "14_Fachadas_Y_Vegetacion",
-        "Instalaciones"
+        "Arquitectura"
       ],
       "location_blender": [
-        0.0,
-        0.0,
-        0.0
+        2.125,
+        4.85,
+        6.005
       ],
       "rotation_euler_deg_blender": [
-        0.0,
+        10.0,
         -0.0,
         0.0
       ],
@@ -20279,45 +23033,45 @@
         1.0
       ],
       "world_center_blender": [
-        0.0,
-        0.0,
-        0.0
+        2.125,
+        4.85,
+        6.005
       ],
       "world_min_blender": [
-        -0.775,
-        -0.75,
-        -0.025
+        1.35,
+        4.10705,
+        5.85014
       ],
       "world_max_blender": [
-        0.775,
-        0.75,
-        0.025
+        2.9,
+        5.59295,
+        6.15986
       ],
       "size_blender": [
         1.55,
-        1.5,
-        0.05
+        1.48589,
+        0.30971
       ],
       "triangles": 12,
       "materials": [
         "MAT_aluminio_negro"
       ],
-      "visible_viewport": false,
-      "visible_render": false
+      "visible_viewport": true,
+      "visible_render": true
     },
     {
       "name": "Solar_Marco_1_1",
       "collections": [
         "14_Fachadas_Y_Vegetacion",
-        "Instalaciones"
+        "Arquitectura"
       ],
       "location_blender": [
-        0.0,
-        0.0,
-        0.0
+        3.845,
+        4.85,
+        6.005
       ],
       "rotation_euler_deg_blender": [
-        0.0,
+        10.0,
         -0.0,
         0.0
       ],
@@ -20327,45 +23081,45 @@
         1.0
       ],
       "world_center_blender": [
-        0.0,
-        0.0,
-        0.0
+        3.845,
+        4.85,
+        6.005
       ],
       "world_min_blender": [
-        -0.775,
-        -0.75,
-        -0.025
+        3.07,
+        4.10705,
+        5.85014
       ],
       "world_max_blender": [
-        0.775,
-        0.75,
-        0.025
+        4.62,
+        5.59295,
+        6.15986
       ],
       "size_blender": [
         1.55,
-        1.5,
-        0.05
+        1.48589,
+        0.30971
       ],
       "triangles": 12,
       "materials": [
         "MAT_aluminio_negro"
       ],
-      "visible_viewport": false,
-      "visible_render": false
+      "visible_viewport": true,
+      "visible_render": true
     },
     {
       "name": "Solar_Marco_1_2",
       "collections": [
         "14_Fachadas_Y_Vegetacion",
-        "Instalaciones"
+        "Arquitectura"
       ],
       "location_blender": [
-        0.0,
-        0.0,
-        0.0
+        5.565,
+        4.85,
+        6.005
       ],
       "rotation_euler_deg_blender": [
-        0.0,
+        10.0,
         -0.0,
         0.0
       ],
@@ -20375,42 +23129,42 @@
         1.0
       ],
       "world_center_blender": [
-        0.0,
-        0.0,
-        0.0
+        5.565,
+        4.85,
+        6.005
       ],
       "world_min_blender": [
-        -0.775,
-        -0.75,
-        -0.025
+        4.79,
+        4.10705,
+        5.85014
       ],
       "world_max_blender": [
-        0.775,
-        0.75,
-        0.025
+        6.34,
+        5.59295,
+        6.15986
       ],
       "size_blender": [
         1.55,
-        1.5,
-        0.05
+        1.48589,
+        0.30971
       ],
       "triangles": 12,
       "materials": [
         "MAT_aluminio_negro"
       ],
-      "visible_viewport": false,
-      "visible_render": false
+      "visible_viewport": true,
+      "visible_render": true
     },
     {
       "name": "Solar_Soporte_0_0_L",
       "collections": [
         "14_Fachadas_Y_Vegetacion",
-        "Instalaciones"
+        "Arquitectura"
       ],
       "location_blender": [
-        0.0,
-        0.0,
-        0.0
+        1.535,
+        3.1,
+        5.95
       ],
       "rotation_euler_deg_blender": [
         0.0,
@@ -20423,19 +23177,19 @@
         1.0
       ],
       "world_center_blender": [
-        0.0,
-        0.0,
-        0.0
+        1.535,
+        3.1,
+        5.95
       ],
       "world_min_blender": [
-        -0.035,
-        -0.6,
-        -0.07
+        1.5,
+        2.5,
+        5.88
       ],
       "world_max_blender": [
-        0.035,
-        0.6,
-        0.07
+        1.57,
+        3.7,
+        6.02
       ],
       "size_blender": [
         0.07,
@@ -20446,19 +23200,19 @@
       "materials": [
         "MAT_aluminio_negro"
       ],
-      "visible_viewport": false,
-      "visible_render": false
+      "visible_viewport": true,
+      "visible_render": true
     },
     {
       "name": "Solar_Soporte_0_0_R",
       "collections": [
         "14_Fachadas_Y_Vegetacion",
-        "Instalaciones"
+        "Arquitectura"
       ],
       "location_blender": [
-        0.0,
-        0.0,
-        0.0
+        2.715,
+        3.1,
+        5.95
       ],
       "rotation_euler_deg_blender": [
         0.0,
@@ -20471,19 +23225,19 @@
         1.0
       ],
       "world_center_blender": [
-        0.0,
-        0.0,
-        0.0
+        2.715,
+        3.1,
+        5.95
       ],
       "world_min_blender": [
-        -0.035,
-        -0.6,
-        -0.07
+        2.68,
+        2.5,
+        5.88
       ],
       "world_max_blender": [
-        0.035,
-        0.6,
-        0.07
+        2.75,
+        3.7,
+        6.02
       ],
       "size_blender": [
         0.07,
@@ -20494,19 +23248,19 @@
       "materials": [
         "MAT_aluminio_negro"
       ],
-      "visible_viewport": false,
-      "visible_render": false
+      "visible_viewport": true,
+      "visible_render": true
     },
     {
       "name": "Solar_Soporte_0_1_L",
       "collections": [
         "14_Fachadas_Y_Vegetacion",
-        "Instalaciones"
+        "Arquitectura"
       ],
       "location_blender": [
-        0.0,
-        0.0,
-        0.0
+        3.255,
+        3.1,
+        5.95
       ],
       "rotation_euler_deg_blender": [
         0.0,
@@ -20519,19 +23273,19 @@
         1.0
       ],
       "world_center_blender": [
-        0.0,
-        0.0,
-        0.0
+        3.255,
+        3.1,
+        5.95
       ],
       "world_min_blender": [
-        -0.035,
-        -0.6,
-        -0.07
+        3.22,
+        2.5,
+        5.88
       ],
       "world_max_blender": [
-        0.035,
-        0.6,
-        0.07
+        3.29,
+        3.7,
+        6.02
       ],
       "size_blender": [
         0.07,
@@ -20542,19 +23296,19 @@
       "materials": [
         "MAT_aluminio_negro"
       ],
-      "visible_viewport": false,
-      "visible_render": false
+      "visible_viewport": true,
+      "visible_render": true
     },
     {
       "name": "Solar_Soporte_0_1_R",
       "collections": [
         "14_Fachadas_Y_Vegetacion",
-        "Instalaciones"
+        "Arquitectura"
       ],
       "location_blender": [
-        0.0,
-        0.0,
-        0.0
+        4.435,
+        3.1,
+        5.95
       ],
       "rotation_euler_deg_blender": [
         0.0,
@@ -20567,19 +23321,19 @@
         1.0
       ],
       "world_center_blender": [
-        0.0,
-        0.0,
-        0.0
+        4.435,
+        3.1,
+        5.95
       ],
       "world_min_blender": [
-        -0.035,
-        -0.6,
-        -0.07
+        4.4,
+        2.5,
+        5.88
       ],
       "world_max_blender": [
-        0.035,
-        0.6,
-        0.07
+        4.47,
+        3.7,
+        6.02
       ],
       "size_blender": [
         0.07,
@@ -20590,19 +23344,19 @@
       "materials": [
         "MAT_aluminio_negro"
       ],
-      "visible_viewport": false,
-      "visible_render": false
+      "visible_viewport": true,
+      "visible_render": true
     },
     {
       "name": "Solar_Soporte_0_2_L",
       "collections": [
         "14_Fachadas_Y_Vegetacion",
-        "Instalaciones"
+        "Arquitectura"
       ],
       "location_blender": [
-        0.0,
-        0.0,
-        0.0
+        4.975,
+        3.1,
+        5.95
       ],
       "rotation_euler_deg_blender": [
         0.0,
@@ -20615,19 +23369,19 @@
         1.0
       ],
       "world_center_blender": [
-        0.0,
-        0.0,
-        0.0
+        4.975,
+        3.1,
+        5.95
       ],
       "world_min_blender": [
-        -0.035,
-        -0.6,
-        -0.07
+        4.94,
+        2.5,
+        5.88
       ],
       "world_max_blender": [
-        0.035,
-        0.6,
-        0.07
+        5.01,
+        3.7,
+        6.02
       ],
       "size_blender": [
         0.07,
@@ -20638,19 +23392,19 @@
       "materials": [
         "MAT_aluminio_negro"
       ],
-      "visible_viewport": false,
-      "visible_render": false
+      "visible_viewport": true,
+      "visible_render": true
     },
     {
       "name": "Solar_Soporte_0_2_R",
       "collections": [
         "14_Fachadas_Y_Vegetacion",
-        "Instalaciones"
+        "Arquitectura"
       ],
       "location_blender": [
-        0.0,
-        0.0,
-        0.0
+        6.155,
+        3.1,
+        5.95
       ],
       "rotation_euler_deg_blender": [
         0.0,
@@ -20663,19 +23417,19 @@
         1.0
       ],
       "world_center_blender": [
-        0.0,
-        0.0,
-        0.0
+        6.155,
+        3.1,
+        5.95
       ],
       "world_min_blender": [
-        -0.035,
-        -0.6,
-        -0.07
+        6.12,
+        2.5,
+        5.88
       ],
       "world_max_blender": [
-        0.035,
-        0.6,
-        0.07
+        6.19,
+        3.7,
+        6.02
       ],
       "size_blender": [
         0.07,
@@ -20686,19 +23440,19 @@
       "materials": [
         "MAT_aluminio_negro"
       ],
-      "visible_viewport": false,
-      "visible_render": false
+      "visible_viewport": true,
+      "visible_render": true
     },
     {
       "name": "Solar_Soporte_1_0_L",
       "collections": [
         "14_Fachadas_Y_Vegetacion",
-        "Instalaciones"
+        "Arquitectura"
       ],
       "location_blender": [
-        0.0,
-        0.0,
-        0.0
+        1.535,
+        4.85,
+        5.95
       ],
       "rotation_euler_deg_blender": [
         0.0,
@@ -20711,19 +23465,19 @@
         1.0
       ],
       "world_center_blender": [
-        0.0,
-        0.0,
-        0.0
+        1.535,
+        4.85,
+        5.95
       ],
       "world_min_blender": [
-        -0.035,
-        -0.6,
-        -0.07
+        1.5,
+        4.25,
+        5.88
       ],
       "world_max_blender": [
-        0.035,
-        0.6,
-        0.07
+        1.57,
+        5.45,
+        6.02
       ],
       "size_blender": [
         0.07,
@@ -20734,19 +23488,19 @@
       "materials": [
         "MAT_aluminio_negro"
       ],
-      "visible_viewport": false,
-      "visible_render": false
+      "visible_viewport": true,
+      "visible_render": true
     },
     {
       "name": "Solar_Soporte_1_0_R",
       "collections": [
         "14_Fachadas_Y_Vegetacion",
-        "Instalaciones"
+        "Arquitectura"
       ],
       "location_blender": [
-        0.0,
-        0.0,
-        0.0
+        2.715,
+        4.85,
+        5.95
       ],
       "rotation_euler_deg_blender": [
         0.0,
@@ -20759,19 +23513,19 @@
         1.0
       ],
       "world_center_blender": [
-        0.0,
-        0.0,
-        0.0
+        2.715,
+        4.85,
+        5.95
       ],
       "world_min_blender": [
-        -0.035,
-        -0.6,
-        -0.07
+        2.68,
+        4.25,
+        5.88
       ],
       "world_max_blender": [
-        0.035,
-        0.6,
-        0.07
+        2.75,
+        5.45,
+        6.02
       ],
       "size_blender": [
         0.07,
@@ -20782,19 +23536,19 @@
       "materials": [
         "MAT_aluminio_negro"
       ],
-      "visible_viewport": false,
-      "visible_render": false
+      "visible_viewport": true,
+      "visible_render": true
     },
     {
       "name": "Solar_Soporte_1_1_L",
       "collections": [
         "14_Fachadas_Y_Vegetacion",
-        "Instalaciones"
+        "Arquitectura"
       ],
       "location_blender": [
-        0.0,
-        0.0,
-        0.0
+        3.255,
+        4.85,
+        5.95
       ],
       "rotation_euler_deg_blender": [
         0.0,
@@ -20807,19 +23561,19 @@
         1.0
       ],
       "world_center_blender": [
-        0.0,
-        0.0,
-        0.0
+        3.255,
+        4.85,
+        5.95
       ],
       "world_min_blender": [
-        -0.035,
-        -0.6,
-        -0.07
+        3.22,
+        4.25,
+        5.88
       ],
       "world_max_blender": [
-        0.035,
-        0.6,
-        0.07
+        3.29,
+        5.45,
+        6.02
       ],
       "size_blender": [
         0.07,
@@ -20830,19 +23584,19 @@
       "materials": [
         "MAT_aluminio_negro"
       ],
-      "visible_viewport": false,
-      "visible_render": false
+      "visible_viewport": true,
+      "visible_render": true
     },
     {
       "name": "Solar_Soporte_1_1_R",
       "collections": [
         "14_Fachadas_Y_Vegetacion",
-        "Instalaciones"
+        "Arquitectura"
       ],
       "location_blender": [
-        0.0,
-        0.0,
-        0.0
+        4.435,
+        4.85,
+        5.95
       ],
       "rotation_euler_deg_blender": [
         0.0,
@@ -20855,19 +23609,19 @@
         1.0
       ],
       "world_center_blender": [
-        0.0,
-        0.0,
-        0.0
+        4.435,
+        4.85,
+        5.95
       ],
       "world_min_blender": [
-        -0.035,
-        -0.6,
-        -0.07
+        4.4,
+        4.25,
+        5.88
       ],
       "world_max_blender": [
-        0.035,
-        0.6,
-        0.07
+        4.47,
+        5.45,
+        6.02
       ],
       "size_blender": [
         0.07,
@@ -20878,19 +23632,19 @@
       "materials": [
         "MAT_aluminio_negro"
       ],
-      "visible_viewport": false,
-      "visible_render": false
+      "visible_viewport": true,
+      "visible_render": true
     },
     {
       "name": "Solar_Soporte_1_2_L",
       "collections": [
         "14_Fachadas_Y_Vegetacion",
-        "Instalaciones"
+        "Arquitectura"
       ],
       "location_blender": [
-        0.0,
-        0.0,
-        0.0
+        4.975,
+        4.85,
+        5.95
       ],
       "rotation_euler_deg_blender": [
         0.0,
@@ -20903,19 +23657,19 @@
         1.0
       ],
       "world_center_blender": [
-        0.0,
-        0.0,
-        0.0
+        4.975,
+        4.85,
+        5.95
       ],
       "world_min_blender": [
-        -0.035,
-        -0.6,
-        -0.07
+        4.94,
+        4.25,
+        5.88
       ],
       "world_max_blender": [
-        0.035,
-        0.6,
-        0.07
+        5.01,
+        5.45,
+        6.02
       ],
       "size_blender": [
         0.07,
@@ -20926,19 +23680,19 @@
       "materials": [
         "MAT_aluminio_negro"
       ],
-      "visible_viewport": false,
-      "visible_render": false
+      "visible_viewport": true,
+      "visible_render": true
     },
     {
       "name": "Solar_Soporte_1_2_R",
       "collections": [
         "14_Fachadas_Y_Vegetacion",
-        "Instalaciones"
+        "Arquitectura"
       ],
       "location_blender": [
-        0.0,
-        0.0,
-        0.0
+        6.155,
+        4.85,
+        5.95
       ],
       "rotation_euler_deg_blender": [
         0.0,
@@ -20951,19 +23705,19 @@
         1.0
       ],
       "world_center_blender": [
-        0.0,
-        0.0,
-        0.0
+        6.155,
+        4.85,
+        5.95
       ],
       "world_min_blender": [
-        -0.035,
-        -0.6,
-        -0.07
+        6.12,
+        4.25,
+        5.88
       ],
       "world_max_blender": [
-        0.035,
-        0.6,
-        0.07
+        6.19,
+        5.45,
+        6.02
       ],
       "size_blender": [
         0.07,
@@ -20974,22 +23728,22 @@
       "materials": [
         "MAT_aluminio_negro"
       ],
-      "visible_viewport": false,
-      "visible_render": false
+      "visible_viewport": true,
+      "visible_render": true
     },
     {
       "name": "Solar_Vidrio_0_0",
       "collections": [
         "14_Fachadas_Y_Vegetacion",
-        "Instalaciones"
+        "Arquitectura"
       ],
       "location_blender": [
-        0.0,
-        0.0,
-        0.0
+        2.125,
+        3.1,
+        6.04
       ],
       "rotation_euler_deg_blender": [
-        0.0,
+        10.0,
         -0.0,
         0.0
       ],
@@ -20999,45 +23753,45 @@
         1.0
       ],
       "world_center_blender": [
-        0.0,
-        0.0,
-        0.0
+        2.125,
+        3.1,
+        6.04
       ],
       "world_min_blender": [
-        -0.735,
-        -0.71,
-        -0.005
+        1.39,
+        2.39992,
+        5.91179
       ],
       "world_max_blender": [
-        0.735,
-        0.71,
-        0.005
+        2.86,
+        3.80008,
+        6.16821
       ],
       "size_blender": [
         1.47,
-        1.42,
-        0.01
+        1.40016,
+        0.25643
       ],
       "triangles": 12,
       "materials": [
         "MAT_vidrio_arq"
       ],
-      "visible_viewport": false,
-      "visible_render": false
+      "visible_viewport": true,
+      "visible_render": true
     },
     {
       "name": "Solar_Vidrio_0_1",
       "collections": [
         "14_Fachadas_Y_Vegetacion",
-        "Instalaciones"
+        "Arquitectura"
       ],
       "location_blender": [
-        0.0,
-        0.0,
-        0.0
+        3.845,
+        3.1,
+        6.04
       ],
       "rotation_euler_deg_blender": [
-        0.0,
+        10.0,
         -0.0,
         0.0
       ],
@@ -21047,45 +23801,45 @@
         1.0
       ],
       "world_center_blender": [
-        0.0,
-        0.0,
-        0.0
+        3.845,
+        3.1,
+        6.04
       ],
       "world_min_blender": [
-        -0.735,
-        -0.71,
-        -0.005
+        3.11,
+        2.39992,
+        5.91179
       ],
       "world_max_blender": [
-        0.735,
-        0.71,
-        0.005
+        4.58,
+        3.80008,
+        6.16821
       ],
       "size_blender": [
         1.47,
-        1.42,
-        0.01
+        1.40016,
+        0.25643
       ],
       "triangles": 12,
       "materials": [
         "MAT_vidrio_arq"
       ],
-      "visible_viewport": false,
-      "visible_render": false
+      "visible_viewport": true,
+      "visible_render": true
     },
     {
       "name": "Solar_Vidrio_0_2",
       "collections": [
         "14_Fachadas_Y_Vegetacion",
-        "Instalaciones"
+        "Arquitectura"
       ],
       "location_blender": [
-        0.0,
-        0.0,
-        0.0
+        5.565,
+        3.1,
+        6.04
       ],
       "rotation_euler_deg_blender": [
-        0.0,
+        10.0,
         -0.0,
         0.0
       ],
@@ -21095,45 +23849,45 @@
         1.0
       ],
       "world_center_blender": [
-        0.0,
-        0.0,
-        0.0
+        5.565,
+        3.1,
+        6.04
       ],
       "world_min_blender": [
-        -0.735,
-        -0.71,
-        -0.005
+        4.83,
+        2.39992,
+        5.91179
       ],
       "world_max_blender": [
-        0.735,
-        0.71,
-        0.005
+        6.3,
+        3.80008,
+        6.16821
       ],
       "size_blender": [
         1.47,
-        1.42,
-        0.01
+        1.40016,
+        0.25643
       ],
       "triangles": 12,
       "materials": [
         "MAT_vidrio_arq"
       ],
-      "visible_viewport": false,
-      "visible_render": false
+      "visible_viewport": true,
+      "visible_render": true
     },
     {
       "name": "Solar_Vidrio_1_0",
       "collections": [
         "14_Fachadas_Y_Vegetacion",
-        "Instalaciones"
+        "Arquitectura"
       ],
       "location_blender": [
-        0.0,
-        0.0,
-        0.0
+        2.125,
+        4.85,
+        6.04
       ],
       "rotation_euler_deg_blender": [
-        0.0,
+        10.0,
         -0.0,
         0.0
       ],
@@ -21143,45 +23897,45 @@
         1.0
       ],
       "world_center_blender": [
-        0.0,
-        0.0,
-        0.0
+        2.125,
+        4.85,
+        6.04
       ],
       "world_min_blender": [
-        -0.735,
-        -0.71,
-        -0.005
+        1.39,
+        4.14992,
+        5.91179
       ],
       "world_max_blender": [
-        0.735,
-        0.71,
-        0.005
+        2.86,
+        5.55008,
+        6.16821
       ],
       "size_blender": [
         1.47,
-        1.42,
-        0.01
+        1.40016,
+        0.25643
       ],
       "triangles": 12,
       "materials": [
         "MAT_vidrio_arq"
       ],
-      "visible_viewport": false,
-      "visible_render": false
+      "visible_viewport": true,
+      "visible_render": true
     },
     {
       "name": "Solar_Vidrio_1_1",
       "collections": [
         "14_Fachadas_Y_Vegetacion",
-        "Instalaciones"
+        "Arquitectura"
       ],
       "location_blender": [
-        0.0,
-        0.0,
-        0.0
+        3.845,
+        4.85,
+        6.04
       ],
       "rotation_euler_deg_blender": [
-        0.0,
+        10.0,
         -0.0,
         0.0
       ],
@@ -21191,45 +23945,45 @@
         1.0
       ],
       "world_center_blender": [
-        0.0,
-        0.0,
-        0.0
+        3.845,
+        4.85,
+        6.04
       ],
       "world_min_blender": [
-        -0.735,
-        -0.71,
-        -0.005
+        3.11,
+        4.14992,
+        5.91179
       ],
       "world_max_blender": [
-        0.735,
-        0.71,
-        0.005
+        4.58,
+        5.55008,
+        6.16821
       ],
       "size_blender": [
         1.47,
-        1.42,
-        0.01
+        1.40016,
+        0.25643
       ],
       "triangles": 12,
       "materials": [
         "MAT_vidrio_arq"
       ],
-      "visible_viewport": false,
-      "visible_render": false
+      "visible_viewport": true,
+      "visible_render": true
     },
     {
       "name": "Solar_Vidrio_1_2",
       "collections": [
         "14_Fachadas_Y_Vegetacion",
-        "Instalaciones"
+        "Arquitectura"
       ],
       "location_blender": [
-        0.0,
-        0.0,
-        0.0
+        5.565,
+        4.85,
+        6.04
       ],
       "rotation_euler_deg_blender": [
-        0.0,
+        10.0,
         -0.0,
         0.0
       ],
@@ -21239,31 +23993,31 @@
         1.0
       ],
       "world_center_blender": [
-        0.0,
-        0.0,
-        0.0
+        5.565,
+        4.85,
+        6.04
       ],
       "world_min_blender": [
-        -0.735,
-        -0.71,
-        -0.005
+        4.83,
+        4.14992,
+        5.91179
       ],
       "world_max_blender": [
-        0.735,
-        0.71,
-        0.005
+        6.3,
+        5.55008,
+        6.16821
       ],
       "size_blender": [
         1.47,
-        1.42,
-        0.01
+        1.40016,
+        0.25643
       ],
       "triangles": 12,
       "materials": [
         "MAT_vidrio_arq"
       ],
-      "visible_viewport": false,
-      "visible_render": false
+      "visible_viewport": true,
+      "visible_render": true
     },
     {
       "name": "Vecino_Norte_Techo",
@@ -23428,8 +26182,8 @@
     {
       "name": "Zona_Paneles_Solares_Base",
       "collections": [
-        "14_Fachadas_Y_Vegetacion",
-        "Instalaciones"
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
       ],
       "location_blender": [
         0.0,
@@ -23447,31 +26201,31 @@
         1.0
       ],
       "world_center_blender": [
-        0.0,
-        0.0,
-        0.0
+        3.9,
+        3.85,
+        5.91
       ],
       "world_min_blender": [
-        -2.7,
-        -1.9,
-        -0.03
+        1.2,
+        2.2,
+        5.88
       ],
       "world_max_blender": [
-        2.7,
-        1.9,
-        0.03
+        6.6,
+        5.5,
+        5.94
       ],
       "size_blender": [
         5.4,
-        3.8,
+        3.3,
         0.06
       ],
       "triangles": 12,
       "materials": [
-        "MAT_aluminio_negro"
+        "MAT_impermeabilizante"
       ],
-      "visible_viewport": false,
-      "visible_render": false
+      "visible_viewport": true,
+      "visible_render": true
     }
   ]
 }

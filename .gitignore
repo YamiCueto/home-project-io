@@ -42,3 +42,5 @@ Thumbs.db
 *.bak
 *.swp
 *~
+
+models/_polyhaven_trees_cache.blend

@@ -106,7 +106,7 @@ namespace HomeProject.Interaction
             controller.radius = playerRadius;
             controller.center = new Vector3(0f, playerHeight * 0.5f, 0f);
             controller.stepOffset = stepOffset;
-            controller.slopeLimit = 50f;
+            controller.slopeLimit = 70f;
             controller.skinWidth = 0.02f;
         }
 

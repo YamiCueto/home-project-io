@@ -31,7 +31,13 @@ namespace HomeProject.Editor
             { "MAT_follaje_tropical", "MAT_follaje_tropical" },
             { "MAT_madera_ext", "MAT_madera_ext" },
             { "MAT_piedra_natural", "MAT_piedra_natural" },
-            { "MAT_porcelanato_ext", "MAT_porcelanato_ext" }
+            { "MAT_porcelanato_ext", "MAT_porcelanato_ext" },
+            { "tree_small_02_trunk", "tree_small_02" },
+            { "tree_small_02_branches", "tree_small_02_branch" },
+            { "tree_small_02_leaves", "tree_small_02_leaves" },
+            { "island_tree_02", "island_tree_02" },
+            { "island_tree_02_branches", "island_tree_02_branches" },
+            { "island_tree_02_leaves", "island_tree_02_leaves" }
         };
 
         public static Dictionary<string, Material> BuildAllMaterials()
@@ -158,7 +164,10 @@ namespace HomeProject.Editor
             }
 
             bool isGlass = detail.name == "MAT_vidrio_arq" || detail.transmission > 0.5f || detail.alpha < 0.99f;
-            bool isAlphaClip = detail.name == "potted_plant_01_leaves" || detail.name == "potted_plant_02_leaves";
+            bool isAlphaClip = detail.name == "potted_plant_01_leaves" ||
+                               detail.name == "potted_plant_02_leaves" ||
+                               detail.name == "tree_small_02_leaves" ||
+                               detail.name == "island_tree_02_leaves";
 
             if (isGlass)
             {
@@ -325,7 +334,13 @@ namespace HomeProject.Editor
         private static Texture2D LoadTexture(string fileName)
         {
             string path = Path.Combine(HomeProjectConstants.TexturesPath, fileName).Replace("\\", "/");
-            return AssetDatabase.LoadAssetAtPath<Texture2D>(path);
+            Texture2D tex = AssetDatabase.LoadAssetAtPath<Texture2D>(path);
+            if (tex != null)
+            {
+                return tex;
+            }
+            string foliagePath = Path.Combine(HomeProjectConstants.TexturesPath, "Foliage", fileName).Replace("\\", "/");
+            return AssetDatabase.LoadAssetAtPath<Texture2D>(foliagePath);
         }
 
         private static Color ToColor(float[] arr, Color fallback)

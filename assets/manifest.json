@@ -92,6 +92,26 @@
       "license": "CC0",
       "url": "https://polyhaven.com/a/potted_plant_02",
       "used_in": ["PH_Plant2_Balcon"]
+    },
+    {
+      "id": "tree_small_02",
+      "source": "polyhaven",
+      "type": "models",
+      "resolution": "1k",
+      "author": "Poly Haven (CC0)",
+      "license": "CC0",
+      "url": "https://polyhaven.com/a/tree_small_02",
+      "used_in": ["Arbol_Tropical_01_LOD0", "Arbol_Tropical_01_LOD1", "Arbol_Tropical_01_LOD2", "Arbol_Tropical_03_LOD0", "Arbol_Tropical_03_LOD1", "Arbol_Tropical_03_LOD2"]
+    },
+    {
+      "id": "island_tree_02",
+      "source": "polyhaven",
+      "type": "models",
+      "resolution": "1k",
+      "author": "Poly Haven (CC0)",
+      "license": "CC0",
+      "url": "https://polyhaven.com/a/island_tree_02",
+      "used_in": ["Arbol_Tropical_02_LOD0", "Arbol_Tropical_02_LOD1", "Arbol_Tropical_02_LOD2"]
     }
   ]
 }

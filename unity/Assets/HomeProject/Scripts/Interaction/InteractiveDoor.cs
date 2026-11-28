@@ -43,6 +43,12 @@ namespace HomeProject.Interaction
                 openLocalPosition = closedLocalPosition + parentUp * slideHeightMeters;
                 openRotation = closedRotation;
             }
+            else if (gameObject.name.Contains("Escotilla_Techo"))
+            {
+                openLocalPosition = closedLocalPosition;
+                Vector3 localHingeAxis = transform.InverseTransformDirection(Vector3.left);
+                openRotation = closedRotation * Quaternion.AngleAxis(88f, localHingeAxis);
+            }
             else
             {
                 openLocalPosition = closedLocalPosition;

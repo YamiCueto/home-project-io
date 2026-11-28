@@ -1,0 +1,10 @@
+{
+  "tropical_trees_lod_count": 9,
+  "placeholder_trees_removed": true,
+  "roof_hatch_present": true,
+  "roof_stair_treads": 13,
+  "roof_guardrails_present": true,
+  "roof_drainage_present": true,
+  "solar_visible_in_arch_only": true,
+  "all_passed": true
+}

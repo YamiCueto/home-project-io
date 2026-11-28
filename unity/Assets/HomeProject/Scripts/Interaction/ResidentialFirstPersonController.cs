@@ -106,7 +106,7 @@ namespace HomeProject.Interaction
             controller.radius = playerRadius;
             controller.center = new Vector3(0f, playerHeight * 0.5f, 0f);
             controller.stepOffset = stepOffset;
-            controller.slopeLimit = 70f;
+            controller.slopeLimit = 76f;
             controller.skinWidth = 0.02f;
         }
 
@@ -198,7 +198,7 @@ namespace HomeProject.Interaction
 
             if (controller.isGrounded && verticalVelocity < 0f)
             {
-                verticalVelocity = -2.0f;
+                verticalVelocity = -6.0f;
             }
             else
             {
@@ -219,21 +219,36 @@ namespace HomeProject.Interaction
             }
 
             Ray ray = new Ray(playerCamera.transform.position, playerCamera.transform.forward);
+            bool ePressed = false;
+            foreach (InputDevice dev in InputSystem.devices)
+            {
+                if (dev is Keyboard kb && kb.enabled && kb.eKey.wasPressedThisFrame)
+                {
+                    ePressed = true;
+                    break;
+                }
+            }
+
+            if (Physics.SphereCast(ray, 0.25f, out RaycastHit cordHit, interactDistance, Physics.DefaultRaycastLayers, QueryTriggerInteraction.Collide))
+            {
+                string cName = cordHit.collider.gameObject.name;
+                if (cName.Contains("Escotilla_Techo") || cName.Contains("Esc_Techo_"))
+                {
+                    RetractableAtticStair attic = Object.FindAnyObjectByType<RetractableAtticStair>();
+                    if (attic != null && ePressed)
+                    {
+                        attic.Toggle();
+                        return;
+                    }
+                }
+            }
+
             if (Physics.Raycast(ray, out RaycastHit hit, interactDistance, Physics.DefaultRaycastLayers, QueryTriggerInteraction.Ignore))
             {
                 InteractiveDoor door = hit.collider.GetComponentInParent<InteractiveDoor>();
                 if (door != null)
                 {
                     LastHoveredDoor = door;
-                    bool ePressed = false;
-                    foreach (InputDevice dev in InputSystem.devices)
-                    {
-                        if (dev is Keyboard kb && kb.enabled && kb.eKey.wasPressedThisFrame)
-                        {
-                            ePressed = true;
-                            break;
-                        }
-                    }
                     if (ePressed)
                     {
                         door.Toggle();

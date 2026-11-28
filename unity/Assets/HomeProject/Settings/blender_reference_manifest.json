@@ -1433,23 +1433,23 @@
         1.0
       ],
       "world_center_blender": [
-        7.805,
+        6.805,
         6.2,
         6.88
       ],
       "world_min_blender": [
-        7.78,
-        5.67,
+        6.78,
+        5.72,
         6.85
       ],
       "world_max_blender": [
-        7.83,
-        6.73,
+        6.83,
+        6.68,
         6.91
       ],
       "size_blender": [
         0.05,
-        1.06,
+        0.96,
         0.06
       ],
       "triangles": 12,
@@ -1481,22 +1481,22 @@
         1.0
       ],
       "world_center_blender": [
-        6.675,
-        6.705,
+        6.125,
+        6.655,
         6.88
       ],
       "world_min_blender": [
-        5.52,
-        6.68,
+        5.42,
+        6.63,
         6.85
       ],
       "world_max_blender": [
-        7.83,
-        6.73,
+        6.83,
+        6.68,
         6.91
       ],
       "size_blender": [
-        2.31,
+        1.41,
         0.05,
         0.06
       ],
@@ -1529,23 +1529,23 @@
         1.0
       ],
       "world_center_blender": [
-        5.495,
+        5.395,
         6.2,
         6.88
       ],
       "world_min_blender": [
-        5.47,
-        5.67,
+        5.37,
+        5.72,
         6.85
       ],
       "world_max_blender": [
-        5.52,
-        6.73,
+        5.42,
+        6.68,
         6.91
       ],
       "size_blender": [
         0.05,
-        1.06,
+        0.96,
         0.06
       ],
       "triangles": 12,
@@ -1577,18 +1577,18 @@
         1.0
       ],
       "world_center_blender": [
-        5.495,
-        5.695,
+        5.395,
+        5.745,
         6.39
       ],
       "world_min_blender": [
-        5.47,
-        5.67,
+        5.37,
+        5.72,
         5.88
       ],
       "world_max_blender": [
-        5.52,
-        5.72,
+        5.42,
+        5.77,
         6.9
       ],
       "size_blender": [
@@ -1625,18 +1625,18 @@
         1.0
       ],
       "world_center_blender": [
-        5.495,
-        6.705,
+        5.395,
+        6.655,
         6.39
       ],
       "world_min_blender": [
-        5.47,
-        6.68,
+        5.37,
+        6.63,
         5.88
       ],
       "world_max_blender": [
-        5.52,
-        6.73,
+        5.42,
+        6.68,
         6.9
       ],
       "size_blender": [
@@ -1673,18 +1673,18 @@
         1.0
       ],
       "world_center_blender": [
-        7.805,
-        5.695,
+        6.805,
+        5.745,
         6.39
       ],
       "world_min_blender": [
-        7.78,
-        5.67,
+        6.78,
+        5.72,
         5.88
       ],
       "world_max_blender": [
-        7.83,
-        5.72,
+        6.83,
+        5.77,
         6.9
       ],
       "size_blender": [
@@ -1721,18 +1721,18 @@
         1.0
       ],
       "world_center_blender": [
-        7.805,
-        6.705,
+        6.805,
+        6.655,
         6.39
       ],
       "world_min_blender": [
-        7.78,
-        6.68,
+        6.78,
+        6.63,
         5.88
       ],
       "world_max_blender": [
-        7.83,
-        6.73,
+        6.83,
+        6.68,
         6.9
       ],
       "size_blender": [
@@ -3812,54 +3812,6 @@
       "visible_render": true
     },
     {
-      "name": "Cubierta_Descanso_Escotilla",
-      "collections": [
-        "08_Propuesta_Segunda_Planta",
-        "Arquitectura"
-      ],
-      "location_blender": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "rotation_euler_deg_blender": [
-        0.0,
-        -0.0,
-        0.0
-      ],
-      "scale_blender": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "world_center_blender": [
-        7.4,
-        6.2,
-        5.84
-      ],
-      "world_min_blender": [
-        7.05,
-        5.75,
-        5.8
-      ],
-      "world_max_blender": [
-        7.75,
-        6.65,
-        5.88
-      ],
-      "size_blender": [
-        0.7,
-        0.9,
-        0.08
-      ],
-      "triangles": 12,
-      "materials": [
-        "MAT_impermeabilizante"
-      ],
-      "visible_viewport": true,
-      "visible_render": true
-    },
-    {
       "name": "Cubierta_P1_Huespedes",
       "collections": [
         "07_Propuesta_Primera_Planta",
@@ -3929,12 +3881,12 @@
         1.0
       ],
       "world_center_blender": [
-        7.8,
+        7.3,
         5.0,
         5.84
       ],
       "world_min_blender": [
-        7.75,
+        6.75,
         0.15,
         5.8
       ],
@@ -3944,7 +3896,7 @@
         5.88
       ],
       "size_blender": [
-        0.1,
+        1.1,
         9.7,
         0.08
       ],
@@ -3977,23 +3929,23 @@
         1.0
       ],
       "world_center_blender": [
-        6.65,
-        8.25,
+        6.1,
+        8.225,
         5.84
       ],
       "world_min_blender": [
-        5.55,
-        6.65,
+        5.45,
+        6.6,
         5.8
       ],
       "world_max_blender": [
-        7.75,
+        6.75,
         9.85,
         5.88
       ],
       "size_blender": [
-        2.2,
-        3.2,
+        1.3,
+        3.25,
         0.08
       ],
       "triangles": 12,
@@ -4025,7 +3977,7 @@
         1.0
       ],
       "world_center_blender": [
-        2.85,
+        2.8,
         5.0,
         5.84
       ],
@@ -4035,12 +3987,12 @@
         5.8
       ],
       "world_max_blender": [
-        5.55,
+        5.45,
         9.85,
         5.88
       ],
       "size_blender": [
-        5.4,
+        5.3,
         9.7,
         0.08
       ],
@@ -4073,23 +4025,23 @@
         1.0
       ],
       "world_center_blender": [
-        6.65,
-        2.95,
+        6.1,
+        2.975,
         5.84
       ],
       "world_min_blender": [
-        5.55,
+        5.45,
         0.15,
         5.8
       ],
       "world_max_blender": [
-        7.75,
-        5.75,
+        6.75,
+        5.8,
         5.88
       ],
       "size_blender": [
-        2.2,
-        5.6,
+        1.3,
+        5.65,
         0.08
       ],
       "triangles": 12,
@@ -4121,12 +4073,12 @@
         1.0
       ],
       "world_center_blender": [
-        7.875,
+        7.375,
         5.0,
         5.7
       ],
       "world_min_blender": [
-        7.75,
+        6.75,
         0.0,
         5.6
       ],
@@ -4136,7 +4088,7 @@
         5.8
       ],
       "size_blender": [
-        0.25,
+        1.25,
         10.0,
         0.2
       ],
@@ -4169,23 +4121,23 @@
         1.0
       ],
       "world_center_blender": [
-        6.65,
-        8.325,
+        6.1,
+        8.3,
         5.7
       ],
       "world_min_blender": [
-        5.55,
-        6.65,
+        5.45,
+        6.6,
         5.6
       ],
       "world_max_blender": [
-        7.75,
+        6.75,
         10.0,
         5.8
       ],
       "size_blender": [
-        2.2,
-        3.35,
+        1.3,
+        3.4,
         0.2
       ],
       "triangles": 12,
@@ -4217,7 +4169,7 @@
         1.0
       ],
       "world_center_blender": [
-        2.775,
+        2.725,
         5.0,
         5.7
       ],
@@ -4227,12 +4179,12 @@
         5.6
       ],
       "world_max_blender": [
-        5.55,
+        5.45,
         10.0,
         5.8
       ],
       "size_blender": [
-        5.55,
+        5.45,
         10.0,
         0.2
       ],
@@ -4265,23 +4217,23 @@
         1.0
       ],
       "world_center_blender": [
-        6.65,
-        2.875,
+        6.1,
+        2.9,
         5.7
       ],
       "world_min_blender": [
-        5.55,
+        5.45,
         0.0,
         5.6
       ],
       "world_max_blender": [
-        7.75,
-        5.75,
+        6.75,
+        5.8,
         5.8
       ],
       "size_blender": [
-        2.2,
-        5.75,
+        1.3,
+        5.8,
         0.2
       ],
       "triangles": 12,
@@ -4916,15 +4868,15 @@
       "visible_render": true
     },
     {
-      "name": "Esc_Techo_Baranda_Norte",
+      "name": "Esc_Techo_Tramo_1",
       "collections": [
         "08_Propuesta_Segunda_Planta",
         "Arquitectura"
       ],
       "location_blender": [
-        0.0,
-        0.0,
-        0.0
+        6.7,
+        6.2,
+        5.64
       ],
       "rotation_euler_deg_blender": [
         0.0,
@@ -4937,42 +4889,44 @@
         1.0
       ],
       "world_center_blender": [
-        6.45,
-        6.62,
-        5.31
+        6.1525,
+        6.2,
+        5.64
       ],
       "world_min_blender": [
-        5.85,
-        6.595,
-        3.815
+        5.58,
+        5.925,
+        5.61
       ],
       "world_max_blender": [
-        7.05,
-        6.645,
-        6.805
+        6.725,
+        6.475,
+        5.67
       ],
       "size_blender": [
-        1.2,
-        0.05,
-        2.99
+        1.145,
+        0.55,
+        0.06
       ],
-      "triangles": 12,
+      "triangles": 96,
       "materials": [
+        "MAT_aluminio",
+        "MAT_acero_tecnico",
         "MAT_aluminio_negro"
       ],
       "visible_viewport": true,
       "visible_render": true
     },
     {
-      "name": "Esc_Techo_Baranda_Sur",
+      "name": "Esc_Techo_Tramo_2",
       "collections": [
         "08_Propuesta_Segunda_Planta",
         "Arquitectura"
       ],
       "location_blender": [
-        0.0,
-        0.0,
-        0.0
+        5.58,
+        6.2,
+        5.71
       ],
       "rotation_euler_deg_blender": [
         0.0,
@@ -4985,42 +4939,44 @@
         1.0
       ],
       "world_center_blender": [
-        6.45,
-        5.78,
-        5.31
+        6.1275,
+        6.2,
+        5.71
       ],
       "world_min_blender": [
-        5.85,
-        5.755,
-        3.815
+        5.555,
+        5.925,
+        5.68
       ],
       "world_max_blender": [
-        7.05,
-        5.805,
-        6.805
+        6.7,
+        6.475,
+        5.74
       ],
       "size_blender": [
-        1.2,
-        0.05,
-        2.99
+        1.145,
+        0.55,
+        0.06
       ],
-      "triangles": 12,
+      "triangles": 96,
       "materials": [
+        "MAT_aluminio",
+        "MAT_acero_tecnico",
         "MAT_aluminio_negro"
       ],
       "visible_viewport": true,
       "visible_render": true
     },
     {
-      "name": "Esc_Techo_Peldano_01",
+      "name": "Esc_Techo_Tramo_3",
       "collections": [
         "08_Propuesta_Segunda_Planta",
         "Arquitectura"
       ],
       "location_blender": [
-        0.0,
-        0.0,
-        0.0
+        6.7,
+        6.2,
+        5.78
       ],
       "rotation_euler_deg_blender": [
         0.0,
@@ -5033,604 +4989,30 @@
         1.0
       ],
       "world_center_blender": [
-        5.91615,
+        6.1525,
         6.2,
-        3.05308
+        5.78
       ],
       "world_min_blender": [
-        5.85,
-        5.85,
-        2.94
+        5.58,
+        5.925,
+        5.75
       ],
       "world_max_blender": [
-        5.98231,
-        6.55,
-        3.16615
+        6.725,
+        6.475,
+        5.81
       ],
       "size_blender": [
-        0.13231,
-        0.7,
-        0.22615
+        1.145,
+        0.55,
+        0.06
       ],
-      "triangles": 12,
+      "triangles": 96,
       "materials": [
-        "MAT_acero_tecnico"
-      ],
-      "visible_viewport": true,
-      "visible_render": true
-    },
-    {
-      "name": "Esc_Techo_Peldano_02",
-      "collections": [
-        "08_Propuesta_Segunda_Planta",
-        "Arquitectura"
-      ],
-      "location_blender": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "rotation_euler_deg_blender": [
-        0.0,
-        -0.0,
-        0.0
-      ],
-      "scale_blender": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "world_center_blender": [
-        6.00846,
-        6.2,
-        3.27923
-      ],
-      "world_min_blender": [
-        5.94231,
-        5.85,
-        3.16615
-      ],
-      "world_max_blender": [
-        6.07462,
-        6.55,
-        3.39231
-      ],
-      "size_blender": [
-        0.13231,
-        0.7,
-        0.22615
-      ],
-      "triangles": 12,
-      "materials": [
-        "MAT_acero_tecnico"
-      ],
-      "visible_viewport": true,
-      "visible_render": true
-    },
-    {
-      "name": "Esc_Techo_Peldano_03",
-      "collections": [
-        "08_Propuesta_Segunda_Planta",
-        "Arquitectura"
-      ],
-      "location_blender": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "rotation_euler_deg_blender": [
-        0.0,
-        -0.0,
-        0.0
-      ],
-      "scale_blender": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "world_center_blender": [
-        6.10077,
-        6.2,
-        3.50538
-      ],
-      "world_min_blender": [
-        6.03462,
-        5.85,
-        3.39231
-      ],
-      "world_max_blender": [
-        6.16692,
-        6.55,
-        3.61846
-      ],
-      "size_blender": [
-        0.13231,
-        0.7,
-        0.22615
-      ],
-      "triangles": 12,
-      "materials": [
-        "MAT_acero_tecnico"
-      ],
-      "visible_viewport": true,
-      "visible_render": true
-    },
-    {
-      "name": "Esc_Techo_Peldano_04",
-      "collections": [
-        "08_Propuesta_Segunda_Planta",
-        "Arquitectura"
-      ],
-      "location_blender": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "rotation_euler_deg_blender": [
-        0.0,
-        -0.0,
-        0.0
-      ],
-      "scale_blender": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "world_center_blender": [
-        6.19308,
-        6.2,
-        3.73154
-      ],
-      "world_min_blender": [
-        6.12692,
-        5.85,
-        3.61846
-      ],
-      "world_max_blender": [
-        6.25923,
-        6.55,
-        3.84462
-      ],
-      "size_blender": [
-        0.13231,
-        0.7,
-        0.22615
-      ],
-      "triangles": 12,
-      "materials": [
-        "MAT_acero_tecnico"
-      ],
-      "visible_viewport": true,
-      "visible_render": true
-    },
-    {
-      "name": "Esc_Techo_Peldano_05",
-      "collections": [
-        "08_Propuesta_Segunda_Planta",
-        "Arquitectura"
-      ],
-      "location_blender": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "rotation_euler_deg_blender": [
-        0.0,
-        -0.0,
-        0.0
-      ],
-      "scale_blender": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "world_center_blender": [
-        6.28538,
-        6.2,
-        3.95769
-      ],
-      "world_min_blender": [
-        6.21923,
-        5.85,
-        3.84462
-      ],
-      "world_max_blender": [
-        6.35154,
-        6.55,
-        4.07077
-      ],
-      "size_blender": [
-        0.13231,
-        0.7,
-        0.22615
-      ],
-      "triangles": 12,
-      "materials": [
-        "MAT_acero_tecnico"
-      ],
-      "visible_viewport": true,
-      "visible_render": true
-    },
-    {
-      "name": "Esc_Techo_Peldano_06",
-      "collections": [
-        "08_Propuesta_Segunda_Planta",
-        "Arquitectura"
-      ],
-      "location_blender": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "rotation_euler_deg_blender": [
-        0.0,
-        -0.0,
-        0.0
-      ],
-      "scale_blender": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "world_center_blender": [
-        6.37769,
-        6.2,
-        4.18385
-      ],
-      "world_min_blender": [
-        6.31154,
-        5.85,
-        4.07077
-      ],
-      "world_max_blender": [
-        6.44385,
-        6.55,
-        4.29692
-      ],
-      "size_blender": [
-        0.13231,
-        0.7,
-        0.22615
-      ],
-      "triangles": 12,
-      "materials": [
-        "MAT_acero_tecnico"
-      ],
-      "visible_viewport": true,
-      "visible_render": true
-    },
-    {
-      "name": "Esc_Techo_Peldano_07",
-      "collections": [
-        "08_Propuesta_Segunda_Planta",
-        "Arquitectura"
-      ],
-      "location_blender": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "rotation_euler_deg_blender": [
-        0.0,
-        -0.0,
-        0.0
-      ],
-      "scale_blender": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "world_center_blender": [
-        6.47,
-        6.2,
-        4.41
-      ],
-      "world_min_blender": [
-        6.40385,
-        5.85,
-        4.29692
-      ],
-      "world_max_blender": [
-        6.53615,
-        6.55,
-        4.52308
-      ],
-      "size_blender": [
-        0.13231,
-        0.7,
-        0.22615
-      ],
-      "triangles": 12,
-      "materials": [
-        "MAT_acero_tecnico"
-      ],
-      "visible_viewport": true,
-      "visible_render": true
-    },
-    {
-      "name": "Esc_Techo_Peldano_08",
-      "collections": [
-        "08_Propuesta_Segunda_Planta",
-        "Arquitectura"
-      ],
-      "location_blender": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "rotation_euler_deg_blender": [
-        0.0,
-        -0.0,
-        0.0
-      ],
-      "scale_blender": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "world_center_blender": [
-        6.56231,
-        6.2,
-        4.63615
-      ],
-      "world_min_blender": [
-        6.49615,
-        5.85,
-        4.52308
-      ],
-      "world_max_blender": [
-        6.62846,
-        6.55,
-        4.74923
-      ],
-      "size_blender": [
-        0.13231,
-        0.7,
-        0.22615
-      ],
-      "triangles": 12,
-      "materials": [
-        "MAT_acero_tecnico"
-      ],
-      "visible_viewport": true,
-      "visible_render": true
-    },
-    {
-      "name": "Esc_Techo_Peldano_09",
-      "collections": [
-        "08_Propuesta_Segunda_Planta",
-        "Arquitectura"
-      ],
-      "location_blender": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "rotation_euler_deg_blender": [
-        0.0,
-        -0.0,
-        0.0
-      ],
-      "scale_blender": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "world_center_blender": [
-        6.65462,
-        6.2,
-        4.86231
-      ],
-      "world_min_blender": [
-        6.58846,
-        5.85,
-        4.74923
-      ],
-      "world_max_blender": [
-        6.72077,
-        6.55,
-        4.97538
-      ],
-      "size_blender": [
-        0.13231,
-        0.7,
-        0.22615
-      ],
-      "triangles": 12,
-      "materials": [
-        "MAT_acero_tecnico"
-      ],
-      "visible_viewport": true,
-      "visible_render": true
-    },
-    {
-      "name": "Esc_Techo_Peldano_10",
-      "collections": [
-        "08_Propuesta_Segunda_Planta",
-        "Arquitectura"
-      ],
-      "location_blender": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "rotation_euler_deg_blender": [
-        0.0,
-        -0.0,
-        0.0
-      ],
-      "scale_blender": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "world_center_blender": [
-        6.74692,
-        6.2,
-        5.08846
-      ],
-      "world_min_blender": [
-        6.68077,
-        5.85,
-        4.97538
-      ],
-      "world_max_blender": [
-        6.81308,
-        6.55,
-        5.20154
-      ],
-      "size_blender": [
-        0.13231,
-        0.7,
-        0.22615
-      ],
-      "triangles": 12,
-      "materials": [
-        "MAT_acero_tecnico"
-      ],
-      "visible_viewport": true,
-      "visible_render": true
-    },
-    {
-      "name": "Esc_Techo_Peldano_11",
-      "collections": [
-        "08_Propuesta_Segunda_Planta",
-        "Arquitectura"
-      ],
-      "location_blender": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "rotation_euler_deg_blender": [
-        0.0,
-        -0.0,
-        0.0
-      ],
-      "scale_blender": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "world_center_blender": [
-        6.83923,
-        6.2,
-        5.31462
-      ],
-      "world_min_blender": [
-        6.77308,
-        5.85,
-        5.20154
-      ],
-      "world_max_blender": [
-        6.90538,
-        6.55,
-        5.42769
-      ],
-      "size_blender": [
-        0.13231,
-        0.7,
-        0.22615
-      ],
-      "triangles": 12,
-      "materials": [
-        "MAT_acero_tecnico"
-      ],
-      "visible_viewport": true,
-      "visible_render": true
-    },
-    {
-      "name": "Esc_Techo_Peldano_12",
-      "collections": [
-        "08_Propuesta_Segunda_Planta",
-        "Arquitectura"
-      ],
-      "location_blender": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "rotation_euler_deg_blender": [
-        0.0,
-        -0.0,
-        0.0
-      ],
-      "scale_blender": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "world_center_blender": [
-        6.93154,
-        6.2,
-        5.54077
-      ],
-      "world_min_blender": [
-        6.86538,
-        5.85,
-        5.42769
-      ],
-      "world_max_blender": [
-        6.99769,
-        6.55,
-        5.65385
-      ],
-      "size_blender": [
-        0.13231,
-        0.7,
-        0.22615
-      ],
-      "triangles": 12,
-      "materials": [
-        "MAT_acero_tecnico"
-      ],
-      "visible_viewport": true,
-      "visible_render": true
-    },
-    {
-      "name": "Esc_Techo_Peldano_13",
-      "collections": [
-        "08_Propuesta_Segunda_Planta",
-        "Arquitectura"
-      ],
-      "location_blender": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "rotation_euler_deg_blender": [
-        0.0,
-        -0.0,
-        0.0
-      ],
-      "scale_blender": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "world_center_blender": [
-        7.02385,
-        6.2,
-        5.76692
-      ],
-      "world_min_blender": [
-        6.95769,
-        5.85,
-        5.65385
-      ],
-      "world_max_blender": [
-        7.09,
-        6.55,
-        5.88
-      ],
-      "size_blender": [
-        0.13231,
-        0.7,
-        0.22615
-      ],
-      "triangles": 12,
-      "materials": [
-        "MAT_acero_tecnico"
+        "MAT_aluminio",
+        "MAT_acero_tecnico",
+        "MAT_aluminio_negro"
       ],
       "visible_viewport": true,
       "visible_render": true
@@ -5753,18 +5135,18 @@
         1.0
       ],
       "world_center_blender": [
-        5.7,
-        5.74,
+        5.6,
+        5.79,
         6.005
       ],
       "world_min_blender": [
-        5.6,
-        5.71,
+        5.5,
+        5.76,
         5.96
       ],
       "world_max_blender": [
-        5.8,
-        5.77,
+        5.7,
+        5.82,
         6.05
       ],
       "size_blender": [
@@ -5775,6 +5157,150 @@
       "triangles": 12,
       "materials": [
         "MAT_acero_tecnico"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Escotilla_Techo_Compuerta",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        6.73,
+        6.2,
+        5.6
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        6.1,
+        6.2,
+        5.6
+      ],
+      "world_min_blender": [
+        5.47,
+        5.82,
+        5.58
+      ],
+      "world_max_blender": [
+        6.73,
+        6.58,
+        5.62
+      ],
+      "size_blender": [
+        1.26,
+        0.76,
+        0.04
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_blanco_calido"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Escotilla_Techo_Cordel",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        5.58,
+        6.2,
+        5.58
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        5.58,
+        6.2,
+        5.13
+      ],
+      "world_min_blender": [
+        5.572,
+        6.192,
+        4.68
+      ],
+      "world_max_blender": [
+        5.588,
+        6.208,
+        5.58
+      ],
+      "size_blender": [
+        0.016,
+        0.016,
+        0.9
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_aluminio_negro"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Escotilla_Techo_Junta",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        6.1,
+        6.2,
+        6.03
+      ],
+      "world_min_blender": [
+        5.42,
+        5.77,
+        6.02
+      ],
+      "world_max_blender": [
+        6.78,
+        6.63,
+        6.04
+      ],
+      "size_blender": [
+        1.36,
+        0.86,
+        0.02
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_aluminio_negro"
       ],
       "visible_viewport": true,
       "visible_render": true
@@ -5801,23 +5327,23 @@
         1.0
       ],
       "world_center_blender": [
-        6.65,
+        6.1,
         6.2,
         5.955
       ],
       "world_min_blender": [
-        5.49,
-        5.69,
+        5.39,
+        5.74,
         5.88
       ],
       "world_max_blender": [
-        7.81,
-        6.71,
+        6.81,
+        6.66,
         6.03
       ],
       "size_blender": [
-        2.32,
-        1.02,
+        1.42,
+        0.92,
         0.15
       ],
       "triangles": 48,
@@ -5834,9 +5360,9 @@
         "Puertas_Y_Ventanas"
       ],
       "location_blender": [
-        5.55,
-        6.65,
-        6.03
+        5.45,
+        6.6,
+        6.04
       ],
       "rotation_euler_deg_blender": [
         0.0,
@@ -5849,24 +5375,72 @@
         1.0
       ],
       "world_center_blender": [
-        6.65,
-        6.2,
-        6.055
+        6.1,
+        6.185,
+        6.05
       ],
       "world_min_blender": [
-        5.55,
-        5.75,
-        6.03
+        5.42,
+        5.74,
+        6.02
       ],
       "world_max_blender": [
-        7.75,
-        6.65,
+        6.78,
+        6.63,
         6.08
       ],
       "size_blender": [
-        2.2,
-        0.9,
-        0.05
+        1.36,
+        0.89,
+        0.06
+      ],
+      "triangles": 12,
+      "materials": [
+        "MAT_aluminio"
+      ],
+      "visible_viewport": true,
+      "visible_render": true
+    },
+    {
+      "name": "Escotilla_Techo_Tirador",
+      "collections": [
+        "08_Propuesta_Segunda_Planta",
+        "Arquitectura"
+      ],
+      "location_blender": [
+        5.58,
+        6.2,
+        4.65
+      ],
+      "rotation_euler_deg_blender": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale_blender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_center_blender": [
+        5.58,
+        6.2,
+        4.65
+      ],
+      "world_min_blender": [
+        5.55,
+        6.185,
+        4.62
+      ],
+      "world_max_blender": [
+        5.61,
+        6.215,
+        4.68
+      ],
+      "size_blender": [
+        0.06,
+        0.03,
+        0.06
       ],
       "triangles": 12,
       "materials": [
@@ -15483,7 +15057,7 @@
       ],
       "location_blender": [
         6.45,
-        7.5,
+        6.7,
         4.25
       ],
       "rotation_euler_deg_blender": [
@@ -15498,17 +15072,17 @@
       ],
       "world_center_blender": [
         6.45,
-        7.5,
+        6.7,
         4.25
       ],
       "world_min_blender": [
         5.05,
-        7.45,
+        6.65,
         2.9
       ],
       "world_max_blender": [
         7.85,
-        7.55,
+        6.75,
         5.6
       ],
       "size_blender": [
@@ -15898,54 +15472,6 @@
       "size_blender": [
         0.1,
         0.25,
-        2.7
-      ],
-      "triangles": 12,
-      "materials": [
-        "MAT_wall_int"
-      ],
-      "visible_viewport": true,
-      "visible_render": true
-    },
-    {
-      "name": "P2_M_Corredor_Norte_Ret",
-      "collections": [
-        "08_Propuesta_Segunda_Planta",
-        "Arquitectura"
-      ],
-      "location_blender": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "rotation_euler_deg_blender": [
-        0.0,
-        -0.0,
-        0.0
-      ],
-      "scale_blender": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "world_center_blender": [
-        5.1,
-        7.1,
-        4.25
-      ],
-      "world_min_blender": [
-        5.05,
-        6.65,
-        2.9
-      ],
-      "world_max_blender": [
-        5.15,
-        7.55,
-        5.6
-      ],
-      "size_blender": [
-        0.1,
-        0.9,
         2.7
       ],
       "triangles": 12,
@@ -20852,54 +20378,6 @@
       "visible_render": true
     },
     {
-      "name": "P2_Piso_P2_Bypass_Esc_Techo",
-      "collections": [
-        "08_Propuesta_Segunda_Planta",
-        "Arquitectura"
-      ],
-      "location_blender": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "rotation_euler_deg_blender": [
-        0.0,
-        -0.0,
-        0.0
-      ],
-      "scale_blender": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "world_center_blender": [
-        6.5,
-        6.7,
-        2.92
-      ],
-      "world_min_blender": [
-        5.15,
-        6.65,
-        2.9
-      ],
-      "world_max_blender": [
-        7.85,
-        6.75,
-        2.94
-      ],
-      "size_blender": [
-        2.7,
-        0.1,
-        0.04
-      ],
-      "triangles": 12,
-      "materials": [
-        "MAT_slab"
-      ],
-      "visible_viewport": true,
-      "visible_render": true
-    },
-    {
       "name": "P2_Piso_P2_Distribuidor_Norte",
       "collections": [
         "08_Propuesta_Segunda_Planta",
@@ -22534,13 +22012,13 @@
     {
       "name": "Solar_Canalizacion",
       "collections": [
-        "14_Fachadas_Y_Vegetacion",
+        "08_Propuesta_Segunda_Planta",
         "Arquitectura"
       ],
       "location_blender": [
-        5.685,
-        6.875,
-        5.91
+        0.0,
+        0.0,
+        0.0
       ],
       "rotation_euler_deg_blender": [
         0.0,
@@ -22553,28 +22031,28 @@
         1.0
       ],
       "world_center_blender": [
-        5.685,
+        5.19,
         6.875,
         5.91
       ],
       "world_min_blender": [
-        5.65,
+        5.15,
         4.0,
         5.88
       ],
       "world_max_blender": [
-        5.72,
+        5.23,
         9.75,
         5.94
       ],
       "size_blender": [
-        0.07,
+        0.08,
         5.75,
         0.06
       ],
       "triangles": 12,
       "materials": [
-        "MAT_aluminio_negro"
+        "MAT_aluminio"
       ],
       "visible_viewport": true,
       "visible_render": true

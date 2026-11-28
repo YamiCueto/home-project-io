@@ -132,7 +132,7 @@ def main():
     bpy.context.scene.collection.children.link(col_temp)
     collider_objs = []
     for o in arch_objs:
-        if "Esc_Techo_Baranda_" not in o.name and "Esc_Techo_Peldano_" not in o.name and any(k in o.name for k in ("_Piso_", "_S0", "_S2", "_S4", "_Sill", "P2_Losa_", "Cubierta_", "Fach_Murete_", "Esc_Baranda_", "Baranda_")):
+        if "Esc_Techo_" not in o.name and "Escotilla_Techo_Compuerta" not in o.name and "Escotilla_Techo_Cordel" not in o.name and "Escotilla_Techo_Tirador" not in o.name and "Escotilla_Techo_Junta" not in o.name and any(k in o.name for k in ("_Piso_", "_S0", "_S2", "_S4", "_Sill", "P2_Losa_", "Cubierta_", "Fach_Murete_", "Esc_Baranda_", "Baranda_")):
             pts = [o.matrix_world @ Vector(c) for c in o.bound_box]
             x0, y0, z0 = min(p.x for p in pts), min(p.y for p in pts), min(p.z for p in pts)
             x1, y1, z1 = max(p.x for p in pts), max(p.y for p in pts), max(p.z for p in pts)
@@ -148,39 +148,6 @@ def main():
             bm.to_mesh(mesh)
             bm.free()
             collider_objs.append(co)
-
-    peldanos = [o for o in arch_objs if o.name.startswith("Esc_Techo_Peldano_")]
-    if peldanos:
-        pts_all = [o.matrix_world @ Vector(c) for o in peldanos for c in o.bound_box]
-        rx0, ry0, rz0 = min(p.x for p in pts_all), min(p.y for p in pts_all), min(p.z for p in pts_all)
-        rx1, ry1, rz1 = max(p.x for p in pts_all), max(p.y for p in pts_all), max(p.z for p in pts_all)
-        mesh_r = bpy.data.meshes.new("COL_Esc_Techo_Rampa")
-        co_r = bpy.data.objects.new("COL_Esc_Techo_Rampa", mesh_r)
-        col_temp.objects.link(co_r)
-        bm_r = bmesh.new()
-        v = [
-            bm_r.verts.new((rx0, ry0, rz0)),
-            bm_r.verts.new((rx1, ry0, rz1)),
-            bm_r.verts.new((rx1, ry1, rz1)),
-            bm_r.verts.new((rx0, ry1, rz0)),
-            bm_r.verts.new((rx0, ry0, rz0 - 0.15)),
-            bm_r.verts.new((rx1, ry0, rz1 - 0.15)),
-            bm_r.verts.new((rx1, ry1, rz1 - 0.15)),
-            bm_r.verts.new((rx0, ry1, rz0 - 0.15)),
-            bm_r.verts.new((rx1 + 0.30, ry0, rz1)),
-            bm_r.verts.new((rx1 + 0.30, ry1, rz1)),
-            bm_r.verts.new((rx1 + 0.30, ry0, rz1 - 0.15)),
-            bm_r.verts.new((rx1 + 0.30, ry1, rz1 - 0.15)),
-        ]
-        for f in [
-            (0, 1, 2, 3), (4, 7, 6, 5), (0, 4, 5, 1), (2, 6, 7, 3), (3, 7, 4, 0),
-            (1, 8, 9, 2), (5, 6, 11, 10), (1, 5, 10, 8), (2, 9, 11, 6), (8, 10, 11, 9),
-        ]:
-            bm_r.faces.new([v[i] for i in f])
-        bmesh.ops.recalc_face_normals(bm_r, faces=bm_r.faces)
-        bm_r.to_mesh(mesh_r)
-        bm_r.free()
-        collider_objs.append(co_r)
 
     packages = {
         "colliders.fbx": ([o.name for o in collider_objs], unity_home / "Colliders" / "colliders.fbx"),

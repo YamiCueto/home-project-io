@@ -67,6 +67,10 @@ namespace HomeProject.Tests.EditMode
             ArchitecturalInspectionMode inspection = Object.FindAnyObjectByType<ArchitecturalInspectionMode>();
             Assert.IsNotNull(inspection, "ArchitecturalInspectionMode missing.");
 
+            HomeProject.Interaction.RetractableAtticStair attic = Object.FindAnyObjectByType<HomeProject.Interaction.RetractableAtticStair>();
+            Assert.IsNotNull(attic, "RetractableAtticStair missing.");
+            Assert.AreEqual(HomeProject.Interaction.AtticStairState.Closed, attic.CurrentState, "Attic stair must start Closed.");
+
             InteractiveDoor[] doors = Object.FindObjectsByType<InteractiveDoor>();
             Assert.AreEqual(19, doors.Length, "Expected 19 InteractiveDoor components.");
 

@@ -290,6 +290,10 @@ namespace HomeProject.Editor
             {
                 sys.gameObject.AddComponent<ArchitecturalInspectionMode>();
             }
+            if (sys.GetComponent<HomeProject.Interaction.RetractableAtticStair>() == null)
+            {
+                sys.gameObject.AddComponent<HomeProject.Interaction.RetractableAtticStair>();
+            }
 
             Transform hud = GetOrCreateChild(systemsRoot.transform, "ResidentialHud");
             if (hud.GetComponent<ResidentialHudController>() == null)

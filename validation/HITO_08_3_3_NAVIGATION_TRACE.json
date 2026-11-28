@@ -1,13 +1,13 @@
 {
     "milestone": "Hito 8.3.1",
     "teleport_count": 0,
-    "total_time_s": 67.13999938964844,
-    "total_distance_m": 103.85399627685547,
-    "floor_collisions": 23297,
-    "stair_collisions": 1608,
-    "wall_collisions": 3584,
-    "obstacle_collisions": 3285,
-    "total_collisions": 31774,
+    "total_time_s": 65.36599731445313,
+    "total_distance_m": 102.93800354003906,
+    "floor_collisions": 19853,
+    "stair_collisions": 1398,
+    "wall_collisions": 2890,
+    "obstacle_collisions": 831,
+    "total_collisions": 24972,
     "zones_expected": 18,
     "zones_visited_count": 18,
     "all_zones_visited": true,
@@ -41,12 +41,12 @@
             "detected_zone": "Exterior / Contexto Urbano",
             "target_unity": [
                 -1.1200000047683716,
-                0.07500000298023224,
+                0.07400000095367432,
                 1.7999999523162842
             ],
             "position_unity": [
                 -1.1200000047683716,
-                0.07500000298023224,
+                0.07400000095367432,
                 1.7999999523162842
             ],
             "horizontal_error_m": 0.0,
@@ -72,14 +72,14 @@
             "position_unity": [
                 -1.1200000047683716,
                 0.019999999552965164,
-                1.0479999780654907
+                1.0499999523162842
             ],
-            "horizontal_error_m": 0.2980000078678131,
+            "horizontal_error_m": 0.30000001192092896,
             "vertical_error_m": 0.05999999865889549,
             "reached": true,
-            "elapsed_s": 0.4819999933242798,
-            "distance_m": 0.7710000276565552,
-            "floor_collisions": 147,
+            "elapsed_s": 0.48500001430511475,
+            "distance_m": 0.7699999809265137,
+            "floor_collisions": 139,
             "stair_collisions": 0,
             "wall_collisions": 0,
             "obstacle_collisions": 0,
@@ -97,14 +97,14 @@
             "position_unity": [
                 -1.1200000047683716,
                 0.05999999865889549,
-                -0.6000000238418579
+                -0.6029999852180481
             ],
-            "horizontal_error_m": 0.30000001192092896,
+            "horizontal_error_m": 0.296999990940094,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 1.7380000352859497,
-            "distance_m": 2.4260001182556152,
-            "floor_collisions": 669,
+            "elapsed_s": 1.746000051498413,
+            "distance_m": 2.428999900817871,
+            "floor_collisions": 627,
             "stair_collisions": 0,
             "wall_collisions": 0,
             "obstacle_collisions": 0,
@@ -120,16 +120,16 @@
                 -2.049999952316284
             ],
             "position_unity": [
-                -1.1180000305175781,
+                -1.11899995803833,
                 0.05999999865889549,
-                -1.7519999742507935
+                -1.753999948501587
             ],
-            "horizontal_error_m": 0.2980000078678131,
+            "horizontal_error_m": 0.29600000381469727,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 2.7179999351501465,
+            "elapsed_s": 2.7239999771118164,
             "distance_m": 3.5820000171661377,
-            "floor_collisions": 1119,
+            "floor_collisions": 1028,
             "stair_collisions": 0,
             "wall_collisions": 0,
             "obstacle_collisions": 0,
@@ -145,18 +145,18 @@
                 -2.049999952316284
             ],
             "position_unity": [
-                -2.703000068664551,
+                -2.7039999961853027,
                 0.05999999865889549,
                 -2.049999952316284
             ],
-            "horizontal_error_m": 0.296999990940094,
+            "horizontal_error_m": 0.29600000381469727,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 3.884000062942505,
-            "distance_m": 5.302000045776367,
-            "floor_collisions": 1572,
+            "elapsed_s": 3.8910000324249268,
+            "distance_m": 5.300000190734863,
+            "floor_collisions": 1503,
             "stair_collisions": 0,
-            "wall_collisions": 121,
+            "wall_collisions": 145,
             "obstacle_collisions": 0,
             "last_hit": "P1_Piso_P1_Sala"
         },
@@ -172,16 +172,16 @@
             "position_unity": [
                 -2.9590001106262207,
                 0.05999999865889549,
-                -3.8289999961853027
+                -3.8299999237060547
             ],
             "horizontal_error_m": 0.2980000078678131,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 5.010000228881836,
-            "distance_m": 7.1020002365112305,
-            "floor_collisions": 2094,
+            "elapsed_s": 5.015999794006348,
+            "distance_m": 7.10099983215332,
+            "floor_collisions": 1952,
             "stair_collisions": 0,
-            "wall_collisions": 121,
+            "wall_collisions": 145,
             "obstacle_collisions": 0,
             "last_hit": "P1_Piso_P1_Sala"
         },
@@ -195,18 +195,18 @@
                 -4.074999809265137
             ],
             "position_unity": [
-                -3.7100000381469727,
+                -3.7070000171661377,
                 0.05999999865889549,
                 -4.008999824523926
             ],
-            "horizontal_error_m": 0.2980000078678131,
+            "horizontal_error_m": 0.30000001192092896,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 5.493000030517578,
-            "distance_m": 7.875999927520752,
-            "floor_collisions": 2317,
+            "elapsed_s": 5.499000072479248,
+            "distance_m": 7.873000144958496,
+            "floor_collisions": 2101,
             "stair_collisions": 0,
-            "wall_collisions": 121,
+            "wall_collisions": 145,
             "obstacle_collisions": 0,
             "last_hit": "P1_Piso_P1_Sala"
         },
@@ -220,18 +220,18 @@
                 -4.074999809265137
             ],
             "position_unity": [
-                -4.554999828338623,
-                0.05700000002980232,
-                -4.060999870300293
+                -4.552999973297119,
+                0.0560000017285347,
+                -4.058000087738037
             ],
-            "horizontal_error_m": 0.29499998688697815,
-            "vertical_error_m": 0.023000000044703484,
+            "horizontal_error_m": 0.2980000078678131,
+            "vertical_error_m": 0.024000000208616257,
             "reached": true,
-            "elapsed_s": 6.250999927520752,
-            "distance_m": 8.729000091552734,
-            "floor_collisions": 2670,
+            "elapsed_s": 6.254000186920166,
+            "distance_m": 8.718999862670898,
+            "floor_collisions": 2418,
             "stair_collisions": 0,
-            "wall_collisions": 175,
+            "wall_collisions": 194,
             "obstacle_collisions": 0,
             "last_hit": "P1_Piso_P1_Garaje_Derecho"
         },
@@ -245,18 +245,18 @@
                 -4.074999809265137
             ],
             "position_unity": [
-                -3.7980000972747803,
+                -3.7990000247955322,
                 0.05999999865889549,
-                -4.089000225067139
+                -4.090000152587891
             ],
-            "horizontal_error_m": 0.29899999499320984,
+            "horizontal_error_m": 0.30000001192092896,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 6.776000022888184,
-            "distance_m": 9.571000099182129,
-            "floor_collisions": 2898,
+            "elapsed_s": 6.78000020980835,
+            "distance_m": 9.560999870300293,
+            "floor_collisions": 2646,
             "stair_collisions": 0,
-            "wall_collisions": 230,
+            "wall_collisions": 253,
             "obstacle_collisions": 0,
             "last_hit": "P1_Piso_P1_Sala"
         },
@@ -270,18 +270,18 @@
                 -4.199999809265137
             ],
             "position_unity": [
-                -2.8970000743865967,
+                -2.8959999084472656,
                 0.05999999865889549,
-                -4.171999931335449
+                -4.172999858856201
             ],
-            "horizontal_error_m": 0.2980000078678131,
+            "horizontal_error_m": 0.296999990940094,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 7.3420000076293945,
-            "distance_m": 10.47599983215332,
-            "floor_collisions": 3160,
+            "elapsed_s": 7.3460001945495605,
+            "distance_m": 10.468000411987305,
+            "floor_collisions": 2905,
             "stair_collisions": 0,
-            "wall_collisions": 230,
+            "wall_collisions": 253,
             "obstacle_collisions": 0,
             "last_hit": "P1_Piso_P1_Sala"
         },
@@ -297,16 +297,16 @@
             "position_unity": [
                 -2.6419999599456787,
                 0.05999999865889549,
-                -5.4039998054504395
+                -5.4029998779296875
             ],
-            "horizontal_error_m": 0.29899999499320984,
+            "horizontal_error_m": 0.30000001192092896,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 8.383000373840332,
-            "distance_m": 11.758999824523926,
-            "floor_collisions": 3644,
+            "elapsed_s": 8.376999855041504,
+            "distance_m": 11.73900032043457,
+            "floor_collisions": 3383,
             "stair_collisions": 0,
-            "wall_collisions": 427,
+            "wall_collisions": 425,
             "obstacle_collisions": 0,
             "last_hit": "P1_Piso_P1_Distribuidor"
         },
@@ -320,18 +320,18 @@
                 -5.699999809265137
             ],
             "position_unity": [
-                -1.5959999561309814,
+                -1.5980000495910645,
                 0.05999999865889549,
                 -5.672999858856201
             ],
-            "horizontal_error_m": 0.296999990940094,
+            "horizontal_error_m": 0.29899999499320984,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 9.32800006866455,
-            "distance_m": 12.869999885559082,
-            "floor_collisions": 4095,
+            "elapsed_s": 9.321000099182129,
+            "distance_m": 12.855999946594238,
+            "floor_collisions": 3813,
             "stair_collisions": 0,
-            "wall_collisions": 652,
+            "wall_collisions": 638,
             "obstacle_collisions": 0,
             "last_hit": "P1_Piso_P1_Bano_Social"
         },
@@ -347,16 +347,16 @@
             "position_unity": [
                 -2.302000045776367,
                 0.05999999865889549,
-                -5.710000038146973
+                -5.711999893188477
             ],
-            "horizontal_error_m": 0.2980000078678131,
+            "horizontal_error_m": 0.29899999499320984,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 9.819999694824219,
-            "distance_m": 13.657999992370605,
-            "floor_collisions": 4307,
+            "elapsed_s": 9.815999984741211,
+            "distance_m": 13.64799976348877,
+            "floor_collisions": 3999,
             "stair_collisions": 0,
-            "wall_collisions": 757,
+            "wall_collisions": 727,
             "obstacle_collisions": 0,
             "last_hit": "P1_Piso_P1_Distribuidor"
         },
@@ -372,16 +372,16 @@
             "position_unity": [
                 -2.572999954223633,
                 0.05999999865889549,
-                -7.432000160217285
+                -7.433000087738037
             ],
-            "horizontal_error_m": 0.30000001192092896,
+            "horizontal_error_m": 0.2980000078678131,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 10.944999694824219,
-            "distance_m": 15.428000450134277,
-            "floor_collisions": 4861,
+            "elapsed_s": 10.940999984741211,
+            "distance_m": 15.416999816894531,
+            "floor_collisions": 4465,
             "stair_collisions": 0,
-            "wall_collisions": 847,
+            "wall_collisions": 809,
             "obstacle_collisions": 0,
             "last_hit": "P1_Piso_P1_Pasillo_Huesped"
         },
@@ -395,18 +395,18 @@
                 -7.730000019073486
             ],
             "position_unity": [
-                -2.9210000038146973,
+                -2.9240000247955322,
                 0.05999999865889549,
-                -7.623000144958496
+                -7.627999782562256
             ],
-            "horizontal_error_m": 0.29899999499320984,
+            "horizontal_error_m": 0.29499998688697815,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
             "elapsed_s": 11.20300006866455,
-            "distance_m": 15.840999603271484,
-            "floor_collisions": 4962,
+            "distance_m": 15.835000038146973,
+            "floor_collisions": 4522,
             "stair_collisions": 0,
-            "wall_collisions": 847,
+            "wall_collisions": 809,
             "obstacle_collisions": 0,
             "last_hit": "P1_Piso_P1_Pasillo_Huesped"
         },
@@ -420,18 +420,18 @@
                 -7.730000019073486
             ],
             "position_unity": [
-                -4.203000068664551,
+                -4.202000141143799,
                 0.05999999865889549,
-                -7.710000038146973
+                -7.710999965667725
             ],
-            "horizontal_error_m": 0.296999990940094,
+            "horizontal_error_m": 0.29899999499320984,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 12.006999969482422,
-            "distance_m": 17.125999450683594,
-            "floor_collisions": 5325,
+            "elapsed_s": 12.003000259399414,
+            "distance_m": 17.115999221801758,
+            "floor_collisions": 4845,
             "stair_collisions": 0,
-            "wall_collisions": 847,
+            "wall_collisions": 809,
             "obstacle_collisions": 0,
             "last_hit": "P1_Piso_P1_Comedor"
         },
@@ -445,19 +445,19 @@
                 -7.730000019073486
             ],
             "position_unity": [
-                -6.4019999504089355,
+                -6.4029998779296875,
                 0.05999999865889549,
                 -7.7230000495910645
             ],
-            "horizontal_error_m": 0.2980000078678131,
+            "horizontal_error_m": 0.296999990940094,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 13.38599967956543,
-            "distance_m": 19.32900047302246,
-            "floor_collisions": 5964,
+            "elapsed_s": 13.385000228881836,
+            "distance_m": 19.32200050354004,
+            "floor_collisions": 5456,
             "stair_collisions": 0,
-            "wall_collisions": 847,
-            "obstacle_collisions": 107,
+            "wall_collisions": 809,
+            "obstacle_collisions": 105,
             "last_hit": "P1_Piso_P1_Cocina"
         },
         {
@@ -470,19 +470,19 @@
                 -6.5
             ],
             "position_unity": [
-                -6.644999980926514,
+                -6.644000053405762,
                 0.05999999865889549,
                 -6.791999816894531
             ],
-            "horizontal_error_m": 0.2980000078678131,
+            "horizontal_error_m": 0.296999990940094,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 14.005000114440918,
-            "distance_m": 20.319000244140625,
-            "floor_collisions": 6205,
+            "elapsed_s": 14.003000259399414,
+            "distance_m": 20.31100082397461,
+            "floor_collisions": 5700,
             "stair_collisions": 0,
-            "wall_collisions": 847,
-            "obstacle_collisions": 107,
+            "wall_collisions": 809,
+            "obstacle_collisions": 105,
             "last_hit": "P1_Piso_P1_Cocina"
         },
         {
@@ -495,19 +495,19 @@
                 -5.25
             ],
             "position_unity": [
-                -7.224999904632568,
+                -7.22599983215332,
                 0.05999999865889549,
-                -5.521999835968018
+                -5.519999980926514
             ],
-            "horizontal_error_m": 0.29899999499320984,
+            "horizontal_error_m": 0.296999990940094,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 14.878000259399414,
-            "distance_m": 21.715999603271484,
-            "floor_collisions": 6583,
+            "elapsed_s": 14.876999855041504,
+            "distance_m": 21.708999633789063,
+            "floor_collisions": 6063,
             "stair_collisions": 0,
-            "wall_collisions": 847,
-            "obstacle_collisions": 107,
+            "wall_collisions": 809,
+            "obstacle_collisions": 105,
             "last_hit": "COL_P1_Piso_P1_Paso_Garaje"
         },
         {
@@ -527,12 +527,12 @@
             "horizontal_error_m": 0.2980000078678131,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 15.814000129699707,
-            "distance_m": 22.85300064086914,
-            "floor_collisions": 7009,
+            "elapsed_s": 15.812000274658203,
+            "distance_m": 22.843000411987305,
+            "floor_collisions": 6467,
             "stair_collisions": 0,
-            "wall_collisions": 951,
-            "obstacle_collisions": 107,
+            "wall_collisions": 909,
+            "obstacle_collisions": 105,
             "last_hit": "P1_Piso_P1_Garaje_Derecho"
         },
         {
@@ -545,19 +545,19 @@
                 -5.25
             ],
             "position_unity": [
-                -7.3480000495910645,
+                -7.3470001220703125,
                 0.05999999865889549,
                 -4.951000213623047
             ],
             "horizontal_error_m": 0.29899999499320984,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 16.16699981689453,
-            "distance_m": 23.417999267578125,
-            "floor_collisions": 7174,
+            "elapsed_s": 16.165000915527344,
+            "distance_m": 23.408000946044922,
+            "floor_collisions": 6615,
             "stair_collisions": 0,
-            "wall_collisions": 1057,
-            "obstacle_collisions": 107,
+            "wall_collisions": 1002,
+            "obstacle_collisions": 105,
             "last_hit": "COL_P1_Piso_P1_Paso_Garaje"
         },
         {
@@ -574,15 +574,15 @@
                 0.05999999865889549,
                 -6.223999977111816
             ],
-            "horizontal_error_m": 0.30000001192092896,
+            "horizontal_error_m": 0.29899999499320984,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 17.02899932861328,
-            "distance_m": 24.79800033569336,
-            "floor_collisions": 7560,
+            "elapsed_s": 17.027000427246094,
+            "distance_m": 24.788000106811523,
+            "floor_collisions": 6905,
             "stair_collisions": 0,
-            "wall_collisions": 1057,
-            "obstacle_collisions": 107,
+            "wall_collisions": 1002,
+            "obstacle_collisions": 105,
             "last_hit": "P1_Piso_P1_Cocina"
         },
         {
@@ -602,12 +602,12 @@
             "horizontal_error_m": 0.2980000078678131,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 17.641000747680664,
-            "distance_m": 25.775999069213867,
-            "floor_collisions": 7863,
+            "elapsed_s": 17.638999938964844,
+            "distance_m": 25.766000747680664,
+            "floor_collisions": 7092,
             "stair_collisions": 0,
-            "wall_collisions": 1057,
-            "obstacle_collisions": 107,
+            "wall_collisions": 1002,
+            "obstacle_collisions": 105,
             "last_hit": "P1_Piso_P1_Cocina"
         },
         {
@@ -620,19 +620,19 @@
                 -9.100000381469727
             ],
             "position_unity": [
-                -6.800000190734863,
+                -6.797999858856201,
                 0.05999999865889549,
-                -8.800000190734863
+                -8.803000450134277
             ],
-            "horizontal_error_m": 0.30000001192092896,
+            "horizontal_error_m": 0.296999990940094,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 18.865999221801758,
-            "distance_m": 27.375999450683594,
-            "floor_collisions": 8474,
+            "elapsed_s": 18.8700008392334,
+            "distance_m": 27.37299919128418,
+            "floor_collisions": 7495,
             "stair_collisions": 0,
-            "wall_collisions": 1177,
-            "obstacle_collisions": 107,
+            "wall_collisions": 1079,
+            "obstacle_collisions": 105,
             "last_hit": "P1_Piso_P1_Lavanderia_Patio"
         },
         {
@@ -652,12 +652,12 @@
             "horizontal_error_m": 0.296999990940094,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 19.600000381469727,
-            "distance_m": 28.540000915527344,
-            "floor_collisions": 8745,
+            "elapsed_s": 19.61400032043457,
+            "distance_m": 28.55299949645996,
+            "floor_collisions": 7704,
             "stair_collisions": 0,
-            "wall_collisions": 1308,
-            "obstacle_collisions": 107,
+            "wall_collisions": 1184,
+            "obstacle_collisions": 105,
             "last_hit": "P1_Piso_P1_Cocina"
         },
         {
@@ -670,19 +670,19 @@
                 -7.75
             ],
             "position_unity": [
-                -2.9179999828338623,
+                -2.9189999103546143,
                 0.05999999865889549,
                 -7.738999843597412
             ],
-            "horizontal_error_m": 0.2980000078678131,
+            "horizontal_error_m": 0.29899999499320984,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 22.047000885009766,
-            "distance_m": 32.43899917602539,
-            "floor_collisions": 9606,
+            "elapsed_s": 22.059999465942383,
+            "distance_m": 32.45199966430664,
+            "floor_collisions": 8526,
             "stair_collisions": 0,
-            "wall_collisions": 1308,
-            "obstacle_collisions": 210,
+            "wall_collisions": 1184,
+            "obstacle_collisions": 199,
             "last_hit": "P1_Piso_P1_Pasillo_Huesped"
         },
         {
@@ -702,12 +702,12 @@
             "horizontal_error_m": 0.2980000078678131,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 22.976999282836914,
-            "distance_m": 33.551998138427734,
-            "floor_collisions": 9938,
+            "elapsed_s": 23.014999389648438,
+            "distance_m": 33.5880012512207,
+            "floor_collisions": 8818,
             "stair_collisions": 0,
-            "wall_collisions": 1435,
-            "obstacle_collisions": 210,
+            "wall_collisions": 1314,
+            "obstacle_collisions": 199,
             "last_hit": "P1_Piso_P1_Habitacion_Huespedes"
         },
         {
@@ -720,19 +720,19 @@
                 -6.800000190734863
             ],
             "position_unity": [
-                -2.615999937057495,
+                -2.61299991607666,
                 0.05999999865889549,
-                -7.0980000495910645
+                -7.0970001220703125
             ],
-            "horizontal_error_m": 0.2980000078678131,
+            "horizontal_error_m": 0.296999990940094,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 24.101999282836914,
-            "distance_m": 35.354000091552734,
-            "floor_collisions": 10310,
+            "elapsed_s": 24.1560001373291,
+            "distance_m": 35.41400146484375,
+            "floor_collisions": 9093,
             "stair_collisions": 0,
-            "wall_collisions": 1511,
-            "obstacle_collisions": 210,
+            "wall_collisions": 1371,
+            "obstacle_collisions": 199,
             "last_hit": "P1_Piso_P1_Pasillo_Huesped"
         },
         {
@@ -745,19 +745,19 @@
                 -5.21999979019165
             ],
             "position_unity": [
-                -2.7290000915527344,
+                -2.7279999256134033,
                 0.05999999865889549,
-                -5.519000053405762
+                -5.515999794006348
             ],
-            "horizontal_error_m": 0.29899999499320984,
+            "horizontal_error_m": 0.296999990940094,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 25.091999053955078,
-            "distance_m": 36.9379997253418,
-            "floor_collisions": 10642,
+            "elapsed_s": 25.145999908447266,
+            "distance_m": 36.99800109863281,
+            "floor_collisions": 9420,
             "stair_collisions": 0,
-            "wall_collisions": 1511,
-            "obstacle_collisions": 210,
+            "wall_collisions": 1371,
+            "obstacle_collisions": 199,
             "last_hit": "P1_Piso_P1_Distribuidor"
         },
         {
@@ -771,18 +771,18 @@
             ],
             "position_unity": [
                 -4.675000190734863,
-                1.4140000343322754,
+                1.4129999876022339,
                 -5.242000102996826
             ],
             "horizontal_error_m": 0.29600000381469727,
-            "vertical_error_m": 0.035999998450279236,
+            "vertical_error_m": 0.03700000047683716,
             "reached": true,
-            "elapsed_s": 26.3700008392334,
-            "distance_m": 39.48099899291992,
-            "floor_collisions": 10673,
-            "stair_collisions": 375,
-            "wall_collisions": 1511,
-            "obstacle_collisions": 275,
+            "elapsed_s": 26.420000076293945,
+            "distance_m": 39.540000915527344,
+            "floor_collisions": 9445,
+            "stair_collisions": 354,
+            "wall_collisions": 1371,
+            "obstacle_collisions": 256,
             "last_hit": "P1_Esc_Peldano_08"
         },
         {
@@ -795,98 +795,48 @@
                 -5.21999979019165
             ],
             "position_unity": [
-                -7.052999973297119,
+                -7.053999900817871,
                 2.9600000381469727,
                 -5.2220001220703125
             ],
-            "horizontal_error_m": 0.296999990940094,
+            "horizontal_error_m": 0.29600000381469727,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 27.856000900268555,
-            "distance_m": 42.4900016784668,
-            "floor_collisions": 10762,
-            "stair_collisions": 735,
-            "wall_collisions": 1511,
-            "obstacle_collisions": 290,
+            "elapsed_s": 27.906999588012695,
+            "distance_m": 42.547000885009766,
+            "floor_collisions": 9527,
+            "stair_collisions": 693,
+            "wall_collisions": 1371,
+            "obstacle_collisions": 269,
             "last_hit": "P2_Piso_P2_Llegada_Escalera"
         },
         {
             "step_index": 31,
-            "label": "Corredor_P2_Bypass_Oeste",
-            "detected_zone": "Habitacion Hija 2",
-            "target_unity": [
-                -7.349999904632568,
-                2.940000057220459,
-                -7.079999923706055
-            ],
-            "position_unity": [
-                -7.313000202178955,
-                2.9600000381469727,
-                -6.7829999923706055
-            ],
-            "horizontal_error_m": 0.29899999499320984,
-            "vertical_error_m": 0.019999999552965164,
-            "reached": true,
-            "elapsed_s": 28.863000869750977,
-            "distance_m": 44.10100173950195,
-            "floor_collisions": 11105,
-            "stair_collisions": 735,
-            "wall_collisions": 1511,
-            "obstacle_collisions": 290,
-            "last_hit": "P2_Piso_P2_Habitacion_Hija_2"
-        },
-        {
-            "step_index": 32,
-            "label": "Corredor_P2_Bypass_Este",
-            "detected_zone": "Habitacion Hija 2",
-            "target_unity": [
-                -5.5,
-                2.940000057220459,
-                -7.079999923706055
-            ],
-            "position_unity": [
-                -5.796000003814697,
-                2.9600000381469727,
-                -7.043000221252441
-            ],
-            "horizontal_error_m": 0.29899999499320984,
-            "vertical_error_m": 0.019999999552965164,
-            "reached": true,
-            "elapsed_s": 29.84600067138672,
-            "distance_m": 45.672000885009766,
-            "floor_collisions": 11444,
-            "stair_collisions": 735,
-            "wall_collisions": 1511,
-            "obstacle_collisions": 290,
-            "last_hit": "P2_Piso_P2_Habitacion_Hija_2"
-        },
-        {
-            "step_index": 33,
-            "label": "Corredor_P2_Bypass_Salida",
+            "label": "Desembarco_Norte_P2",
             "detected_zone": "Corredor Superior",
             "target_unity": [
-                -5.5,
+                -7.349999904632568,
                 2.940000057220459,
                 -6.099999904632568
             ],
             "position_unity": [
-                -5.5269999504089355,
+                -7.2729997634887695,
                 2.9600000381469727,
-                -6.396999835968018
+                -5.814000129699707
             ],
-            "horizontal_error_m": 0.2980000078678131,
+            "horizontal_error_m": 0.29600000381469727,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 30.357999801635742,
-            "distance_m": 46.41899871826172,
-            "floor_collisions": 11626,
-            "stair_collisions": 735,
-            "wall_collisions": 1608,
-            "obstacle_collisions": 290,
+            "elapsed_s": 28.31599998474121,
+            "distance_m": 43.20199966430664,
+            "floor_collisions": 9636,
+            "stair_collisions": 693,
+            "wall_collisions": 1371,
+            "obstacle_collisions": 269,
             "last_hit": "P2_Piso_P2_Distribuidor_Norte"
         },
         {
-            "step_index": 34,
+            "step_index": 32,
             "label": "Corredor_P2_H2",
             "detected_zone": "Corredor Superior",
             "target_unity": [
@@ -895,23 +845,23 @@
                 -6.099999904632568
             ],
             "position_unity": [
-                -4.885000228881836,
+                -4.89900016784668,
                 2.9600000381469727,
-                -6.189000129699707
+                -6.091000080108643
             ],
-            "horizontal_error_m": 0.29899999499320984,
+            "horizontal_error_m": 0.30000001192092896,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 30.7810001373291,
-            "distance_m": 47.095001220703125,
-            "floor_collisions": 11784,
-            "stair_collisions": 735,
-            "wall_collisions": 1608,
-            "obstacle_collisions": 290,
+            "elapsed_s": 29.917999267578125,
+            "distance_m": 45.6609992980957,
+            "floor_collisions": 10104,
+            "stair_collisions": 693,
+            "wall_collisions": 1464,
+            "obstacle_collisions": 269,
             "last_hit": "P2_Piso_P2_Distribuidor_Norte"
         },
         {
-            "step_index": 35,
+            "step_index": 33,
             "label": "Hab_Hija_2",
             "detected_zone": "Habitacion Hija 2",
             "target_unity": [
@@ -920,23 +870,23 @@
                 -8.100000381469727
             ],
             "position_unity": [
-                -4.630000114440918,
+                -4.63100004196167,
                 2.9600000381469727,
-                -7.803999900817871
+                -7.802000045776367
             ],
-            "horizontal_error_m": 0.296999990940094,
+            "horizontal_error_m": 0.30000001192092896,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 32.051998138427734,
-            "distance_m": 48.75299835205078,
-            "floor_collisions": 12203,
-            "stair_collisions": 735,
-            "wall_collisions": 1721,
-            "obstacle_collisions": 290,
+            "elapsed_s": 31.250999450683594,
+            "distance_m": 47.415000915527344,
+            "floor_collisions": 10533,
+            "stair_collisions": 693,
+            "wall_collisions": 1576,
+            "obstacle_collisions": 269,
             "last_hit": "P2_Piso_P2_Habitacion_Hija_2"
         },
         {
-            "step_index": 36,
+            "step_index": 34,
             "label": "Retorno_Corredor_H2",
             "detected_zone": "Corredor Superior",
             "target_unity": [
@@ -945,23 +895,23 @@
                 -6.099999904632568
             ],
             "position_unity": [
-                -4.6020002365112305,
+                -4.591000080108643,
                 2.9600000381469727,
-                -6.3979997634887695
+                -6.396999835968018
             ],
-            "horizontal_error_m": 0.2980000078678131,
+            "horizontal_error_m": 0.296999990940094,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 32.9379997253418,
-            "distance_m": 50.172000885009766,
-            "floor_collisions": 12479,
-            "stair_collisions": 735,
-            "wall_collisions": 1793,
-            "obstacle_collisions": 290,
+            "elapsed_s": 32.19300079345703,
+            "distance_m": 48.92300033569336,
+            "floor_collisions": 10837,
+            "stair_collisions": 693,
+            "wall_collisions": 1649,
+            "obstacle_collisions": 269,
             "last_hit": "P2_Piso_P2_Distribuidor_Norte"
         },
         {
-            "step_index": 37,
+            "step_index": 35,
             "label": "Corredor_P2_H1",
             "detected_zone": "Corredor Superior",
             "target_unity": [
@@ -977,16 +927,16 @@
             "horizontal_error_m": 0.29499998688697815,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 33.52899932861328,
-            "distance_m": 51.117000579833984,
-            "floor_collisions": 12678,
-            "stair_collisions": 735,
-            "wall_collisions": 1793,
-            "obstacle_collisions": 290,
+            "elapsed_s": 32.77799987792969,
+            "distance_m": 49.858001708984375,
+            "floor_collisions": 11027,
+            "stair_collisions": 693,
+            "wall_collisions": 1649,
+            "obstacle_collisions": 269,
             "last_hit": "P2_Piso_P2_Distribuidor_Norte"
         },
         {
-            "step_index": 38,
+            "step_index": 36,
             "label": "Hab_Hija_1",
             "detected_zone": "Habitacion Hija 1",
             "target_unity": [
@@ -997,21 +947,21 @@
             "position_unity": [
                 -3.430000066757202,
                 2.9600000381469727,
-                -7.802000045776367
+                -7.803999900817871
             ],
-            "horizontal_error_m": 0.29899999499320984,
+            "horizontal_error_m": 0.296999990940094,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 34.81399917602539,
-            "distance_m": 52.78799819946289,
-            "floor_collisions": 13121,
-            "stair_collisions": 735,
-            "wall_collisions": 1900,
-            "obstacle_collisions": 290,
+            "elapsed_s": 34.07600021362305,
+            "distance_m": 51.54499816894531,
+            "floor_collisions": 11478,
+            "stair_collisions": 693,
+            "wall_collisions": 1793,
+            "obstacle_collisions": 269,
             "last_hit": "P2_Piso_P2_Habitacion_Hija_1"
         },
         {
-            "step_index": 39,
+            "step_index": 37,
             "label": "Retorno_Corredor_H1",
             "detected_zone": "Corredor Superior",
             "target_unity": [
@@ -1022,21 +972,21 @@
             "position_unity": [
                 -3.3919999599456787,
                 2.9600000381469727,
-                -6.400000095367432
+                -6.394999980926514
             ],
-            "horizontal_error_m": 0.30000001192092896,
+            "horizontal_error_m": 0.29499998688697815,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 35.75199890136719,
-            "distance_m": 54.28900146484375,
-            "floor_collisions": 13441,
-            "stair_collisions": 735,
-            "wall_collisions": 1985,
-            "obstacle_collisions": 290,
+            "elapsed_s": 35.01900100708008,
+            "distance_m": 53.05400085449219,
+            "floor_collisions": 11756,
+            "stair_collisions": 693,
+            "wall_collisions": 1867,
+            "obstacle_collisions": 269,
             "last_hit": "P2_Piso_P2_Distribuidor_Norte"
         },
         {
-            "step_index": 40,
+            "step_index": 38,
             "label": "Corredor_P2_Bano",
             "detected_zone": "Corredor Superior",
             "target_unity": [
@@ -1045,23 +995,23 @@
                 -6.0
             ],
             "position_unity": [
-                -2.819999933242798,
+                -2.821000099182129,
                 2.9600000381469727,
-                -6.125
+                -6.124000072479248
             ],
-            "horizontal_error_m": 0.296999990940094,
+            "horizontal_error_m": 0.2980000078678131,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 36.150001525878906,
-            "distance_m": 54.92599868774414,
-            "floor_collisions": 13586,
-            "stair_collisions": 735,
-            "wall_collisions": 1985,
-            "obstacle_collisions": 290,
+            "elapsed_s": 35.415000915527344,
+            "distance_m": 53.6879997253418,
+            "floor_collisions": 11862,
+            "stair_collisions": 693,
+            "wall_collisions": 1867,
+            "obstacle_collisions": 269,
             "last_hit": "P2_Piso_P2_Distribuidor_Oeste"
         },
         {
-            "step_index": 41,
+            "step_index": 39,
             "label": "Bano_Compartido",
             "detected_zone": "Bano Compartido",
             "target_unity": [
@@ -1070,23 +1020,23 @@
                 -6.0
             ],
             "position_unity": [
-                -1.5950000286102295,
+                -1.5980000495910645,
                 2.9600000381469727,
-                -6.026000022888184
+                -6.0229997634887695
             ],
-            "horizontal_error_m": 0.296999990940094,
+            "horizontal_error_m": 0.29899999499320984,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 37.14500045776367,
-            "distance_m": 56.15700149536133,
-            "floor_collisions": 13955,
-            "stair_collisions": 735,
-            "wall_collisions": 2075,
-            "obstacle_collisions": 290,
+            "elapsed_s": 36.40999984741211,
+            "distance_m": 54.91699981689453,
+            "floor_collisions": 12140,
+            "stair_collisions": 693,
+            "wall_collisions": 1928,
+            "obstacle_collisions": 269,
             "last_hit": "P2_Piso_P2_Bano_Compartido"
         },
         {
-            "step_index": 42,
+            "step_index": 40,
             "label": "Retorno_Corredor_Bano",
             "detected_zone": "Corredor Superior",
             "target_unity": [
@@ -1095,23 +1045,23 @@
                 -6.0
             ],
             "position_unity": [
-                -2.302000045776367,
+                -2.3010001182556152,
                 2.9600000381469727,
-                -5.986000061035156
+                -5.985000133514404
             ],
-            "horizontal_error_m": 0.2980000078678131,
+            "horizontal_error_m": 0.30000001192092896,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 37.652000427246094,
-            "distance_m": 56.965999603271484,
-            "floor_collisions": 14111,
-            "stair_collisions": 735,
-            "wall_collisions": 2156,
-            "obstacle_collisions": 290,
+            "elapsed_s": 36.926998138427734,
+            "distance_m": 55.7239990234375,
+            "floor_collisions": 12271,
+            "stair_collisions": 693,
+            "wall_collisions": 1995,
+            "obstacle_collisions": 269,
             "last_hit": "P2_Piso_P2_Distribuidor_Oeste"
         },
         {
-            "step_index": 43,
+            "step_index": 41,
             "label": "Corredor_P2_Master_Puerta",
             "detected_zone": "Corredor Superior",
             "target_unity": [
@@ -1120,23 +1070,23 @@
                 -5.099999904632568
             ],
             "position_unity": [
-                -2.5199999809265137,
+                -2.5209999084472656,
                 2.9600000381469727,
-                -5.388000011444092
+                -5.386000156402588
             ],
-            "horizontal_error_m": 0.29899999499320984,
+            "horizontal_error_m": 0.296999990940094,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 38.05699920654297,
-            "distance_m": 57.60900115966797,
-            "floor_collisions": 14260,
-            "stair_collisions": 735,
-            "wall_collisions": 2189,
-            "obstacle_collisions": 290,
+            "elapsed_s": 37.33300018310547,
+            "distance_m": 56.36899948120117,
+            "floor_collisions": 12406,
+            "stair_collisions": 693,
+            "wall_collisions": 2026,
+            "obstacle_collisions": 269,
             "last_hit": "P2_Piso_P2_Distribuidor_Oeste"
         },
         {
-            "step_index": 44,
+            "step_index": 42,
             "label": "Hab_Principal",
             "detected_zone": "Habitacion Principal",
             "target_unity": [
@@ -1145,23 +1095,23 @@
                 -3.049999952316284
             ],
             "position_unity": [
-                -2.6029999256134033,
+                -2.5889999866485596,
                 2.9600000381469727,
-                -3.3469998836517334
+                -3.3459999561309814
             ],
-            "horizontal_error_m": 0.296999990940094,
+            "horizontal_error_m": 0.29600000381469727,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 39.551998138427734,
-            "distance_m": 59.733001708984375,
-            "floor_collisions": 14767,
-            "stair_collisions": 735,
-            "wall_collisions": 2265,
-            "obstacle_collisions": 290,
+            "elapsed_s": 38.8380012512207,
+            "distance_m": 58.41400146484375,
+            "floor_collisions": 12916,
+            "stair_collisions": 693,
+            "wall_collisions": 2096,
+            "obstacle_collisions": 269,
             "last_hit": "P2_Piso_P2_Habitacion_Principal"
         },
         {
-            "step_index": 45,
+            "step_index": 43,
             "label": "Master_Puerta_Vest",
             "detected_zone": "Habitacion Principal",
             "target_unity": [
@@ -1170,23 +1120,23 @@
                 -3.049999952316284
             ],
             "position_unity": [
-                -3.7049999237060547,
+                -3.7039999961853027,
                 2.9600000381469727,
-                -3.0989999771118164
+                -3.0969998836517334
             ],
-            "horizontal_error_m": 0.29899999499320984,
+            "horizontal_error_m": 0.30000001192092896,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 40.2760009765625,
-            "distance_m": 60.89099884033203,
-            "floor_collisions": 15009,
-            "stair_collisions": 735,
-            "wall_collisions": 2265,
-            "obstacle_collisions": 290,
+            "elapsed_s": 39.56999969482422,
+            "distance_m": 59.584999084472656,
+            "floor_collisions": 13132,
+            "stair_collisions": 693,
+            "wall_collisions": 2096,
+            "obstacle_collisions": 269,
             "last_hit": "P2_Piso_P2_Habitacion_Principal"
         },
         {
-            "step_index": 46,
+            "step_index": 44,
             "label": "Vestidor",
             "detected_zone": "Vestidor",
             "target_unity": [
@@ -1195,23 +1145,23 @@
                 -3.049999952316284
             ],
             "position_unity": [
-                -5.017000198364258,
+                -5.001999855041504,
                 2.9600000381469727,
-                -3.061000108718872
+                -3.056999921798706
             ],
-            "horizontal_error_m": 0.28299999237060547,
+            "horizontal_error_m": 0.2980000078678131,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 41.32500076293945,
-            "distance_m": 62.20800018310547,
-            "floor_collisions": 15362,
-            "stair_collisions": 735,
-            "wall_collisions": 2344,
-            "obstacle_collisions": 290,
+            "elapsed_s": 40.611000061035156,
+            "distance_m": 60.887001037597656,
+            "floor_collisions": 13476,
+            "stair_collisions": 693,
+            "wall_collisions": 2168,
+            "obstacle_collisions": 269,
             "last_hit": "COL_P2_Piso_P2_Vestidor_Principal"
         },
         {
-            "step_index": 47,
+            "step_index": 45,
             "label": "Bano_Principal",
             "detected_zone": "Bano Principal",
             "target_unity": [
@@ -1220,23 +1170,23 @@
                 -3.049999952316284
             ],
             "position_unity": [
-                -6.251999855041504,
+                -6.250999927520752,
                 2.9600000381469727,
-                -3.049999952316284
+                -3.052000045776367
             ],
-            "horizontal_error_m": 0.2980000078678131,
+            "horizontal_error_m": 0.29899999499320984,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 42.36399841308594,
-            "distance_m": 63.446998596191406,
-            "floor_collisions": 15737,
-            "stair_collisions": 735,
-            "wall_collisions": 2423,
-            "obstacle_collisions": 290,
+            "elapsed_s": 41.654998779296875,
+            "distance_m": 62.13600158691406,
+            "floor_collisions": 13778,
+            "stair_collisions": 693,
+            "wall_collisions": 2220,
+            "obstacle_collisions": 269,
             "last_hit": "COL_P2_Piso_P2_Bano_Principal"
         },
         {
-            "step_index": 48,
+            "step_index": 46,
             "label": "Retorno_Vestidor",
             "detected_zone": "Vestidor",
             "target_unity": [
@@ -1245,23 +1195,23 @@
                 -3.049999952316284
             ],
             "position_unity": [
-                -5.598999977111816,
+                -5.593999862670898,
                 2.9600000381469727,
-                -3.071000099182129
+                -3.0220000743865967
             ],
-            "horizontal_error_m": 0.30000001192092896,
+            "horizontal_error_m": 0.29600000381469727,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 42.832000732421875,
-            "distance_m": 64.19499969482422,
-            "floor_collisions": 15881,
-            "stair_collisions": 735,
-            "wall_collisions": 2498,
-            "obstacle_collisions": 290,
+            "elapsed_s": 42.14099884033203,
+            "distance_m": 62.91400146484375,
+            "floor_collisions": 13890,
+            "stair_collisions": 693,
+            "wall_collisions": 2277,
+            "obstacle_collisions": 269,
             "last_hit": "COL_P2_Piso_P2_Vestidor_Principal"
         },
         {
-            "step_index": 49,
+            "step_index": 47,
             "label": "Retorno_Master_Oeste",
             "detected_zone": "Habitacion Principal",
             "target_unity": [
@@ -1272,21 +1222,21 @@
             "position_unity": [
                 -2.9000000953674316,
                 2.9600000381469727,
-                -3.052000045776367
+                -3.046999931335449
             ],
             "horizontal_error_m": 0.30000001192092896,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 44.51900100708008,
-            "distance_m": 66.8949966430664,
-            "floor_collisions": 16487,
-            "stair_collisions": 735,
-            "wall_collisions": 2584,
-            "obstacle_collisions": 290,
+            "elapsed_s": 43.82500076293945,
+            "distance_m": 65.60900115966797,
+            "floor_collisions": 14416,
+            "stair_collisions": 693,
+            "wall_collisions": 2346,
+            "obstacle_collisions": 269,
             "last_hit": "P2_Piso_P2_Habitacion_Principal"
         },
         {
-            "step_index": 50,
+            "step_index": 48,
             "label": "Retorno_Master_Salir",
             "detected_zone": "Habitacion Principal",
             "target_unity": [
@@ -1295,23 +1245,23 @@
                 -3.799999952316284
             ],
             "position_unity": [
-                -2.7079999446868896,
+                -2.7070000171661377,
                 2.9600000381469727,
-                -3.5209999084472656
+                -3.5220000743865967
             ],
-            "horizontal_error_m": 0.29899999499320984,
+            "horizontal_error_m": 0.2980000078678131,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 44.83700180053711,
-            "distance_m": 67.40399932861328,
-            "floor_collisions": 16600,
-            "stair_collisions": 735,
-            "wall_collisions": 2584,
-            "obstacle_collisions": 290,
+            "elapsed_s": 44.14699935913086,
+            "distance_m": 66.1240005493164,
+            "floor_collisions": 14525,
+            "stair_collisions": 693,
+            "wall_collisions": 2346,
+            "obstacle_collisions": 269,
             "last_hit": "P2_Piso_P2_Habitacion_Principal"
         },
         {
-            "step_index": 51,
+            "step_index": 49,
             "label": "Corredor_P2_Descenso",
             "detected_zone": "Corredor Superior",
             "target_unity": [
@@ -1327,141 +1277,166 @@
             "horizontal_error_m": 0.29600000381469727,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 46.26499938964844,
-            "distance_m": 69.68900299072266,
-            "floor_collisions": 17134,
-            "stair_collisions": 735,
-            "wall_collisions": 2664,
-            "obstacle_collisions": 290,
+            "elapsed_s": 45.57400131225586,
+            "distance_m": 68.40799713134766,
+            "floor_collisions": 15023,
+            "stair_collisions": 693,
+            "wall_collisions": 2419,
+            "obstacle_collisions": 269,
             "last_hit": "P2_Piso_P2_Distribuidor_Oeste"
         },
         {
-            "step_index": 52,
-            "label": "Base_Escalera_Techo",
+            "step_index": 50,
+            "label": "Base_Escalera_Retractil",
             "detected_zone": "Corredor Superior",
             "target_unity": [
-                -5.5,
+                -4.349999904632568,
                 2.940000057220459,
                 -6.199999809265137
             ],
             "position_unity": [
-                -5.201000213623047,
+                -4.054999828338623,
                 2.9600000381469727,
-                -6.178999900817871
+                -6.159999847412109
             ],
-            "horizontal_error_m": 0.30000001192092896,
+            "horizontal_error_m": 0.2980000078678131,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 47.9900016784668,
-            "distance_m": 72.36499786376953,
-            "floor_collisions": 17765,
-            "stair_collisions": 735,
-            "wall_collisions": 2758,
-            "obstacle_collisions": 290,
+            "elapsed_s": 46.55799865722656,
+            "distance_m": 69.93399810791016,
+            "floor_collisions": 15337,
+            "stair_collisions": 693,
+            "wall_collisions": 2487,
+            "obstacle_collisions": 269,
             "last_hit": "P2_Piso_P2_Distribuidor_Norte"
         },
         {
-            "step_index": 53,
+            "step_index": 51,
+            "label": "Escalera_Techo_Pie",
+            "detected_zone": "Corredor Superior",
+            "target_unity": [
+                -5.449999809265137,
+                2.940000057220459,
+                -6.199999809265137
+            ],
+            "position_unity": [
+                -5.151000022888184,
+                2.9600000381469727,
+                -6.191999912261963
+            ],
+            "horizontal_error_m": 0.29899999499320984,
+            "vertical_error_m": 0.019999999552965164,
+            "reached": true,
+            "elapsed_s": 48.39699935913086,
+            "distance_m": 71.03099822998047,
+            "floor_collisions": 15889,
+            "stair_collisions": 693,
+            "wall_collisions": 2487,
+            "obstacle_collisions": 269,
+            "last_hit": "P2_Piso_P2_Distribuidor_Norte"
+        },
+        {
+            "step_index": 52,
             "label": "Escalera_Techo_Media",
             "detected_zone": "Corredor Superior",
             "target_unity": [
-                -6.449999809265137,
-                4.150000095367432,
+                -6.179999828338623,
+                4.449999809265137,
                 -6.199999809265137
             ],
             "position_unity": [
-                -6.1539998054504395,
-                4.1529998779296875,
-                -6.195000171661377
+                -5.966000080108643,
+                4.11899995803833,
+                -6.197999954223633
             ],
-            "horizontal_error_m": 0.29600000381469727,
-            "vertical_error_m": 0.003000000026077032,
+            "horizontal_error_m": 0.21400000154972076,
+            "vertical_error_m": 0.3310000002384186,
             "reached": true,
-            "elapsed_s": 48.584999084472656,
-            "distance_m": 74.11100006103516,
-            "floor_collisions": 17874,
-            "stair_collisions": 735,
-            "wall_collisions": 2776,
-            "obstacle_collisions": 405,
-            "last_hit": "COL_Esc_Techo_Rampa"
+            "elapsed_s": 48.90599822998047,
+            "distance_m": 72.70800018310547,
+            "floor_collisions": 15968,
+            "stair_collisions": 693,
+            "wall_collisions": 2487,
+            "obstacle_collisions": 314,
+            "last_hit": "Esc_Techo_Rampa_Collider"
         },
         {
-            "step_index": 54,
+            "step_index": 53,
             "label": "Cubierta_Desembarco",
             "detected_zone": "Corredor Superior",
             "target_unity": [
-                -7.420000076293945,
+                -6.679999828338623,
                 5.960000038146973,
-                -6.199999809265137
+                -6.099999904632568
             ],
             "position_unity": [
-                -6.75,
-                5.565000057220459,
-                -6.188000202178955
+                -6.416999816894531,
+                5.620999813079834,
+                -6.13700008392334
             ],
-            "horizontal_error_m": 0.6710000038146973,
-            "vertical_error_m": 0.39500001072883606,
-            "reached": false,
-            "elapsed_s": 51.2130012512207,
-            "distance_m": 75.6520004272461,
-            "floor_collisions": 17874,
-            "stair_collisions": 735,
-            "wall_collisions": 2776,
-            "obstacle_collisions": 3059,
-            "last_hit": "COL_Esc_Techo_Rampa"
+            "horizontal_error_m": 0.26499998569488525,
+            "vertical_error_m": 0.33899998664855957,
+            "reached": true,
+            "elapsed_s": 49.191001892089844,
+            "distance_m": 74.27799987792969,
+            "floor_collisions": 15968,
+            "stair_collisions": 693,
+            "wall_collisions": 2487,
+            "obstacle_collisions": 389,
+            "last_hit": "Esc_Techo_Rampa_Collider"
         },
         {
-            "step_index": 55,
+            "step_index": 54,
             "label": "Cubierta_Salida_Escotilla",
             "detected_zone": "Cubierta Tecnica",
             "target_unity": [
-                -7.420000076293945,
+                -6.679999828338623,
                 5.960000038146973,
                 -5.199999809265137
             ],
             "position_unity": [
-                -7.38700008392334,
-                5.978000164031982,
-                -5.494999885559082
+                -6.559999942779541,
+                6.066999912261963,
+                -5.473999977111816
             ],
-            "horizontal_error_m": 0.296999990940094,
-            "vertical_error_m": 0.017999999225139618,
+            "horizontal_error_m": 0.29899999499320984,
+            "vertical_error_m": 0.10700000077486038,
             "reached": true,
-            "elapsed_s": 52.21900177001953,
-            "distance_m": 77.04199981689453,
-            "floor_collisions": 18154,
-            "stair_collisions": 735,
-            "wall_collisions": 3012,
-            "obstacle_collisions": 3115,
-            "last_hit": "Escotilla_Techo_Marco"
+            "elapsed_s": 49.63199996948242,
+            "distance_m": 75.28299713134766,
+            "floor_collisions": 16071,
+            "stair_collisions": 693,
+            "wall_collisions": 2563,
+            "obstacle_collisions": 425,
+            "last_hit": "Solar_Marco_1_2"
         },
         {
-            "step_index": 56,
+            "step_index": 55,
             "label": "Cubierta_Tecnica",
             "detected_zone": "Cubierta Tecnica",
             "target_unity": [
-                -7.420000076293945,
+                -6.949999809265137,
                 5.960000038146973,
                 -4.400000095367432
             ],
             "position_unity": [
-                -7.4120001792907715,
+                -6.849999904632568,
                 5.900000095367432,
-                -4.697999954223633
+                -4.678999900817871
             ],
-            "horizontal_error_m": 0.2980000078678131,
+            "horizontal_error_m": 0.296999990940094,
             "vertical_error_m": 0.05999999865889549,
             "reached": true,
-            "elapsed_s": 52.71799850463867,
-            "distance_m": 77.8740005493164,
-            "floor_collisions": 18322,
-            "stair_collisions": 735,
-            "wall_collisions": 3012,
-            "obstacle_collisions": 3116,
-            "last_hit": "COL_Cubierta_Pend_Seg_Sur"
+            "elapsed_s": 50.1609992980957,
+            "distance_m": 76.16899871826172,
+            "floor_collisions": 16218,
+            "stair_collisions": 693,
+            "wall_collisions": 2563,
+            "obstacle_collisions": 441,
+            "last_hit": "COL_Cubierta_Pend_Seg_Este"
         },
         {
-            "step_index": 57,
+            "step_index": 56,
             "label": "Cubierta_PV_Inspeccion",
             "detected_zone": "Cubierta Tecnica",
             "target_unity": [
@@ -1470,173 +1445,173 @@
                 -4.400000095367432
             ],
             "position_unity": [
-                -5.49399995803833,
-                5.997000217437744,
-                -4.438000202178955
+                -5.493000030517578,
+                5.999000072479248,
+                -4.447000026702881
             ],
             "horizontal_error_m": 0.29600000381469727,
-            "vertical_error_m": 0.03700000047683716,
+            "vertical_error_m": 0.039000000804662704,
             "reached": true,
-            "elapsed_s": 53.92900085449219,
-            "distance_m": 79.84300231933594,
-            "floor_collisions": 18736,
-            "stair_collisions": 735,
-            "wall_collisions": 3012,
-            "obstacle_collisions": 3116,
+            "elapsed_s": 51.02399826049805,
+            "distance_m": 77.58100128173828,
+            "floor_collisions": 16493,
+            "stair_collisions": 693,
+            "wall_collisions": 2563,
+            "obstacle_collisions": 441,
             "last_hit": "Solar_Vidrio_1_2"
         },
         {
-            "step_index": 58,
+            "step_index": 57,
             "label": "Cubierta_Retorno_Oeste",
             "detected_zone": "Cubierta Tecnica",
             "target_unity": [
-                -7.420000076293945,
+                -6.949999809265137,
                 5.960000038146973,
                 -4.400000095367432
             ],
             "position_unity": [
-                -7.120999813079834,
-                5.900000095367432,
-                -4.4029998779296875
+                -6.6529998779296875,
+                5.954999923706055,
+                -4.406000137329102
             ],
-            "horizontal_error_m": 0.29899999499320984,
-            "vertical_error_m": 0.05999999865889549,
+            "horizontal_error_m": 0.296999990940094,
+            "vertical_error_m": 0.004999999888241291,
             "reached": true,
-            "elapsed_s": 54.95399856567383,
-            "distance_m": 81.5199966430664,
-            "floor_collisions": 19142,
-            "stair_collisions": 735,
-            "wall_collisions": 3012,
-            "obstacle_collisions": 3116,
-            "last_hit": "COL_Cubierta_Pend_Seg_Sur"
+            "elapsed_s": 51.75699996948242,
+            "distance_m": 78.77799987792969,
+            "floor_collisions": 16752,
+            "stair_collisions": 693,
+            "wall_collisions": 2563,
+            "obstacle_collisions": 441,
+            "last_hit": "Zona_Paneles_Solares_Base"
         },
         {
-            "step_index": 59,
+            "step_index": 58,
             "label": "Cubierta_Retorno_Escotilla",
             "detected_zone": "Cubierta Tecnica",
             "target_unity": [
-                -7.420000076293945,
+                -6.679999828338623,
                 5.960000038146973,
                 -5.199999809265137
             ],
             "position_unity": [
-                -7.317999839782715,
-                5.900000095367432,
-                -4.919000148773193
+                -6.673999786376953,
+                5.951000213623047,
+                -4.901000022888184
             ],
             "horizontal_error_m": 0.29899999499320984,
-            "vertical_error_m": 0.05999999865889549,
+            "vertical_error_m": 0.008999999612569809,
             "reached": true,
-            "elapsed_s": 55.29999923706055,
-            "distance_m": 82.0739974975586,
-            "floor_collisions": 19286,
-            "stair_collisions": 735,
-            "wall_collisions": 3012,
-            "obstacle_collisions": 3116,
-            "last_hit": "COL_Cubierta_Pend_Seg_Sur"
+            "elapsed_s": 52.06999969482422,
+            "distance_m": 79.27799987792969,
+            "floor_collisions": 16863,
+            "stair_collisions": 693,
+            "wall_collisions": 2563,
+            "obstacle_collisions": 441,
+            "last_hit": "Zona_Paneles_Solares_Base"
         },
         {
-            "step_index": 60,
+            "step_index": 59,
             "label": "Cubierta_Entrada_Escotilla",
             "detected_zone": "Cubierta Tecnica",
             "target_unity": [
-                -7.420000076293945,
+                -6.679999828338623,
                 5.960000038146973,
+                -6.099999904632568
+            ],
+            "position_unity": [
+                -6.473999977111816,
+                6.038000106811523,
+                -5.883999824523926
+            ],
+            "horizontal_error_m": 0.29899999499320984,
+            "vertical_error_m": 0.07800000160932541,
+            "reached": true,
+            "elapsed_s": 52.92399978637695,
+            "distance_m": 80.45600128173828,
+            "floor_collisions": 17091,
+            "stair_collisions": 693,
+            "wall_collisions": 2738,
+            "obstacle_collisions": 489,
+            "last_hit": "Escotilla_Techo_Marco"
+        },
+        {
+            "step_index": 60,
+            "label": "Descenso_Techo_Media",
+            "detected_zone": "Corredor Superior",
+            "target_unity": [
+                -6.179999828338623,
+                4.449999809265137,
                 -6.199999809265137
             ],
             "position_unity": [
-                -7.396999835968018,
-                6.008999824523926,
-                -5.901000022888184
+                -6.1529998779296875,
+                4.747000217437744,
+                -6.191999912261963
             ],
-            "horizontal_error_m": 0.30000001192092896,
-            "vertical_error_m": 0.04899999871850014,
+            "horizontal_error_m": 0.02800000086426735,
+            "vertical_error_m": 0.296999990940094,
             "reached": true,
-            "elapsed_s": 55.91600036621094,
-            "distance_m": 83.11900329589844,
-            "floor_collisions": 19551,
-            "stair_collisions": 735,
-            "wall_collisions": 3012,
-            "obstacle_collisions": 3121,
-            "last_hit": "Escotilla_Techo_Marco"
+            "elapsed_s": 53.74599838256836,
+            "distance_m": 83.76799774169922,
+            "floor_collisions": 17126,
+            "stair_collisions": 693,
+            "wall_collisions": 2738,
+            "obstacle_collisions": 666,
+            "last_hit": "Esc_Techo_Rampa_Collider"
         },
         {
             "step_index": 61,
             "label": "Descenso_Escalera_Techo",
             "detected_zone": "Corredor Superior",
             "target_unity": [
-                -5.5,
+                -4.349999904632568,
                 2.940000057220459,
                 -6.199999809265137
             ],
             "position_unity": [
-                -5.735000133514404,
-                3.2799999713897705,
-                -6.185999870300293
+                -4.6479997634887695,
+                2.9600000381469727,
+                -6.199999809265137
             ],
-            "horizontal_error_m": 0.23600000143051147,
-            "vertical_error_m": 0.3400000035762787,
+            "horizontal_error_m": 0.2980000078678131,
+            "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 57.060001373291016,
-            "distance_m": 86.60099792480469,
-            "floor_collisions": 19741,
-            "stair_collisions": 735,
-            "wall_collisions": 3133,
-            "obstacle_collisions": 3155,
-            "last_hit": "COL_Esc_Techo_Rampa"
+            "elapsed_s": 54.6870002746582,
+            "distance_m": 86.60399627685547,
+            "floor_collisions": 17300,
+            "stair_collisions": 693,
+            "wall_collisions": 2738,
+            "obstacle_collisions": 755,
+            "last_hit": "P2_Piso_P2_Distribuidor_Norte"
         },
         {
             "step_index": 62,
-            "label": "Corredor_P2_Retorno_Bypass_Este",
-            "detected_zone": "Habitacion Hija 2",
-            "target_unity": [
-                -5.5,
-                2.940000057220459,
-                -7.079999923706055
-            ],
-            "position_unity": [
-                -5.53000020980835,
-                2.9600000381469727,
-                -6.7820000648498535
-            ],
-            "horizontal_error_m": 0.30000001192092896,
-            "vertical_error_m": 0.019999999552965164,
-            "reached": true,
-            "elapsed_s": 57.48899841308594,
-            "distance_m": 87.447998046875,
-            "floor_collisions": 19889,
-            "stair_collisions": 735,
-            "wall_collisions": 3228,
-            "obstacle_collisions": 3184,
-            "last_hit": "P2_Piso_P2_Habitacion_Hija_2"
-        },
-        {
-            "step_index": 63,
-            "label": "Corredor_P2_Retorno_Bypass_Oeste",
-            "detected_zone": "Habitacion Hija 2",
+            "label": "Corredor_P2_Escalera_Norte",
+            "detected_zone": "Corredor Superior",
             "target_unity": [
                 -7.349999904632568,
                 2.940000057220459,
-                -7.079999923706055
+                -6.099999904632568
             ],
             "position_unity": [
-                -7.052000045776367,
+                -7.053999900817871,
                 2.9600000381469727,
-                -7.052999973297119
+                -6.107999801635742
             ],
-            "horizontal_error_m": 0.29899999499320984,
+            "horizontal_error_m": 0.29600000381469727,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 58.50899887084961,
-            "distance_m": 89.03199768066406,
-            "floor_collisions": 20372,
-            "stair_collisions": 735,
-            "wall_collisions": 3325,
-            "obstacle_collisions": 3184,
-            "last_hit": "P2_Piso_P2_Habitacion_Hija_2"
+            "elapsed_s": 57.35499954223633,
+            "distance_m": 89.0270004272461,
+            "floor_collisions": 18105,
+            "stair_collisions": 693,
+            "wall_collisions": 2738,
+            "obstacle_collisions": 755,
+            "last_hit": "P2_Piso_P2_Distribuidor_Norte"
         },
         {
-            "step_index": 64,
+            "step_index": 63,
             "label": "Corredor_P2_Escalera",
             "detected_zone": "Corredor Superior",
             "target_unity": [
@@ -1645,23 +1620,23 @@
                 -5.21999979019165
             ],
             "position_unity": [
-                -7.303999900817871,
+                -7.258999824523926,
                 2.9600000381469727,
-                -5.513000011444092
+                -5.505000114440918
             ],
-            "horizontal_error_m": 0.296999990940094,
+            "horizontal_error_m": 0.29899999499320984,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 59.486000061035156,
-            "distance_m": 90.59500122070313,
-            "floor_collisions": 20797,
-            "stair_collisions": 735,
-            "wall_collisions": 3325,
-            "obstacle_collisions": 3184,
+            "elapsed_s": 57.75400161743164,
+            "distance_m": 89.66699981689453,
+            "floor_collisions": 18232,
+            "stair_collisions": 693,
+            "wall_collisions": 2738,
+            "obstacle_collisions": 755,
             "last_hit": "P2_Piso_P2_Llegada_Escalera"
         },
         {
-            "step_index": 65,
+            "step_index": 64,
             "label": "Descenso_Escalera",
             "detected_zone": "Primera Planta",
             "target_unity": [
@@ -1670,23 +1645,23 @@
                 -5.21999979019165
             ],
             "position_unity": [
-                -3.0480000972747803,
-                0.19699999690055847,
+                -3.0450000762939453,
+                0.19599999487400055,
                 -5.230000019073486
             ],
-            "horizontal_error_m": 0.2980000078678131,
-            "vertical_error_m": 0.11699999868869781,
+            "horizontal_error_m": 0.29600000381469727,
+            "vertical_error_m": 0.11599999666213989,
             "reached": true,
-            "elapsed_s": 62.20899963378906,
-            "distance_m": 95.9729995727539,
-            "floor_collisions": 21013,
-            "stair_collisions": 1499,
-            "wall_collisions": 3325,
-            "obstacle_collisions": 3285,
+            "elapsed_s": 60.44599914550781,
+            "distance_m": 95.06199645996094,
+            "floor_collisions": 18368,
+            "stair_collisions": 1354,
+            "wall_collisions": 2738,
+            "obstacle_collisions": 831,
             "last_hit": "P1_Esc_Peldano_01"
         },
         {
-            "step_index": 66,
+            "step_index": 65,
             "label": "Salida_Distribuidor",
             "detected_zone": "Sala",
             "target_unity": [
@@ -1695,23 +1670,23 @@
                 -4.199999809265137
             ],
             "position_unity": [
-                -2.6730000972747803,
+                -2.6740000247955322,
                 0.05999999865889549,
-                -4.48799991607666
+                -4.489999771118164
             ],
-            "horizontal_error_m": 0.296999990940094,
+            "horizontal_error_m": 0.29899999499320984,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 62.78099822998047,
-            "distance_m": 96.87999725341797,
-            "floor_collisions": 21168,
-            "stair_collisions": 1608,
-            "wall_collisions": 3532,
-            "obstacle_collisions": 3285,
+            "elapsed_s": 61.00600051879883,
+            "distance_m": 95.96099853515625,
+            "floor_collisions": 18457,
+            "stair_collisions": 1398,
+            "wall_collisions": 2855,
+            "obstacle_collisions": 831,
             "last_hit": "P1_Piso_P1_Sala"
         },
         {
-            "step_index": 67,
+            "step_index": 66,
             "label": "Salida_Sala_Este",
             "detected_zone": "Sala",
             "target_unity": [
@@ -1722,21 +1697,21 @@
             "position_unity": [
                 -2.9600000381469727,
                 0.05999999865889549,
-                -2.3440001010894775
+                -2.3469998836517334
             ],
-            "horizontal_error_m": 0.296999990940094,
+            "horizontal_error_m": 0.30000001192092896,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 64.13300323486328,
-            "distance_m": 99.04199981689453,
-            "floor_collisions": 21829,
-            "stair_collisions": 1608,
-            "wall_collisions": 3532,
-            "obstacle_collisions": 3285,
+            "elapsed_s": 62.358001708984375,
+            "distance_m": 98.1240005493164,
+            "floor_collisions": 18844,
+            "stair_collisions": 1398,
+            "wall_collisions": 2855,
+            "obstacle_collisions": 831,
             "last_hit": "P1_Piso_P1_Sala"
         },
         {
-            "step_index": 68,
+            "step_index": 67,
             "label": "Salida_Sala_Puerta",
             "detected_zone": "Sala",
             "target_unity": [
@@ -1745,23 +1720,23 @@
                 -2.049999952316284
             ],
             "position_unity": [
-                -1.4140000343322754,
+                -1.4119999408721924,
                 0.05999999865889549,
-                -2.0959999561309814
+                -2.0950000286102295
             ],
-            "horizontal_error_m": 0.2980000078678131,
+            "horizontal_error_m": 0.29600000381469727,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 65.11299896240234,
-            "distance_m": 100.61100006103516,
-            "floor_collisions": 22298,
-            "stair_collisions": 1608,
-            "wall_collisions": 3532,
-            "obstacle_collisions": 3285,
+            "elapsed_s": 63.34000015258789,
+            "distance_m": 99.69499969482422,
+            "floor_collisions": 19179,
+            "stair_collisions": 1398,
+            "wall_collisions": 2855,
+            "obstacle_collisions": 831,
             "last_hit": "P1_Piso_P1_Sala"
         },
         {
-            "step_index": 69,
+            "step_index": 68,
             "label": "Salida_Acceso_Peatonal",
             "detected_zone": "Acceso Peatonal",
             "target_unity": [
@@ -1770,23 +1745,23 @@
                 -0.8999999761581421
             ],
             "position_unity": [
-                -1.1799999475479126,
+                -1.1790000200271606,
                 0.05999999865889549,
-                -1.194000005722046
+                -1.190999984741211
             ],
-            "horizontal_error_m": 0.30000001192092896,
+            "horizontal_error_m": 0.296999990940094,
             "vertical_error_m": 0.019999999552965164,
             "reached": true,
-            "elapsed_s": 65.7040023803711,
-            "distance_m": 101.55000305175781,
-            "floor_collisions": 22595,
-            "stair_collisions": 1608,
-            "wall_collisions": 3584,
-            "obstacle_collisions": 3285,
+            "elapsed_s": 63.93199920654297,
+            "distance_m": 100.63600158691406,
+            "floor_collisions": 19383,
+            "stair_collisions": 1398,
+            "wall_collisions": 2890,
+            "obstacle_collisions": 831,
             "last_hit": "P1_Piso_P1_Acceso_Peatonal"
         },
         {
-            "step_index": 70,
+            "step_index": 69,
             "label": "Salida_Exterior",
             "detected_zone": "Exterior / Contexto Urbano",
             "target_unity": [
@@ -1802,12 +1777,12 @@
             "horizontal_error_m": 0.296999990940094,
             "vertical_error_m": 0.05999999865889549,
             "reached": true,
-            "elapsed_s": 67.13999938964844,
-            "distance_m": 103.85399627685547,
-            "floor_collisions": 23297,
-            "stair_collisions": 1608,
-            "wall_collisions": 3584,
-            "obstacle_collisions": 3285,
+            "elapsed_s": 65.36599731445313,
+            "distance_m": 102.93800354003906,
+            "floor_collisions": 19853,
+            "stair_collisions": 1398,
+            "wall_collisions": 2890,
+            "obstacle_collisions": 831,
             "last_hit": "Anden_Frontal"
         }
     ]

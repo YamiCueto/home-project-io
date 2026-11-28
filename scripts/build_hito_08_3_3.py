@@ -169,6 +169,78 @@ def build_tropical_trees(root):
             remove_obj(o.name)
 
 
+def make_local_box(mesh_name, obj_name, origin, x0, x1, y0, y1, z0, z1, mat, cols):
+    mesh = bpy.data.meshes.new(mesh_name)
+    bm = bmesh.new()
+    verts = [
+        bm.verts.new((x0, y0, z0)),
+        bm.verts.new((x1, y0, z0)),
+        bm.verts.new((x1, y1, z0)),
+        bm.verts.new((x0, y1, z0)),
+        bm.verts.new((x0, y0, z1)),
+        bm.verts.new((x1, y0, z1)),
+        bm.verts.new((x1, y1, z1)),
+        bm.verts.new((x0, y1, z1)),
+    ]
+    for f in [(0, 3, 2, 1), (4, 5, 6, 7), (0, 1, 5, 4), (1, 2, 6, 5), (2, 3, 7, 6), (3, 0, 4, 7)]:
+        bm.faces.new([verts[i] for i in f])
+    bmesh.ops.recalc_face_normals(bm, faces=bm.faces)
+    bm.to_mesh(mesh)
+    bm.free()
+    obj = bpy.data.objects.new(obj_name, mesh)
+    obj.location = origin
+    for c in cols:
+        if c and obj.name not in c.objects:
+            c.objects.link(obj)
+    obj.data.materials.append(mat)
+    return obj
+
+
+def make_stair_segment(name, origin, length_dir, mat_rail, mat_tread, mat_hinge, cols):
+    mesh = bpy.data.meshes.new(name)
+    bm = bmesh.new()
+    L = 1.12 * length_dir
+    x_a, x_b = (0.0, L) if length_dir < 0 else (0.0, L)
+    x_min, x_max = min(x_a, x_b), max(x_a, x_b)
+
+    def add_bm_box(bx0, bx1, by0, by1, bz0, bz1, mat_idx):
+        v = [
+            bm.verts.new((bx0, by0, bz0)),
+            bm.verts.new((bx1, by0, bz0)),
+            bm.verts.new((bx1, by1, bz0)),
+            bm.verts.new((bx0, by1, bz0)),
+            bm.verts.new((bx0, by0, bz1)),
+            bm.verts.new((bx1, by0, bz1)),
+            bm.verts.new((bx1, by1, bz1)),
+            bm.verts.new((bx0, by1, bz1)),
+        ]
+        for f in [(0, 3, 2, 1), (4, 5, 6, 7), (0, 1, 5, 4), (1, 2, 6, 5), (2, 3, 7, 6), (3, 0, 4, 7)]:
+            face = bm.faces.new([v[i] for i in f])
+            face.material_index = mat_idx
+
+    add_bm_box(x_min, x_max, -0.27, -0.24, -0.025, 0.025, 0)
+    add_bm_box(x_min, x_max, 0.24, 0.27, -0.025, 0.025, 0)
+    for k in range(4):
+        tx = (0.14 + k * 0.26) * length_dir
+        tx0, tx1 = min(tx - 0.045, tx + 0.045), max(tx - 0.045, tx + 0.045)
+        add_bm_box(tx0, tx1, -0.24, 0.24, -0.015, 0.015, 1)
+    add_bm_box(-0.025, 0.025, -0.275, -0.235, -0.03, 0.03, 2)
+    add_bm_box(-0.025, 0.025, 0.235, 0.275, -0.03, 0.03, 2)
+
+    bmesh.ops.recalc_face_normals(bm, faces=bm.faces)
+    bm.to_mesh(mesh)
+    bm.free()
+    obj = bpy.data.objects.new(name, mesh)
+    obj.location = origin
+    for c in cols:
+        if c and obj.name not in c.objects:
+            c.objects.link(obj)
+    obj.data.materials.append(mat_rail)
+    obj.data.materials.append(mat_tread)
+    obj.data.materials.append(mat_hinge)
+    return obj
+
+
 def build_p2_rooftop_access():
     c_p2 = bpy.data.collections.get("08_Propuesta_Segunda_Planta") or bpy.context.scene.collection
     c_arch = bpy.data.collections.get("Arquitectura") or bpy.context.scene.collection
@@ -182,17 +254,18 @@ def build_p2_rooftop_access():
 
     remove_obj("Zona_Paneles_Solares_Base")
     make_box("Zona_Paneles_Solares_Base", 1.20, 6.60, 2.20, 5.50, 5.88, 5.94, m_imp, [c_p2, c_arch])
-    sc = bpy.data.objects.get("Solar_Canalizacion")
-    if sc:
-        sc.location.x -= 0.90
+    remove_obj("Solar_Canalizacion")
+    c_inst = bpy.data.collections.get("Instalaciones")
+    make_box("Solar_Canalizacion", 5.15, 5.23, 4.00, 9.75, 5.88, 5.94, m_alum, [c_p2, c_inst] if c_inst else [c_p2])
     remove_obj("Inst_Zona_Ampliacion_Solar")
     m_zona_amp = bpy.data.materials.get("MAT_zona_ampliacion") or m_imp
-    c_inst = bpy.data.collections.get("Instalaciones")
     make_box("Inst_Zona_Ampliacion_Solar", 1.20, 5.70, 6.25, 8.20, 5.88, 5.94, m_zona_amp, [c_p2, c_inst] if c_inst else [c_p2])
 
     for n in [
         "Cubierta_Plana_Superior", "Cubierta_Pendiente_Drenaje",
         "Escotilla_Techo_Marco", "Escotilla_Techo_Puerta1", "Escotilla_Techo_Cierre",
+        "Escotilla_Techo_Junta", "Escotilla_Techo_Compuerta", "Escotilla_Techo_Cordel", "Escotilla_Techo_Tirador",
+        "Esc_Techo_Tramo_1", "Esc_Techo_Tramo_2", "Esc_Techo_Tramo_3",
         "Esc_Techo_Baranda_Norte", "Esc_Techo_Baranda_Sur",
         "Cubierta_Canal_Drenaje", "Cubierta_Sumidero_NE",
         "Cubierta_Solapa_Oeste", "Cubierta_Solapa_Este", "Cubierta_Solapa_Sur", "Cubierta_Solapa_Norte",
@@ -205,21 +278,7 @@ def build_p2_rooftop_access():
         if o.name.startswith(("Cubierta_Plana_Seg_", "Cubierta_Pend_Seg_", "Esc_Techo_Peldano_")):
             remove_obj(o.name)
 
-    for wall_name in ("P2_M_Banda_Norte_S4", "COL_P2_M_Banda_Norte_S4"):
-        w = bpy.data.objects.get(wall_name)
-        if w:
-            w.location.y += 0.80
-    for mob_name in ("P2_Mob_Escritorio_H2", "P2_Mob_Silla_H2"):
-        mob = bpy.data.objects.get(mob_name)
-        if mob:
-            mob.location.x -= 2.00
-            mob.location.y += 0.75
-    m_wall = bpy.data.materials.get("MAT_wall_int") or m_concreto
-    m_slab = bpy.data.materials.get("MAT_slab") or m_concreto
-    make_box("P2_M_Corredor_Norte_Ret", 5.05, 5.15, 6.65, 7.55, 2.90, 5.60, m_wall, [c_p2, c_arch])
-    make_box("P2_Piso_P2_Bypass_Esc_Techo", 5.15, 7.85, 6.65, 6.75, 2.90, 2.94, m_slab, [c_p2, c_arch])
-
-    ox0, ox1, oy0, oy1 = 5.55, 7.75, 5.75, 6.65
+    ox0, ox1, oy0, oy1 = 5.45, 6.75, 5.80, 6.60
 
     make_box("Cubierta_Plana_Seg_Oeste", 0.0, ox0, 0.0, 10.0, 5.60, 5.80, m_concreto, [c_p2, c_arch])
     make_box("Cubierta_Plana_Seg_Este", ox1, 8.0, 0.0, 10.0, 5.60, 5.80, m_concreto, [c_p2, c_arch])
@@ -230,7 +289,6 @@ def build_p2_rooftop_access():
     make_box("Cubierta_Pend_Seg_Este", ox1, 7.85, 0.15, 9.85, 5.80, 5.88, m_imp, [c_p2, c_arch])
     make_box("Cubierta_Pend_Seg_Sur", ox0, ox1, 0.15, oy0, 5.80, 5.88, m_imp, [c_p2, c_arch])
     make_box("Cubierta_Pend_Seg_Norte", ox0, ox1, oy1, 9.85, 5.80, 5.88, m_imp, [c_p2, c_arch])
-    make_box("Cubierta_Descanso_Escotilla", 7.05, ox1, oy0, oy1, 5.80, 5.88, m_imp, [c_p2, c_arch])
 
     make_box("Cubierta_Canal_Drenaje", 7.60, 7.85, 0.25, 9.75, 5.86, 5.89, m_negro, [c_p2, c_arch])
     make_box("Cubierta_Sumidero_NE", 7.62, 7.84, 9.55, 9.80, 5.84, 5.90, m_alum, [c_p2, c_arch])
@@ -266,17 +324,19 @@ def build_p2_rooftop_access():
     c_p2.objects.link(marco)
     c_arch.objects.link(marco)
     marco.data.materials.append(m_negro)
+
+    make_box("Escotilla_Techo_Junta", ox0 - 0.03, ox1 + 0.03, oy0 - 0.03, oy1 + 0.03, 6.02, 6.04, m_negro, [c_p2, c_arch])
     mesh_lid = bpy.data.meshes.new("Escotilla_Techo_Puerta1")
     bm = bmesh.new()
     verts = [
-        bm.verts.new((0.0, -(oy1 - oy0), 0.0)),
-        bm.verts.new((ox1 - ox0, -(oy1 - oy0), 0.0)),
-        bm.verts.new((ox1 - ox0, 0.0, 0.0)),
-        bm.verts.new((0.0, 0.0, 0.0)),
-        bm.verts.new((0.0, -(oy1 - oy0), 0.05)),
-        bm.verts.new((ox1 - ox0, -(oy1 - oy0), 0.05)),
-        bm.verts.new((ox1 - ox0, 0.0, 0.05)),
-        bm.verts.new((0.0, 0.0, 0.05)),
+        bm.verts.new((-0.03, -(oy1 - oy0) - 0.06, -0.02)),
+        bm.verts.new((ox1 - ox0 + 0.03, -(oy1 - oy0) - 0.06, -0.02)),
+        bm.verts.new((ox1 - ox0 + 0.03, 0.03, -0.02)),
+        bm.verts.new((-0.03, 0.03, -0.02)),
+        bm.verts.new((-0.03, -(oy1 - oy0) - 0.06, 0.04)),
+        bm.verts.new((ox1 - ox0 + 0.03, -(oy1 - oy0) - 0.06, 0.04)),
+        bm.verts.new((ox1 - ox0 + 0.03, 0.03, 0.04)),
+        bm.verts.new((-0.03, 0.03, 0.04)),
     ]
     for f in [(0, 3, 2, 1), (4, 5, 6, 7), (0, 1, 5, 4), (1, 2, 6, 5), (2, 3, 7, 6), (3, 0, 4, 7)]:
         bm.faces.new([verts[i] for i in f])
@@ -286,23 +346,18 @@ def build_p2_rooftop_access():
     lid = bpy.data.objects.new("Escotilla_Techo_Puerta1", mesh_lid)
     c_p2.objects.link(lid)
     c_doors.objects.link(lid)
-    lid.location = (ox0, oy1, 6.03)
+    lid.location = (ox0, oy1, 6.04)
     lid.data.materials.append(m_alum)
     make_box("Escotilla_Techo_Cierre", ox0 + 0.05, ox0 + 0.25, oy0 - 0.04, oy0 + 0.02, 5.96, 6.05, m_acero, [c_p2, c_arch])
 
-    n_steps = 13
-    x_start, x_end = 5.85, 7.05
-    dx = (x_end - x_start) / n_steps
-    dz = (5.88 - 2.94) / n_steps
-    for i in range(n_steps):
-        sx0 = x_start + i * dx
-        sx1 = sx0 + dx + 0.04
-        sz0 = 2.94 + i * dz
-        sz1 = sz0 + dz
-        make_box(f"Esc_Techo_Peldano_{i+1:02d}", sx0, sx1, 5.85, 6.55, sz0, sz1, m_acero, [c_p2, c_arch])
+    m_techo = bpy.data.materials.get("MAT_blanco_calido") or m_concreto
+    make_local_box("Escotilla_Techo_Compuerta", "Escotilla_Techo_Compuerta", (6.73, 6.20, 5.60), -1.26, 0.0, -0.38, 0.38, -0.02, 0.02, m_techo, [c_p2, c_arch])
+    make_local_box("Escotilla_Techo_Cordel", "Escotilla_Techo_Cordel", (5.58, 6.20, 5.58), -0.008, 0.008, -0.008, 0.008, -0.90, 0.0, m_negro, [c_p2, c_arch])
+    make_local_box("Escotilla_Techo_Tirador", "Escotilla_Techo_Tirador", (5.58, 6.20, 4.65), -0.03, 0.03, -0.015, 0.015, -0.03, 0.03, m_alum, [c_p2, c_arch])
 
-    make_sloped_rail("Esc_Techo_Baranda_Sur", (5.85, 5.78, 3.84), (7.05, 5.78, 6.78), 0.025, 0.025, m_negro, [c_p2, c_arch])
-    make_sloped_rail("Esc_Techo_Baranda_Norte", (5.85, 6.62, 3.84), (7.05, 6.62, 6.78), 0.025, 0.025, m_negro, [c_p2, c_arch])
+    make_stair_segment("Esc_Techo_Tramo_1", (6.70, 6.20, 5.64), -1.0, m_alum, m_acero, m_negro, [c_p2, c_arch])
+    make_stair_segment("Esc_Techo_Tramo_2", (5.58, 6.20, 5.71), 1.0, m_alum, m_acero, m_negro, [c_p2, c_arch])
+    make_stair_segment("Esc_Techo_Tramo_3", (6.70, 6.20, 5.78), -1.0, m_alum, m_acero, m_negro, [c_p2, c_arch])
 
     make_box("Baranda_Cubierta_Sur", 0.05, 7.95, 0.05, 0.10, 6.88, 6.94, m_negro, [c_p2, c_arch])
     make_box("Baranda_Cubierta_Norte", 0.05, 7.95, 9.90, 9.95, 6.88, 6.94, m_negro, [c_p2, c_arch])

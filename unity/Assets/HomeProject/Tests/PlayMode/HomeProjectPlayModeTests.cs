@@ -254,22 +254,63 @@ namespace HomeProject.Tests.PlayMode
         {
             yield return LoadMainScene();
 
-            GameObject hatchGo = GameObject.Find("Escotilla_Techo_Puerta1");
-            Assert.IsNotNull(hatchGo, "Escotilla_Techo_Puerta1 missing.");
-            InteractiveDoor hatch = hatchGo.GetComponent<InteractiveDoor>();
-            Assert.IsNotNull(hatch, "InteractiveDoor missing on Escotilla_Techo_Puerta1.");
+            RetractableAtticStair attic = UnityEngine.Object.FindAnyObjectByType<RetractableAtticStair>();
+            ResidentialFirstPersonController player = UnityEngine.Object.FindAnyObjectByType<ResidentialFirstPersonController>();
+            Assert.IsNotNull(attic, "RetractableAtticStair missing.");
+            Assert.IsNotNull(player);
 
-            Vector3 closedUp = hatchGo.transform.position;
-            hatch.SetOpen(false, true);
-            Quaternion closedRot = hatchGo.transform.localRotation;
-            hatch.SetOpen(true, false);
-            float waitStart = Time.unscaledTime;
-            while (hatch.IsTransitioning && Time.unscaledTime - waitStart < 1.5f)
+            string renderDir = Path.GetFullPath(Path.Combine(Application.dataPath, "../../renders/hito_08_3_3"));
+            Directory.CreateDirectory(renderDir);
+
+            Assert.AreEqual(AtticStairState.Closed, attic.CurrentState, "Stair must start Closed.");
+            GameObject tramo1 = GameObject.Find("Esc_Techo_Tramo_1");
+            Assert.IsNotNull(tramo1, "Esc_Techo_Tramo_1 missing.");
+            Assert.IsFalse(tramo1.GetComponent<Renderer>().enabled, "Retractable stair segments must be hidden when Closed.");
+
+            player.TeleportTo(new Vector3(-4.10f, 2.96f, -6.20f), 270f);
+            yield return null;
+            CaptureCameraFrame(player.PlayerCamera, Path.Combine(renderDir, "ESCALERA_RETRACTIL_1_CLOSED.png"));
+
+            attic.SetStateImmediate(AtticStairState.Opening);
+            yield return null;
+            Assert.AreEqual(AtticStairState.Opening, attic.CurrentState);
+            Assert.IsTrue(tramo1.GetComponent<Renderer>().enabled, "Stair segments must become visible while Opening.");
+            CaptureCameraFrame(player.PlayerCamera, Path.Combine(renderDir, "ESCALERA_RETRACTIL_2_OPENING.png"));
+
+            attic.SetStateImmediate(AtticStairState.Open);
+            yield return null;
+            Assert.AreEqual(AtticStairState.Open, attic.CurrentState);
+            CaptureCameraFrame(player.PlayerCamera, Path.Combine(renderDir, "ESCALERA_RETRACTIL_3_OPEN.png"));
+
+            player.TeleportTo(new Vector3(-5.70f, 4.30f, -6.20f), 270f);
+            yield return null;
+            bool closedWhileOnStair = attic.Close();
+            Assert.IsFalse(closedWhileOnStair, "Closing must be blocked while player is on the stair.");
+            Assert.AreEqual(AtticStairState.Open, attic.CurrentState);
+            Assert.IsFalse(string.IsNullOrEmpty(attic.LastBlockedReason));
+
+            player.TeleportTo(new Vector3(-4.10f, 2.96f, -6.20f), 270f);
+            yield return null;
+            attic.SetStateImmediate(AtticStairState.Closing);
+            yield return null;
+            Assert.AreEqual(AtticStairState.Closing, attic.CurrentState);
+            CaptureCameraFrame(player.PlayerCamera, Path.Combine(renderDir, "ESCALERA_RETRACTIL_4_CLOSING.png"));
+
+            attic.SetStateImmediate(AtticStairState.Open);
+            attic.Close();
+            float waitS = Time.unscaledTime;
+            while (attic.CurrentState != AtticStairState.Closed && Time.unscaledTime - waitS < 3.0f)
             {
                 yield return null;
             }
-            Assert.IsTrue(hatch.IsOpen, "Roof hatch failed to open.");
-            Assert.Greater(Quaternion.Angle(closedRot, hatchGo.transform.localRotation), 45f, "Roof hatch rotation too small.");
+            Assert.AreEqual(AtticStairState.Closed, attic.CurrentState, "Stair failed to return to Closed.");
+            Assert.IsFalse(tramo1.GetComponent<Renderer>().enabled, "Stair segments must hide again when Closed.");
+
+            player.TeleportTo(new Vector3(-4.95f, 2.96f, -6.20f), 270f);
+            yield return null;
+            yield return PressSyntheticKey(Key.E);
+            Assert.IsTrue(attic.CurrentState == AtticStairState.Opening || attic.CurrentState == AtticStairState.Open,
+                "Pressing E near the pull cord did not trigger Opening.");
 
             string[] guardrailNames =
             {

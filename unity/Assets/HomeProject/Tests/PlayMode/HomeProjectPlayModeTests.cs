@@ -91,6 +91,24 @@ namespace HomeProject.Tests.PlayMode
             Assert.AreEqual(1, CountEnabledCameras(), "Expected exactly 1 active camera after returning to FPS.");
         }
 
+        private static IEnumerator PressSyntheticKey(Key key)
+        {
+            InputSystem.settings.backgroundBehavior = InputSettings.BackgroundBehavior.IgnoreFocus;
+            Keyboard kb = InputSystem.AddDevice<Keyboard>();
+            kb.MakeCurrent();
+            yield return null;
+            yield return null;
+            InputSystem.QueueStateEvent(kb, new KeyboardState());
+            yield return null;
+            InputSystem.QueueStateEvent(kb, new KeyboardState(key));
+            yield return null;
+            yield return null;
+            yield return null;
+            InputSystem.QueueStateEvent(kb, new KeyboardState());
+            yield return null;
+            InputSystem.RemoveDevice(kb);
+        }
+
         [UnityTest]
         public IEnumerator InputSystemEKeyOpensDoorAndWindowBlocksPlayer()
         {
@@ -106,24 +124,57 @@ namespace HomeProject.Tests.PlayMode
             player.TeleportTo(new Vector3(-1.12f, 0.08f, -1.10f), 180f);
             yield return null;
 
-            InputSystem.settings.backgroundBehavior = InputSettings.BackgroundBehavior.IgnoreFocus;
-            Keyboard kb = InputSystem.AddDevice<Keyboard>();
-            kb.MakeCurrent();
-            yield return null;
-            InputSystem.QueueStateEvent(kb, new KeyboardState());
-            yield return null;
-            InputSystem.QueueStateEvent(kb, new KeyboardState(Key.E));
-            yield return null;
-            yield return null;
-            InputSystem.QueueStateEvent(kb, new KeyboardState());
-            yield return null;
-            InputSystem.RemoveDevice(kb);
+            yield return PressSyntheticKey(Key.E);
 
             Assert.IsTrue(door.IsOpen, "Pressing E via InputSystem did not open P1_M_Sur_Sala_Puerta1.");
 
             GameObject winGlass = GameObject.Find("P2_M_Sur_Win1_Glass");
             Assert.IsNotNull(winGlass, "Window glass P2_M_Sur_Win1_Glass missing.");
             Assert.IsNotNull(winGlass.GetComponent<Collider>(), "Window glass must have a Collider.");
+        }
+
+        [UnityTest]
+        public IEnumerator ArchitecturalInspectionModeTogglesAndPreventsPlayerOverlap()
+        {
+            yield return LoadMainScene();
+
+            ArchitecturalInspectionMode inspection = UnityEngine.Object.FindAnyObjectByType<ArchitecturalInspectionMode>();
+            ResidentialFirstPersonController player = UnityEngine.Object.FindAnyObjectByType<ResidentialFirstPersonController>();
+            Assert.IsNotNull(inspection, "ArchitecturalInspectionMode missing in scene.");
+            Assert.IsNotNull(player);
+
+            Assert.AreEqual(InspectionMode.ArchitectureOnly, inspection.CurrentMode, "Scene must start in ArchitectureOnly.");
+            Assert.AreEqual(0, inspection.ActiveManagedRendererCount, "Non-architectural renderers must be hidden in ArchitectureOnly.");
+            Assert.AreEqual(0, inspection.ActiveManagedColliderCount, "Non-architectural colliders must be disabled in ArchitectureOnly.");
+
+            GameObject wall = GameObject.Find("P1_M_Oeste_S0");
+            Assert.IsNotNull(wall);
+            Assert.IsTrue(wall.GetComponent<Collider>() != null && wall.GetComponent<Collider>().enabled, "Architectural colliders must stay active.");
+
+            string renderDir = Path.GetFullPath(Path.Combine(Application.dataPath, "../../renders/hito_08_3_2"));
+            Directory.CreateDirectory(renderDir);
+            player.TeleportTo(new Vector3(-3.20f, 0.08f, -2.15f), 240f);
+            yield return null;
+            CaptureCameraFrame(player.PlayerCamera, Path.Combine(renderDir, "COMPARATIVA_ARCHITECTURE_ONLY.png"));
+
+            yield return PressSyntheticKey(Key.M);
+
+            Assert.AreEqual(InspectionMode.FullFurnished, inspection.CurrentMode,
+                "Pressing M did not switch to FullFurnished. Blocked: " + inspection.LastBlockedReason);
+            Assert.Greater(inspection.ActiveManagedRendererCount, 0, "FullFurnished must restore non-architectural renderers.");
+            Assert.Greater(inspection.ActiveManagedColliderCount, 0, "FullFurnished must restore non-architectural colliders.");
+            CaptureCameraFrame(player.PlayerCamera, Path.Combine(renderDir, "COMPARATIVA_FULL_FURNISHED.png"));
+
+            Assert.IsTrue(inspection.SetMode(InspectionMode.ArchitectureOnly));
+            Assert.AreEqual(0, inspection.ActiveManagedRendererCount);
+            Assert.AreEqual(0, inspection.ActiveManagedColliderCount);
+
+            player.TeleportTo(new Vector3(-5.88f, 0.08f, -2.25f), 180f);
+            yield return null;
+            bool switched = inspection.SetMode(InspectionMode.FullFurnished);
+            Assert.IsFalse(switched, "Switching to FullFurnished must be blocked when player overlaps vehicle/furniture volume.");
+            Assert.AreEqual(InspectionMode.ArchitectureOnly, inspection.CurrentMode);
+            Assert.IsFalse(string.IsNullOrEmpty(inspection.LastBlockedReason));
         }
 
         [UnityTest]
@@ -137,7 +188,7 @@ namespace HomeProject.Tests.PlayMode
             Assert.IsNotNull(player);
             Assert.IsNotNull(hud);
 
-            string renderDir = Path.GetFullPath(Path.Combine(Application.dataPath, "../../renders/hito_08_3"));
+            string renderDir = Path.GetFullPath(Path.Combine(Application.dataPath, "../../renders/hito_08_3_2"));
             Directory.CreateDirectory(renderDir);
 
             int shotIndex = 1;
@@ -151,7 +202,7 @@ namespace HomeProject.Tests.PlayMode
             });
 
             NavigationTraceReport traceReport = agent.BuildReport();
-            string tracePath = Path.GetFullPath(Path.Combine(Application.dataPath, "../../validation/HITO_08_3_1_NAVIGATION_TRACE.json"));
+            string tracePath = Path.GetFullPath(Path.Combine(Application.dataPath, "../../validation/HITO_08_3_2_NAVIGATION_TRACE.json"));
             Directory.CreateDirectory(Path.GetDirectoryName(tracePath));
             File.WriteAllText(tracePath, JsonUtility.ToJson(traceReport, true));
 
@@ -172,9 +223,9 @@ namespace HomeProject.Tests.PlayMode
             Assert.AreEqual(0, traceReport.teleport_count, "Teleports prohibited during autonomous tour.");
             Assert.IsTrue(traceReport.exterior_entry_passed, "Exterior pedestrian entry failed.");
             Assert.IsTrue(traceReport.exterior_return_passed, "Return to exterior failed.");
-            Assert.AreEqual(18, traceReport.zones_visited_count,
+            Assert.AreEqual(17, traceReport.zones_visited_count,
                 "Unreachable zones: " + string.Join(", ", traceReport.unreachable_zones));
-            Assert.IsTrue(traceReport.all_zones_visited, "Not all 18 zones were visited.");
+            Assert.IsTrue(traceReport.all_zones_visited, "Not all 17 zones were visited.");
         }
 
         private static void CaptureCameraFrame(Camera cam, string path)

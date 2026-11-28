@@ -78,8 +78,7 @@ namespace HomeProject.Interaction
             "Bano Compartido",
             "Habitacion Principal",
             "Vestidor",
-            "Bano Principal",
-            "Balcon"
+            "Bano Principal"
         };
 
         public ResidentialNavigationAgent(ResidentialFirstPersonController controller)
@@ -106,13 +105,17 @@ namespace HomeProject.Interaction
                 ("Sala_Entrada", new Vector3(-1.12f, 0.08f, -2.05f), ""),
                 ("Sala_Pasillo_Este", new Vector3(-3.00f, 0.08f, -2.05f), ""),
                 ("Sala_Centro", new Vector3(-3.00f, 0.08f, -4.125f), ""),
+                ("Sala_Puerta_Garaje", new Vector3(-4.00f, 0.08f, -4.075f), "P1_M_Sep_Sala_Garaje_Puerta1"),
+                ("Garaje_Desde_Hall", new Vector3(-4.85f, 0.08f, -4.075f), ""),
+                ("Retorno_Hall_Garaje", new Vector3(-3.50f, 0.08f, -4.075f), ""),
                 ("Distribuidor_Puerta", new Vector3(-2.60f, 0.08f, -4.20f), "P1_M_Bano_Sur_Puerta1"),
                 ("Distribuidor_Entrada", new Vector3(-2.60f, 0.08f, -5.70f), "P1_M_Bano_Este_Puerta1"),
                 ("Bano_Social", new Vector3(-1.30f, 0.08f, -5.70f), ""),
                 ("Distribuidor_Retorno", new Vector3(-2.60f, 0.08f, -5.70f), ""),
-                ("Distribuidor_Norte", new Vector3(-2.60f, 0.08f, -7.75f), ""),
-                ("Comedor", new Vector3(-4.50f, 0.08f, -7.75f), ""),
-                ("Cocina_Pasillo", new Vector3(-6.70f, 0.08f, -7.75f), ""),
+                ("Distribuidor_Norte", new Vector3(-2.60f, 0.08f, -7.73f), ""),
+                ("Distribuidor_Norte_Giro", new Vector3(-3.20f, 0.08f, -7.73f), ""),
+                ("Comedor", new Vector3(-4.50f, 0.08f, -7.73f), ""),
+                ("Cocina_Pasillo", new Vector3(-6.70f, 0.08f, -7.73f), ""),
                 ("Cocina", new Vector3(-6.70f, 0.08f, -6.50f), ""),
                 ("Pasillo_Garaje_Norte", new Vector3(-7.35f, 0.08f, -5.25f), "P1_M_Norte_Garaje_Puerta1"),
                 ("Garaje", new Vector3(-7.35f, 0.08f, -4.10f), ""),
@@ -143,10 +146,7 @@ namespace HomeProject.Interaction
                 ("Vestidor", new Vector3(-5.30f, 2.94f, -3.05f), "P2_M_Vest_Bano_Puerta1"),
                 ("Bano_Principal", new Vector3(-6.55f, 2.94f, -3.05f), ""),
                 ("Retorno_Vestidor", new Vector3(-5.30f, 2.94f, -3.05f), ""),
-                ("Retorno_Master", new Vector3(-4.00f, 2.94f, -0.95f), "P2_M_Master_Este_Puerta1"),
-                ("Balcon", new Vector3(-5.80f, 2.94f, -0.95f), ""),
-                ("Retorno_Master_Balcon", new Vector3(-4.00f, 2.94f, -0.95f), ""),
-                ("Retorno_Master_Oeste", new Vector3(-2.60f, 2.94f, -0.95f), ""),
+                ("Retorno_Master_Oeste", new Vector3(-2.60f, 2.94f, -3.05f), ""),
                 ("Retorno_Master_Salir", new Vector3(-2.60f, 2.94f, -3.80f), ""),
                 ("Corredor_P2_Descenso", new Vector3(-2.60f, 2.94f, -6.10f), ""),
                 ("Corredor_P2_Escalera_Norte", new Vector3(-7.35f, 2.94f, -6.10f), ""),

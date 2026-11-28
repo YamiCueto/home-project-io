@@ -1,0 +1,26 @@
+{
+  "colliders.fbx": {
+    "mesh_match": true,
+    "dims_match": true
+  },
+  "architecture.fbx": {
+    "mesh_match": true,
+    "dims_match": true
+  },
+  "furniture.fbx": {
+    "mesh_match": true,
+    "dims_match": true
+  },
+  "interactive_doors.fbx": {
+    "mesh_match": true,
+    "dims_match": true
+  },
+  "installations.fbx": {
+    "mesh_match": true,
+    "dims_match": true
+  },
+  "urban_context.fbx": {
+    "mesh_match": true,
+    "dims_match": true
+  }
+}

@@ -225,7 +225,16 @@ namespace HomeProject.Interaction
                 if (door != null)
                 {
                     LastHoveredDoor = door;
-                    if (Keyboard.current != null && Keyboard.current.eKey.wasPressedThisFrame)
+                    bool ePressed = false;
+                    foreach (InputDevice dev in InputSystem.devices)
+                    {
+                        if (dev is Keyboard kb && kb.enabled && kb.eKey.wasPressedThisFrame)
+                        {
+                            ePressed = true;
+                            break;
+                        }
+                    }
+                    if (ePressed)
                     {
                         door.Toggle();
                     }

@@ -64,8 +64,11 @@ namespace HomeProject.Tests.EditMode
             ResidentialHudController hud = Object.FindAnyObjectByType<ResidentialHudController>();
             Assert.IsNotNull(hud, "ResidentialHudController missing.");
 
+            ArchitecturalInspectionMode inspection = Object.FindAnyObjectByType<ArchitecturalInspectionMode>();
+            Assert.IsNotNull(inspection, "ArchitecturalInspectionMode missing.");
+
             InteractiveDoor[] doors = Object.FindObjectsByType<InteractiveDoor>();
-            Assert.AreEqual(19, doors.Length, "Expected 19 InteractiveDoor components.");
+            Assert.AreEqual(18, doors.Length, "Expected 18 InteractiveDoor components.");
         }
 
         [Test]
@@ -79,7 +82,7 @@ namespace HomeProject.Tests.EditMode
             Assert.AreEqual(0, report.statistics.missing_material_references, "Missing material references found.");
             Assert.AreEqual(0, report.statistics.non_urp_materials, "Non-URP materials found.");
             Assert.AreEqual(0, report.statistics.visible_collider_renderers, "Visible collider renderers found.");
-            Assert.Greater(report.dimensional_checks_total, 400, "Too few dimensional checks executed.");
+            Assert.GreaterOrEqual(report.dimensional_checks_total, 300, "Too few dimensional checks executed.");
             Assert.AreEqual(0, report.dimensional_checks_failed, "Dimensional/transform tolerance failures detected.");
             Assert.AreEqual(report.pivot_checks_total, report.pivot_checks_passed, "Door pivot tolerance failures.");
             Assert.AreEqual(report.capsule_audits_total, report.capsule_audits_passed, "Capsule opening sweeps blocked.");

@@ -89,14 +89,24 @@ namespace HomeProject.Infrastructure
             boxStyle.fontSize = 13;
             boxStyle.padding = new RectOffset(10, 10, 8, 8);
 
+            ArchitecturalInspectionMode inspection = Object.FindAnyObjectByType<ArchitecturalInspectionMode>();
+            string inspectionLabel = inspection != null && inspection.CurrentMode == InspectionMode.FullFurnished
+                ? "FULL FURNISHED [M]"
+                : "ARCHITECTURE ONLY [M]";
             string mode = player.IsOrbitalMode ? "Inspeccion Orbital" : (player.IsPaused ? "Pausado" : "Primera Persona");
             string info = "HOME PROJECT — Recorrido Residencial\n" +
                           "Modo: " + mode + "\n" +
+                          "Inspeccion: " + inspectionLabel + "\n" +
                           "Ubicacion: " + player.CurrentZoneName + "\n" +
                           "Altura: " + player.CurrentElevationY.ToString("F2") + " m\n" +
                           "Rendimiento: " + CurrentFps.ToString("F0") + " FPS (" + CurrentFrameTimeMs.ToString("F1") + " ms)";
 
-            GUI.Box(new Rect(14, 14, 320, 108), info, boxStyle);
+            GUI.Box(new Rect(14, 14, 340, 126), info, boxStyle);
+
+            if (inspection != null && !string.IsNullOrEmpty(inspection.LastBlockedReason))
+            {
+                GUI.Box(new Rect(14, 146, 460, 28), inspection.LastBlockedReason, boxStyle);
+            }
 
             if (!player.IsOrbitalMode && player.LastHoveredDoor != null)
             {
@@ -104,8 +114,8 @@ namespace HomeProject.Infrastructure
                 GUI.Box(new Rect(Screen.width * 0.5f - 85, Screen.height * 0.5f + 24, 170, 28), prompt, boxStyle);
             }
 
-            string controls = "WASD: Caminar | Raton: Orientar | E: Puerta | V: Modo Orbital | R: Inicio | Esc: Pausa";
-            GUI.Box(new Rect(14, Screen.height - 42, 620, 28), controls, boxStyle);
+            string controls = "WASD: Caminar | Raton: Orientar | E: Puerta | M: Arquitectura/Amoblado | V: Orbital | R: Inicio | Esc: Pausa";
+            GUI.Box(new Rect(14, Screen.height - 42, 740, 28), controls, boxStyle);
         }
     }
 }

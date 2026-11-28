@@ -29,6 +29,11 @@ namespace HomeProject.Core
                 return "Primera Planta";
             }
 
+            if (bz >= 5.65f)
+            {
+                return "Cubierta Tecnica";
+            }
+
             if (by <= 4.70f)
             {
                 if (bx < 4.55f) return "Habitacion Principal";

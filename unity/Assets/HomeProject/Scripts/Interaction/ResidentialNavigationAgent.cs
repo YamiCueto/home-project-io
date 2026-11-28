@@ -78,7 +78,8 @@ namespace HomeProject.Interaction
             "Bano Compartido",
             "Habitacion Principal",
             "Vestidor",
-            "Bano Principal"
+            "Bano Principal",
+            "Cubierta Tecnica"
         };
 
         public ResidentialNavigationAgent(ResidentialFirstPersonController controller)
@@ -149,6 +150,18 @@ namespace HomeProject.Interaction
                 ("Retorno_Master_Oeste", new Vector3(-2.60f, 2.94f, -3.05f), ""),
                 ("Retorno_Master_Salir", new Vector3(-2.60f, 2.94f, -3.80f), ""),
                 ("Corredor_P2_Descenso", new Vector3(-2.60f, 2.94f, -6.10f), ""),
+                ("Base_Escalera_Retractil", new Vector3(-4.35f, 2.94f, -6.20f), "ATTIC_OPEN"),
+                ("Escalera_Techo_Pie", new Vector3(-5.45f, 2.94f, -6.20f), ""),
+                ("Escalera_Techo_Media", new Vector3(-6.18f, 4.45f, -6.20f), ""),
+                ("Cubierta_Desembarco", new Vector3(-6.68f, 5.96f, -6.10f), ""),
+                ("Cubierta_Salida_Escotilla", new Vector3(-6.68f, 5.96f, -5.20f), ""),
+                ("Cubierta_Tecnica", new Vector3(-6.95f, 5.96f, -4.40f), ""),
+                ("Cubierta_PV_Inspeccion", new Vector3(-5.20f, 5.96f, -4.40f), ""),
+                ("Cubierta_Retorno_Oeste", new Vector3(-6.95f, 5.96f, -4.40f), ""),
+                ("Cubierta_Retorno_Escotilla", new Vector3(-6.68f, 5.96f, -5.20f), ""),
+                ("Cubierta_Entrada_Escotilla", new Vector3(-6.68f, 5.96f, -6.10f), ""),
+                ("Descenso_Techo_Media", new Vector3(-6.18f, 4.45f, -6.20f), ""),
+                ("Descenso_Escalera_Techo", new Vector3(-4.35f, 2.94f, -6.20f), "ATTIC_CLOSE"),
                 ("Corredor_P2_Escalera_Norte", new Vector3(-7.35f, 2.94f, -6.10f), ""),
                 ("Corredor_P2_Escalera", new Vector3(-7.35f, 2.94f, -5.22f), ""),
                 ("Descenso_Escalera", new Vector3(-2.75f, 0.08f, -5.22f), ""),
@@ -162,7 +175,8 @@ namespace HomeProject.Interaction
             for (int i = 0; i < waypoints.Length; i++)
             {
                 bool reached = false;
-                yield return WalkToWaypoint(waypoints[i].target, 6.0f, r => reached = r);
+                float timeout = (waypoints[i].label.Contains("Escalera_Techo") || waypoints[i].label.Contains("Cubierta_Desembarco")) ? 10.0f : 6.0f;
+                yield return WalkToWaypoint(waypoints[i].target, timeout, r => reached = r);
                 RecordStep(i + 1, waypoints[i].label, waypoints[i].target, reached);
 
                 if (waypoints[i].label == "Acceso_Peatonal" && reached && player.CurrentZoneName == "Acceso Peatonal")
@@ -178,7 +192,30 @@ namespace HomeProject.Interaction
 
                 if (!string.IsNullOrEmpty(waypoints[i].doorToOpen))
                 {
-                    yield return InteractWithNamedDoor(waypoints[i].doorToOpen);
+                    if (waypoints[i].doorToOpen == "ATTIC_OPEN" || waypoints[i].doorToOpen == "ATTIC_CLOSE")
+                    {
+                        player.SetInputOverride(true, Vector2.zero, Vector2.zero);
+                        RetractableAtticStair attic = UnityEngine.Object.FindAnyObjectByType<RetractableAtticStair>();
+                        if (attic != null)
+                        {
+                            if (waypoints[i].doorToOpen == "ATTIC_OPEN")
+                            {
+                                attic.Open();
+                                float waitS = Time.unscaledTime;
+                                while (attic.CurrentState != AtticStairState.Open && Time.unscaledTime - waitS < 3.0f) yield return null;
+                            }
+                            else
+                            {
+                                attic.Close();
+                                float waitS = Time.unscaledTime;
+                                while (attic.CurrentState != AtticStairState.Closed && Time.unscaledTime - waitS < 3.0f) yield return null;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        yield return InteractWithNamedDoor(waypoints[i].doorToOpen);
+                    }
                 }
             }
 

@@ -67,8 +67,22 @@ namespace HomeProject.Tests.EditMode
             ArchitecturalInspectionMode inspection = Object.FindAnyObjectByType<ArchitecturalInspectionMode>();
             Assert.IsNotNull(inspection, "ArchitecturalInspectionMode missing.");
 
+            HomeProject.Interaction.RetractableAtticStair attic = Object.FindAnyObjectByType<HomeProject.Interaction.RetractableAtticStair>();
+            Assert.IsNotNull(attic, "RetractableAtticStair missing.");
+            Assert.AreEqual(HomeProject.Interaction.AtticStairState.Closed, attic.CurrentState, "Attic stair must start Closed.");
+
             InteractiveDoor[] doors = Object.FindObjectsByType<InteractiveDoor>();
-            Assert.AreEqual(18, doors.Length, "Expected 18 InteractiveDoor components.");
+            Assert.AreEqual(19, doors.Length, "Expected 19 InteractiveDoor components.");
+
+            string[] treeNames = { "Arbol_Tropical_01", "Arbol_Tropical_02", "Arbol_Tropical_03" };
+            for (int i = 0; i < treeNames.Length; i++)
+            {
+                GameObject tree = GameObject.Find(treeNames[i]);
+                Assert.IsNotNull(tree, "Missing tropical tree: " + treeNames[i]);
+                Assert.IsNotNull(tree.GetComponent<LODGroup>(), "Missing LODGroup on " + treeNames[i]);
+                Assert.IsNotNull(tree.GetComponent<CapsuleCollider>(), "Missing CapsuleCollider on " + treeNames[i]);
+                Assert.IsNotNull(tree.GetComponent<HomeProject.Architecture.TropicalFoliageWind>(), "Missing TropicalFoliageWind on " + treeNames[i]);
+            }
         }
 
         [Test]

@@ -31,7 +31,6 @@ namespace HomeProject.Infrastructure
             "Cortina",
             "Tapete",
             "Espejo",
-            "Solar",
             "Closet",
             "Inodoro",
             "Lavabo",

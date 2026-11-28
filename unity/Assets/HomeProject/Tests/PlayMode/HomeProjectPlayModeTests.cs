@@ -93,6 +93,7 @@ namespace HomeProject.Tests.PlayMode
 
         private static IEnumerator PressSyntheticKey(Key key)
         {
+            Application.runInBackground = true;
             InputSystem.settings.backgroundBehavior = InputSettings.BackgroundBehavior.IgnoreFocus;
             Keyboard kb = InputSystem.AddDevice<Keyboard>();
             kb.MakeCurrent();
@@ -101,6 +102,7 @@ namespace HomeProject.Tests.PlayMode
             InputSystem.QueueStateEvent(kb, new KeyboardState());
             yield return null;
             InputSystem.QueueStateEvent(kb, new KeyboardState(key));
+            yield return null;
             yield return null;
             yield return null;
             yield return null;
@@ -151,7 +153,26 @@ namespace HomeProject.Tests.PlayMode
             Assert.IsNotNull(wall);
             Assert.IsTrue(wall.GetComponent<Collider>() != null && wall.GetComponent<Collider>().enabled, "Architectural colliders must stay active.");
 
-            string renderDir = Path.GetFullPath(Path.Combine(Application.dataPath, "../../renders/hito_08_3_2"));
+            GameObject tree = GameObject.Find("Arbol_Tropical_01_LOD0");
+            Assert.IsNotNull(tree, "Arbol_Tropical_01_LOD0 missing.");
+            Assert.IsTrue(tree.GetComponent<Renderer>().enabled, "Tropical trees must stay visible in ArchitectureOnly.");
+
+            GameObject solar = GameObject.Find("Solar_Panel_01");
+            if (solar == null)
+            {
+                foreach (MeshRenderer mr in UnityEngine.Object.FindObjectsByType<MeshRenderer>(FindObjectsInactive.Include))
+                {
+                    if (mr.gameObject.name.StartsWith("Solar_"))
+                    {
+                        solar = mr.gameObject;
+                        break;
+                    }
+                }
+            }
+            Assert.IsNotNull(solar, "Solar panel object missing.");
+            Assert.IsTrue(solar.GetComponent<Renderer>().enabled, "Solar panels must stay visible in ArchitectureOnly.");
+
+            string renderDir = Path.GetFullPath(Path.Combine(Application.dataPath, "../../renders/hito_08_3_3"));
             Directory.CreateDirectory(renderDir);
             player.TeleportTo(new Vector3(-3.20f, 0.08f, -2.15f), 240f);
             yield return null;
@@ -188,7 +209,7 @@ namespace HomeProject.Tests.PlayMode
             Assert.IsNotNull(player);
             Assert.IsNotNull(hud);
 
-            string renderDir = Path.GetFullPath(Path.Combine(Application.dataPath, "../../renders/hito_08_3_2"));
+            string renderDir = Path.GetFullPath(Path.Combine(Application.dataPath, "../../renders/hito_08_3_3"));
             Directory.CreateDirectory(renderDir);
 
             int shotIndex = 1;
@@ -202,7 +223,7 @@ namespace HomeProject.Tests.PlayMode
             });
 
             NavigationTraceReport traceReport = agent.BuildReport();
-            string tracePath = Path.GetFullPath(Path.Combine(Application.dataPath, "../../validation/HITO_08_3_2_NAVIGATION_TRACE.json"));
+            string tracePath = Path.GetFullPath(Path.Combine(Application.dataPath, "../../validation/HITO_08_3_3_NAVIGATION_TRACE.json"));
             Directory.CreateDirectory(Path.GetDirectoryName(tracePath));
             File.WriteAllText(tracePath, JsonUtility.ToJson(traceReport, true));
 
@@ -217,15 +238,96 @@ namespace HomeProject.Tests.PlayMode
                 p99_frame_time_ms = Mathf.Round(p99Ms * 100f) / 100f,
                 one_percent_low_fps = Mathf.Round(onePercentLow * 10f) / 10f
             };
-            string perfPath = Path.GetFullPath(Path.Combine(Application.dataPath, "../../validation/HITO_08_3_1_PERFORMANCE.json"));
+            string perfPath = Path.GetFullPath(Path.Combine(Application.dataPath, "../../validation/HITO_08_3_3_PERFORMANCE.json"));
             File.WriteAllText(perfPath, JsonUtility.ToJson(perf, true));
 
             Assert.AreEqual(0, traceReport.teleport_count, "Teleports prohibited during autonomous tour.");
             Assert.IsTrue(traceReport.exterior_entry_passed, "Exterior pedestrian entry failed.");
             Assert.IsTrue(traceReport.exterior_return_passed, "Return to exterior failed.");
-            Assert.AreEqual(17, traceReport.zones_visited_count,
+            Assert.AreEqual(18, traceReport.zones_visited_count,
                 "Unreachable zones: " + string.Join(", ", traceReport.unreachable_zones));
-            Assert.IsTrue(traceReport.all_zones_visited, "Not all 17 zones were visited.");
+            Assert.IsTrue(traceReport.all_zones_visited, "Not all 18 zones were visited.");
+        }
+
+        [UnityTest]
+        public IEnumerator RooftopHatchAndFallProtectionWorkCorrectly()
+        {
+            yield return LoadMainScene();
+
+            RetractableAtticStair attic = UnityEngine.Object.FindAnyObjectByType<RetractableAtticStair>();
+            ResidentialFirstPersonController player = UnityEngine.Object.FindAnyObjectByType<ResidentialFirstPersonController>();
+            Assert.IsNotNull(attic, "RetractableAtticStair missing.");
+            Assert.IsNotNull(player);
+
+            string renderDir = Path.GetFullPath(Path.Combine(Application.dataPath, "../../renders/hito_08_3_3"));
+            Directory.CreateDirectory(renderDir);
+
+            Assert.AreEqual(AtticStairState.Closed, attic.CurrentState, "Stair must start Closed.");
+            GameObject tramo1 = GameObject.Find("Esc_Techo_Tramo_1");
+            Assert.IsNotNull(tramo1, "Esc_Techo_Tramo_1 missing.");
+            Assert.IsFalse(tramo1.GetComponent<Renderer>().enabled, "Retractable stair segments must be hidden when Closed.");
+
+            player.TeleportTo(new Vector3(-4.10f, 2.96f, -6.20f), 270f);
+            yield return null;
+            CaptureCameraFrame(player.PlayerCamera, Path.Combine(renderDir, "ESCALERA_RETRACTIL_1_CLOSED.png"));
+
+            attic.SetStateImmediate(AtticStairState.Opening);
+            yield return null;
+            Assert.AreEqual(AtticStairState.Opening, attic.CurrentState);
+            Assert.IsTrue(tramo1.GetComponent<Renderer>().enabled, "Stair segments must become visible while Opening.");
+            CaptureCameraFrame(player.PlayerCamera, Path.Combine(renderDir, "ESCALERA_RETRACTIL_2_OPENING.png"));
+
+            attic.SetStateImmediate(AtticStairState.Open);
+            yield return null;
+            Assert.AreEqual(AtticStairState.Open, attic.CurrentState);
+            CaptureCameraFrame(player.PlayerCamera, Path.Combine(renderDir, "ESCALERA_RETRACTIL_3_OPEN.png"));
+
+            player.TeleportTo(new Vector3(-5.70f, 4.30f, -6.20f), 270f);
+            yield return null;
+            bool closedWhileOnStair = attic.Close();
+            Assert.IsFalse(closedWhileOnStair, "Closing must be blocked while player is on the stair.");
+            Assert.AreEqual(AtticStairState.Open, attic.CurrentState);
+            Assert.IsFalse(string.IsNullOrEmpty(attic.LastBlockedReason));
+
+            player.TeleportTo(new Vector3(-4.10f, 2.96f, -6.20f), 270f);
+            yield return null;
+            attic.SetStateImmediate(AtticStairState.Closing);
+            yield return null;
+            Assert.AreEqual(AtticStairState.Closing, attic.CurrentState);
+            CaptureCameraFrame(player.PlayerCamera, Path.Combine(renderDir, "ESCALERA_RETRACTIL_4_CLOSING.png"));
+
+            attic.SetStateImmediate(AtticStairState.Open);
+            attic.Close();
+            float waitS = Time.unscaledTime;
+            while (attic.CurrentState != AtticStairState.Closed && Time.unscaledTime - waitS < 3.0f)
+            {
+                yield return null;
+            }
+            Assert.AreEqual(AtticStairState.Closed, attic.CurrentState, "Stair failed to return to Closed.");
+            Assert.IsFalse(tramo1.GetComponent<Renderer>().enabled, "Stair segments must hide again when Closed.");
+
+            player.TeleportTo(new Vector3(-4.95f, 2.96f, -6.20f), 270f);
+            yield return null;
+            yield return PressSyntheticKey(Key.E);
+            Assert.IsTrue(attic.CurrentState == AtticStairState.Opening || attic.CurrentState == AtticStairState.Open,
+                "Pressing E near the pull cord did not trigger Opening.");
+
+            string[] guardrailNames =
+            {
+                "Baranda_Cubierta_Oeste",
+                "Baranda_Cubierta_Este",
+                "Baranda_Cubierta_Sur",
+                "Baranda_Cubierta_Norte",
+                "Baranda_Escotilla_Oeste"
+            };
+            for (int i = 0; i < guardrailNames.Length; i++)
+            {
+                GameObject rail = GameObject.Find(guardrailNames[i]);
+                Assert.IsNotNull(rail, "Missing rooftop guardrail: " + guardrailNames[i]);
+                Collider col = rail.GetComponent<Collider>();
+                Assert.IsNotNull(col, "Missing collider on guardrail: " + guardrailNames[i]);
+                Assert.IsTrue(col.enabled, "Collider disabled on guardrail: " + guardrailNames[i]);
+            }
         }
 
         private static void CaptureCameraFrame(Camera cam, string path)

@@ -48,7 +48,7 @@
             "test_id": "NEG_06_WRONG_PIVOT",
             "description": "Desplazar pivote de puerta 0.05m (> 0.02m) debe detectarse en validacion de pivotes",
             "fault_detected": true,
-            "detector_message": "pivot_checks_passed=17/18",
+            "detector_message": "pivot_checks_passed=18/19",
             "scene_restored": true,
             "passed": true
         },

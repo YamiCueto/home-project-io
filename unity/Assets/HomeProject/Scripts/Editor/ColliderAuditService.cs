@@ -54,7 +54,7 @@ namespace HomeProject.Editor
                 }
 
                 Collider existing = go.GetComponent<Collider>();
-                if (mesh.vertexCount <= 24 && mesh.triangles.Length <= 36)
+                if (mesh.vertexCount <= 24 && mesh.triangles.Length <= 36 && !go.name.Contains("Baranda") && !go.name.Contains("Rampa"))
                 {
                     if (existing != null && !(existing is BoxCollider))
                     {
@@ -103,6 +103,10 @@ namespace HomeProject.Editor
             for (int i = 0; i < filters.Length; i++)
             {
                 GameObject go = filters[i].gameObject;
+                if (go.name.StartsWith("Arbol_Tropical_") || go.name.StartsWith("Esc_Techo_Tramo_"))
+                {
+                    continue;
+                }
                 Mesh mesh = filters[i].sharedMesh;
                 if (mesh == null)
                 {
@@ -114,6 +118,14 @@ namespace HomeProject.Editor
                     continue;
                 }
 
+                if (go.name == "Escotilla_Techo_Cordel" || go.name == "Escotilla_Techo_Tirador")
+                {
+                    BoxCollider trig = go.AddComponent<BoxCollider>();
+                    trig.center = mesh.bounds.center;
+                    trig.size = mesh.bounds.size;
+                    trig.isTrigger = true;
+                    continue;
+                }
                 if (useBoxCollider)
                 {
                     BoxCollider box = go.AddComponent<BoxCollider>();

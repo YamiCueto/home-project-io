@@ -1,3 +1,44 @@
-
 *.blend1
 *_PH_STAGING.blend
+
+# Unity generated directories
+unity/Library/
+unity/Temp/
+unity/Obj/
+unity/Logs/
+unity/UserSettings/
+unity/MemoryCaptures/
+unity/Build/
+unity/Builds/
+unity/.vs/
+unity/.vscode/
+unity/.idea/
+unity/.utmp/
+unity/.gradle/
+
+# Unity generated project & solution files
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# OS & temporary files
+.DS_Store
+Thumbs.db
+*.bak
+*.swp
+*~

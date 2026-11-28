@@ -1,0 +1,80 @@
+{
+    "milestone": "Hito 8.2",
+    "total_cases": 9,
+    "passed_cases": 9,
+    "all_detected": true,
+    "cases": [
+        {
+            "test_id": "NEG_01_WRONG_SCALE",
+            "description": "Escalar P1_M_Oeste_S0 a (2,2,2) debe fallar validacion dimensional",
+            "fault_detected": true,
+            "detector_message": "dimensional_checks_failed=1",
+            "scene_restored": true,
+            "passed": true
+        },
+        {
+            "test_id": "NEG_02_MISSING_ASSET",
+            "description": "Remover sharedMesh en P1_M_Oeste_S0 debe detectarse como referencia faltante",
+            "fault_detected": true,
+            "detector_message": "missing_mesh_references=1",
+            "scene_restored": true,
+            "passed": true
+        },
+        {
+            "test_id": "NEG_03_INCOMPATIBLE_SHADER",
+            "description": "Asignar shader Built-In Standard debe detectarse como material no-URP",
+            "fault_detected": true,
+            "detector_message": "non_urp_materials=1",
+            "scene_restored": true,
+            "passed": true
+        },
+        {
+            "test_id": "NEG_04_COLLIDER_BLOCKING_DOOR",
+            "description": "Collider bloqueando puerta principal debe detectarse en barrido volumetrico de capsula",
+            "fault_detected": true,
+            "detector_message": "capsule_audits_passed=7/8",
+            "scene_restored": true,
+            "passed": true
+        },
+        {
+            "test_id": "NEG_05_VISIBLE_COLLIDER",
+            "description": "Habilitar MeshRenderer en CollisionGeometry debe detectarse como collider visible",
+            "fault_detected": true,
+            "detector_message": "visible_collider_renderers=1",
+            "scene_restored": true,
+            "passed": true
+        },
+        {
+            "test_id": "NEG_06_WRONG_PIVOT",
+            "description": "Desplazar pivote de puerta 0.05m (> 0.02m) debe detectarse en validacion de pivotes",
+            "fault_detected": true,
+            "detector_message": "pivot_checks_passed=17/18",
+            "scene_restored": true,
+            "passed": true
+        },
+        {
+            "test_id": "NEG_07_FLOOR_MISALIGNMENT",
+            "description": "Desplazar losa P2 verticalmente 0.25m debe detectarse en validacion posicional",
+            "fault_detected": true,
+            "detector_message": "dimensional_checks_failed=1",
+            "scene_restored": true,
+            "passed": true
+        },
+        {
+            "test_id": "NEG_08_DUPLICATE_OBJECT_NAME",
+            "description": "Introducir objeto con nombre duplicado debe detectarse en UNI-01",
+            "fault_detected": true,
+            "detector_message": "duplicate_object_names=1",
+            "scene_restored": true,
+            "passed": true
+        },
+        {
+            "test_id": "NEG_09_MISSING_SURFACE",
+            "description": "Deshabilitar collider de piso transitable debe detectarse en UNI-05",
+            "fault_detected": true,
+            "detector_message": "floor_raycasts_passed=7/8",
+            "scene_restored": true,
+            "passed": true
+        }
+    ]
+}

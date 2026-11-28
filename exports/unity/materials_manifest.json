@@ -1,0 +1,190 @@
+[
+  {
+    "name": "asphalt_02_material_Calle_Frontal",
+    "use_nodes": true
+  },
+  {
+    "name": "asphalt_02_material_Calle_Lateral",
+    "use_nodes": true
+  },
+  {
+    "name": "concrete_pavement_03_material_Anden_Frontal",
+    "use_nodes": true
+  },
+  {
+    "name": "concrete_pavement_03_material_Anden_Lateral",
+    "use_nodes": true
+  },
+  {
+    "name": "dark_wood_material_P1_Mob_Mesa_Comedor_Sobre",
+    "use_nodes": true
+  },
+  {
+    "name": "dining_chair_02",
+    "use_nodes": true
+  },
+  {
+    "name": "MAT_acero_inox",
+    "use_nodes": true
+  },
+  {
+    "name": "MAT_aluminio_negro",
+    "use_nodes": true
+  },
+  {
+    "name": "MAT_antracita",
+    "use_nodes": true
+  },
+  {
+    "name": "MAT_aplique_calido",
+    "use_nodes": true
+  },
+  {
+    "name": "MAT_arte_mural",
+    "use_nodes": true
+  },
+  {
+    "name": "MAT_blanco_calido",
+    "use_nodes": true
+  },
+  {
+    "name": "MAT_bordillo",
+    "use_nodes": true
+  },
+  {
+    "name": "MAT_celdas_pv",
+    "use_nodes": true
+  },
+  {
+    "name": "MAT_ceramica_sanitaria",
+    "use_nodes": true
+  },
+  {
+    "name": "MAT_concreto_arq",
+    "use_nodes": true
+  },
+  {
+    "name": "MAT_cuarzo_blanco",
+    "use_nodes": true
+  },
+  {
+    "name": "MAT_equipo_domotica",
+    "use_nodes": true
+  },
+  {
+    "name": "MAT_estuco_blanco",
+    "use_nodes": true
+  },
+  {
+    "name": "MAT_follaje_tropical",
+    "use_nodes": true
+  },
+  {
+    "name": "MAT_led_indirecto",
+    "use_nodes": true
+  },
+  {
+    "name": "MAT_linderos",
+    "use_nodes": true
+  },
+  {
+    "name": "MAT_luz_calida",
+    "use_nodes": true
+  },
+  {
+    "name": "MAT_madera_ext",
+    "use_nodes": true
+  },
+  {
+    "name": "MAT_pantalla_tv",
+    "use_nodes": true
+  },
+  {
+    "name": "MAT_piedra_natural",
+    "use_nodes": true
+  },
+  {
+    "name": "MAT_piso_antideslizante",
+    "use_nodes": true
+  },
+  {
+    "name": "MAT_porcelanato_ext",
+    "use_nodes": true
+  },
+  {
+    "name": "MAT_senal_vial",
+    "use_nodes": true
+  },
+  {
+    "name": "MAT_slab",
+    "use_nodes": true
+  },
+  {
+    "name": "MAT_solar_panel",
+    "use_nodes": true
+  },
+  {
+    "name": "MAT_stair",
+    "use_nodes": true
+  },
+  {
+    "name": "MAT_tapete_tejido",
+    "use_nodes": true
+  },
+  {
+    "name": "MAT_textil_claro",
+    "use_nodes": true
+  },
+  {
+    "name": "MAT_textil_neutro",
+    "use_nodes": true
+  },
+  {
+    "name": "MAT_vecino_neutro",
+    "use_nodes": true
+  },
+  {
+    "name": "MAT_vecino_techo",
+    "use_nodes": true
+  },
+  {
+    "name": "MAT_vehicle_car",
+    "use_nodes": true
+  },
+  {
+    "name": "MAT_vehicle_moto",
+    "use_nodes": true
+  },
+  {
+    "name": "MAT_vidrio_arq",
+    "use_nodes": true
+  },
+  {
+    "name": "MAT_wall_int",
+    "use_nodes": true
+  },
+  {
+    "name": "modern_coffee_table_01",
+    "use_nodes": true
+  },
+  {
+    "name": "potted_plant_01_leaves",
+    "use_nodes": true
+  },
+  {
+    "name": "potted_plant_01_pot",
+    "use_nodes": true
+  },
+  {
+    "name": "potted_plant_02_leaves",
+    "use_nodes": true
+  },
+  {
+    "name": "potted_plant_02_pot",
+    "use_nodes": true
+  },
+  {
+    "name": "side_table_01",
+    "use_nodes": true
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "architecture.fbx": {
+    "expected_meshes": 312,
+    "reimported_meshes": 312,
+    "match": true,
+    "file_size_kb": 94128.87
+  },
+  "furniture.fbx": {
+    "expected_meshes": 101,
+    "reimported_meshes": 101,
+    "match": true,
+    "file_size_kb": 28279.59
+  },
+  "interactive_doors.fbx": {
+    "expected_meshes": 17,
+    "reimported_meshes": 17,
+    "match": true,
+    "file_size_kb": 63.07
+  },
+  "urban_context.fbx": {
+    "expected_meshes": 25,
+    "reimported_meshes": 25,
+    "match": true,
+    "file_size_kb": 19794.5
+  }
+}

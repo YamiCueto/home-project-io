@@ -1,0 +1,132 @@
+{
+  "model": "HOME_PROJECT_HITO_06.blend",
+  "areas_evaluated_m2": {
+    "p1_total_floors_net_m2": 77.18,
+    "p1_covered_by_upper_slab_or_roof_net_m2": 68.82,
+    "p1_uncovered_net_m2": 8.36,
+    "p2_floors_net_m2": 68.022,
+    "p2_slab_projection_m2": 75.898,
+    "roof_projection_m2": 80.0,
+    "p1_rooms": {
+      "P1_Piso_P1_Acceso_Peatonal": {
+        "total_m2": 6.525,
+        "covered_by_upper_m2": 6.525,
+        "uncovered_m2": 0.0
+      },
+      "P1_Piso_P1_Sala": {
+        "total_m2": 12.615,
+        "covered_by_upper_m2": 12.615,
+        "uncovered_m2": 0.0
+      },
+      "P1_Piso_P1_Garaje_Derecho": {
+        "total_m2": 14.625,
+        "covered_by_upper_m2": 14.625,
+        "uncovered_m2": 0.0
+      },
+      "P1_Piso_P1_Bano_Social": {
+        "total_m2": 3.61,
+        "covered_by_upper_m2": 3.61,
+        "uncovered_m2": 0.0
+      },
+      "P1_Piso_P1_Distribuidor": {
+        "total_m2": 1.805,
+        "covered_by_upper_m2": 1.805,
+        "uncovered_m2": 0.0
+      },
+      "P1_Piso_P1_Escalera": {
+        "total_m2": 3.562,
+        "covered_by_upper_m2": 3.562,
+        "uncovered_m2": 0.0
+      },
+      "P1_Piso_P1_Comedor": {
+        "total_m2": 5.738,
+        "covered_by_upper_m2": 5.738,
+        "uncovered_m2": 0.0
+      },
+      "P1_Piso_P1_Cocina": {
+        "total_m2": 4.95,
+        "covered_by_upper_m2": 4.95,
+        "uncovered_m2": 0.0
+      },
+      "P1_Piso_P1_Habitacion_Huespedes": {
+        "total_m2": 12.833,
+        "covered_by_upper_m2": 8.048,
+        "uncovered_m2": 4.785
+      },
+      "P1_Piso_P1_Lavanderia_Patio": {
+        "total_m2": 9.588,
+        "covered_by_upper_m2": 6.013,
+        "uncovered_m2": 3.575
+      },
+      "P1_Piso_P1_Pasillo_Huesped": {
+        "total_m2": 1.33,
+        "covered_by_upper_m2": 1.33,
+        "uncovered_m2": 0.0
+      }
+    }
+  },
+  "checks": {
+    "AUD01_evaluated_areas_computed": "PASS",
+    "AUD02_full_1152_frame_walkthrough": "PASS",
+    "AUD03_garage_door_swing_and_moto_exit": "PASS",
+    "AUD04_physical_doorway_connectivity": "PASS",
+    "AUD05_tv_window_clear_and_bed_vector": "PASS",
+    "AUD06_4k_png_ihdr_and_sha256": "PASS",
+    "AUD07_manifest_cc0_and_textures_packed": "PASS",
+    "AUD10_door_swing_0_90_no_mob_hit": "PASS",
+    "no_mob_wall_collisions": "PASS",
+    "lot_boundaries_respected": "PASS",
+    "no_duplicate_geometry": "PASS",
+    "structural_electrical_pot_cert": "PENDING"
+  },
+  "details": {
+    "bed_street_dot": 1.0,
+    "walk_collisions": [],
+    "walk_unsupported_frames": [],
+    "door_swing_collisions": [],
+    "mob_wall_collisions": [],
+    "unconnected": [],
+    "lot_violations": [],
+    "duplicates": [],
+    "missing_imgs": [],
+    "unlicensed": [],
+    "renders_4k": {
+      "01_ESQUINA_DIA_4K.png": {
+        "width": 3840,
+        "height": 2160,
+        "sha256": "1bea0c5da68e021618d6e489ffbc5a154e9a6796277511392d74e2d67e71069d",
+        "ok": true
+      },
+      "02_ESQUINA_NOCHE_4K.png": {
+        "width": 3840,
+        "height": 2160,
+        "sha256": "87c1e1f1e6c1359c0694fe25b8afee16d08c9228cb8d4f45bb74712481c84c64",
+        "ok": true
+      },
+      "03_SALA_CONTEMPORANEA_4K.png": {
+        "width": 3840,
+        "height": 2160,
+        "sha256": "9bafe0de08bf39bcd16f4d32473ad9f7f4504759522ed85cd4605cd4aa64a40f",
+        "ok": true
+      },
+      "04_COCINA_COMEDOR_4K.png": {
+        "width": 3840,
+        "height": 2160,
+        "sha256": "284833bd2c50085d3325dbb58a335afd2c5d853405ef9d76762f631b99749651",
+        "ok": true
+      },
+      "05_SUITE_PRINCIPAL_4K.png": {
+        "width": 3840,
+        "height": 2160,
+        "sha256": "4bbaf5b22094342e399f2f3ac5524233b5ada2965b29b96bfe0c4c99cd1fdb28",
+        "ok": true
+      },
+      "06_CUBIERTA_FOTOVOLTAICA_4K.png": {
+        "width": 3840,
+        "height": 2160,
+        "sha256": "9da1c1e062c2905b31f6cdffad44680561f7a4be2ea1307f5bc09ae7796bcef7",
+        "ok": true
+      }
+    }
+  }
+}

@@ -1,0 +1,836 @@
+{
+    "milestone": "Hito 8.1",
+    "unity_version": "6000.6.11f1",
+    "render_pipeline": "UniversalRenderPipelineAsset",
+    "scene_path": "Assets/HomeProject/Scenes/HomeProject_Main.unity",
+    "tolerance_m": 0.019999999552965164,
+    "overall_passed": true,
+    "statistics": {
+        "total_gameobjects": 612,
+        "total_mesh_renderers": 471,
+        "total_unique_meshes": 471,
+        "total_triangles": 732973,
+        "total_unique_materials": 46,
+        "urp_lit_materials": 46,
+        "non_urp_materials": 0,
+        "total_colliders": 247,
+        "box_colliders": 144,
+        "mesh_colliders": 103,
+        "visible_collider_renderers": 0,
+        "missing_mesh_references": 0,
+        "missing_material_references": 0
+    },
+    "dimensional_checks_total": 468,
+    "dimensional_checks_passed": 468,
+    "dimensional_checks_failed": 0,
+    "opening_audits_total": 17,
+    "opening_audits_passed": 17,
+    "failed_dimensions": [],
+    "sample_dimensions": [
+        {
+            "name": "Anden_Frontal",
+            "category": "Other",
+            "blender_size_m": [
+                13.5,
+                1.5,
+                0.05000000074505806
+            ],
+            "unity_size_m": [
+                13.5,
+                0.05000000074505806,
+                1.5
+            ],
+            "abs_diff_m": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "max_diff_m": 0.0,
+            "passed": true
+        },
+        {
+            "name": "Anden_Lateral",
+            "category": "Other",
+            "blender_size_m": [
+                1.5,
+                12.5,
+                0.05000000074505806
+            ],
+            "unity_size_m": [
+                1.5,
+                0.05000000074505806,
+                12.5
+            ],
+            "abs_diff_m": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "max_diff_m": 0.0,
+            "passed": true
+        },
+        {
+            "name": "Aplique_Ext_1",
+            "category": "Other",
+            "blender_size_m": [
+                0.1599999964237213,
+                0.07999999821186066,
+                0.11999999731779099
+            ],
+            "unity_size_m": [
+                0.1599999964237213,
+                0.11999999731779099,
+                0.07999999821186066
+            ],
+            "abs_diff_m": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "max_diff_m": 0.0,
+            "passed": true
+        },
+        {
+            "name": "Aplique_Ext_2",
+            "category": "Other",
+            "blender_size_m": [
+                0.1599999964237213,
+                0.07999999821186066,
+                0.11999999731779099
+            ],
+            "unity_size_m": [
+                0.1599999964237213,
+                0.11999999731779099,
+                0.07999999821186066
+            ],
+            "abs_diff_m": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "max_diff_m": 0.0,
+            "passed": true
+        },
+        {
+            "name": "Aplique_Ext_3",
+            "category": "Other",
+            "blender_size_m": [
+                0.1599999964237213,
+                0.07999999821186066,
+                0.11999999731779099
+            ],
+            "unity_size_m": [
+                0.1599999964237213,
+                0.11999999731779099,
+                0.07999999821186066
+            ],
+            "abs_diff_m": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "max_diff_m": 0.0,
+            "passed": true
+        },
+        {
+            "name": "Aplique_Ext_4",
+            "category": "Other",
+            "blender_size_m": [
+                0.1599999964237213,
+                0.07999999821186066,
+                0.11999999731779099
+            ],
+            "unity_size_m": [
+                0.1599999964237213,
+                0.11999999731779099,
+                0.07999999821186066
+            ],
+            "abs_diff_m": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "max_diff_m": 0.0,
+            "passed": true
+        },
+        {
+            "name": "Aplique_Ext_5",
+            "category": "Other",
+            "blender_size_m": [
+                0.1599999964237213,
+                0.07999999821186066,
+                0.11999999731779099
+            ],
+            "unity_size_m": [
+                0.1599999964237213,
+                0.11999999731779099,
+                0.07999999821186066
+            ],
+            "abs_diff_m": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "max_diff_m": 0.0,
+            "passed": true
+        },
+        {
+            "name": "Arbol_Urbano_Copa_1",
+            "category": "Other",
+            "blender_size_m": [
+                2.615410089492798,
+                2.75,
+                2.125
+            ],
+            "unity_size_m": [
+                2.6154000759124756,
+                2.125,
+                2.75
+            ],
+            "abs_diff_m": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "max_diff_m": 0.0,
+            "passed": true
+        },
+        {
+            "name": "Arbol_Urbano_Copa_2",
+            "category": "Other",
+            "blender_size_m": [
+                2.615410089492798,
+                2.75,
+                2.125
+            ],
+            "unity_size_m": [
+                2.6154000759124756,
+                2.125,
+                2.75
+            ],
+            "abs_diff_m": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "max_diff_m": 0.0,
+            "passed": true
+        },
+        {
+            "name": "Arbol_Urbano_Tronco_1",
+            "category": "Other",
+            "blender_size_m": [
+                0.23999999463558197,
+                0.23999999463558197,
+                2.4000000953674316
+            ],
+            "unity_size_m": [
+                0.23999999463558197,
+                2.4000000953674316,
+                0.23999999463558197
+            ],
+            "abs_diff_m": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "max_diff_m": 0.0,
+            "passed": true
+        },
+        {
+            "name": "Arbol_Urbano_Tronco_2",
+            "category": "Other",
+            "blender_size_m": [
+                0.23999999463558197,
+                0.23999999463558197,
+                2.4000000953674316
+            ],
+            "unity_size_m": [
+                0.23999999463558197,
+                2.4000000953674316,
+                0.23999999463558197
+            ],
+            "abs_diff_m": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "max_diff_m": 0.0,
+            "passed": true
+        },
+        {
+            "name": "Bajante_Pluvial_Esquina",
+            "category": "Other",
+            "blender_size_m": [
+                0.10000000149011612,
+                0.10000000149011612,
+                5.800000190734863
+            ],
+            "unity_size_m": [
+                0.10000000149011612,
+                5.800000190734863,
+                0.10000000149011612
+            ],
+            "abs_diff_m": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "max_diff_m": 0.0,
+            "passed": true
+        },
+        {
+            "name": "Balcon_Pasamanos_Sur",
+            "category": "Other",
+            "blender_size_m": [
+                3.1700000762939453,
+                0.05999999865889549,
+                0.05000000074505806
+            ],
+            "unity_size_m": [
+                3.1700000762939453,
+                0.05000000074505806,
+                0.05999999865889549
+            ],
+            "abs_diff_m": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "max_diff_m": 0.0,
+            "passed": true
+        },
+        {
+            "name": "Balcon_Poste_1",
+            "category": "Other",
+            "blender_size_m": [
+                0.05999999865889549,
+                0.05999999865889549,
+                1.0199999809265137
+            ],
+            "unity_size_m": [
+                0.05999999865889549,
+                1.0199999809265137,
+                0.05999999865889549
+            ],
+            "abs_diff_m": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "max_diff_m": 0.0,
+            "passed": true
+        },
+        {
+            "name": "Balcon_Poste_2",
+            "category": "Other",
+            "blender_size_m": [
+                0.05999999865889549,
+                0.05999999865889549,
+                1.0199999809265137
+            ],
+            "unity_size_m": [
+                0.05999999865889549,
+                1.0199999809265137,
+                0.05999999865889549
+            ],
+            "abs_diff_m": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "max_diff_m": 0.0,
+            "passed": true
+        },
+        {
+            "name": "Balcon_Poste_3",
+            "category": "Other",
+            "blender_size_m": [
+                0.05999999865889549,
+                0.05999999865889549,
+                1.0199999809265137
+            ],
+            "unity_size_m": [
+                0.05999999865889549,
+                1.0199999809265137,
+                0.05999999865889549
+            ],
+            "abs_diff_m": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "max_diff_m": 0.0,
+            "passed": true
+        },
+        {
+            "name": "Bordillo_Frontal",
+            "category": "Other",
+            "blender_size_m": [
+                12.550000190734863,
+                0.10000000149011612,
+                0.07999999821186066
+            ],
+            "unity_size_m": [
+                12.550000190734863,
+                0.07999999821186066,
+                0.10000000149011612
+            ],
+            "abs_diff_m": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "max_diff_m": 0.0,
+            "passed": true
+        },
+        {
+            "name": "Bordillo_Lateral",
+            "category": "Other",
+            "blender_size_m": [
+                0.10000000149011612,
+                14.449999809265137,
+                0.07999999821186066
+            ],
+            "unity_size_m": [
+                0.10000000149011612,
+                0.07999999821186066,
+                14.449999809265137
+            ],
+            "abs_diff_m": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "max_diff_m": 0.0,
+            "passed": true
+        },
+        {
+            "name": "Calle_Frontal",
+            "category": "Other",
+            "blender_size_m": [
+                19.5,
+                7.0,
+                0.07000000029802322
+            ],
+            "unity_size_m": [
+                19.5,
+                0.07000000029802322,
+                7.0
+            ],
+            "abs_diff_m": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "max_diff_m": 0.0,
+            "passed": true
+        },
+        {
+            "name": "Calle_Lateral",
+            "category": "Other",
+            "blender_size_m": [
+                7.0,
+                14.5,
+                0.07000000029802322
+            ],
+            "unity_size_m": [
+                7.0,
+                0.07000000029802322,
+                14.5
+            ],
+            "abs_diff_m": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "max_diff_m": 0.0,
+            "passed": true
+        },
+        {
+            "name": "Celosia_Lat_P1_01",
+            "category": "Other",
+            "blender_size_m": [
+                0.10000000149011612,
+                0.05000000074505806,
+                2.4000000953674316
+            ],
+            "unity_size_m": [
+                0.10000000149011612,
+                2.4000000953674316,
+                0.05000000074505806
+            ],
+            "abs_diff_m": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "max_diff_m": 0.0,
+            "passed": true
+        },
+        {
+            "name": "Celosia_Lat_P1_02",
+            "category": "Other",
+            "blender_size_m": [
+                0.10000000149011612,
+                0.05000000074505806,
+                2.4000000953674316
+            ],
+            "unity_size_m": [
+                0.10000000149011612,
+                2.4000000953674316,
+                0.05000000074505806
+            ],
+            "abs_diff_m": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "max_diff_m": 0.0,
+            "passed": true
+        },
+        {
+            "name": "Celosia_Lat_P1_03",
+            "category": "Other",
+            "blender_size_m": [
+                0.10000000149011612,
+                0.05000000074505806,
+                2.4000000953674316
+            ],
+            "unity_size_m": [
+                0.10000000149011612,
+                2.4000000953674316,
+                0.05000000074505806
+            ],
+            "abs_diff_m": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "max_diff_m": 0.0,
+            "passed": true
+        },
+        {
+            "name": "Celosia_Lat_P1_04",
+            "category": "Other",
+            "blender_size_m": [
+                0.10000000149011612,
+                0.05000000074505806,
+                2.4000000953674316
+            ],
+            "unity_size_m": [
+                0.10000000149011612,
+                2.4000000953674316,
+                0.05000000074505806
+            ],
+            "abs_diff_m": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "max_diff_m": 0.0,
+            "passed": true
+        },
+        {
+            "name": "Celosia_Lat_P1_05",
+            "category": "Other",
+            "blender_size_m": [
+                0.10000000149011612,
+                0.05000000074505806,
+                2.4000000953674316
+            ],
+            "unity_size_m": [
+                0.10000000149011612,
+                2.4000000953674316,
+                0.05000000074505806
+            ],
+            "abs_diff_m": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "max_diff_m": 0.0,
+            "passed": true
+        }
+    ],
+    "opening_audits": [
+        {
+            "name": "P1_M_Bano_Este_Puerta1",
+            "center_unity": [
+                -2.0999999046325684,
+                1.0700000524520874,
+                -5.699999809265137
+            ],
+            "half_extents": [
+                0.07999999821186066,
+                0.20000000298023224,
+                0.07999999821186066
+            ],
+            "blocked_by_collider": false,
+            "blocking_object": "",
+            "passed": true
+        },
+        {
+            "name": "P1_M_Bano_Sur_Puerta1",
+            "center_unity": [
+                -2.5999999046325684,
+                1.0700000524520874,
+                -4.699999809265137
+            ],
+            "half_extents": [
+                0.07999999821186066,
+                0.20000000298023224,
+                0.07999999821186066
+            ],
+            "blocked_by_collider": false,
+            "blocking_object": "",
+            "passed": true
+        },
+        {
+            "name": "P1_M_Huesped_Norte_Cocina_Puerta1",
+            "center_unity": [
+                -2.625,
+                1.0700000524520874,
+                -8.100000381469727
+            ],
+            "half_extents": [
+                0.07999999821186066,
+                0.20000000298023224,
+                0.07999999821186066
+            ],
+            "blocked_by_collider": false,
+            "blocking_object": "",
+            "passed": true
+        },
+        {
+            "name": "P1_M_Huesped_Norte_Cocina_Puerta3",
+            "center_unity": [
+                -6.650000095367432,
+                1.0700000524520874,
+                -8.100000381469727
+            ],
+            "half_extents": [
+                0.07999999821186066,
+                0.20000000298023224,
+                0.07999999821186066
+            ],
+            "blocked_by_collider": false,
+            "blocking_object": "",
+            "passed": true
+        },
+        {
+            "name": "P1_M_Sep_Sala_Garaje_Puerta1",
+            "center_unity": [
+                -4.550000190734863,
+                1.0700000524520874,
+                -4.125
+            ],
+            "half_extents": [
+                0.07999999821186066,
+                0.20000000298023224,
+                0.07999999821186066
+            ],
+            "blocked_by_collider": false,
+            "blocking_object": "",
+            "passed": true
+        },
+        {
+            "name": "P1_M_Sur_Garaje_Porton1_P1",
+            "center_unity": [
+                -6.224999904632568,
+                0.3287999927997589,
+                -0.07500000298023224
+            ],
+            "half_extents": [
+                0.07999999821186066,
+                0.20000000298023224,
+                0.07999999821186066
+            ],
+            "blocked_by_collider": false,
+            "blocking_object": "",
+            "passed": true
+        },
+        {
+            "name": "P1_M_Sur_Garaje_Porton1_P2",
+            "center_unity": [
+                -6.224999904632568,
+                0.9061999917030334,
+                -0.07500000298023224
+            ],
+            "half_extents": [
+                0.07999999821186066,
+                0.20000000298023224,
+                0.07999999821186066
+            ],
+            "blocked_by_collider": false,
+            "blocking_object": "",
+            "passed": true
+        },
+        {
+            "name": "P1_M_Sur_Garaje_Porton1_P3",
+            "center_unity": [
+                -6.224999904632568,
+                1.4838000535964966,
+                -0.07500000298023224
+            ],
+            "half_extents": [
+                0.07999999821186066,
+                0.20000000298023224,
+                0.07999999821186066
+            ],
+            "blocked_by_collider": false,
+            "blocking_object": "",
+            "passed": true
+        },
+        {
+            "name": "P1_M_Sur_Garaje_Porton1_P4",
+            "center_unity": [
+                -6.224999904632568,
+                2.061199903488159,
+                -0.07500000298023224
+            ],
+            "half_extents": [
+                0.07999999821186066,
+                0.20000000298023224,
+                0.07999999821186066
+            ],
+            "blocked_by_collider": false,
+            "blocking_object": "",
+            "passed": true
+        },
+        {
+            "name": "P1_M_Sur_Sala_Puerta1",
+            "center_unity": [
+                -1.125,
+                1.0950000286102295,
+                -1.7000000476837158
+            ],
+            "half_extents": [
+                0.07999999821186066,
+                0.20000000298023224,
+                0.07999999821186066
+            ],
+            "blocked_by_collider": false,
+            "blocking_object": "",
+            "passed": true
+        },
+        {
+            "name": "P2_M_Banda_Norte_Puerta1",
+            "center_unity": [
+                -3.4000000953674316,
+                3.9700000286102295,
+                -6.699999809265137
+            ],
+            "half_extents": [
+                0.07999999821186066,
+                0.20000000298023224,
+                0.07999999821186066
+            ],
+            "blocked_by_collider": false,
+            "blocking_object": "",
+            "passed": true
+        },
+        {
+            "name": "P2_M_Banda_Norte_Puerta3",
+            "center_unity": [
+                -4.599999904632568,
+                3.9700000286102295,
+                -6.699999809265137
+            ],
+            "half_extents": [
+                0.07999999821186066,
+                0.20000000298023224,
+                0.07999999821186066
+            ],
+            "blocked_by_collider": false,
+            "blocking_object": "",
+            "passed": true
+        },
+        {
+            "name": "P2_M_Banda_Sur_Puerta1",
+            "center_unity": [
+                -2.5999999046325684,
+                3.9700000286102295,
+                -4.699999809265137
+            ],
+            "half_extents": [
+                0.07999999821186066,
+                0.20000000298023224,
+                0.07999999821186066
+            ],
+            "blocked_by_collider": false,
+            "blocking_object": "",
+            "passed": true
+        },
+        {
+            "name": "P2_M_Bano_Comp_Este_Puerta1",
+            "center_unity": [
+                -2.0999999046325684,
+                3.9700000286102295,
+                -6.0
+            ],
+            "half_extents": [
+                0.07999999821186066,
+                0.20000000298023224,
+                0.07999999821186066
+            ],
+            "blocked_by_collider": false,
+            "blocking_object": "",
+            "passed": true
+        },
+        {
+            "name": "P2_M_Master_Este_Puerta1",
+            "center_unity": [
+                -4.550000190734863,
+                3.9700000286102295,
+                -0.949999988079071
+            ],
+            "half_extents": [
+                0.07999999821186066,
+                0.20000000298023224,
+                0.07999999821186066
+            ],
+            "blocked_by_collider": false,
+            "blocking_object": "",
+            "passed": true
+        },
+        {
+            "name": "P2_M_Master_Este_Puerta3",
+            "center_unity": [
+                -4.550000190734863,
+                3.9700000286102295,
+                -3.049999952316284
+            ],
+            "half_extents": [
+                0.07999999821186066,
+                0.20000000298023224,
+                0.07999999821186066
+            ],
+            "blocked_by_collider": false,
+            "blocking_object": "",
+            "passed": true
+        },
+        {
+            "name": "P2_M_Vest_Bano_Puerta1",
+            "center_unity": [
+                -6.199999809265137,
+                3.9700000286102295,
+                -3.0999999046325684
+            ],
+            "half_extents": [
+                0.07999999821186066,
+                0.20000000298023224,
+                0.07999999821186066
+            ],
+            "blocked_by_collider": false,
+            "blocking_object": "",
+            "passed": true
+        }
+    ],
+    "errors": [],
+    "warnings": [
+        "Known Hito 6.1 FBX export delta on decorative mesh PH_Plant1_1_potted_plant_01_pebbles: max_diff_m=0,4813",
+        "Known Hito 6.1 FBX export delta on decorative mesh PH_Plant1_2_potted_plant_01_pebbles: max_diff_m=0,4813",
+        "Known Hito 6.1 FBX export delta on decorative mesh PH_Plant1_3_potted_plant_01_pebbles: max_diff_m=0,4813"
+    ]
+}

@@ -1,0 +1,182 @@
+{
+  "architecture.fbx": {
+    "original": {
+      "meshes": 313,
+      "triangles": 361472,
+      "materials": 16,
+      "dims_m": [
+        8.42,
+        11.7,
+        6.35
+      ]
+    },
+    "reimported": {
+      "meshes": 313,
+      "triangles": 602060,
+      "materials": 16,
+      "dims_m": [
+        8.42,
+        11.7,
+        6.35
+      ]
+    },
+    "mesh_count_match": true,
+    "dims_match_within_2cm": true,
+    "dim_diff_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "file_size_kb": 94131.17
+  },
+  "furniture.fbx": {
+    "original": {
+      "meshes": 103,
+      "triangles": 122245,
+      "materials": 22,
+      "dims_m": [
+        7.67,
+        10.82,
+        5.41
+      ]
+    },
+    "reimported": {
+      "meshes": 103,
+      "triangles": 130513,
+      "materials": 22,
+      "dims_m": [
+        7.67,
+        10.82,
+        5.41
+      ]
+    },
+    "mesh_count_match": true,
+    "dims_match_within_2cm": true,
+    "dim_diff_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "file_size_kb": 28284.89
+  },
+  "interactive_doors.fbx": {
+    "original": {
+      "meshes": 17,
+      "triangles": 204,
+      "materials": 2,
+      "dims_m": [
+        7.05,
+        8.105,
+        4.96
+      ]
+    },
+    "reimported": {
+      "meshes": 17,
+      "triangles": 204,
+      "materials": 2,
+      "dims_m": [
+        7.05,
+        8.105,
+        4.96
+      ]
+    },
+    "mesh_count_match": true,
+    "dims_match_within_2cm": true,
+    "dim_diff_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "file_size_kb": 63.07
+  },
+  "installations.fbx": {
+    "original": {
+      "meshes": 13,
+      "triangles": 156,
+      "materials": 6,
+      "dims_m": [
+        7.88,
+        9.6,
+        5.86
+      ]
+    },
+    "reimported": {
+      "meshes": 13,
+      "triangles": 156,
+      "materials": 6,
+      "dims_m": [
+        7.88,
+        9.6,
+        5.86
+      ]
+    },
+    "mesh_count_match": true,
+    "dims_match_within_2cm": true,
+    "dim_diff_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "file_size_kb": 54.48
+  },
+  "urban_context.fbx": {
+    "original": {
+      "meshes": 25,
+      "triangles": 436,
+      "materials": 10,
+      "dims_m": [
+        24.6,
+        27.1,
+        5.82
+      ]
+    },
+    "reimported": {
+      "meshes": 25,
+      "triangles": 436,
+      "materials": 10,
+      "dims_m": [
+        24.6,
+        27.1,
+        5.82
+      ]
+    },
+    "mesh_count_match": true,
+    "dims_match_within_2cm": true,
+    "dim_diff_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "file_size_kb": 19794.5
+  },
+  "colliders.fbx": {
+    "original": {
+      "meshes": 127,
+      "triangles": 1524,
+      "materials": 0,
+      "dims_m": [
+        8.02,
+        11.43,
+        6.35
+      ]
+    },
+    "reimported": {
+      "meshes": 127,
+      "triangles": 1524,
+      "materials": 0,
+      "dims_m": [
+        8.02,
+        11.43,
+        6.35
+      ]
+    },
+    "mesh_count_match": true,
+    "dims_match_within_2cm": true,
+    "dim_diff_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "file_size_kb": 253.06
+  }
+}

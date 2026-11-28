@@ -1,0 +1,13 @@
+{
+  "bano_social_area_m2": 6.27,
+  "bano_social_expanded": true,
+  "vestidor_area_m2": 6.525,
+  "vestidor_expanded": true,
+  "bano_principal_area_m2": 7.65,
+  "bano_principal_expanded": true,
+  "balcon_eliminated": true,
+  "p2_footprint_m2": 80.0,
+  "p2_under_80m2": true,
+  "architecture_only_visible_non_arch_count": 0,
+  "all_passed": true
+}

@@ -53,9 +53,12 @@ namespace HomeProject.Editor
 
             if (writeReportFile)
             {
-                string outPath = Path.GetFullPath(Path.Combine(Application.dataPath, "../../validation/HITO_08_2_VALIDATION.json"));
+                string json = JsonUtility.ToJson(report, true);
+                string outPath = Path.GetFullPath(Path.Combine(Application.dataPath, "../../validation/HITO_08_3_1_VALIDATION.json"));
                 Directory.CreateDirectory(Path.GetDirectoryName(outPath));
-                File.WriteAllText(outPath, JsonUtility.ToJson(report, true));
+                File.WriteAllText(outPath, json);
+                string outPath2 = Path.GetFullPath(Path.Combine(Application.dataPath, "../../validation/HITO_08_3_2_VALIDATION.json"));
+                File.WriteAllText(outPath2, json);
             }
 
             return report;
@@ -311,7 +314,7 @@ namespace HomeProject.Editor
             int mask = colLayer >= 0 ? (1 << colLayer) : Physics.DefaultRaycastLayers;
             Physics.SyncTransforms();
 
-            float radius = 0.28f;
+            float radius = 0.30f;
             float height = 1.80f;
 
             (string name, Vector3 start, Vector3 end)[] sweeps =
@@ -321,7 +324,7 @@ namespace HomeProject.Editor
                 ("Sala_a_Garaje", new Vector3(-4.0f, 0.05f, -4.12f), new Vector3(-5.1f, 0.05f, -4.12f)),
                 ("Pasillo_a_Hab_Huespedes", new Vector3(-2.62f, 0.05f, -7.5f), new Vector3(-2.62f, 0.05f, -8.8f)),
                 ("Cocina_a_Lavanderia", new Vector3(-6.65f, 0.05f, -7.5f), new Vector3(-6.65f, 0.05f, -8.8f)),
-                ("Corredor_P2_a_Master", new Vector3(-5.1f, 2.95f, -0.95f), new Vector3(-3.8f, 2.95f, -0.95f)),
+                ("Master_a_Vestidor", new Vector3(-4.0f, 2.95f, -3.05f), new Vector3(-5.2f, 2.95f, -3.05f)),
                 ("Corredor_P2_a_Hija_1", new Vector3(-3.4f, 2.95f, -6.1f), new Vector3(-3.4f, 2.95f, -7.3f)),
                 ("Corredor_P2_a_Hija_2", new Vector3(-4.6f, 2.95f, -6.1f), new Vector3(-4.6f, 2.95f, -7.3f))
             };

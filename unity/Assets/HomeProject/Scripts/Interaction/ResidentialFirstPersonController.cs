@@ -24,6 +24,7 @@ namespace HomeProject.Interaction
         private float verticalVelocity;
         private float pitch;
         private float yaw;
+        private float smoothedCameraY;
         private bool inputOverrideActive;
         private Vector2 overrideMove;
         private Vector2 overrideLook;
@@ -33,21 +34,66 @@ namespace HomeProject.Interaction
         public bool IsGrounded => controller != null && controller.isGrounded;
         public string CurrentZoneName => ResidentialZoneTracker.GetZoneName(transform.position);
         public float CurrentElevationY => transform.position.y;
+        public float CurrentYaw => yaw;
         public InteractiveDoor LastHoveredDoor { get; private set; }
+        public int FloorCollisions { get; private set; }
+        public int StairCollisions { get; private set; }
+        public int WallCollisions { get; private set; }
+        public int ObstacleCollisions { get; private set; }
+        public int CollisionCount => FloorCollisions + StairCollisions + WallCollisions + ObstacleCollisions;
+        public string LastHitObject { get; private set; }
+        public Camera PlayerCamera => playerCamera;
 
         private void Awake()
         {
             controller = GetComponent<CharacterController>();
             ConfigureCharacterController();
             playerCamera = GetComponentInChildren<Camera>(true);
-            orbitalCamera = Object.FindFirstObjectByType<OrbitalInspectionCamera>(FindObjectsInactive.Include);
+            orbitalCamera = Object.FindAnyObjectByType<OrbitalInspectionCamera>(FindObjectsInactive.Include);
             yaw = spawnYaw;
-            ApplyCameraTransform();
+            smoothedCameraY = transform.position.y + cameraEyeHeight;
+            ApplyCameraTransform(true);
         }
 
         private void Start()
         {
             SetOrbitalMode(false);
+        }
+
+        private void OnDisable()
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
+
+        private void OnApplicationFocus(bool hasFocus)
+        {
+            if (hasFocus)
+            {
+                UpdateCursorLock();
+            }
+        }
+
+        private void OnControllerColliderHit(ControllerColliderHit hit)
+        {
+            string hitName = hit.collider != null ? hit.collider.gameObject.name : "";
+            LastHitObject = hitName;
+            if (hitName.Contains("Esc_Peldano"))
+            {
+                StairCollisions++;
+            }
+            else if (hit.normal.y >= 0.7f)
+            {
+                FloorCollisions++;
+            }
+            else if (hitName.Contains("_M_") || hitName.Contains("Puerta") || hitName.Contains("Porton") || hitName.Contains("Baranda") || hitName.Contains("Glass") || hitName.Contains("Fach_"))
+            {
+                WallCollisions++;
+            }
+            else
+            {
+                ObstacleCollisions++;
+            }
         }
 
         public void ConfigureCharacterController()
@@ -67,6 +113,12 @@ namespace HomeProject.Interaction
         private void Update()
         {
             HandleSystemShortcuts();
+
+            if (transform.position.y < -1.0f)
+            {
+                ResetToSpawn();
+                return;
+            }
 
             if (IsPaused || IsOrbitalMode)
             {
@@ -117,7 +169,7 @@ namespace HomeProject.Interaction
 
             yaw += delta.x;
             pitch = Mathf.Clamp(pitch - delta.y, -80f, 80f);
-            ApplyCameraTransform();
+            ApplyCameraTransform(false);
         }
 
         private void HandleMovement()
@@ -155,6 +207,7 @@ namespace HomeProject.Interaction
 
             Vector3 motion = (horizontal + Vector3.up * verticalVelocity) * Time.deltaTime;
             controller.Move(motion);
+            ApplyCameraTransform(false);
         }
 
         private void HandleDoorHoverAndInteract()
@@ -172,12 +225,31 @@ namespace HomeProject.Interaction
                 if (door != null)
                 {
                     LastHoveredDoor = door;
-                    if (Keyboard.current != null && Keyboard.current.eKey.wasPressedThisFrame)
+                    bool ePressed = false;
+                    foreach (InputDevice dev in InputSystem.devices)
+                    {
+                        if (dev is Keyboard kb && kb.enabled && kb.eKey.wasPressedThisFrame)
+                        {
+                            ePressed = true;
+                            break;
+                        }
+                    }
+                    if (ePressed)
                     {
                         door.Toggle();
                     }
                 }
             }
+        }
+
+        public bool InteractWithDoor(InteractiveDoor door)
+        {
+            if (door == null) return false;
+            float dist = Vector3.Distance(transform.position, door.transform.position);
+            if (dist > interactDistance) return false;
+            LastHoveredDoor = door;
+            door.Toggle();
+            return true;
         }
 
         public void ResetToSpawn()
@@ -196,7 +268,8 @@ namespace HomeProject.Interaction
             verticalVelocity = 0f;
             yaw = newYaw;
             pitch = 0f;
-            ApplyCameraTransform();
+            smoothedCameraY = position.y + cameraEyeHeight;
+            ApplyCameraTransform(true);
             controller.enabled = true;
             Physics.SyncTransforms();
         }
@@ -211,6 +284,16 @@ namespace HomeProject.Interaction
         public void SetOrbitalMode(bool orbital)
         {
             IsOrbitalMode = orbital;
+
+            Camera[] allCams = Object.FindObjectsByType<Camera>(FindObjectsInactive.Include);
+            for (int i = 0; i < allCams.Length; i++)
+            {
+                if (allCams[i] != playerCamera && (orbitalCamera == null || allCams[i].gameObject != orbitalCamera.gameObject))
+                {
+                    allCams[i].enabled = false;
+                }
+            }
+
             if (playerCamera != null)
             {
                 playerCamera.enabled = !orbital;
@@ -222,12 +305,23 @@ namespace HomeProject.Interaction
             UpdateCursorLock();
         }
 
-        private void ApplyCameraTransform()
+        private void ApplyCameraTransform(bool immediate)
         {
             transform.rotation = Quaternion.Euler(0f, yaw, 0f);
             if (playerCamera != null)
             {
-                playerCamera.transform.localPosition = new Vector3(0f, cameraEyeHeight, 0f);
+                float targetY = transform.position.y + cameraEyeHeight;
+                if (immediate)
+                {
+                    smoothedCameraY = targetY;
+                }
+                else
+                {
+                    smoothedCameraY = Mathf.Lerp(smoothedCameraY, targetY, Mathf.Clamp01(Time.deltaTime * 18f));
+                }
+
+                float localY = smoothedCameraY - transform.position.y;
+                playerCamera.transform.localPosition = new Vector3(0f, localY, 0f);
                 playerCamera.transform.localRotation = Quaternion.Euler(pitch, 0f, 0f);
             }
         }

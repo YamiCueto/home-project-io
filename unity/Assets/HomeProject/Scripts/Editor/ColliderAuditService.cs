@@ -109,11 +109,6 @@ namespace HomeProject.Editor
                     continue;
                 }
 
-                if (groupName == HomeProjectConstants.GroupArchitecture && go.name.Contains("Vidrio"))
-                {
-                    continue;
-                }
-
                 if (go.GetComponent<Collider>() != null)
                 {
                     continue;

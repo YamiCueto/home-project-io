@@ -15,6 +15,11 @@ namespace HomeProject.Interaction
         private float pitch = 24f;
         private bool active;
 
+        public float Yaw => yaw;
+        public float Pitch => pitch;
+        public float Distance => distance;
+        public bool IsActive => active && cam != null && cam.enabled;
+
         private void Awake()
         {
             cam = GetComponent<Camera>();
@@ -32,6 +37,14 @@ namespace HomeProject.Interaction
             {
                 UpdateOrbitTransform();
             }
+        }
+
+        public void ApplyOrbitInput(float yawDelta, float pitchDelta, float distanceDelta)
+        {
+            yaw += yawDelta;
+            pitch = Mathf.Clamp(pitch + pitchDelta, 5f, 80f);
+            distance = Mathf.Clamp(distance + distanceDelta, 6f, 35f);
+            UpdateOrbitTransform();
         }
 
         private void Update()

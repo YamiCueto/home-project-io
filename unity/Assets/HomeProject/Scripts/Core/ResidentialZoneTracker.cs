@@ -20,7 +20,7 @@ namespace HomeProject.Core
                 if (by < 1.70f && bx < 4.55f) return "Acceso Peatonal";
                 if (bx >= 4.55f && by <= 4.75f) return "Garaje";
                 if (bx < 4.55f && by <= 4.70f) return "Sala";
-                if (bx < 2.15f && by > 4.70f && by <= 6.70f) return "Bano Social";
+                if (bx < 2.10f && by >= 4.70f && by <= 8.05f) return "Bano Social";
                 if (bx >= 3.10f && bx <= 6.85f && by >= 4.75f && by <= 5.75f) return "Escalera";
                 if (bx < 5.65f && by > 5.75f && by <= 8.10f) return "Comedor";
                 if (bx >= 5.65f && by > 5.75f && by <= 8.10f) return "Cocina";
@@ -32,8 +32,7 @@ namespace HomeProject.Core
             if (by <= 4.70f)
             {
                 if (bx < 4.55f) return "Habitacion Principal";
-                if (bx >= 4.55f && by < 1.50f) return "Balcon";
-                if (bx >= 4.55f && by < 3.10f) return "Vestidor";
+                if (bx >= 4.55f && bx < 6.08f) return "Vestidor";
                 return "Bano Principal";
             }
 

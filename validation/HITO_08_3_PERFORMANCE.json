@@ -1,0 +1,12 @@
+{
+    "milestone": "Hito 8.3",
+    "screen_width": 2560,
+    "screen_height": 1440,
+    "warmup_frames": 60,
+    "render_pipeline": "URP 17.6.0 (Forward+, HDR, MSAA 4x, SSAO, Shadows 4096)",
+    "average_fps": 375.0,
+    "average_frame_time_ms": 2.6700000762939453,
+    "p95_frame_time_ms": 5.5,
+    "p99_frame_time_ms": 9.520000457763672,
+    "one_percent_low_fps": 65.0999984741211
+}
